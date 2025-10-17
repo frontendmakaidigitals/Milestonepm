@@ -94,7 +94,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Asset Advisory Services
         </h1>
       </div>
@@ -152,12 +152,12 @@ export default function Page() {
           </div>
         </div>
       </section>{" "}
-      <section className="py-20 bg-gradient-to-b from-blue-50 via-white to-blue-50">
+      <section className="py-20 bg-gradient-to-b from-yellow-50 via-white to-yellow-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-yellow-900 mb-6">
             Capital Planning & Cost Modeling
           </h2>
-          <p className="text-center text-blue-700 max-w-2xl mx-auto mb-14">
+          <p className="text-center text-yellow-700 max-w-2xl mx-auto mb-14">
             Building resilient, future-ready organizations through smart
             investment planning, portfolio optimization, sustainability, and
             digital asset management.
@@ -167,18 +167,18 @@ export default function Page() {
             {sections.map((section, i) => (
               <div
                 key={i}
-                className="bg-white shadow-lg rounded-2xl border border-blue-100 hover:shadow-xl transition p-8"
+                className="bg-white shadow-lg rounded-2xl border border-yellow-100 hover:shadow-xl transition p-8"
               >
-                <h3 className="text-xl font-semibold text-blue-800 mb-4">
+                <h3 className="text-xl font-semibold text-yellow-800 mb-4">
                   {section.title}
                 </h3>
                 <ul className="space-y-3">
                   {section.items.map((item, j) => (
                     <li
                       key={j}
-                      className="flex items-start gap-3 text-blue-700"
+                      className="flex items-start gap-3 text-yellow-700"
                     >
-                      <span className="h-2 w-2 mt-2 rounded-full bg-blue-500"></span>
+                      <span className="h-2 w-2 mt-2 rounded-full bg-yellow-500"></span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -188,9 +188,9 @@ export default function Page() {
           </div>
         </div>
       </section>{" "}
-      <section className="py-20 bg-gradient-to-b from-white via-blue-50 to-white">
+      <section className="py-20 bg-gradient-to-b from-white via-yellow-50 to-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-yellow-900 mb-12">
             Who We Support
           </h2>
 
@@ -198,12 +198,12 @@ export default function Page() {
             {supports.map((support, i) => (
               <div
                 key={i}
-                className="bg-white border border-blue-100 rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col items-center text-center"
+                className="bg-white border border-yellow-100 rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col items-center text-center"
               >
-                <div className="p-4 rounded-full bg-blue-100 text-blue-700 mb-4">
+                <div className="p-4 rounded-full bg-yellow-100 text-yellow-700 mb-4">
                   <support.icon className="h-8 w-8" />
                 </div>
-                <h3 className="text-lg font-medium text-blue-800">
+                <h3 className="text-lg font-medium text-yellow-800">
                   {support.title}
                 </h3>
               </div>
@@ -213,7 +213,7 @@ export default function Page() {
       </section>{" "}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-900 mb-12 text-center">
             Why Choose Al Yusr for Asset Advisory?
           </h2>
 
@@ -221,7 +221,7 @@ export default function Page() {
             {points.map((item, idx) => (
               <div
                 key={idx}
-                className="flex flex-col items-center  bg-blue-50 rounded-2xl shadow-md hover:shadow-lg transition"
+                className="flex flex-col items-center  bg-yellow-50 rounded-2xl shadow-md hover:shadow-lg transition"
               >
                 <div className="  w-full h-[230px] bg-white shadow-inner overflow-hidden">
                   <img
@@ -231,7 +231,7 @@ export default function Page() {
                   />
                 </div>
                 <div className="p-5">
-                  <h3 className="text-lg font-semibold text-blue-900 mb-2">
+                  <h3 className="text-lg font-semibold text-yellow-900 mb-2">
                     {item.title}
                   </h3>
                   <p className="text-gray-700 leading-relaxed text-sm">

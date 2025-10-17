@@ -63,8 +63,8 @@ const Industry = () => {
     <section className="py-20">
       <div className="container mx-auto">
         <h1 className="text-4xl lg:text-5xl text-center font-semibold">
-          Industry <span className="text-blue-500">Insights</span> and{" "}
-          <span className="text-blue-500">Case</span> Studies
+          Industry <span className="text-yellow-500">Insights</span> and{" "}
+          <span className="text-yellow-500">Case</span> Studies
         </h1>
         <h2 className="text-center mt-3 text-lg text-gray-600 max-w-3xl mx-auto">
           In-depth articles on engineering trends, smart infrastructure,
@@ -91,7 +91,7 @@ const Industry = () => {
                   />
                   <BgLayer />
                   <div className="absolute bottom-0 translate-y-1/2 bg-white shadow-lg rounded-lg p-6 w-[90%] left-1/2 transform -translate-x-1/2">
-                    <div className="mb-4 flex items-center gap-2 text-blue-600">
+                    <div className="mb-4 flex items-center gap-2 text-yellow-600">
                       <h2 className="text-2xl text-slate-600 mt-8 font-semibold w-full text-center">
                         {item.title}
                       </h2>
@@ -132,14 +132,14 @@ const Industry = () => {
           <button
             disabled={!canScrollPrev}
             onClick={() => api?.scrollPrev()}
-            className="bg-blue-500 disabled:bg-slate-400 text-white p-2 rounded-full"
+            className="bg-yellow-500 disabled:bg-slate-400 text-white p-2 rounded-full"
           >
             <ArrowLeft />
           </button>
           <button
             disabled={!canScrollNext}
             onClick={() => api?.scrollNext()}
-            className="bg-blue-500 disabled:bg-slate-400 text-white p-2 rounded-full"
+            className="bg-yellow-500 disabled:bg-slate-400 text-white p-2 rounded-full"
           >
             <ArrowRight />
           </button>

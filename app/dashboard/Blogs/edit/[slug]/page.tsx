@@ -321,7 +321,7 @@ export default function Page() {
             <div className="relative flex items-center border border-gray-100 shadow gap-3 line-clamp-1 bg-white w-full px-3 py-[.22rem] rounded-lg">
               <label
                 htmlFor="fileAdd"
-                className="px-3 rounded-md py-[.45rem] bg-blue-500 text-slate-50 cursor-pointer"
+                className="px-3 rounded-md py-[.45rem] bg-yellow-500 text-slate-50 cursor-pointer"
               >
                 Choose
               </label>
@@ -378,7 +378,7 @@ export default function Page() {
             type="button"
             onClick={handlePreview}
             size="lg"
-            className="py-6 bg-blue-600 hover:bg-blue-700 text-slate-50"
+            className="py-6 bg-yellow-600 hover:bg-yellow-700 text-slate-50"
           >
             <Eye /> Preview
           </Button>

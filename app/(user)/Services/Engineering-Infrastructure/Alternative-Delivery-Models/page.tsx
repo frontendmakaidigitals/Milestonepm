@@ -85,7 +85,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Alternative Delivery Models
         </h1>
       </div>
@@ -116,10 +116,10 @@ export default function ConstructionManagementPage() {
           maximizing efficiency while minimizing risk.
         </p>
       </section>
-      <section className="bg-sky-50 mt-10 py-20">
+      <section className="bg-amber-50 mt-10 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-10 container">
           <div className="">
-            <h2 className="text-4xl lg:text-5xl font-bold text-sky-900 mb-5">
+            <h2 className="text-4xl lg:text-5xl font-bold text-amber-900 mb-5">
               What Are Alternative Delivery Models?
             </h2>
             <p>
@@ -145,7 +145,7 @@ export default function ConstructionManagementPage() {
       <section className="bg-white text-gray-900 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12">
-            Our <span className="text-blue-500">Core Delivery</span> Models
+            Our <span className="text-yellow-500">Core Delivery</span> Models
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {models.map((model, idx) => (
@@ -161,10 +161,10 @@ export default function ConstructionManagementPage() {
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="text-xl text-blue-900 font-semibold mb-2">
+                  <h3 className="text-xl text-yellow-900 font-semibold mb-2">
                     {model.title}
                   </h3>
-                  <p className="text-blue-950">{model.desc}</p>
+                  <p className="text-yellow-950">{model.desc}</p>
                 </div>
               </div>
             ))}
@@ -176,7 +176,7 @@ export default function ConstructionManagementPage() {
         <div className="container">
           <h2 className="text-4xl lg:text-5xl max-w-4xl mx-auto font-bold text-center mb-10">
             When Should You Consider{" "}
-            <span className="text-blue-500">Alternative Delivery?</span>
+            <span className="text-yellow-500">Alternative Delivery?</span>
           </h2>
           <ul className="grid grid-cols-1 lg:grid-cols-3 gap-7 mx-auto max-w-5xl">
             {considerations.map((item, idx) => (
@@ -184,7 +184,7 @@ export default function ConstructionManagementPage() {
                 key={idx}
                 className="flex items-start gap-4 bg-white p-3 rounded-lg"
               >
-                <BadgeCheck className="text-blue-600 w-6 h-6 mt-1 shrink-0" />
+                <BadgeCheck className="text-yellow-600 w-6 h-6 mt-1 shrink-0" />
                 <span className="text-lg">{item}</span>
               </li>
             ))}
@@ -192,10 +192,10 @@ export default function ConstructionManagementPage() {
         </div>
       </section>
 
-      <section className="bg-sky-50 mt-10 py-20">
+      <section className="bg-amber-50 mt-10 py-20">
         <div className="grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10 container">
           <div className="">
-            <h2 className="text-4xl lg:text-5xl font-bold text-sky-900 mb-5">
+            <h2 className="text-4xl lg:text-5xl font-bold text-amber-900 mb-5">
               Our Value Proposition
             </h2>
             <p>
@@ -231,7 +231,7 @@ export default function ConstructionManagementPage() {
         <div className="container">
           <h2 className="text-4xl lg:text-5xl max-w-5xl mx-auto font-bold text-center mb-14">
             <span className="text-green-600">Advantages</span> of{" "}
-            <span className="text-blue-500">Alternative Delivery</span> Models
+            <span className="text-yellow-500">Alternative Delivery</span> Models
             with Al Yusr
           </h2>
           <div className="grid gap-10 grid-cols-1 lg:grid-cols-3">
@@ -240,8 +240,8 @@ export default function ConstructionManagementPage() {
                 key={idx}
                 className="flex bg-slate-100 rounded-xl p-5 items-start gap-5"
               >
-                <div className="p-3 bg-blue-100 rounded-full">
-                  <Icon className="w-6 h-6 text-blue-600" />
+                <div className="p-3 bg-yellow-100 rounded-full">
+                  <Icon className="w-6 h-6 text-yellow-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-1">{title}</h3>

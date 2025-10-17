@@ -59,27 +59,27 @@ export default function Page() {
     {
       title: "Cost Intelligence",
       desc: "We leverage real project data and international benchmarks to provide realistic cost guidance.",
-      icon: <Calculator className="h-8 w-8 text-blue-600" />,
+      icon: <Calculator className="h-8 w-8 text-yellow-600" />,
     },
     {
       title: "Sector-Specific Expertise",
       desc: "From infrastructure to high-rise buildings, we understand your industry and its financial pressures.",
-      icon: <Building2 className="h-8 w-8 text-blue-600" />,
+      icon: <Building2 className="h-8 w-8 text-yellow-600" />,
     },
     {
       title: "Transparent Reporting",
       desc: "Our detailed, real-time cost tracking and reporting keep you in control at all times.",
-      icon: <FileBarChart2 className="h-8 w-8 text-blue-600" />,
+      icon: <FileBarChart2 className="h-8 w-8 text-yellow-600" />,
     },
     {
       title: "Value-Driven Design",
       desc: "We help you maximize ROI through efficient designs that don’t compromise on quality.",
-      icon: <Gem className="h-8 w-8 text-blue-600" />,
+      icon: <Gem className="h-8 w-8 text-yellow-600" />,
     },
     {
       title: "End-to-End Support",
       desc: "From initial planning to project handover, we’re with you every step of the way.",
-      icon: <Handshake className="h-8 w-8 text-blue-600" />,
+      icon: <Handshake className="h-8 w-8 text-yellow-600" />,
     },
   ];
   const capabilities = [
@@ -99,7 +99,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Cost Management Services
         </h1>
       </div>
@@ -138,7 +138,7 @@ export default function Page() {
             viewport={{ once: true }}
             className="text-4xl lg:text-5xl font-bold text-gray-800 mb-12 text-center"
           >
-            What <span className="text-blue-500">We Offer</span>
+            What <span className="text-yellow-500">We Offer</span>
           </motion.h2>
 
           {/* Services Grid */}
@@ -150,7 +150,7 @@ export default function Page() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="rounded-xl border border-gray-200 bg-sky-50 p-1 shadow-sm hover:shadow-md transition-shadow duration-200 max-w-sm mx-auto"
+                className="rounded-xl border border-gray-200 bg-amber-50 p-1 shadow-sm hover:shadow-md transition-shadow duration-200 max-w-sm mx-auto"
               >
                 {service.img && (
                   <div className="relative bg-red-300 w-full h-60 rounded-lg overflow-hidden">
@@ -163,7 +163,7 @@ export default function Page() {
                   </div>
                 )}
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-sky-800">
+                  <h3 className="text-lg font-semibold text-amber-800">
                     {service.title}
                   </h3>
                   <p className="text-sm text-gray-500 mt-1 leading-relaxed">
@@ -190,7 +190,7 @@ export default function Page() {
           <div className="p-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Our Approach:{" "}
-              <span className="text-blue-600">
+              <span className="text-yellow-600">
                 Strategic, Transparent, Precise
               </span>
             </h2>
@@ -205,7 +205,7 @@ export default function Page() {
             <ul className="space-y-4 mb-6">
               {points.map((point, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="h-2 w-2 mt-2 rounded-full bg-blue-600"></span>
+                  <span className="h-2 w-2 mt-2 rounded-full bg-yellow-600"></span>
                   <span className="text-gray-800">{point}</span>
                 </li>
               ))}
@@ -222,7 +222,7 @@ export default function Page() {
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">
-            Why Choose <span className="text-blue-600">Al Yusr</span> for Cost
+            Why Choose <span className="text-yellow-600">Al Yusr</span> for Cost
             Management
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -238,7 +238,7 @@ export default function Page() {
               key={index}
               className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-start hover:shadow-xl transition"
             >
-              <div className="p-3 rounded-xl bg-blue-100 mb-4">
+              <div className="p-3 rounded-xl bg-yellow-100 mb-4">
                 {feature.icon}
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -252,7 +252,7 @@ export default function Page() {
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">
-            Our <span className="text-blue-600">Cost Management</span>{" "}
+            Our <span className="text-yellow-600">Cost Management</span>{" "}
             Capabilities
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -268,7 +268,7 @@ export default function Page() {
               key={index}
               className="flex items-start space-x-3 bg-gray-50 rounded-xl p-4 hover:bg-gray-100 transition"
             >
-              <BadgeCheck className="h-6 w-6 text-blue-600 flex-shrink-0" />
+              <BadgeCheck className="h-6 w-6 text-yellow-600 flex-shrink-0" />
               <span className="text-gray-800 font-medium">{item}</span>
             </div>
           ))}

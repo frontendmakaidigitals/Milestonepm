@@ -47,7 +47,7 @@ export function AppSidebar() {
         />
         <SidebarGroup>
           <SidebarGroupLabel className="flex justify-center mt-5">
-            <Logo img={"/logo-black.webp"} />
+            <Logo img={"/logo.png"} />
           </SidebarGroupLabel>
           <SidebarGroupContent className=" mt-20">
             <SidebarMenu className="space-y-2">

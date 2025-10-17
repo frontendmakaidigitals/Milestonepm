@@ -28,7 +28,7 @@ const WhoWeAre = ({ data, imgCard, wideCard, onNavigate }: dataProps) => {
                     <Link
                       onClick={onNavigate}
                       href={`/Who-we-are/${item.link}`}
-                      className="block w-full text-center border border-blue-300 hover:bg-gradient-to-br from-[#06b6d4]
+                      className="block w-full text-center border border-yellow-300 hover:bg-gradient-to-br from-[#06b6d4]
 via-[#2563eb]
 to-[#6366f1]  hover:text-white rounded-full px-4 py-2 transition"
                     >
@@ -64,7 +64,7 @@ to-[#6366f1]  hover:text-white rounded-full px-4 py-2 transition"
                     />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-blue-200 mb-1">
+                    <h3 className="text-lg font-semibold text-yellow-200 mb-1">
                       {card.label}
                     </h3>
                     <p className="text-sm 2xl:text-base text-white/80 max-w-md leading-snug">
@@ -98,7 +98,7 @@ to-[#6366f1]  hover:text-white rounded-full px-4 py-2 transition"
                   href={"/brochure/brochure.pdf"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-blue-500 text-white whitespace-nowrap text-sm font-medium px-5 py-2 rounded-full border border-black shadow-md"
+                  className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-yellow-500 text-white whitespace-nowrap text-sm font-medium px-5 py-2 rounded-full border border-black shadow-md"
                 >
                   {img.button}
                 </a>
@@ -106,7 +106,7 @@ to-[#6366f1]  hover:text-white rounded-full px-4 py-2 transition"
                 <Link
                   onClick={onNavigate}
                   href="/Contact"
-                  className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-blue-500 text-white whitespace-nowrap text-sm font-medium px-5 py-2 rounded-full border border-black shadow-md"
+                  className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-yellow-500 text-white whitespace-nowrap text-sm font-medium px-5 py-2 rounded-full border border-black shadow-md"
                 >
                   {img.button}
                 </Link>

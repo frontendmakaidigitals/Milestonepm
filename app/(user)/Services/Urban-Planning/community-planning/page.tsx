@@ -91,7 +91,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Community Planning
         </h1>
       </div>
@@ -118,7 +118,7 @@ export default function Page() {
       <section className="bg-gray-100 py-20 px-4">
         <div className="container text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-            Our <span className="text-blue-500">Planning</span> Framework
+            Our <span className="text-yellow-500">Planning</span> Framework
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
             We structure our community planning process into clear, phased
@@ -150,10 +150,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-20 bg-sky-50">
+      <section className="py-20 bg-amber-50">
         <div className="container ">
           <h2 className="text-4xl lg:text-5xl font-bold mb-10 text-center">
-            What We <span className="text-blue-500">Offer</span>
+            What We <span className="text-yellow-500">Offer</span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {offerings.map((item, i) => (
@@ -183,14 +183,14 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-blue-50 via-white to-blue-100 py-20 px-4 md:px-10">
+      <section className="bg-gradient-to-br from-yellow-50 via-white to-yellow-100 py-20 px-4 md:px-10">
         <div className="max-w-5xl mx-auto text-center">
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl lg:text-5xl font-[700] mb-6 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+            className="text-4xl lg:text-5xl font-[700] mb-6 bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
           >
             Community Engagement & Stakeholder Collaboration
           </motion.h2>
@@ -222,7 +222,7 @@ export default function Page() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl font-bold mb-6 text-sky-800">
+              <h2 className="text-4xl font-bold mb-6 text-amber-800">
                 Sustainable & Resilient Communities
               </h2>
               <p className="mb-6 text-gray-700">
@@ -289,7 +289,7 @@ export default function Page() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl font-bold mb-6 text-blue-900">
+              <h2 className="text-4xl font-bold mb-6 text-yellow-900">
                 Our Experience
               </h2>
               <p className="mb-6 text-gray-700">
@@ -311,7 +311,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-sky-50 py-20 px-4 md:px-10">
+      <section className="bg-amber-50 py-20 px-4 md:px-10">
         <div className="max-w-5xl mx-auto text-center">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -320,7 +320,7 @@ export default function Page() {
             viewport={{ once: true }}
             className="text-4xl lg:text-5xl font-bold text-gray-800 mb-10"
           >
-            Why <span className="text-blue-500">Al Yusr?</span>
+            Why <span className="text-yellow-500">Al Yusr?</span>
           </motion.h2>
 
           <div className="grid gap-6 md:grid-cols-2 text-left max-w-5xl mx-auto">
@@ -331,7 +331,7 @@ export default function Page() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1, duration: 0.4 }}
                 viewport={{ once: true }}
-                className="flex items-start gap-3 bg-blue-100 p-3 rounded-lg"
+                className="flex items-start gap-3 bg-yellow-100 p-3 rounded-lg"
               >
                 <BadgeCheck className="text-white fill-green-500 mt-1 shrink-0" />
                 <span className="text-gray-700 text-lg">{point}</span>

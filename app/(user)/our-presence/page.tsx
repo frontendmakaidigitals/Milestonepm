@@ -18,7 +18,7 @@ const offices = [
   },
   {
     country: "United Kingdom (UK)",
-    color: "from-indigo-600 to-blue-500",
+    color: "from-indigo-600 to-yellow-500",
     img: "/locations/uk.webp",
     content:
       "In the UK, Al Yusr taps into one of the world’s most advanced ecosystems of engineering, research, and sustainable design practices. Our UK office connects us to cutting-edge technologies and global best practices, enabling us to integrate innovation into every project we deliver. From strategic consulting and advanced engineering to sustainability-driven solutions, our UK presence strengthens our ability to provide clients with world-class expertise combined with local adaptability. Serving as a global bridge, our UK operations ensure that projects across the Middle East, Africa, and Asia benefit from the lessons, standards, and innovations developed in one of the most progressive markets in the world.",
@@ -51,7 +51,7 @@ export default function OurPresence() {
     <section className="relative overflow-hidden">
       {/* Heading */}
       <section className="text-start container my-10">
-        <h1 className="text-4xl lg:text-5xl text-sky-800 font-bold">
+        <h1 className="text-4xl lg:text-5xl text-amber-800 font-bold">
           Our Presence
         </h1>
       </section>
@@ -237,7 +237,7 @@ function OfficeCard({
 
       {/* Content */}
       <div className={`${idx % 2 === 1 ? "lg:order-1" : "lg:order-2"}`}>
-        <h2 className="text-4xl lg:text-5xl py-1 font-[600] mb-3 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 bg-clip-text text-transparent">
+        <h2 className="text-4xl lg:text-5xl py-1 font-[600] mb-3 bg-gradient-to-r from-yellow-600 via-amber-500 to-yellow-400 bg-clip-text text-transparent">
           <span className="text-5xl lg:text-6xl text-gray-700">0{idx + 1}</span>{" "}
           {office.country}
         </h2>

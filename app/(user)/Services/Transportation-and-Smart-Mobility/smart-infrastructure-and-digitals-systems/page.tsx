@@ -98,11 +98,11 @@ export default function Page() {
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-semibold">
-              <span className="bg-gradient-to-r from-blue-600 to-sky-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-600 to-amber-400 bg-clip-text text-transparent">
                 Smart
               </span>{" "}
               Infrastructure &{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-sky-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-600 to-amber-400 bg-clip-text text-transparent">
                 Digital
               </span>{" "}
               Services
@@ -136,7 +136,7 @@ export default function Page() {
       </section>
       <section className="py-20 bg-gray-50">
         <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
-          Our <span className="text-blue-600">Digital Capabilities</span>
+          Our <span className="text-yellow-600">Digital Capabilities</span>
         </h2>
 
         <div className="space-y-24 container">
@@ -174,8 +174,8 @@ export default function Page() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold text-center mb-12 mx-auto max-w-4xl">
-            Why Choose <span className="text-blue-600">Al Yusr</span> for Smart
-            Infrastructure?
+            Why Choose <span className="text-yellow-600">Al Yusr</span> for
+            Smart Infrastructure?
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -184,7 +184,7 @@ export default function Page() {
                 key={idx}
                 className="flex flex-col items-start bg-gray-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
               >
-                <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-blue-100 text-blue-600 mb-4">
+                <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-yellow-100 text-yellow-600 mb-4">
                   <item.icon size={28} />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">

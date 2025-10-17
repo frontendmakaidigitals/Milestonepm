@@ -36,10 +36,10 @@ export default function Page() {
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
               <h1 className="text-5xl font-semibold leading-tighter  mb-4">
-                Our <span className="text-blue-500">Ethics</span>
+                Our <span className="text-yellow-500">Ethics</span>
               </h1>
               <p className="text-lg text-gray-700">
-                At ALYUSR Engineering Consulting, we believe that ethical
+                At Milestonepm Engineering Consulting, we believe that ethical
                 behavior is the foundation of long-term success. We are fully
                 committed to upholding the highest standards of integrity,
                 transparency, and compliance in everything we do, from how we
@@ -52,7 +52,10 @@ export default function Page() {
                 ethical, and respectful across all markets we operate in.
               </p>
 
-              <Link href={'/Contact'} className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#387EF0] to-[#2651C2] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition">
+              <Link
+                href={"/Contact"}
+                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
+              >
                 Discover Our Story <ArrowUpRight />
               </Link>
             </div>
@@ -75,7 +78,7 @@ export default function Page() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-bold text-sky-800 text-center mb-12"
+            className="text-4xl md:text-5xl font-bold text-amber-800 text-center mb-12"
           >
             Our Ethical Culture
           </motion.h2>
@@ -119,7 +122,7 @@ export default function Page() {
 
               {/* Training & Awareness */}
               <div className="bg-white p-6 rounded-xl shadow border border-gray-200">
-                <h3 className="text-2xl font-semibold text-blue-700 mb-4">
+                <h3 className="text-2xl font-semibold text-yellow-700 mb-4">
                   Training & Awareness
                 </h3>
                 <p className="mb-4">
@@ -150,14 +153,14 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="bg-sky-50 py-20">
+      <section className="bg-amber-50 py-20">
         <div className="container mx-auto px-6">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-bold text-sky-800 text-center mb-12"
+            className="text-4xl md:text-5xl font-bold text-amber-800 text-center mb-12"
           >
             Code of Ethics & Conduct
           </motion.h2>
@@ -170,15 +173,15 @@ export default function Page() {
             className="max-w-4xl mx-auto space-y-6 text-gray-700"
           >
             <p>
-              ALYUSR follows a strict Code of Ethics and Business Conduct, which
-              outlines:
+              Milestonepm follows a strict Code of Ethics and Business Conduct,
+              which outlines:
             </p>
 
             <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {codeItems.map((item, i) => (
                 <li
                   key={i}
-                  className="flex bg-sky-100 p-2 rounded-lg items-start gap-3"
+                  className="flex bg-amber-100 p-2 rounded-lg items-start gap-3"
                 >
                   <BadgeCheck className="w-5 h-5 text-green-600 mt-1 shrink-0" />
                   <span>{item}</span>

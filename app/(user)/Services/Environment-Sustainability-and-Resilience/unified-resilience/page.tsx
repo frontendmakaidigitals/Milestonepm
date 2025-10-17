@@ -116,7 +116,7 @@ export default function Page() {
             <h1 className="text-4xl lg:text-5xl font-[600]">
               Unified Resilience
             </h1>
-            <h2 className="text-lg text-blue-400 font-[500]">
+            <h2 className="text-lg text-yellow-400 font-[500]">
               Protecting Infrastructure, Enabling Continuity
             </h2>
             <p>
@@ -180,7 +180,7 @@ export default function Page() {
         <div className="container text-center">
           {/* Section Heading */}
           <motion.h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
-            <span className="text-blue-500">Industries</span> We Support
+            <span className="text-yellow-500">Industries</span> We Support
           </motion.h2>
 
           {/* Cards Grid */}
@@ -221,7 +221,7 @@ export default function Page() {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-12"
           >
-            Why Choose <span className="text-blue-500">Al Yusr?</span>
+            Why Choose <span className="text-yellow-500">Al Yusr?</span>
           </motion.h2>
 
           {/* Features Grid */}
@@ -233,7 +233,7 @@ export default function Page() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
                 viewport={{ once: true }}
-                className="flex items-start gap-4 bg-blue-50 p-3 rounded-lg"
+                className="flex items-start gap-4 bg-yellow-50 p-3 rounded-lg"
               >
                 {/* Icon */}
                 <div className="flex-shrink-0 text-white">

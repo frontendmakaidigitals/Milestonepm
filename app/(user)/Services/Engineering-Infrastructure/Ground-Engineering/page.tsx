@@ -121,7 +121,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Ground Engineering Services
         </h1>
       </div>
@@ -158,10 +158,10 @@ export default function ConstructionManagementPage() {
       </section>
 
       {/* Features */}
-      <section className="bg-sky-50 mt-10 py-20">
+      <section className="bg-amber-50 mt-10 py-20">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl lg:text-5xl font-bold text-center  mb-16">
-            What We <span className="text-blue-500">Offer</span>
+            What We <span className="text-yellow-500">Offer</span>
           </h2>
 
           <div className="space-y-16 container">
@@ -194,7 +194,7 @@ export default function ConstructionManagementPage() {
                       isEven ? "lg:order-2" : "lg:order-1"
                     } order-2`}
                   >
-                    <h3 className="text-4xl text-sky-800 font-semibold mb-2">
+                    <h3 className="text-4xl text-amber-800 font-semibold mb-2">
                       {item.title}
                     </h3>
                     <p className="text-black/90 mb-4">{item.description}</p>
@@ -215,9 +215,9 @@ export default function ConstructionManagementPage() {
           </div>
         </div>
       </section>
-      <section className="bg-blue-50 py-16">
+      <section className="bg-yellow-50 py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-blue-900 mb-12">
+          <h2 className="text-4xl lg:text-5xl font-bold text-center text-yellow-900 mb-12">
             Why Choose Al Yusr?
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -228,12 +228,12 @@ export default function ConstructionManagementPage() {
                   key={index}
                   whileHover={{ y: -6 }}
                   transition={{ type: "spring", stiffness: 100 }}
-                  className="bg-white rounded-2xl p-6 shadow-md border border-blue-100"
+                  className="bg-white rounded-2xl p-6 shadow-md border border-yellow-100"
                 >
-                  <div className="flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-800 rounded-full mb-4">
+                  <div className="flex items-center justify-center w-12 h-12 bg-yellow-100 text-yellow-800 rounded-full mb-4">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                  <h3 className="text-xl font-semibold text-yellow-900 mb-2">
                     {item.title}
                   </h3>
                   <p className="text-gray-700 text-sm">{item.desc}</p>

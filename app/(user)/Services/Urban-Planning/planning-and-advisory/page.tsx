@@ -93,14 +93,14 @@ export default function ConstructionManagementPage() {
   const sections = [
     {
       title: "Integrated Team Collaboration",
-      desc: `At ALYUSR, we believe that successful planning requires collaboration across a wide range of disciplines. Our planning experts work side by side with architects, engineers, environmental consultants, economists, and legal advisors to ensure a truly integrated approach. 
+      desc: `At Milestonepm, we believe that successful planning requires collaboration across a wide range of disciplines. Our planning experts work side by side with architects, engineers, environmental consultants, economists, and legal advisors to ensure a truly integrated approach. 
 This teamwork allows us to address every aspect of a project, technical, regulatory, financial, and social, through a unified lens. By combining expertise from different fields, we create solutions that are not only visionary in scope but also realistic, cost-effective, and fully compliant with local and national regulations. 
 This process leads to stronger outcomes, better coordination, and a smoother path from concept to execution. Whether it’s a complex urban development or a strategic infrastructure project, our interdisciplinary method ensures that every detail is thoughtfully considered and aligned with the project’s long-term goals.`,
       img: "/urban-planning/planning-and-advisory/team.webp",
     },
     {
       title: "Community & Stakeholder Engagement",
-      desc: `We recognize that great planning is not done in isolation; it is shaped by the people it impacts. At ALYUSR, we are committed to inclusive planning that actively involves the voices of communities and stakeholders.
+      desc: `We recognize that great planning is not done in isolation; it is shaped by the people it impacts. At Milestonepm, we are committed to inclusive planning that actively involves the voices of communities and stakeholders.
 Through public consultation sessions, surveys, community workshops, and focus groups, we gather valuable insights from residents, local businesses, government bodies, and interest groups. These inputs help us understand the real needs, challenges, and aspirations of the people we serve. 
 Our approach ensures that strategies are not just designed from the top down, but are informed by on-the-ground realities and lived experiences. This two-way dialogue builds trust, transparency, and stronger community ownership of development outcomes. Ultimately, it leads to more sustainable and widely supported solutions that enhance quality of life and create places people are proud to call home.`,
       img: "/urban-planning/planning-and-advisory/community.webp",
@@ -110,7 +110,7 @@ Our approach ensures that strategies are not just designed from the top down, bu
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Planning and Advisory Solutions
         </h1>
       </div>
@@ -150,7 +150,7 @@ Our approach ensures that strategies are not just designed from the top down, bu
             viewport={{ once: true }}
             className="text-4xl lg:text-5xl font-bold text-gray-800 mb-12 text-center"
           >
-            What <span className="text-blue-500">We Offer</span>
+            What <span className="text-yellow-500">We Offer</span>
           </motion.h2>
 
           {/* Services Grid */}
@@ -162,7 +162,7 @@ Our approach ensures that strategies are not just designed from the top down, bu
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="rounded-xl border border-gray-200 bg-sky-50 p-1 shadow-sm hover:shadow-md transition-shadow duration-200 max-w-sm mx-auto"
+                className="rounded-xl border border-gray-200 bg-amber-50 p-1 shadow-sm hover:shadow-md transition-shadow duration-200 max-w-sm mx-auto"
               >
                 {service.img && (
                   <div className="relative bg-red-300 w-full h-60 rounded-lg overflow-hidden">
@@ -175,7 +175,7 @@ Our approach ensures that strategies are not just designed from the top down, bu
                   </div>
                 )}
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-sky-800">
+                  <h3 className="text-lg font-semibold text-amber-800">
                     {service.title}
                   </h3>
                   <p className="text-sm text-gray-500 mt-1 leading-relaxed">
@@ -223,7 +223,7 @@ Our approach ensures that strategies are not just designed from the top down, bu
                   viewport={{ once: true }}
                   className="bg-white gap-3 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow p-6 flex items-start"
                 >
-                  <div className="bg-blue-100 text-blue-600 p-2 rounded-full">
+                  <div className="bg-yellow-100 text-yellow-600 p-2 rounded-full">
                     <Icon size={32} />
                   </div>
                   <h3 className="text-lg mt-3 font-semibold">{cap.title}</h3>

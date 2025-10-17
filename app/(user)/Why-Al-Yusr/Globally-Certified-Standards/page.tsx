@@ -69,7 +69,7 @@ export default function CertificationsPage() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-top"
           src="/why/global-standard.jpg"
-          alt="ALYUSR Engineering Hero Background"
+          alt="Milestonepm Engineering Hero Background"
         />
       </motion.div>
       {/* OVERVIEW SECTION */}
@@ -77,32 +77,32 @@ export default function CertificationsPage() {
         {/* Background image */}
         <BgLayer />
         {/* Left gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-sky-100/30 via-sky-200/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-100/30 via-amber-200/40 to-transparent" />
 
         {/* Container with text */}
         <div className="relative z-10 min-h-[85vh] flex flex-col h-full justify-center items-center">
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
-              <h1 className="text-4xl lg:text-5xl font-semibold text-sky-800 leading-tighter  mb-4">
+              <h1 className="text-4xl lg:text-5xl font-semibold text-amber-800 leading-tighter  mb-4">
                 Certified for Global Excellence
               </h1>
               <p className="text-lg text-gray-700">
-                At ALYUSR Engineering Consulting, our work meets and exceeds the
-                highest international standards. Our certifications reflect our
-                commitment to quality assurance, environmental responsibility,
-                occupational health and safety, and project risk management
-                across every service we deliver.
+                At Milestonepm Engineering Consulting, our work meets and
+                exceeds the highest international standards. Our certifications
+                reflect our commitment to quality assurance, environmental
+                responsibility, occupational health and safety, and project risk
+                management across every service we deliver.
               </p>
               <p className="mt-3">
                 With a globally aligned operating model and internationally
-                certified methodologies, ALYUSR is equipped to manage
+                certified methodologies, Milestonepm is equipped to manage
                 large-scale, multidisciplinary projects with precision and
                 accountability.
               </p>
 
               <Link
                 href={"/Contact"}
-                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#387EF0] to-[#2651C2] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
+                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
               >
                 Discover Our Story <ArrowUpRight />
               </Link>
@@ -119,7 +119,7 @@ export default function CertificationsPage() {
       </section>
 
       {/* CERTIFICATIONS LIST */}
-      <section className="bg-gradient-to-b from-sky-50 to-white py-24 px-6 sm:px-10">
+      <section className="bg-gradient-to-b from-amber-50 to-white py-24 px-6 sm:px-10">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -160,14 +160,14 @@ export default function CertificationsPage() {
             ].map((cert, i) => (
               <div
                 key={i}
-                className="bg-white border border-sky-100 p-6 rounded-2xl shadow hover:shadow-md transition-all duration-300 hover:-translate-y-1"
+                className="bg-white border border-amber-100 p-6 rounded-2xl shadow hover:shadow-md transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="mb-4">
-                  <div className="w-10 h-10 bg-sky-100 text-sky-600 flex items-center justify-center rounded-lg font-bold text-sm">
+                  <div className="w-10 h-10 bg-amber-100 text-amber-600 flex items-center justify-center rounded-lg font-bold text-sm">
                     {i + 1}
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-sky-800 mb-2">
+                <h3 className="text-lg font-semibold text-amber-800 mb-2">
                   {cert.title}
                 </h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
@@ -180,15 +180,15 @@ export default function CertificationsPage() {
       </section>
 
       {/* GLOBAL MEMBERSHIPS */}
-      <section className="relative bg-gradient-to-br from-sky-100 via-white to-sky-50 py-24 lg:px-6 ">
+      <section className="relative bg-gradient-to-br from-amber-100 via-white to-amber-50 py-24 lg:px-6 ">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-20">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              <span className="text-blue-500">Global</span> Accreditations &
+              <span className="text-yellow-500">Global</span> Accreditations &
               Memberships
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our global accreditations reflect ALYUSR’s dedication to
+              Our global accreditations reflect Milestonepm’s dedication to
               world-class practices, sustainability, and verified credibility.
             </p>
           </div>
@@ -223,7 +223,7 @@ export default function CertificationsPage() {
                   className="relative bg-white/60 backdrop-blur-md border border-white/40 shadow-xl rounded-2xl p-6 hover:-translate-y-1 transition-transform duration-300"
                 >
                   {/* Floating Icon */}
-                  <div className="absolute -top-6 left-6 bg-white shadow-md w-14 h-14 rounded-full flex items-center justify-center text-sky-700">
+                  <div className="absolute -top-6 left-6 bg-white shadow-md w-14 h-14 rounded-full flex items-center justify-center text-amber-700">
                     <Icon className="w-8 h-8" />
                   </div>
 
@@ -245,7 +245,7 @@ export default function CertificationsPage() {
         <div className="my-24 container">
           <h3 className="text-4xl font-bold text-center text-gray-800 mb-16">
             Why It Matters to{" "}
-            <span className="text-blue-500"> Our Clients</span>
+            <span className="text-yellow-500"> Our Clients</span>
           </h3>
 
           <Carousel
@@ -279,8 +279,8 @@ export default function CertificationsPage() {
                   key={i}
                   className="group basis-2/2 !p-0 lg:basis-1/3 bg-slate-300 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all"
                 >
-                  <div className="group border bg-blue-500 border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
-                    <div className="relative h-[300px] w-full bg-sky-100">
+                  <div className="group border bg-yellow-500 border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                    <div className="relative h-[300px] w-full bg-amber-100">
                       <Image
                         src={point.img}
                         alt={point.title}
@@ -289,7 +289,7 @@ export default function CertificationsPage() {
                       />
                     </div>
                     <div className="p-5">
-                      <p className="text-center text-gray-50 text-sm font-semibold group-hover:text-sky-50 transition-colors duration-300">
+                      <p className="text-center text-gray-50 text-sm font-semibold group-hover:text-amber-50 transition-colors duration-300">
                         {point.title}
                       </p>
                     </div>
@@ -303,14 +303,14 @@ export default function CertificationsPage() {
             <button
               disabled={!canScrollPrev}
               onClick={() => api?.scrollPrev()}
-              className="bg-blue-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
+              className="bg-yellow-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
             >
               <ArrowLeft />
             </button>
             <button
               disabled={!canScrollNext}
               onClick={() => api?.scrollNext()}
-              className="bg-blue-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
+              className="bg-yellow-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
             >
               <ArrowRight />
             </button>
@@ -319,17 +319,17 @@ export default function CertificationsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-sky-900 text-white text-center px-6">
+      <section className="py-20 bg-amber-900 text-white text-center px-6">
         <h3 className="text-3xl font-semibold mb-4">
           Certified to Deliver. Committed to Excellence.
         </h3>
         <p className="max-w-3xl mx-auto mb-8">
-          At ALYUSR, we don&apos;t just follow global standards; we embed them
-          into everything we do. These certifications are not just badges;
+          At Milestonepm, we don&apos;t just follow global standards; we embed
+          them into everything we do. These certifications are not just badges;
           they&apos;re our promise to clients, partners, and the communities we
           serve.
         </p>
-        <button className="bg-white text-sky-900 font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-100 transition">
+        <button className="bg-white text-amber-900 font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-100 transition">
           Explore Our Services
         </button>
       </section>

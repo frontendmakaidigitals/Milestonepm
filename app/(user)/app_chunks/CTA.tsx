@@ -23,7 +23,7 @@ export default function EngineeringCTA({
       <div className="relative z-10 text-white overflow-hidden py-8 ">
         {/* CTA Content */}
         <div className="relative z-20 max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl text-blue-50 md:text-4xl font-bold leading-tight mb-4">
+          <h2 className="text-3xl text-yellow-50 md:text-4xl font-bold leading-tight mb-4">
             {title}
           </h2>
 
@@ -31,7 +31,10 @@ export default function EngineeringCTA({
             {desc}
           </p>
 
-          <Link href={'/Contact'} className="inline-flex items-center gap-2 bg-white text-sky-600 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-sky-100 transition duration-300">
+          <Link
+            href={"/Contact"}
+            className="inline-flex items-center gap-2 bg-white text-amber-600 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-amber-100 transition duration-300"
+          >
             {btn}
             <ArrowRight className="w-5 h-5" />
           </Link>
@@ -39,7 +42,6 @@ export default function EngineeringCTA({
 
         {/* Decorative Circles */}
       </div>
-     
     </section>
   );
 }

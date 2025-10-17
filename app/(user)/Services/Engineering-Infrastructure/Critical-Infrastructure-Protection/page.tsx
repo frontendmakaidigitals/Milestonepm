@@ -81,7 +81,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Critical Infrastructure Protection
         </h1>
       </div>
@@ -98,10 +98,10 @@ export default function ConstructionManagementPage() {
       </section>
 
       {/* Features */}
-      <section className="bg-sky-50 mt-10 py-20">
+      <section className="bg-amber-50 mt-10 py-20">
         <div className="grid grid-cols-1 lg:grid-cols2 gap-10 container">
           <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-sky-900 mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-900 mb-16">
               Securing the Foundations of Modern Life
             </h2>
             <p>
@@ -126,13 +126,13 @@ export default function ConstructionManagementPage() {
           </div>
         </div>
       </section>
-      <section className="bg-sky-50 mt-10 py-20">
+      <section className="bg-amber-50 mt-10 py-20">
         <div className="grid grid-cols-1 lg:grid-cols2 gap-10 container">
           <div>
             <img src={""} alt={""} className="" />
           </div>
           <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-sky-900 mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-900 mb-16">
               A Converged Approach to Resilience
             </h2>
             <p>
@@ -225,7 +225,7 @@ export default function ConstructionManagementPage() {
                 className="flex items-start gap-4 p-5 rounded-xl bg-gray-50 shadow hover:shadow-md transition"
               >
                 <div>
-                  <BadgeCheck className="text-blue-600 w-6 h-6 mt-1" />{" "}
+                  <BadgeCheck className="text-yellow-600 w-6 h-6 mt-1" />{" "}
                 </div>
                 <p className="text-base">{item}</p>
               </div>

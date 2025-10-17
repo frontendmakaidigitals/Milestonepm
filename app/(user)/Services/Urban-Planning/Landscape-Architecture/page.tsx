@@ -42,49 +42,49 @@ export default function ConstructionManagementPage() {
       title: "Urban Parks & Open Space Design",
       description:
         "Planning and design of public parks, promenades, and recreation areas that foster community interaction and environmental benefits.",
-      icon: <TreePalm className="w-12 h-12 text-blue-500" />,
+      icon: <TreePalm className="w-12 h-12 text-yellow-500" />,
       gradient: "from-green-600 to-green-400",
     },
     {
       title: "Corporate & Institutional Landscapes",
       description:
         "High-performance landscapes that enhance campuses, headquarters, and educational institutions while supporting wellness and placemaking.",
-      icon: <Building2 className="w-12 h-12 text-blue-500" />,
+      icon: <Building2 className="w-12 h-12 text-yellow-500" />,
       gradient: "from-indigo-600 to-indigo-400",
     },
     {
       title: "Green Infrastructure Integration",
       description:
         "Sustainable systems that manage stormwater, reduce urban heat, and enhance biodiversity, including rain gardens, bioswales, and permeable surfaces.",
-      icon: <Droplets className="w-12 h-12 text-blue-500" />,
+      icon: <Droplets className="w-12 h-12 text-yellow-500" />,
       gradient: "from-emerald-600 to-emerald-400",
     },
     {
       title: "Streetscapes & Mobility Corridors",
       description:
         "Pedestrian- and cyclist-friendly design solutions that support safe, active transportation within urban areas.",
-      icon: <Route className="w-12 h-12 text-blue-500" />,
+      icon: <Route className="w-12 h-12 text-yellow-500" />,
       gradient: "from-yellow-600 to-yellow-400",
     },
     {
       title: "Civic & Cultural Spaces",
       description:
         "Plazas, memorials, and cultural precincts that reflect local identity and invite public engagement.",
-      icon: <Landmark className="w-12 h-12 text-blue-500" />,
+      icon: <Landmark className="w-12 h-12 text-yellow-500" />,
       gradient: "from-pink-600 to-pink-400",
     },
     {
       title: "Resilient Coastal & Riverfront Landscapes",
       description:
         "Adaptive shoreline and floodplain strategies that mitigate risk and reconnect communities to water.",
-      icon: <Waves className="w-12 h-12 text-blue-500" />,
-      gradient: "from-blue-600 to-blue-400",
+      icon: <Waves className="w-12 h-12 text-yellow-500" />,
+      gradient: "from-yellow-600 to-yellow-400",
     },
   ];
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Landscape Architecture
         </h1>
       </div>
@@ -122,7 +122,7 @@ export default function ConstructionManagementPage() {
             viewport={{ once: true }}
             className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6"
           >
-            Our <span className="text-blue-500">Design Philosophy</span>
+            Our <span className="text-yellow-500">Design Philosophy</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -146,7 +146,7 @@ export default function ConstructionManagementPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2, duration: 0.5 }}
                 viewport={{ once: true }}
-                className={`rounded-xl bg-blue-50 shadow-lg text-black`}
+                className={`rounded-xl bg-yellow-50 shadow-lg text-black`}
               >
                 <div className=" w-full h-[230px] rounded-xl overflow-hidden bg-red-300">
                   <Image
@@ -158,7 +158,7 @@ export default function ConstructionManagementPage() {
                   />
                 </div>
                 <div className="p-5">
-                  <h3 className="text-xl font-[700] text-blue-700 mb-2">
+                  <h3 className="text-xl font-[700] text-yellow-700 mb-2">
                     {item.title}
                   </h3>
                   <p className="text-sm">{item.description}</p>
@@ -169,7 +169,7 @@ export default function ConstructionManagementPage() {
         </div>
       </section>
 
-      <section className="py-14 bg-gradient-to-br from-blue-50 via-white to-blue-100">
+      <section className="py-14 bg-gradient-to-br from-yellow-50 via-white to-yellow-100">
         <div className="container">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -178,7 +178,7 @@ export default function ConstructionManagementPage() {
             viewport={{ once: true }}
             className="text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-6"
           >
-            <span className="text-blue-500">Services</span> We Offer
+            <span className="text-yellow-500">Services</span> We Offer
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -200,10 +200,10 @@ export default function ConstructionManagementPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.15, duration: 0.5 }}
                 viewport={{ once: true }}
-                className={`rounded-xl shadow-md p-6 bg-blue-50`}
+                className={`rounded-xl shadow-md p-6 bg-yellow-50`}
               >
                 <div className="mb-4 ">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-2 text-sky-800">
+                <h3 className="text-xl font-semibold mb-2 text-amber-800">
                   {service.title}
                 </h3>
                 <p className="text-sm">{service.description}</p>
@@ -212,10 +212,10 @@ export default function ConstructionManagementPage() {
           </div>
         </div>
       </section>
-      <section className="py-20 px-6 md:px-10 bg-blue-50">
+      <section className="py-20 px-6 md:px-10 bg-yellow-50">
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-10 container  ">
           <div className="bg-white p-6 rounded-xl grid grid-cols-1 place-items-center lg:grid-cols-2 gap-5">
-            <div className=" bg-blue-100 text-blue-800 h-[400px] rounded-xl w-full mb-5">
+            <div className=" bg-yellow-100 text-yellow-800 h-[400px] rounded-xl w-full mb-5">
               <Image
                 src={"/urban-planning/landscape/Landscape Performance.webp"}
                 alt={""}
@@ -225,7 +225,7 @@ export default function ConstructionManagementPage() {
               />
             </div>
             <div>
-              <h2 className="text-3xl lg:text-4xl font-[700] text-blue-900 mb-4">
+              <h2 className="text-3xl lg:text-4xl font-[700] text-yellow-900 mb-4">
                 Landscape Performance & Sustainability
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed">
@@ -241,7 +241,7 @@ export default function ConstructionManagementPage() {
 
           <div className="bg-white p-6 rounded-xl place-items-center grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-[700] text-blue-900 mb-4">
+              <h2 className="text-3xl lg:text-4xl font-[700] text-yellow-900 mb-4">
                 Global Vision, Local Impact
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed">
@@ -252,7 +252,7 @@ export default function ConstructionManagementPage() {
                 bring integrated and innovative solutions to life.
               </p>
             </div>
-            <div className=" bg-blue-100 text-blue-800 h-[400px] rounded-xl w-full mb-5">
+            <div className=" bg-yellow-100 text-yellow-800 h-[400px] rounded-xl w-full mb-5">
               <Image
                 src={"/urban-planning/landscape/global-vision.webp"}
                 alt={""}

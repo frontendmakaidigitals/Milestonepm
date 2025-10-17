@@ -113,8 +113,8 @@ export default function Page() {
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
-              Geo-<span className="text-blue-500">Intelligence</span> &{" "}
-              <span className="text-blue-500">Analysis</span>
+              Geo-<span className="text-yellow-500">Intelligence</span> &{" "}
+              <span className="text-yellow-500">Analysis</span>
             </h1>
             <p>
               In today’s fast-moving, data-driven world, the ability to see,
@@ -145,7 +145,7 @@ export default function Page() {
           {/* Heading */}
           <div className="text-center mb-12 max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
-              Why <span className="text-blue-500">Geo-Intelligence</span>{" "}
+              Why <span className="text-yellow-500">Geo-Intelligence</span>{" "}
               Matters
             </h2>
             <p className="mt-2 text-base text-muted-foreground">
@@ -166,8 +166,8 @@ export default function Page() {
                   viewport={{ once: true }}
                   className="bg-card rounded-2xl shadow-md border border-border p-6 flex flex-col items-center text-center space-y-4"
                 >
-                  <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center">
-                    <Icon className="w-7 h-7 text-blue-500" />
+                  <div className="w-14 h-14 rounded-full bg-yellow-100 flex items-center justify-center">
+                    <Icon className="w-7 h-7 text-yellow-500" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground">
                     {item.title}
@@ -195,7 +195,7 @@ export default function Page() {
           {/* Heading */}
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
-              Our <span className="text-blue-500">Capabilities</span>
+              Our <span className="text-yellow-500">Capabilities</span>
             </h2>
           </div>
 
@@ -241,7 +241,7 @@ export default function Page() {
           {/* Heading */}
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
-              How <span className="text-blue-500">We Deliver</span> Value
+              How <span className="text-yellow-500">We Deliver</span> Value
             </h2>
           </div>
 

@@ -171,7 +171,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Construction Management
         </h1>
       </div>
@@ -201,7 +201,7 @@ export default function ConstructionManagementPage() {
       {/* Features */}
       <section className="container my-20">
         <motion.h2 className="text-4xl lg:text-5xl font-semibold text-center mb-12">
-          Our Key <span className="text-blue-500">Responsibilities</span>
+          Our Key <span className="text-yellow-500">Responsibilities</span>
         </motion.h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {keyResponsibilities.map((item, i) => {
@@ -216,7 +216,7 @@ export default function ConstructionManagementPage() {
               >
                 <div className="p-6 flex items-start gap-4">
                   <span>
-                    <Icon className="w-10 h-10 text-blue-500" />
+                    <Icon className="w-10 h-10 text-yellow-500" />
                   </span>
                   <h3 className="font-semibold mt-2">{item.title}</h3>
                 </div>
@@ -235,7 +235,7 @@ export default function ConstructionManagementPage() {
         <div className=" flex flex-col lg:flex-row items-center gap-5">
           <div>
             <motion.h2 className="text-4xl lg:text-5xl font-bold mb-2 text-start">
-              Full <span className="text-blue-500">Project Lifecycle</span>{" "}
+              Full <span className="text-yellow-500">Project Lifecycle</span>{" "}
               Expertise
             </motion.h2>
 
@@ -257,14 +257,14 @@ export default function ConstructionManagementPage() {
               <button
                 disabled={!canScrollPrev}
                 onClick={() => api?.scrollPrev()}
-                className="bg-blue-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
+                className="bg-yellow-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
               >
                 <ArrowLeft />
               </button>
               <button
                 disabled={!canScrollNext}
                 onClick={() => api?.scrollNext()}
-                className="bg-blue-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
+                className="bg-yellow-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
               >
                 <ArrowRight />
               </button>
@@ -286,7 +286,7 @@ export default function ConstructionManagementPage() {
                       {i + 1}
                     </motion.h2>
 
-                    <div className="bg-blue-50 h-full relative shadow-sm">
+                    <div className="bg-yellow-50 h-full relative shadow-sm">
                       <div className=" h-[400px] overflow-hidden rounded-lg relative">
                         <div className="absolute inset-0 w-full h-full bg-black/30" />
                         <Image
@@ -308,15 +308,14 @@ export default function ConstructionManagementPage() {
           </div>
         </div>
       </section>
-      
-      
+
       <section className="py-16 container">
         <motion.h2
           className="text-4xl lg:text-5xl font-semibold text-center mb-6"
           initial="hidden"
           whileInView="visible"
         >
-          <span className="text-blue-500">Technical Strength</span> of Al Yusr
+          <span className="text-yellow-500">Technical Strength</span> of Al Yusr
         </motion.h2>
         <motion.p
           className="text-center max-w-5xl container mb-10"
@@ -331,7 +330,7 @@ export default function ConstructionManagementPage() {
         </motion.p>
 
         <motion.h3
-          className="text-2xl text-sky-700 font-semibold mb-6"
+          className="text-2xl text-amber-700 font-semibold mb-6"
           initial="hidden"
           whileInView="visible"
         >
@@ -341,7 +340,7 @@ export default function ConstructionManagementPage() {
           {specialCapabilities.map((cap, i) => (
             <motion.li
               key={i}
-              className=" bg-blue-50 p-4 rounded-lg"
+              className=" bg-yellow-50 p-4 rounded-lg"
               initial="hidden"
               whileInView="visible"
               custom={i}
@@ -364,7 +363,7 @@ export default function ConstructionManagementPage() {
             visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
           }}
         >
-          What <span className="text-blue-500">Sets Us</span> Apart
+          What <span className="text-yellow-500">Sets Us</span> Apart
         </motion.h2>
         <motion.p
           className="text-center max-w-4xl mx-auto mb-12 text-gray-600"
@@ -401,10 +400,10 @@ export default function ConstructionManagementPage() {
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl text-blue-900 font-semibold mb-2">
+                <h3 className="text-xl text-yellow-900 font-semibold mb-2">
                   {item.title}
                 </h3>
-                <p className="text-blue-950">{item.desc}</p>
+                <p className="text-yellow-950">{item.desc}</p>
               </div>
             </motion.div>
           ))}

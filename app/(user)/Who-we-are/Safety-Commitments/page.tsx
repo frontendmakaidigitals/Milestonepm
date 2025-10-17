@@ -15,6 +15,7 @@ import BgLayer from "../../app_chunks/BgLayer";
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import EngineeringCTA from "@/app/(user)/app_chunks/CTA";
+import Link from "next/link";
 const safetyPrograms = [
   {
     icon: <ShieldCheck className="w-6 h-6 text-emerald-600" />,
@@ -22,7 +23,7 @@ const safetyPrograms = [
     desc: "Senior managers and project heads lead all safety efforts to ensure visibility, resource allocation, and improvement.",
   },
   {
-    icon: <Users className="w-6 h-6 text-blue-600" />,
+    icon: <Users className="w-6 h-6 text-yellow-600" />,
     title: "Employee Participation & Awareness",
     desc: "All staff are engaged in planning, audits, toolbox talks, and encouraged to report hazards and suggest improvements.",
   },
@@ -47,9 +48,9 @@ const safetyPrograms = [
     desc: "Employees must be mentally and physically ready for work. Health programs support wellness.",
   },
   {
-    icon: <CheckCircle className="w-6 h-6 text-sky-600" />,
+    icon: <CheckCircle className="w-6 h-6 text-amber-600" />,
     title: "Contractor & Partner Integration",
-    desc: "Subcontractors align with ALYUSR’s safety systems, with joint inspections and shared KPIs.",
+    desc: "Subcontractors align with Milestonepm’s safety systems, with joint inspections and shared KPIs.",
   },
   {
     icon: <Award className="w-6 h-6 text-yellow-600" />,
@@ -96,12 +97,12 @@ export default function SafetyCommitmentsPage() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src={"/safety commitments/umit-yildirim-9OB46apMbC4-unsplash.webp"}
-          alt="ALYUSR Engineering Hero Background"
+          alt="Milestonepm Engineering Hero Background"
         />
       </motion.div>
       <section className="relative overflow-hidden">
         {/* Gradient background fixed here */}
-        <div className="absolute inset-0 bg-gradient-to-r from-sky-100/30 via-sky-200/40 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-100/30 via-amber-200/40 to-transparent pointer-events-none" />
 
         {/* SECTION 1: Image Right */}
         <div className="relative z-10 py-20">
@@ -112,11 +113,11 @@ export default function SafetyCommitmentsPage() {
                 Our Commitment to Safety
               </h1>
               <p className="text-lg text-gray-700">
-                At ALYUSR Engineering Consulting, safety is more than a policy;
-                it is a core value embedded into our culture, our people, and
-                our projects. We are committed to ensuring the physical, mental,
-                and environmental well-being of every team member, client, and
-                community we work with.
+                At Milestonepm Engineering Consulting, safety is more than a
+                policy; it is a core value embedded into our culture, our
+                people, and our projects. We are committed to ensuring the
+                physical, mental, and environmental well-being of every team
+                member, client, and community we work with.
                 <br />
                 From project planning to execution, we apply proactive risk
                 management strategies to identify, reduce, and eliminate
@@ -126,7 +127,7 @@ export default function SafetyCommitmentsPage() {
               </p>
               <Link
                 href={"/Contact"}
-                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#387EF0] to-[#2651C2] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
+                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
               >
                 Discover Our Story <ArrowUpRight />
               </Link>
@@ -171,7 +172,7 @@ export default function SafetyCommitmentsPage() {
               </p>
               <Link
                 href={"/Contact"}
-                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#387EF0] to-[#2651C2] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
+                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
               >
                 Discover Our Story <ArrowUpRight />
               </Link>
@@ -187,9 +188,9 @@ export default function SafetyCommitmentsPage() {
             Safety Commitments
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            At ALYUSR Engineering Consulting, safety is a core value. We embed
-            it in our culture, people, and projects — from planning to execution
-            — following international standards like ISO 45001.
+            At Milestonepm Engineering Consulting, safety is a core value. We
+            embed it in our culture, people, and projects — from planning to
+            execution — following international standards like ISO 45001.
           </p>
         </div>
 
@@ -203,16 +204,16 @@ export default function SafetyCommitmentsPage() {
             >
               <div className="flex items-start gap-5 mb-4">
                 {/* Icon container */}
-                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 shadow-inner">
+                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-yellow-50 text-yellow-600 shadow-inner">
                   {item.icon}
                 </div>
 
                 {/* Title with underline effect on hover */}
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-1 group-hover:text-blue-700 transition">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-1 group-hover:text-yellow-700 transition">
                     {item.title}
                   </h3>
-                  <div className="h-0.5 w-8 bg-blue-200 group-hover:w-16 transition-all duration-300" />
+                  <div className="h-0.5 w-8 bg-yellow-200 group-hover:w-16 transition-all duration-300" />
                 </div>
               </div>
 
@@ -226,7 +227,7 @@ export default function SafetyCommitmentsPage() {
       </section>
       <EngineeringCTA
         title="Certifications & Compliance"
-        desc="ALYUSR is fully certified under ISO 45001:2018 – Occupational Health & Safety Management. All of our safety practices are aligned with local laws and international benchmarks to ensure consistent, high-standard outcomes."
+        desc="Milestonepm is fully certified under ISO 45001:2018 – Occupational Health & Safety Management. All of our safety practices are aligned with local laws and international benchmarks to ensure consistent, high-standard outcomes."
       />
     </section>
   );

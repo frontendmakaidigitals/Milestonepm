@@ -7,7 +7,7 @@ import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import WhoWeAre from "./Who-we-are";
-import WhyAlYusr from "./Why-al-yusr";
+import WhyMilestonepm from "./Why-al-yusr";
 import WhatWeDo from "./What-we-do";
 import Link from "next/link";
 
@@ -42,8 +42,8 @@ const Navbar = () => {
     },
   };
   return (
-    <header className=" bg-[#000000] relative z-50">
-      <div className="flex py-3 lg:py-0 justify-between items-center container mx-auto">
+    <header className=" bg-[#000000] py-3 relative z-50">
+      <div className="flex py-3 lg:py-0 justify-between items-center container mx-auto ">
         <Logo />
 
         {/* Menu Starts from here */}
@@ -78,7 +78,7 @@ const Navbar = () => {
                 >
                   <motion.span
                     variants={hoverAnimation}
-                    className="absolute inset-0 w-full bg-gradient-to-tr from-blue-700 to-sky-600 z-[10]"
+                    className="absolute inset-0 w-full bg-gradient-to-tr from-yellow-700 to-amber-600 z-[10]"
                     transition={{ duration: 0.4, ease: "easeInOut" }}
                   />
 
@@ -98,7 +98,7 @@ const Navbar = () => {
                   >
                     <motion.span
                       variants={hoverAnimation}
-                      className="absolute inset-0 w-full bg-gradient-to-tr from-blue-700 to-sky-600 z-[10]"
+                      className="absolute inset-0 w-full bg-gradient-to-tr from-yellow-700 to-amber-600 z-[10]"
                       transition={{ duration: 0.4, ease: "easeInOut" }}
                     />
 
@@ -160,7 +160,7 @@ const Navbar = () => {
 
                         {menu[idx].label === "Why Al Yusr" &&
                         "services" in menu[idx] ? (
-                          <WhyAlYusr
+                          <WhyMilestonepm
                             data={menu[idx].services}
                             tabs={menu[idx].tabs}
                           />
@@ -250,7 +250,7 @@ const MenuMobile = ({ menu }: { menu: SiteConfig["navItems"] }) => {
                       ) : null}
 
                       {item.label === "Why Al Yusr" ? (
-                        <WhyAlYusr
+                        <WhyMilestonepm
                           onNavigate={handleClose} // 👈 pass close handler
                           data={item.services}
                           tabs={item.tabs}
@@ -272,7 +272,7 @@ const MenuMobile = ({ menu }: { menu: SiteConfig["navItems"] }) => {
                     <div key={idx} className="border-b border-slate-700 py-3">
                       <Link
                         href={item.href}
-                        className="text-white text-base hover:text-sky-400"
+                        className="text-white text-base hover:text-amber-400"
                         onClick={() => setIsOpen(false)}
                       >
                         {item.label}

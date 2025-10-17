@@ -127,7 +127,7 @@ const Herosection = () => {
                           duration: 1.4,
                           ease: [0.19, 1, 0.22, 1],
                         }}
-                        className="bg-gradient-to-br mt-4 px-4 py-[.45rem] text-sm rounded-lg text-slate-50 flex items-center gap-2 from-[#387EF0] to-[#2651C2]"
+                        className="bg-gradient-to-br mt-4 px-4 py-[.45rem] text-sm rounded-lg text-slate-50 flex items-center gap-2 from-[#FFC107] to-[#F57C00]"
                       >
                         Explore Our Services <ArrowUpRight />
                       </motion.button>
@@ -171,7 +171,7 @@ const Herosection = () => {
                       }}
                       key={activeIndex}
                     >
-                      <span className="absolute inset-0 w-full h-full  bg-gradient-to-r from-[#1A2980] via-[#2464da] to-[#1A2980]" />
+                      <span className="absolute inset-0 w-full h-full  bg-gradient-to-r from-[#F57C00] via-[#FFB300] to-[#F57C00]" />
                     </span>
                   </>
                 )}

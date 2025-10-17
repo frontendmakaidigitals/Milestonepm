@@ -107,8 +107,8 @@ export default function Page() {
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
-              <span className="text-blue-500">EHS</span> and{" "}
-              <span className="text-blue-500">ESG</span> Solutions
+              <span className="text-yellow-500">EHS</span> and{" "}
+              <span className="text-yellow-500">ESG</span> Solutions
             </h1>
             <p>
               At Al Yusr Engineering Consulting, we help organizations
@@ -138,7 +138,7 @@ export default function Page() {
       <section className="py-20 bg-gradient-to-br from-gray-50 via-surface-50 to-white relative">
         <div className="container mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12">
-            Our <span className="text-blue-500">Agile Process</span>
+            Our <span className="text-yellow-500">Agile Process</span>
           </h2>
 
           <Carousel className="w-full ">
@@ -174,7 +174,7 @@ export default function Page() {
       <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-slate-100">
         <div className="container mx-auto px-6 text-center">
           <motion.h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-12">
-            Our <span className="text-blue-500">Differentiators</span>
+            Our <span className="text-yellow-500">Differentiators</span>
           </motion.h2>
 
           <div className="grid max-w-6xl mx-auto gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -209,15 +209,15 @@ export default function Page() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Why Choose <span className="text-blue-500">Al Yusr</span> for EHS &
-            ESG?
+            Why Choose <span className="text-yellow-500">Al Yusr</span> for EHS
+            & ESG?
           </motion.h2>
 
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5">
             {points.map((point, i) => (
               <motion.div
                 key={i}
-                className="flex p-3 rounded-lg items-start gap-4 bg-blue-50"
+                className="flex p-3 rounded-lg items-start gap-4 bg-yellow-50"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}

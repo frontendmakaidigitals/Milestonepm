@@ -112,7 +112,7 @@ const Services = () => {
                   transition={{ duration: 0.4, ease: [0.19, 1, 0.22, 1] }}
                   className={`w-full  text-slate-50 rounded-md relative   !p-3  ${
                     animationFinished
-                      ? "backdrop-filter backdrop-blur-lg bg-gradient-to-tr from-[#387EF0]/40 to-[#387EF0]/70 z-10"
+                      ? "backdrop-filter backdrop-blur-lg bg-gradient-to-tr from-[#FFA000]/40 to-[#FB8C00]/70 z-10"
                       : ""
                   }`}
                 >
@@ -128,7 +128,7 @@ const Services = () => {
       <div className="flex justify-center items-center">
         <Link
           href={"/Services"}
-          className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#387EF0] to-[#2651C2] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
+          className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
         >
           View all services <ArrowUpRight />
         </Link>

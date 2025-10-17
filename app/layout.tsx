@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "ALYUSR Engineering Consulting – Global Infrastructure Solutions | Riyadh, UK, Egypt, Sri Lanka",
+    "Milestonepm Engineering Consulting – Global Infrastructure Solutions | Riyadh, UK, Egypt, Sri Lanka",
   description:
-    "ALYUSR Engineering Consulting delivers innovative global infrastructure solutions across Riyadh, UK, Egypt, and Sri Lanka. Trusted experts in engineering design, BIM management, and project execution.",
+    "Milestonepm Engineering Consulting delivers innovative global infrastructure solutions across Riyadh, UK, Egypt, and Sri Lanka. Trusted experts in engineering design, BIM management, and project execution.",
 };
 
 export default function RootLayout({

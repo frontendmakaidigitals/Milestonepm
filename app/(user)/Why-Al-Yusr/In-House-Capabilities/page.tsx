@@ -124,36 +124,36 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/why-in-hero-house.jpeg"
-          alt="ALYUSR Engineering Hero Background"
+          alt="Milestonepm Engineering Hero Background"
         />
       </motion.div>
       <section className="min-h-[85vh] py-20 lg:py-0 overflow-hidden relative">
         {/* Background image */}
 
         {/* Left gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-sky-100/30 via-sky-200/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-100/30 via-amber-200/40 to-transparent" />
         <BgLayer />
         {/* Container with text */}
         <div className="relative z-10 min-h-[85vh] flex flex-col h-full justify-center items-center">
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
-              <h1 className="text-4xl lg:text-5xl font-semibold text-sky-800 leading-tighter  mb-4">
+              <h1 className="text-4xl lg:text-5xl font-semibold text-amber-800 leading-tighter  mb-4">
                 Expertise Under One Roof
               </h1>
               <p className="text-lg text-gray-700">
-                At ALYUSR Engineering Consulting, we proudly deliver all major
-                services in-house, ensuring tighter control over timelines,
-                budgets, and quality at every stage of the project lifecycle.
-                Our multidisciplinary teams work side by side, sharing
-                resources, tools, and knowledge under one roof to offer clients
-                a seamless and efficient experience. Whether it&apos;s
+                At Milestonepm Engineering Consulting, we proudly deliver all
+                major services in-house, ensuring tighter control over
+                timelines, budgets, and quality at every stage of the project
+                lifecycle. Our multidisciplinary teams work side by side,
+                sharing resources, tools, and knowledge under one roof to offer
+                clients a seamless and efficient experience. Whether it&apos;s
                 feasibility studies, architectural design, engineering, or
                 project supervision, we don’t outsource the core. We own it.
               </p>
 
               <Link
                 href={"/Contact"}
-                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#387EF0] to-[#2651C2] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
+                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
               >
                 Discover Our Story <ArrowUpRight />
               </Link>
@@ -168,15 +168,15 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="relative py-24 lg:px-6 bg-gradient-to-b from-white to-sky-50">
+      <section className="relative py-24 lg:px-6 bg-gradient-to-b from-white to-amber-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
               What Sets Our{" "}
-              <span className="text-blue-500">In-House Model</span> Apart?
+              <span className="text-yellow-500">In-House Model</span> Apart?
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              ALYUSR’s integrated approach ensures precision, speed, and
+              Milestonepm’s integrated approach ensures precision, speed, and
               collaboration across all project touchpoints — led by expert teams
               under one roof.
             </p>
@@ -190,7 +190,7 @@ export default function Page() {
               "Streamlined Project Management",
             ].map((title, idx) => {
               const descriptions = [
-                "All critical services are executed by ALYUSR’s internal teams, reducing risk and ensuring quality control from start to finish.",
+                "All critical services are executed by Milestonepm’s internal teams, reducing risk and ensuring quality control from start to finish.",
                 "Architects, engineers, planners, and consultants work together in real-time, minimizing delays and communication gaps.",
                 "We cover every phase of the project: design, documentation, permitting, supervision, and post-construction support, within our firm.",
                 "Clients benefit from a single point of contact and clear accountability throughout the project lifecycle.",
@@ -198,9 +198,9 @@ export default function Page() {
               return (
                 <div
                   key={idx}
-                  className="bg-white border border-sky-100 rounded-2xl p-6 shadow-lg hover:shadow-xl transition duration-300"
+                  className="bg-white border border-amber-100 rounded-2xl p-6 shadow-lg hover:shadow-xl transition duration-300"
                 >
-                  <h3 className="text-xl font-semibold text-sky-800 mb-2">
+                  <h3 className="text-xl font-semibold text-amber-800 mb-2">
                     {title}
                   </h3>
                   <p className="text-gray-700 text-base leading-relaxed">
@@ -216,7 +216,7 @@ export default function Page() {
       <section className="">
         <div className="container my-24">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-            Core <span className="text-blue-500">In-House Capabilities</span>{" "}
+            Core <span className="text-yellow-500">In-House Capabilities</span>{" "}
             Include
           </h2>
           <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -233,9 +233,9 @@ export default function Page() {
             ].map((cap, i) => (
               <li
                 key={i}
-                className="bg-sky-50 border border-sky-100 rounded-xl px-5 py-4 flex gap-3 items-start"
+                className="bg-amber-50 border border-amber-100 rounded-xl px-5 py-4 flex gap-3 items-start"
               >
-                <span className="text-sky-600 mt-1">●</span>
+                <span className="text-amber-600 mt-1">●</span>
                 <p className="text-gray-700">{cap}</p>
               </li>
             ))}
@@ -308,7 +308,8 @@ export default function Page() {
       <section>
         <div className="my-24 container">
           <h3 className="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-16">
-            Why It Matters to <span className="text-blue-500">Our Clients</span>
+            Why It Matters to{" "}
+            <span className="text-yellow-500">Our Clients</span>
           </h3>
           <Carousel
             opts={{
@@ -340,8 +341,8 @@ export default function Page() {
                   key={i}
                   className="group basis-4/5 !p-0 lg:basis-1/3 bg-slate-300 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all"
                 >
-                  <div className="group border bg-blue-500 border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
-                    <div className="relative h-[300px] w-full bg-sky-100">
+                  <div className="group border bg-yellow-500 border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                    <div className="relative h-[300px] w-full bg-amber-100">
                       <Image
                         src={point.img}
                         alt={point.title}
@@ -350,7 +351,7 @@ export default function Page() {
                       />
                     </div>
                     <div className="p-5">
-                      <p className="text-center text-gray-50 text-sm font-semibold group-hover:text-sky-100 transition-colors duration-300">
+                      <p className="text-center text-gray-50 text-sm font-semibold group-hover:text-amber-100 transition-colors duration-300">
                         {point.title}
                       </p>
                     </div>
@@ -364,14 +365,14 @@ export default function Page() {
             <button
               disabled={!canScrollPrev}
               onClick={() => api?.scrollPrev()}
-              className="bg-blue-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
+              className="bg-yellow-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
             >
               <ArrowLeft />
             </button>
             <button
               disabled={!canScrollNext}
               onClick={() => api?.scrollNext()}
-              className="bg-blue-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
+              className="bg-yellow-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
             >
               <ArrowRight />
             </button>

@@ -41,7 +41,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Program Management
         </h1>
       </div>
@@ -76,7 +76,7 @@ export default function Page() {
           <div>
             {" "}
             <h1 className="text-5xl lg:text-6xl font-[600]">
-              Outcome-Driven <span className="text-blue-500">Leadership</span>
+              Outcome-Driven <span className="text-yellow-500">Leadership</span>
             </h1>
             <p className="mt-3">
               We partner closely with clients to define success from the start,
@@ -104,11 +104,11 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-blue-50/20 to-blue-400/10">
+      <section className="py-20 bg-gradient-to-br from-yellow-50/20 to-yellow-400/10">
         <div className="container max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-              Our <span className="text-blue-500">Capabilities</span> at a
+              Our <span className="text-yellow-500">Capabilities</span> at a
               Glance
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
@@ -127,7 +127,7 @@ export default function Page() {
                 key={idx}
                 className="flex items-start gap-4 p-6 bg-white shadow-sm rounded-2xl hover:shadow-md transition"
               >
-                <div className="p-3 rounded-xl bg-blue-50 text-blue-600">
+                <div className="p-3 rounded-xl bg-yellow-50 text-yellow-600">
                   <Icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
@@ -197,13 +197,13 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-bl from-blue-50 to-blue-500/10">
+      <section className="py-20 bg-gradient-to-bl from-yellow-50 to-yellow-500/10">
         <div className="container">
           {/* Heading */}
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl max-w-5xl mx-auto font-bold">
               Why Choose Al Yusr for{" "}
-              <span className="text-blue-500">Program Management?</span>
+              <span className="text-yellow-500">Program Management?</span>
             </h2>
           </div>
 

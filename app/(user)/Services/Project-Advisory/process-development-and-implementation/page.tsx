@@ -85,7 +85,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Process Development & Implementation
         </h1>
       </div>
@@ -129,8 +129,8 @@ export default function Page() {
           {/* Right Content */}
           <div className="p-8">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-blue-500">Smart</span> Process{" "}
-              <span className="text-blue-500">Solutions</span> from Start to
+              <span className="text-yellow-500">Smart</span> Process{" "}
+              <span className="text-yellow-500">Solutions</span> from Start to
               Finish
             </h2>
 
@@ -153,7 +153,8 @@ export default function Page() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-6">
-            Our <span className="text-blue-500">Capabilities</span> at a Glance
+            Our <span className="text-yellow-500">Capabilities</span> at a
+            Glance
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             Our services span consulting, design, and implementation, supporting
@@ -169,7 +170,7 @@ export default function Page() {
                 key={idx}
                 className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-lg transition"
               >
-                <item.icon className="w-10 h-10 text-blue-600 mb-4" />
+                <item.icon className="w-10 h-10 text-yellow-600 mb-4" />
                 <h3 className="text-lg font-semibold text-gray-800">
                   {item.title}
                 </h3>
@@ -181,7 +182,7 @@ export default function Page() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12">
-            <span className="text-blue-500">Core Areas</span> of Expertise
+            <span className="text-yellow-500">Core Areas</span> of Expertise
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {expertise.map((item, idx) => (

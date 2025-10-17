@@ -44,7 +44,7 @@ const services = [
   {
     title: "Building Information Modeling (BIM)",
     desc: "Using platforms like Revit and Navisworks, we offer BIM modeling, clash detection, quantity take‑offs, and 5D simulation. This enables enhanced collaboration, reduced design conflicts, and smarter construction sequencing.",
-    pexelsUrl: "/Engineering-Infrastructure/Engineering/blueprint.webp",
+    pexelsUrl: "/Engineering-Infrastructure/Engineering/yellowprint.webp",
   },
   {
     title: "Infrastructure & Roads Engineering",
@@ -62,7 +62,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Engineering Services
         </h1>
       </div>
@@ -97,7 +97,7 @@ export default function ConstructionManagementPage() {
         <div className="container place-items-center grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div>
             <h1 className="text-4xl lg:text-5xl font-[600] max-w-xl">
-              Our <span className="text-blue-500">Capabilities</span> at a
+              Our <span className="text-yellow-500">Capabilities</span> at a
               Glance
             </h1>
             <p className="mt-5">
@@ -136,7 +136,7 @@ export default function ConstructionManagementPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold">
-              Our <span className="text-blue-500">Core Services</span>
+              Our <span className="text-yellow-500">Core Services</span>
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               At Al Yusr Engineering Consulting, we deliver a multidisciplinary
@@ -159,10 +159,10 @@ export default function ConstructionManagementPage() {
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="text-xl text-blue-900 font-semibold mb-2">
+                  <h3 className="text-xl text-yellow-900 font-semibold mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-blue-950">{service.desc}</p>
+                  <p className="text-yellow-950">{service.desc}</p>
                 </div>
               </div>
             ))}
@@ -174,7 +174,7 @@ export default function ConstructionManagementPage() {
         <div className="container max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold">
-              Specialized <span className="text-blue-500">Expertise</span>
+              Specialized <span className="text-yellow-500">Expertise</span>
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               Our focused engineering disciplines ensure technical depth in
@@ -190,10 +190,10 @@ export default function ConstructionManagementPage() {
                 className="bg-white rounded-xl p-6 shadow hover:shadow-md transition"
               >
                 <div className="flex items-start gap-4 mb-4">
-                  <span className="bg-blue-500 p-2 rounded-lg">
-                    <item.icon className="text-blue-50 w-8 h-8 shrink-0" />
+                  <span className="bg-yellow-500 p-2 rounded-lg">
+                    <item.icon className="text-yellow-50 w-8 h-8 shrink-0" />
                   </span>
-                  <h3 className="text-xl text-blue-900 font-semibold mt-[.15rem]">
+                  <h3 className="text-xl text-yellow-900 font-semibold mt-[.15rem]">
                     {item.title}
                   </h3>
                 </div>
@@ -217,7 +217,7 @@ export default function ConstructionManagementPage() {
           <div>
             <h1 className="text-4xl lg:text-5xl font-semibold">
               Integrated, BIM-Led{" "}
-              <span className="text-blue-500">Project Delivery</span>
+              <span className="text-yellow-500">Project Delivery</span>
             </h1>
             <p className="mt-3">
               Our engineering approach is fully BIM-integrated and coordinated
@@ -242,7 +242,7 @@ export default function ConstructionManagementPage() {
         <div className="container">
           <div className="text-center mb-12 max-w-4xl mx-auto">
             <h2 className="text-4xl lg:text-5xl font-bold">
-              Why Choose <span className="text-blue-500">Al Yusr</span> for
+              Why Choose <span className="text-yellow-500">Al Yusr</span> for
               Engineering Services?
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -255,7 +255,7 @@ export default function ConstructionManagementPage() {
             {reasonsToChoose.map((reason, i) => (
               <li
                 key={i}
-                className="flex items-start bg-blue-50 rounded-lg p-4 shadow-sm"
+                className="flex items-start bg-yellow-50 rounded-lg p-4 shadow-sm"
               >
                 <BadgeCheck className="text-white fill-green-500 mt-1 mr-3 w-6 h-6 shrink-0" />
                 <span className="text-gray-800 text-lg font-[500]">

@@ -51,7 +51,7 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/Leadership-Vision 2/banner.webp"
-          alt="ALYUSR Engineering Hero Background"
+          alt="Milestonepm Engineering Hero Background"
         />
       </motion.div>
 
@@ -60,11 +60,11 @@ export default function Page() {
         <div className="container grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-              <span className="text-blue-500">Leadership</span> That Builds with
-              Purpose
+              <span className="text-yellow-500">Leadership</span> That Builds
+              with Purpose
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              At ALYUSR, leadership is about inspiring progress, driving
+              At Milestonepm, leadership is about inspiring progress, driving
               innovation, and delivering value. Our CEO and department heads
               across engineering, planning, design, safety, and project
               management work collaboratively to embed quality, sustainability,
@@ -80,7 +80,7 @@ export default function Page() {
           <div className="rounded-xl h-[260px] lg:h-[450px] overflow-hidden">
             <img
               src="/our-ethics.jpg"
-              alt="Leadership at ALYUSR"
+              alt="Leadership at Milestonepm"
               className="w-full h-full object-cover"
             />
           </div>
@@ -88,13 +88,13 @@ export default function Page() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="bg-sky-50 py-20 px-6">
+      <section className="bg-amber-50 py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           <div>
             <div className="rounded-xl mb-4 h-[350px] overflow-hidden">
               <img
                 src="/Leadership-Vision 2/leadership.webp"
-                alt="Leadership at ALYUSR"
+                alt="Leadership at Milestonepm"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -112,7 +112,7 @@ export default function Page() {
             <div className="rounded-xl h-[350px] mb-4 overflow-hidden">
               <img
                 src="/Leadership-Vision 2/mission.webp"
-                alt="Leadership at ALYUSR"
+                alt="Leadership at Milestonepm"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -133,7 +133,7 @@ export default function Page() {
           <div>
             <h2 className="text-4xl font-bold text-gray-800 mb-6 leading-snug">
               Our Commitment to <br className="hidden sm:inline" />
-              <span className="text-sky-700">Vision 2030</span>
+              <span className="text-amber-700">Vision 2030</span>
             </h2>
             <p className="text-gray-700 text-lg mb-4">
               We proudly align with the Kingdom’s Vision 2030, contributing to
@@ -144,15 +144,15 @@ export default function Page() {
             </p>
             <p className="text-gray-700 text-lg mb-4">
               Whether we are shaping smart cities, supporting green
-              infrastructure, or modernizing essential services, ALYUSR is
+              infrastructure, or modernizing essential services, Milestonepm is
               committed to turning national goals into real-world outcomes.
             </p>
             <p className="text-gray-700 text-lg">
               As the Kingdom invests in infrastructure, smart cities, housing,
-              and sustainability, ALYUSR delivers engineering solutions that
-              support these goals across every sector. Our projects directly
-              align with Vision 2030’s core pillars: a vibrant society, a
-              thriving economy, and an ambitious nation.
+              and sustainability, Milestonepm delivers engineering solutions
+              that support these goals across every sector. Our projects
+              directly align with Vision 2030’s core pillars: a vibrant society,
+              a thriving economy, and an ambitious nation.
             </p>
           </div>
 
@@ -171,38 +171,38 @@ export default function Page() {
       <section className="pt-12 lg:py-20 px-6">
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            How We Support <span className="text-blue-500">Vision 2030</span>
+            How We Support <span className="text-yellow-500">Vision 2030</span>
           </h2>
         </div>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
-              icon: <Building2 className="w-6 h-6 text-sky-700" />,
+              icon: <Building2 className="w-6 h-6 text-amber-700" />,
               title: "Urban Development & Housing",
               desc: "Designing livable communities and master plans that enhance life.",
             },
             {
-              icon: <Network className="w-6 h-6 text-sky-700" />,
+              icon: <Network className="w-6 h-6 text-amber-700" />,
               title: "Infrastructure & Connectivity",
               desc: "Planning roads, utilities, and logistics hubs powering the future.",
             },
             {
-              icon: <Globe className="w-6 h-6 text-sky-700" />,
+              icon: <Globe className="w-6 h-6 text-amber-700" />,
               title: "Digital Transformation",
               desc: "Using BIM, GIS, and smart tools for efficient project delivery.",
             },
             {
-              icon: <TreeDeciduous className="w-6 h-6 text-sky-700" />,
+              icon: <TreeDeciduous className="w-6 h-6 text-amber-700" />,
               title: "Sustainability & Environment",
               desc: "Green building, energy efficiency, and eco-focused design.",
             },
             {
-              icon: <Brain className="w-6 h-6 text-sky-700" />,
+              icon: <Brain className="w-6 h-6 text-amber-700" />,
               title: "Private Sector Enablement",
               desc: "Partnering with developers and PPPs for strategic growth.",
             },
             {
-              icon: <Compass className="w-6 h-6 text-sky-700" />,
+              icon: <Compass className="w-6 h-6 text-amber-700" />,
               title: "Nationwide Impact",
               desc: "From NEOM to Tabuk, delivering value that lasts for generations.",
             },
@@ -227,7 +227,7 @@ export default function Page() {
 
       <EngineeringCTA
         title="Nationwide Impact"
-        desc="From Riyadh to NEOM, and from the Eastern Province to Tabuk, ALYUSR is helping reshape the Kingdom’s landscape, one project at a time. We partner with both public and private sector entities to deliver value, reduce environmental impact, and create long-lasting infrastructure for generations to come."
+        desc="From Riyadh to NEOM, and from the Eastern Province to Tabuk, Milestonepm is helping reshape the Kingdom’s landscape, one project at a time. We partner with both public and private sector entities to deliver value, reduce environmental impact, and create long-lasting infrastructure for generations to come."
       />
     </div>
   );

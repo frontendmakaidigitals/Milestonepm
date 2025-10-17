@@ -99,7 +99,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Interior Architecture
         </h1>
       </div>
@@ -116,7 +116,7 @@ export default function Page() {
       <section className="bg-gray-50 ">
         <div className="container py-12 grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div>
-            <h2 className="text-4xl lg:text-5xl text-sky-700 font-bold ">
+            <h2 className="text-4xl lg:text-5xl text-amber-700 font-bold ">
               Creative, Contextual, Client-Focused
             </h2>
             <p className="text-lg text-gray-700 mt-4">
@@ -144,7 +144,7 @@ export default function Page() {
       <section className="py-16 bg-gray-50">
         <div className="container max-w-7xl">
           <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12">
-            Our <span className="text-blue-600">Interior Architecture</span>{" "}
+            Our <span className="text-yellow-600">Interior Architecture</span>{" "}
             Services
           </h2>
           <div className="grid gap-6 grid-cols-1 lg:grid-cols-4">
@@ -175,7 +175,7 @@ export default function Page() {
       <section className="max-w-7xl mx-auto px-4 py-20 space-y-16">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Our <span className="text-blue-500">Areas of Expertise</span>
+            Our <span className="text-yellow-500">Areas of Expertise</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Interior architecture tailored to every sector&apso;s unique demands
@@ -205,7 +205,7 @@ export default function Page() {
                 />
               </div>
               <div className="w-full md:w-1/2">
-                <h3 className="text-4xl text-sky-700 font-semibold mb-3">
+                <h3 className="text-4xl text-amber-700 font-semibold mb-3">
                   {item.title}
                 </h3>
                 <p className="text-muted-foreground text-lg">{item.desc}</p>
@@ -218,7 +218,7 @@ export default function Page() {
       <section className="bg-gray-50 ">
         <div className="container py-12 place-items-center grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div>
-            <h2 className="text-4xl lg:text-5xl font-[700] text-sky-700">
+            <h2 className="text-4xl lg:text-5xl font-[700] text-amber-700">
               An Integrated Team From Day One
             </h2>
             <p className="text-lg text-gray-700 mt-4">
@@ -244,7 +244,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-b from-blue-50/50 to-white py-20 px-4">
+      <section className="bg-gradient-to-b from-yellow-50/50 to-white py-20 px-4">
         <div className="max-w-3xl container text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Why Choose Al Yusr for Interior Architecture?

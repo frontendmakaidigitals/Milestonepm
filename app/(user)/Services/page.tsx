@@ -307,19 +307,19 @@ const Page = () => {
         <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Text Block */}
           <div className="lg:col-span-6 space-y-3">
-            <h1 className="text-4xl sm:text-4xl lg:text-5xl font-semibold text-blue-950 leading-tight">
+            <h1 className="text-4xl sm:text-4xl lg:text-5xl font-semibold text-yellow-950 leading-tight">
               Services
             </h1>
             <h2 className=" text-xl text-slate-700 font-normal leading-relaxed">
-              ALYUSR partners with public and private sector clients to solve
-              their most complex engineering and development challenges,
+              Milestonepm partners with public and private sector clients to
+              solve their most complex engineering and development challenges,
               transforming ambitious visions into excellent results. Across
               Saudi Arabia and international markets, our expert teams push the
               boundaries of innovation and precision.
             </h2>
           </div>
           <div className="lg:col-span-6">
-            <div className="bg-blue-50/30 p-8 rounded-xl border border-blue-200/20 shadow-xs">
+            <div className="bg-yellow-50/30 p-8 rounded-xl border border-yellow-200/20 shadow-xs">
               <p className="text-lg text-slate-800 leading-relaxed">
                 From national infrastructure to sustainable urban design, we
                 deliver projects that make a lasting, positive impact on people,

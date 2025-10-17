@@ -55,7 +55,7 @@ export default function Page() {
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
               Public-Private{" "}
-              <span className="text-blue-500">Partnerships (P3)</span>
+              <span className="text-yellow-500">Partnerships (P3)</span>
             </h1>
             <p>
               As infrastructure funding gaps grow across the globe,
@@ -95,7 +95,7 @@ export default function Page() {
           {/* Right Content */}
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-              Our <span className="text-blue-500">Experience</span>
+              Our <span className="text-yellow-500">Experience</span>
             </h2>
             <p className="mt-6 text-lg text-gray-700 leading-relaxed">
               Our expertise spans transportation, energy, buildings, water, and
@@ -107,20 +107,20 @@ export default function Page() {
 
             <ul className="mt-8 space-y-4 text-gray-700">
               <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold">•</span>
+                <span className="text-yellow-600 font-bold">•</span>
                 Structuring financially viable deals that attract investment
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold">•</span>
+                <span className="text-yellow-600 font-bold">•</span>
                 Accelerating project delivery schedules
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold">•</span>
+                <span className="text-yellow-600 font-bold">•</span>
                 Designing innovative engineering solutions that optimize
                 lifecycle costs
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold">•</span>
+                <span className="text-yellow-600 font-bold">•</span>
                 Helping public agencies achieve infrastructure goals without
                 overstretching budgets
               </li>
@@ -128,7 +128,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-100">
+      <section className="py-20 bg-gradient-to-br from-yellow-50 via-white to-yellow-100">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
             What We Do
@@ -213,8 +213,8 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Multi-Sector Expertise */}
             <div className="flex items-start space-x-4">
-              <div className="p-3 bg-blue-100 rounded-2xl">
-                <Layers className="h-6 w-6 text-blue-600" />
+              <div className="p-3 bg-yellow-100 rounded-2xl">
+                <Layers className="h-6 w-6 text-yellow-600" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">

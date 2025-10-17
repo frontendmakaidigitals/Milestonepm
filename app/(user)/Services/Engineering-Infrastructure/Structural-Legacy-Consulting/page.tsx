@@ -113,7 +113,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Structural Legacy Consulting
         </h1>
       </div>
@@ -149,7 +149,7 @@ export default function ConstructionManagementPage() {
       <section className="py-20 px-6 md:px-10  text-gray-900">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-center">
-            Our <span className="text-blue-500">Core Expertise</span>
+            Our <span className="text-yellow-500">Core Expertise</span>
           </h2>
           <div className="grid grid-cols-1 gap-8">
             {expertise.map((area, index) => {
@@ -177,7 +177,7 @@ export default function ConstructionManagementPage() {
                       isEven ? "order-2 lg:order-1" : "order-2 lg:order-2"
                     }`}
                   >
-                    <h3 className="text-3xl font-semibold mb-2 text-sky-800">
+                    <h3 className="text-3xl font-semibold mb-2 text-amber-800">
                       {area.title}
                     </h3>
                     <p className="text-gray-700 mb-4">{area.description}</p>
@@ -195,9 +195,9 @@ export default function ConstructionManagementPage() {
           </div>
         </div>
       </section>
-      <section className="bg-blue-50 py-20 px-6">
+      <section className="bg-yellow-50 py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-sky-900 mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-amber-900 mb-6">
             Specialized Equipment Advisory
           </h2>
           <p className="text-slate-950 mb-12 max-w-3xl mx-auto">
@@ -210,9 +210,9 @@ export default function ConstructionManagementPage() {
             {items.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center gap-4 bg-blue-100 rounded-xl p-5 text-black border shadow"
+                className="flex items-center gap-4 bg-yellow-100 rounded-xl p-5 text-black border shadow"
               >
-                <div className="bg-blue-400 p-2 rounded-lg">{item.icon}</div>
+                <div className="bg-yellow-400 p-2 rounded-lg">{item.icon}</div>
                 <p className="text-base">{item.text}</p>
               </div>
             ))}
@@ -222,7 +222,7 @@ export default function ConstructionManagementPage() {
       <section className="py-20 bg-gray-50">
         <div className="container px-4">
           <h2 className="text-4xl lg:text-5xl text-center font-bold mb-12 text-gray-800">
-            <span className="text-blue-500">Industries</span> We Serve
+            <span className="text-yellow-500">Industries</span> We Serve
           </h2>
 
           <div className=" max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-5">
@@ -239,8 +239,8 @@ export default function ConstructionManagementPage() {
                     />
                   </motion.div>
 
-                  <motion.div className=" w-full border bg-blue-50 text-slate-950 rounded-b-xl p-3 ">
-                    <h3 className="text-lg text-blue-900 font-[700] ">
+                  <motion.div className=" w-full border bg-yellow-50 text-slate-950 rounded-b-xl p-3 ">
+                    <h3 className="text-lg text-yellow-900 font-[700] ">
                       {industry.title}
                     </h3>
                   </motion.div>
@@ -250,7 +250,7 @@ export default function ConstructionManagementPage() {
           </div>
         </div>
       </section>
-      <section className="py-20  bg-blue-50">
+      <section className="py-20  bg-yellow-50">
         <div className="grid grid-cols-1 lg:grid-cols-2 container gap-8 place-items-center">
           <div>
             {" "}
@@ -258,7 +258,7 @@ export default function ConstructionManagementPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-4xl lg:text-5xl font-bold text-start text-sky-900 mb-10"
+              className="text-4xl lg:text-5xl font-bold text-start text-amber-900 mb-10"
             >
               Why Partner with Al Yusr?
             </motion.h2>
@@ -269,7 +269,7 @@ export default function ConstructionManagementPage() {
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="flex items-start gap-4 text-blue-950"
+                  className="flex items-start gap-4 text-yellow-950"
                 >
                   <BadgeCheck className="w-6 h-6 text-white fill-green-500  mt-1 flex-shrink-0" />
                   <p className="text-lg font-medium">{reason}</p>

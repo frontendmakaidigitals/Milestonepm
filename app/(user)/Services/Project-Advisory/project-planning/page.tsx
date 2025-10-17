@@ -59,7 +59,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Project Planning
         </h1>
       </div>
@@ -93,8 +93,8 @@ export default function Page() {
           <div>
             {" "}
             <h1 className="text-5xl lg:text-6xl font-[600]">
-              Smart <span className="text-blue-500">Planning</span> for Smarter{" "}
-              <span className="text-green-500">Development</span>
+              Smart <span className="text-yellow-500">Planning</span> for
+              Smarter <span className="text-green-500">Development</span>
             </h1>
             <p className="mt-3">
               We take a strategic approach to project planning, integrating
@@ -167,7 +167,7 @@ export default function Page() {
             <ul className="space-y-3">
               {lifecycle.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 mt-1" />
+                  <CheckCircle className="w-5 h-5 text-yellow-600 mt-1" />
                   <span className="text-gray-700">{item}</span>
                 </li>
               ))}
@@ -178,7 +178,7 @@ export default function Page() {
 
       <section className="py-16 bg-gray-900 ">
         <div className="container text-center max-w-6xl">
-          <h1 className="leading-[4.1rem] text-5xl lg:text-6xl font-[600] mb-3 bg-gradient-to-r from-blue-600 via-fuchsia-400 to-blue-600 bg-clip-text text-transparent">
+          <h1 className="leading-[4.1rem] text-5xl lg:text-6xl font-[600] mb-3 bg-gradient-to-r from-yellow-600 via-fuchsia-400 to-yellow-600 bg-clip-text text-transparent">
             Sustainability at the Core
           </h1>
           <p className="text-white text-lg">
@@ -195,7 +195,7 @@ export default function Page() {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Why Choose Al Yusr for{" "}
-            <span className="text-blue-500">Project Planning?</span>
+            <span className="text-yellow-500">Project Planning?</span>
           </h2>
           <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
             We combine technical expertise, regulatory insight, and innovative
@@ -208,10 +208,10 @@ export default function Page() {
             {reasons.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-blue-50/50  rounded-2xl p-5 flex flex-col items-center justify-center  border border-blue-400/20"
+                className="bg-yellow-50/50  rounded-2xl p-5 flex flex-col items-center justify-center  border border-yellow-400/20"
               >
-                <div className="p-2 bg-blue-100 rounded-lg w-fit mb-4">
-                  <item.icon className="w-10 h-10 text-blue-600 " />
+                <div className="p-2 bg-yellow-100 rounded-lg w-fit mb-4">
+                  <item.icon className="w-10 h-10 text-yellow-600 " />
                 </div>
                 <p className="text-gray-700 ">{item.text}</p>
               </div>

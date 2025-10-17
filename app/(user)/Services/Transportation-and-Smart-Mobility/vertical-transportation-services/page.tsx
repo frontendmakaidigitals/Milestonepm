@@ -16,7 +16,7 @@ export default function Page() {
   const services = [
     {
       title: "Design & Engineering",
-      icon: <PenTool className="w-8 h-8 text-blue-600" />,
+      icon: <PenTool className="w-8 h-8 text-yellow-600" />,
       points: [
         "Development of VT system design concepts",
         "Design drawings, detailed specifications, and cost estimates",
@@ -28,7 +28,7 @@ export default function Page() {
     },
     {
       title: "Condition Assessments & Studies",
-      icon: <ClipboardCheck className="w-8 h-8 text-blue-600" />,
+      icon: <ClipboardCheck className="w-8 h-8 text-yellow-600" />,
       points: [
         "Modernization strategies for aging equipment",
         "Elevator and escalator inspections and evaluations",
@@ -39,7 +39,7 @@ export default function Page() {
     },
     {
       title: "Construction Phase Services",
-      icon: <Hammer className="w-8 h-8 text-blue-600" />,
+      icon: <Hammer className="w-8 h-8 text-yellow-600" />,
       points: [
         "Shop drawing and submittal reviews",
         "Construction progress monitoring and site inspections",
@@ -51,7 +51,7 @@ export default function Page() {
     },
     {
       title: "Simulation & Pedestrian Flow Analysis",
-      icon: <Users className="w-8 h-8 text-blue-600" />,
+      icon: <Users className="w-8 h-8 text-yellow-600" />,
       points: [
         "Vertical transportation simulation modeling",
         "Peak demand assessments & elevator wait time calculations",
@@ -63,27 +63,27 @@ export default function Page() {
   const reasons = [
     {
       title: "End-to-End Expertise",
-      icon: <Workflow className="w-8 h-8 text-blue-600" />,
+      icon: <Workflow className="w-8 h-8 text-yellow-600" />,
       desc: "From feasibility studies to final commissioning, we offer full-service support under one roof.",
     },
     {
       title: "Code Compliance & Safety Focus",
-      icon: <ShieldCheck className="w-8 h-8 text-blue-600" />,
+      icon: <ShieldCheck className="w-8 h-8 text-yellow-600" />,
       desc: "We ensure all designs meet the highest standards in safety, reliability, and accessibility.",
     },
     {
       title: "Technology-Driven Solutions",
-      icon: <Cpu className="w-8 h-8 text-blue-600" />,
+      icon: <Cpu className="w-8 h-8 text-yellow-600" />,
       desc: "Our approach integrates smart controls, energy-efficient systems, and digital simulation tools.",
     },
     {
       title: "Interdisciplinary Collaboration",
-      icon: <Users className="w-8 h-8 text-blue-600" />,
+      icon: <Users className="w-8 h-8 text-yellow-600" />,
       desc: "Seamless coordination with architects, engineers, and facility teams ensures fully integrated solutions.",
     },
     {
       title: "Client-Centric Delivery",
-      icon: <Handshake className="w-8 h-8 text-blue-600" />,
+      icon: <Handshake className="w-8 h-8 text-yellow-600" />,
       desc: "Our solutions are always tailored to your building type, usage patterns, and long-term goals.",
     },
   ];
@@ -93,7 +93,7 @@ export default function Page() {
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-semibold">
-              Vertical <span className="text-blue-600">Transportation</span>{" "}
+              Vertical <span className="text-yellow-600">Transportation</span>{" "}
               Services
             </h1>
 
@@ -132,7 +132,7 @@ export default function Page() {
             viewport={{ once: true }}
             className="text-4xl lg:text-4xl lg:text-5xl font-bold mb-6"
           >
-            Our <span className="text-blue-600">Approach</span>
+            Our <span className="text-yellow-600">Approach</span>
           </motion.h2>
 
           <motion.p
@@ -160,7 +160,7 @@ export default function Page() {
             transition={{ duration: 0.6 }}
             className="text-4xl lg:text-4xl lg:text-5xl font-bold text-center mb-12"
           >
-            Our <span className="text-blue-600">Services</span>
+            Our <span className="text-yellow-600">Services</span>
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -179,7 +179,7 @@ export default function Page() {
                 <ul className="space-y-2 text-gray-700">
                   {service.points.map((point, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <span className="text-blue-600 mt-1">•</span>
+                      <span className="text-yellow-600 mt-1">•</span>
                       <span>{point}</span>
                     </li>
                   ))}
@@ -198,7 +198,7 @@ export default function Page() {
             viewport={{ once: true }}
             className="text-4xl lg:text-4xl lg:text-5xl font-bold text-center mb-14"
           >
-            Why Choose <span className="text-blue-600">Al Yusr</span> for
+            Why Choose <span className="text-yellow-600">Al Yusr</span> for
             Vertical Transportation?
           </motion.h2>
 

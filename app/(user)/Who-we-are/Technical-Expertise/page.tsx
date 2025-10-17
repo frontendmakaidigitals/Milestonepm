@@ -81,24 +81,25 @@ export default function TechnicalExpertisePage() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/technical expertise 2/banner.webp"
-          alt="ALYUSR Engineering Hero Background"
+          alt="Milestonepm Engineering Hero Background"
         />
       </motion.div>
-      <section className=" bg-gradient-to-r from-sky-100/30 via-sky-200/40 to-transparent overflow-hidden relative">
+      <section className=" bg-gradient-to-r from-amber-100/30 via-amber-200/40 to-transparent overflow-hidden relative">
         <div className="relative py-16 z-10  flex flex-col h-full justify-center items-center">
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
               <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter  mb-4">
-                <span className="text-blue-500">Expertise</span> You Can Rely On
+                <span className="text-yellow-500">Expertise</span> You Can Rely
+                On
               </h1>
               <p className="text-lg text-gray-700">
-                At ALYUSR, technical excellence is at the core of everything we
-                do. Our strength lies in our ability to combine deep domain
-                knowledge with cutting-edge tools and a results-driven approach.
-                From concept to completion, our engineers, architects, planners,
-                and project managers apply international standards and local
-                insight to deliver high-impact, future-ready solutions. <br />{" "}
-                <br />
+                At Milestonepm, technical excellence is at the core of
+                everything we do. Our strength lies in our ability to combine
+                deep domain knowledge with cutting-edge tools and a
+                results-driven approach. From concept to completion, our
+                engineers, architects, planners, and project managers apply
+                international standards and local insight to deliver
+                high-impact, future-ready solutions. <br /> <br />
                 With experience across residential, commercial, industrial, and
                 infrastructure sectors, we bring specialized expertise to every
                 phase of the project lifecycle, ensuring accuracy, efficiency,
@@ -107,7 +108,7 @@ export default function TechnicalExpertisePage() {
 
               <Link
                 href={"/Contact"}
-                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#387EF0] to-[#2651C2] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
+                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
               >
                 Discover Our Story <ArrowUpRight />
               </Link>
@@ -127,7 +128,7 @@ export default function TechnicalExpertisePage() {
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800">
-            <span className="text-blue-500">Multidisciplinary</span>{" "}
+            <span className="text-yellow-500">Multidisciplinary</span>{" "}
             Capabilities
           </h2>
           <p className="mb-16 mt-3 text-center text-gray-600">
@@ -138,10 +139,10 @@ export default function TechnicalExpertisePage() {
             {capabilities.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg border border-blue-100 hover:border-blue-300 shadow-sm hover:shadow-md transition-all overflow-hidden group"
+                className="bg-white rounded-lg border border-yellow-100 hover:border-yellow-300 shadow-sm hover:shadow-md transition-all overflow-hidden group"
               >
-                {/* Top Blue Accent Bar */}
-                <div className="h-1 bg-blue-500" />
+                {/* Top yellow Accent Bar */}
+                <div className="h-1 bg-yellow-500" />
 
                 {/* Image */}
                 <div className="relative h-56 w-full">
@@ -155,7 +156,7 @@ export default function TechnicalExpertisePage() {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-500 transition-colors">
+                  <h3 className="text-xl font-semibold text-gray-800 group-hover:text-yellow-500 transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed mt-2">
@@ -171,7 +172,8 @@ export default function TechnicalExpertisePage() {
       <section className="py-16 container ">
         <div className=" text-center">
           <h2 className="text-4xl lg:text-5xl font-semibold text-gray-800 mb-4">
-            Advanced <span className="text-blue-500">Tools & Technologies</span>
+            Advanced{" "}
+            <span className="text-yellow-500">Tools & Technologies</span>
           </h2>
           <p className="text-gray-700 mb-6">
             To deliver precision and speed, we rely on globally recognized tools
@@ -190,7 +192,7 @@ export default function TechnicalExpertisePage() {
             ].map((tool, i) => (
               <li
                 key={i}
-                className="border border-slate-100/30 text-sky-800 font-medium rounded-lg px-4 py-2 text-center shadow-sm"
+                className="border border-slate-100/30 text-amber-800 font-medium rounded-lg px-4 py-2 text-center shadow-sm"
               >
                 <div className="w-full h-[100px] ">
                   <img

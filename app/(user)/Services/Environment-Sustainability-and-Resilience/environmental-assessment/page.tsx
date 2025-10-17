@@ -159,13 +159,13 @@ export default function Page() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-12">
-            Our <span className="text-blue-600">Approach</span>
+            Our <span className="text-yellow-600">Approach</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-10">
             {items.map((item, idx) => (
               <div key={idx} className="flex items-start gap-4">
-                <div className="p-3 bg-blue-100 rounded-xl">
-                  <item.icon className="w-7 h-7 text-blue-600" />
+                <div className="p-3 bg-yellow-100 rounded-xl">
+                  <item.icon className="w-7 h-7 text-yellow-600" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">
@@ -212,7 +212,7 @@ export default function Page() {
       <section className="py-16 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center">
-            Why Choose <span className="text-blue-600">Al Yusr</span>
+            Why Choose <span className="text-yellow-600">Al Yusr</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {reasons.map((item, idx) => (

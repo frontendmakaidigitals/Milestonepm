@@ -72,7 +72,7 @@ export default function Page() {
     {
       title: "Forward-Looking Expertise",
       desc: "We anticipate changes before they disrupt your city.",
-      icon: <Lightbulb className="w-10 h-10 text-blue-600" />,
+      icon: <Lightbulb className="w-10 h-10 text-yellow-600" />,
     },
     {
       title: "Integrated Planning",
@@ -96,7 +96,7 @@ export default function Page() {
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-semibold">
-              Urban <span className="text-blue-600">Mobility</span> Solutions
+              Urban <span className="text-yellow-600">Mobility</span> Solutions
             </h1>
 
             <p>
@@ -125,7 +125,7 @@ export default function Page() {
       </section>
       <section className="py-16 px-6 lg:px-20 bg-gray-50">
         <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12">
-          Our <span className="text-blue-600">Scope of Work</span>
+          Our <span className="text-yellow-600">Scope of Work</span>
         </h2>
         <div className="space-y-20">
           {items.map((item, i) => (
@@ -160,7 +160,7 @@ export default function Page() {
       </section>
       <section className="py-16 px-6 lg:px-20 bg-white">
         <h2 className="text-4xl font-bold text-center mb-12">
-          Why Choose <span className="text-blue-600">Al Yusr</span> for Urban
+          Why Choose <span className="text-yellow-600">Al Yusr</span> for Urban
           Mobility?
         </h2>
 

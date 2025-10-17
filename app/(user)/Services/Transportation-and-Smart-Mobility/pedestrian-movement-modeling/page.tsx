@@ -7,7 +7,7 @@ export default function Page() {
     {
       title: "Physical Layout",
       desc: "The design and structure of the built environment (e.g., corridors, entrances, exits, escalators).",
-      icon: <Building className="w-8 h-8 text-blue-600" />,
+      icon: <Building className="w-8 h-8 text-yellow-600" />,
       img: "/Transportation-mobility/pedestrian-movement/Physical.webp", // mall/hallway
     },
     {
@@ -72,7 +72,7 @@ export default function Page() {
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
-              <span className="text-blue-500">Pedestrian Movement</span>{" "}
+              <span className="text-yellow-500">Pedestrian Movement</span>{" "}
               Planning
             </h1>
             <p>
@@ -207,7 +207,7 @@ export default function Page() {
                 "Congestion Mapping",
               ].map((point, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="w-2 h-2 mt-2 rounded-full bg-blue-600"></span>
+                  <span className="w-2 h-2 mt-2 rounded-full bg-yellow-600"></span>
                   <span>{point}</span>
                 </li>
               ))}
@@ -244,10 +244,10 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gradient-to-r from-blue-50 via-white to-blue-100">
+      <section className="py-20 bg-gradient-to-r from-yellow-50 via-white to-yellow-100">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-            Why Choose <span className="text-blue-500">Al Yusr?</span>
+            Why Choose <span className="text-yellow-500">Al Yusr?</span>
           </h2>
           <p className="mt-6 text-lg text-gray-700 leading-relaxed">
             With deep expertise in urban design, infrastructure planning, and

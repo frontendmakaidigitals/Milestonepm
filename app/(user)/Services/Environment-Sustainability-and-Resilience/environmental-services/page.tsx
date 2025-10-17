@@ -42,7 +42,7 @@ export default function Page() {
     {
       icon: <FileText className="h-6 w-6" aria-hidden />,
       title: "Environmental Impact Assessments (EIA)",
-      accent: "bg-sky-100 text-sky-700 ring-sky-200",
+      accent: "bg-amber-100 text-amber-700 ring-amber-200",
       items: [
         {
           label: "Project-specific EIAs and Strategic EIAs",
@@ -194,8 +194,8 @@ export default function Page() {
       </section>
       <section className="relative isolate overflow-hidden bg-gradient-to-b from-white to-slate-50">
         {/* Decorative gradient blobs */}
-        <div className="pointer-events-none absolute -top-24 right-0 h-72 w-72 rounded-full bg-blue-200/50 blur-3xl" />
-        <div className="pointer-events-none absolute bottom-0 -left-24 h-72 w-72 rounded-full bg-sky-400/30 blur-3xl" />
+        <div className="pointer-events-none absolute -top-24 right-0 h-72 w-72 rounded-full bg-yellow-200/50 blur-3xl" />
+        <div className="pointer-events-none absolute bottom-0 -left-24 h-72 w-72 rounded-full bg-amber-400/30 blur-3xl" />
 
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
@@ -313,7 +313,7 @@ export default function Page() {
               {points.map((point) => (
                 <li
                   key={point}
-                  className="flex items-start gap-3 bg-blue-50 rounded-lg p-3"
+                  className="flex items-start gap-3 bg-yellow-50 rounded-lg p-3"
                 >
                   <BadgeCheck className="h-6 w-6 shrink-0 text-white fill-green-500 mt-0.5" />
                   <span className="text-lg leading-7 text-slate-700">

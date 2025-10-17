@@ -63,7 +63,7 @@ const Blogs = () => {
       {blogs.length !== 0 ? (
         <div className="container ">
           <motion.h1 className="text-4xl text-center lg:text-5xl font-bold  mb-6">
-            Latest from the <span className="text-blue-500">Blog</span>
+            Latest from the <span className="text-yellow-500">Blog</span>
           </motion.h1>
 
           <Carousel
@@ -77,7 +77,7 @@ const Blogs = () => {
                   key={blog.id || index}
                   className="basis-1/1 pb-10 relative lg:basis-1/5"
                 >
-                  <div className="bg-blue-50 p-1 relative shadow-sm rounded-lg overflow-hidden">
+                  <div className="bg-yellow-50 p-1 relative shadow-sm rounded-lg overflow-hidden">
                     <div className="h-[230px] lg:h-[200px] overflow-hidden rounded-lg w-full relative">
                       <div className="absolute inset-0 bg-black/20 z-10" />
                       {blog.image && (
@@ -127,7 +127,7 @@ const Blogs = () => {
                       blog.title.toLowerCase().replace(/\s+/g, "-")
                     )}`}
                   >
-                    <button className="absolute right-4 bottom-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg p-2">
+                    <button className="absolute right-4 bottom-4 bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg p-2">
                       <MoveUpRight />
                     </button>
                   </Link>
@@ -139,14 +139,14 @@ const Blogs = () => {
             <button
               disabled={!canScrollPrev}
               onClick={() => api?.scrollPrev()}
-              className="bg-blue-500 disabled:bg-slate-400 text-white p-2 rounded-full"
+              className="bg-yellow-500 disabled:bg-slate-400 text-white p-2 rounded-full"
             >
               <ArrowLeft />
             </button>
             <button
               disabled={!canScrollNext}
               onClick={() => api?.scrollNext()}
-              className="bg-blue-500 disabled:bg-slate-400 text-white p-2 rounded-full"
+              className="bg-yellow-500 disabled:bg-slate-400 text-white p-2 rounded-full"
             >
               <ArrowRight />
             </button>

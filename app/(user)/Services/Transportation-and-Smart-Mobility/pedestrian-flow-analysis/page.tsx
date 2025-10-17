@@ -72,7 +72,7 @@ export default function Page() {
   const stages = [
     {
       title: "Design Optimization",
-      icon: <ClipboardList className="w-10 h-10 text-blue-600" />,
+      icon: <ClipboardList className="w-10 h-10 text-yellow-600" />,
       points: [
         "Compare multiple layout options before finalizing plans",
         "Understand how different architectural features impact flow",
@@ -113,38 +113,38 @@ export default function Page() {
   const benefits = [
     {
       title: "Avoid costly redesigns",
-      icon: <ShieldCheck className="w-6 h-6  text-blue-500" />,
+      icon: <ShieldCheck className="w-6 h-6  text-yellow-500" />,
     },
     {
       title: "Enhance safety and accessibility",
-      icon: <Accessibility className="w-6 h-6 text-blue-500" />,
+      icon: <Accessibility className="w-6 h-6 text-yellow-500" />,
     },
     {
       title: "Improve user experience",
-      icon: <Smile className="w-6 h-6 text-blue-500" />,
+      icon: <Smile className="w-6 h-6 text-yellow-500" />,
     },
     {
       title: "Maximize throughput and minimize delays",
-      icon: <Gauge className="w-6 h-6 text-blue-500" />,
+      icon: <Gauge className="w-6 h-6 text-yellow-500" />,
     },
   ];
 
   const deliverables = [
     {
       title: "Interactive simulation videos & heat maps",
-      icon: <Video className="w-6 h-6 text-blue-500" />,
+      icon: <Video className="w-6 h-6 text-yellow-500" />,
     },
     {
       title: "Data dashboards with key indicators",
-      icon: <BarChart3 className="w-6 h-6 text-blue-500" />,
+      icon: <BarChart3 className="w-6 h-6 text-yellow-500" />,
     },
     {
       title: "Recommendations for improvements",
-      icon: <FileText className="w-6 h-6 text-blue-500" />,
+      icon: <FileText className="w-6 h-6 text-yellow-500" />,
     },
     {
       title: "Scenario comparison & growth modeling",
-      icon: <Layers className="w-6 h-6 text-blue-500" />,
+      icon: <Layers className="w-6 h-6 text-yellow-500" />,
     },
   ];
 
@@ -154,7 +154,7 @@ export default function Page() {
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
-              Pedestrian <span className="text-blue-500">Flow Analysis</span>
+              Pedestrian <span className="text-yellow-500">Flow Analysis</span>
             </h1>
             <p>
               At Al Yusr, our Pedestrian Flow Analysis service uses dynamic
@@ -183,7 +183,7 @@ export default function Page() {
           {/* Title */}
           <h2 className="text-3xl lg:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-16">
             What Is{" "}
-            <span className="text-blue-600">Pedestrian Flow Analysis?</span>
+            <span className="text-yellow-600">Pedestrian Flow Analysis?</span>
           </h2>
 
           {/* What It Is */}
@@ -202,7 +202,7 @@ export default function Page() {
               <div className="space-y-6">
                 {features.map((item, idx) => (
                   <div key={idx} className="flex gap-4 items-start">
-                    <item.icon className="w-8 h-8 text-blue-600" />
+                    <item.icon className="w-8 h-8 text-yellow-600" />
                     <div>
                       <h3 className="font-semibold text-gray-800">
                         {item.title}
@@ -229,7 +229,7 @@ export default function Page() {
           {/* What We Analyze */}
           <div>
             <h3 className="text-4xl lg:text-5xl font-semibold text-gray-900 text-center mb-12">
-              What <span className="text-blue-500">We Analyze</span>
+              What <span className="text-yellow-500">We Analyze</span>
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {analysis.map((item, idx) => (
@@ -237,7 +237,7 @@ export default function Page() {
                   key={idx}
                   className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition"
                 >
-                  <item.icon className="w-10 h-10 text-blue-600 mb-4" />
+                  <item.icon className="w-10 h-10 text-yellow-600 mb-4" />
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">
                     {item.title}
                   </h4>
@@ -323,9 +323,9 @@ export default function Page() {
               {deliverables.map((item, i) => (
                 <li
                   key={i}
-                  className="flex items-start gap-3 bg-blue-50/50 p-4 rounded-lg mt-5"
+                  className="flex items-start gap-3 bg-yellow-50/50 p-4 rounded-lg mt-5"
                 >
-                  <span className="p-2 bg-blue-100 rounded-lg ">
+                  <span className="p-2 bg-yellow-100 rounded-lg ">
                     {item.icon}
                   </span>
                   <span className="text-gray-800 font-medium">

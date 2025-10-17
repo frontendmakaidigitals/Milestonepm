@@ -79,7 +79,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Community Engagement
         </h1>
       </div>
@@ -114,8 +114,8 @@ export default function Page() {
           <div>
             {" "}
             <h1 className="text-4xl lg:text-5xl font-[700]">
-              <span className="text-blue-500">Engaging</span> People,{" "}
-              <span className="text-blue-500">Empowering</span> Places
+              <span className="text-yellow-500">Engaging</span> People,{" "}
+              <span className="text-yellow-500">Empowering</span> Places
             </h1>
             <p className="mt-4">
               We approach engagement as more than just information sharing;
@@ -186,7 +186,7 @@ export default function Page() {
                   viewport={{ once: true }}
                   className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow flex flex-col items-center text-center"
                 >
-                  <div className="bg-blue-100 text-blue-600 p-4 rounded-full mb-4">
+                  <div className="bg-yellow-100 text-yellow-600 p-4 rounded-full mb-4">
                     <Icon size={32} />
                   </div>
                   <p className="text-gray-700 font-[700]">{cap.title}</p>
@@ -211,7 +211,7 @@ export default function Page() {
           </div>
           <div className="space-y-6">
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
-              <span className="text-blue-500">Innovating Engagement</span> for
+              <span className="text-yellow-500">Innovating Engagement</span> for
               the Future
             </h2>
             <p className="text-muted-foreground">
@@ -236,15 +236,15 @@ export default function Page() {
       <section className="py-20 bg-gray-50">
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           {/* Why Community Engagement Matters */}
-          <div className="bg-sky-100 shadow-lg rounded-2xl p-8 border border-gray-900/10">
-            <h2 className="text-4xl  font-bold mb-8 text-blue-700 border-b border-blue-700/20 pb-4">
+          <div className="bg-amber-100 shadow-lg rounded-2xl p-8 border border-gray-900/10">
+            <h2 className="text-4xl  font-bold mb-8 text-yellow-700 border-b border-yellow-700/20 pb-4">
               Why Community Engagement Matters
             </h2>
             <ul className="space-y-5 flex-grow">
               {reasonsMatters.map((reason, index) => (
                 <li key={index} className="flex items-start space-x-4 group">
-                  <div className="bg-blue-100 p-2 rounded-full ">
-                    <BadgeCheck className="w-6 h-6 text-blue-600" />
+                  <div className="bg-yellow-100 p-2 rounded-full ">
+                    <BadgeCheck className="w-6 h-6 text-yellow-600" />
                   </div>
                   <span className="text-lg text-gray-700 leading-relaxed">
                     {reason}

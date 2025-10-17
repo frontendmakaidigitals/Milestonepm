@@ -89,7 +89,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           SCCI Electric
         </h1>
       </div>
@@ -123,7 +123,7 @@ export default function ConstructionManagementPage() {
         <div className="container place-items-center grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
             <h1 className="text-4xl lg:text-5xl font-semibold">
-              What We <span className="text-blue-500">Do</span>
+              What We <span className="text-yellow-500">Do</span>
             </h1>
             <p className="mt-3 text-lg">
               We offer complete electrical contracting services, including
@@ -151,7 +151,7 @@ export default function ConstructionManagementPage() {
             transition={{ duration: 0.6 }}
             className="text-4xl lg:text-5xl font-bold mb-4"
           >
-            <span className="text-blue-500">Markets</span> We Serve
+            <span className="text-yellow-500">Markets</span> We Serve
           </motion.h2>
           <p className="text-gray-600">
             Empowering infrastructure across transportation and utility sectors.
@@ -184,7 +184,7 @@ export default function ConstructionManagementPage() {
 
                 {/* Text column */}
                 <div className={`${isEven ? "lg:order-1" : "lg:order-2"}`}>
-                  <h3 className="text-3xl text-sky-800 font-semibold mb-2">
+                  <h3 className="text-3xl text-amber-800 font-semibold mb-2">
                     {item.title}
                   </h3>
                   <p className="text-black/90 mb-4">{item.desc}</p>
@@ -205,9 +205,9 @@ export default function ConstructionManagementPage() {
         </div>
       </section>
 
-      <section className="bg-blue-50 py-16">
+      <section className="bg-yellow-50 py-16">
         <div className="container px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-blue-900 mb-12">
+          <h2 className="text-4xl lg:text-5xl font-bold text-center text-yellow-900 mb-12">
             Why Choose SCCI Electric?
           </h2>
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-4">
@@ -218,12 +218,12 @@ export default function ConstructionManagementPage() {
                   key={index}
                   whileHover={{ y: -6 }}
                   transition={{ type: "spring", stiffness: 100 }}
-                  className="bg-white rounded-2xl p-6 shadow-md border border-blue-100"
+                  className="bg-white rounded-2xl p-6 shadow-md border border-yellow-100"
                 >
-                  <div className="flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-800 rounded-full mb-4">
+                  <div className="flex items-center justify-center w-12 h-12 bg-yellow-100 text-yellow-800 rounded-full mb-4">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                  <h3 className="text-xl font-semibold text-yellow-900 mb-2">
                     {item.title}
                   </h3>
                   <p className="text-gray-700 text-sm">{item.description}</p>

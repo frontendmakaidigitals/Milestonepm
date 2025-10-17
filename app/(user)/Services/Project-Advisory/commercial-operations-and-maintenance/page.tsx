@@ -101,7 +101,7 @@ export default function Page() {
     {
       title: "Industry-Certified Teams",
       desc: "Deep technical knowledge and proven expertise across disciplines.",
-      icon: <Building2 className="w-10 h-10 text-blue-600" />,
+      icon: <Building2 className="w-10 h-10 text-yellow-600" />,
     },
     {
       title: "Technology-Driven Solutions",
@@ -127,7 +127,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Commercial Operations & Maintenance
         </h1>
       </div>
@@ -157,7 +157,7 @@ export default function Page() {
       </section>
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-blue-900 mb-14">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-yellow-900 mb-14">
             What We Deliver
           </h2>
 
@@ -173,7 +173,7 @@ export default function Page() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                  <h3 className="text-xl font-semibold text-yellow-900 mb-2">
                     {cat.title}
                   </h3>
                   <p className="text-gray-700 mb-4">{cat.desc}</p>

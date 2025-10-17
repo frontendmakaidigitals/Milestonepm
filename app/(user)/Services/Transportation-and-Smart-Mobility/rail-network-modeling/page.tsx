@@ -73,7 +73,7 @@ export default function Page() {
   ];
   const benefits = [
     {
-      icon: <BarChart3 className="w-8 h-8 text-blue-600" />,
+      icon: <BarChart3 className="w-8 h-8 text-yellow-600" />,
       title: "Evidence-Based Decision Making",
       desc: "Quantitative insights to guide infrastructure investments.",
     },
@@ -100,7 +100,7 @@ export default function Page() {
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-semibold">
-              <span className="bg-gradient-to-r from-blue-600 to-sky-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-600 to-amber-400 bg-clip-text text-transparent">
                 Rail Network
               </span>{" "}
               Modeling & Simulation Services
@@ -133,7 +133,7 @@ export default function Page() {
       <section className="py-16 px-6 max-w-7xl mx-auto">
         <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12">
           Our{" "}
-          <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400 bg-clip-text text-transparent">
             Rail Simulation
           </span>{" "}
           Tools & Capabilities
@@ -168,7 +168,7 @@ export default function Page() {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-12">
             Key Benefits of Our{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-600 via-indigo-500 to-purple-600 bg-clip-text text-transparent">
               Rail Modeling
             </span>{" "}
             Approach
@@ -194,7 +194,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-12">
             Why Choose{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-sky-500 to-sky-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-600 via-amber-500 to-amber-600 bg-clip-text text-transparent">
               Al Yusr
             </span>{" "}
             for Rail Network Simulation?
@@ -225,7 +225,7 @@ export default function Page() {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-12">
             Our{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-sky-500 to-sky-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-600 via-amber-500 to-amber-600 bg-clip-text text-transparent">
               Rail Network
             </span>{" "}
             Modeling Services
@@ -237,7 +237,7 @@ export default function Page() {
                 key={i}
                 className="flex items-start gap-3 p-5 bg-white rounded-2xl shadow hover:shadow-md transition"
               >
-                <BadgeCheck className="w-6 h-6 text-blue-600 shrink-0 mt-1" />
+                <BadgeCheck className="w-6 h-6 text-yellow-600 shrink-0 mt-1" />
                 <p className="text-lg font-medium">{service}</p>
               </div>
             ))}

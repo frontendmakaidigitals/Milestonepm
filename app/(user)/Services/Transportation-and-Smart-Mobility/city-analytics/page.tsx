@@ -87,7 +87,7 @@ export default function Page() {
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
               Data-Driven Planning for{" "}
-              <span className="text-blue-500">Smarter Cities</span>
+              <span className="text-yellow-500">Smarter Cities</span>
             </h1>
             <p>
               At Al Yusr Engineering Consulting, our City Analytics services
@@ -125,7 +125,7 @@ export default function Page() {
           <div className="w-full space-y-2">
             <h1 className="text-4xl lg:text-5xl font-[600]">
               Where <span className="text-green-500">Strategy</span> Meets{" "}
-              <span className="text-blue-500">Technology</span>
+              <span className="text-yellow-500">Technology</span>
             </h1>
             <p className="text-base leading-relaxed text-muted-foreground">
               We lead the way in applying analytics and simulation tools to
@@ -150,7 +150,7 @@ export default function Page() {
           {/* Heading */}
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
-              Our <span className="text-blue-500">Focus Areas</span>
+              Our <span className="text-yellow-500">Focus Areas</span>
             </h2>
           </div>
 
@@ -187,7 +187,7 @@ export default function Page() {
           {/* Heading */}
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
-              <span className="text-blue-500">Tools</span> We Use
+              <span className="text-yellow-500">Tools</span> We Use
             </h2>
           </div>
 
@@ -201,8 +201,8 @@ export default function Page() {
                   whileHover={{ y: -5 }}
                   className="bg-card rounded-2xl shadow-md p-8 border border-border flex flex-col items-center text-center space-y-4"
                 >
-                  <div className="w-14 h-14 bg-blue-100  rounded-full flex items-center justify-center">
-                    <Icon className="w-7 h-7 text-blue-500" />
+                  <div className="w-14 h-14 bg-yellow-100  rounded-full flex items-center justify-center">
+                    <Icon className="w-7 h-7 text-yellow-500" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground">
                     {tool.title}

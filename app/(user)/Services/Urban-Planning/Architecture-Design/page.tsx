@@ -31,7 +31,7 @@ export default function Page() {
   const sectors = [
     {
       label: "Civic & Government",
-      icon: <Landmark className="w-6 h-6 text-blue-600" />,
+      icon: <Landmark className="w-6 h-6 text-yellow-600" />,
     },
     {
       label: "Commercial & Residential",
@@ -119,7 +119,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Architecture
         </h1>
       </div>
@@ -133,11 +133,11 @@ export default function Page() {
         />
       </section>
 
-      <section className="py-20 bg-sky-50">
+      <section className="py-20 bg-amber-50">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div>
             {" "}
-            <h1 className="text-4xl lg:text-5xl font-[600] text-sky-800">
+            <h1 className="text-4xl lg:text-5xl font-[600] text-amber-800">
               Design with Purpose
             </h1>
             <p className="mt-4">
@@ -171,7 +171,7 @@ export default function Page() {
         <div className="container py-12">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-              <span className="text-blue-500">Our Capabilities</span> at a
+              <span className="text-yellow-500">Our Capabilities</span> at a
               Glance
             </h2>
             <p className="text-lg text-gray-700 mt-4">
@@ -185,7 +185,7 @@ export default function Page() {
             {capabilities.map((item, index) => (
               <div
                 key={index}
-                className="flex items-start gap-4 bg-sky-50 rounded-xl shadow-sm p-5 border border-sky-200 "
+                className="flex items-start gap-4 bg-amber-50 rounded-xl shadow-sm p-5 border border-amber-200 "
               >
                 <BadgeCheck className="w-6 h-6 text-green-600 mt-1" />
                 <span className="text-gray-800 text-base font-medium">
@@ -218,7 +218,7 @@ export default function Page() {
 
               {/* Content */}
               <div className="w-full lg:w-1/2 space-y-6">
-                <h3 className="text-4xl max-w-md font-bold text-sky-700">
+                <h3 className="text-4xl max-w-md font-bold text-amber-700">
                   {section.title}
                 </h3>
                 <p className="text-lg text-gray-700">{section.description}</p>
@@ -239,7 +239,7 @@ export default function Page() {
       <section className="py-16 bg-gray-50">
         <div className="container max-w-6xl">
           <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-4">
-            Where <span className="text-blue-500">We Work</span>
+            Where <span className="text-yellow-500">We Work</span>
           </h2>
           <p className="text-gray-600  text-center mb-10">
             Our architectural portfolio spans a wide range of sectors,
@@ -267,7 +267,7 @@ export default function Page() {
       <section className="py-16 bg-white">
         <div className="max-w-3xl container text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-            Why Choose <span className="text-blue-600">Al Yusr</span> for
+            Why Choose <span className="text-yellow-600">Al Yusr</span> for
             Architecture?
           </h2>
         </div>

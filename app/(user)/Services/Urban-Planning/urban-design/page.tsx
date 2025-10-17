@@ -46,7 +46,7 @@ export default function ConstructionManagementPage() {
     {
       title: "Design Guidelines & Urban Policies",
       desc: "Developing regulatory frameworks that ensure consistent, high-quality development.",
-      icon: <Sparkle className="w-8 h-8 text-blue-600" />,
+      icon: <Sparkle className="w-8 h-8 text-yellow-600" />,
     },
     {
       title: "Sustainable Urban Infrastructure",
@@ -90,7 +90,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Urban Design Services
         </h1>
       </div>
@@ -141,7 +141,7 @@ export default function ConstructionManagementPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
-              Our <span className="text-blue-500">Urban Services</span>
+              Our <span className="text-yellow-500">Urban Services</span>
             </h2>
             <p className="text-gray-600 text-lg">
               Building vibrant, inclusive, and forward-looking cities
@@ -154,9 +154,9 @@ export default function ConstructionManagementPage() {
               return (
                 <div
                   key={index}
-                  className="bg-blue-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition-all h-full"
+                  className="bg-yellow-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition-all h-full"
                 >
-                  <div className="flex items-center justify-center w-14 h-14 bg-blue-100 text-blue-600 rounded-full mb-4">
+                  <div className="flex items-center justify-center w-14 h-14 bg-yellow-100 text-yellow-600 rounded-full mb-4">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -174,7 +174,7 @@ export default function ConstructionManagementPage() {
       <section className="bg-white py-20">
         <div className="container text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-10">
-            <span className="text-blue-500">Specialized</span> Capabilities
+            <span className="text-yellow-500">Specialized</span> Capabilities
           </h2>
           <div className="grid gap-10 grid-cols-1 lg:grid-cols-4">
             {capabilities.map((item, index) => (
@@ -195,7 +195,7 @@ export default function ConstructionManagementPage() {
       <section className="bg-white py-20 px-4">
         <div className=" container text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold">
-            Why <span className="text-blue-500">Choose</span> Al Yusr for{" "}
+            Why <span className="text-yellow-500">Choose</span> Al Yusr for{" "}
             <span className="text-green-500">Urban Design</span>
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">

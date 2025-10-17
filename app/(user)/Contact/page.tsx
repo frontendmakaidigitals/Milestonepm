@@ -24,7 +24,7 @@ const Contact = () => {
     {
       country: "United Kingdom",
       city: "London Office",
-      email: "uk@alyusr.com.sa",
+      email: "uk@Milestonepm.com.sa",
       flag: "/contact-flags/uk.webp",
       bg: "#E8EAF6", // indigo 50
       text: "#1A237E", // indigo 900
@@ -32,7 +32,7 @@ const Contact = () => {
     {
       country: "Sri Lanka",
       city: "Colombo Office",
-      email: "srilanka@alyusr.com.sa",
+      email: "srilanka@Milestonepm.com.sa",
       flag: "/contact-flags/srilanka.webp",
       bg: "#FFF8E1", // amber 50
       text: "#FF6F00", // amber 900
@@ -40,7 +40,7 @@ const Contact = () => {
     {
       country: "Egypt",
       city: "Cairo Office",
-      email: "egypt@alyusr.com.sa",
+      email: "egypt@Milestonepm.com.sa",
       flag: "/contact-flags/egypt.webp",
       bg: "#FFEBEE", // red 50
       text: "#B71C1C", // red 900
@@ -184,7 +184,7 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="bg-white/70 backdrop-blur-xl border border-slate-200 shadow-xl p-10 rounded-2xl space-y-6"
           >
-            <h2 className="text-3xl font-bold text-slate-800 mb-4 border-l-4 border-blue-500 pl-3">
+            <h2 className="text-3xl font-bold text-slate-800 mb-4 border-l-4 border-yellow-500 pl-3">
               Enquiry Form
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -196,7 +196,7 @@ const Contact = () => {
                   value={form.firstName}
                   onChange={handleChange}
                   placeholder="First Name"
-                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-blue-500"
+                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-yellow-500"
                 />
               </div>
               <div>
@@ -206,7 +206,7 @@ const Contact = () => {
                   value={form.lastName}
                   onChange={handleChange}
                   placeholder="Last Name"
-                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-blue-500"
+                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-yellow-500"
                 />
               </div>
             </div>
@@ -219,7 +219,7 @@ const Contact = () => {
                   value={form.email}
                   onChange={handleChange}
                   placeholder="Email"
-                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-blue-500"
+                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-yellow-500"
                 />
               </div>
               <div>
@@ -230,7 +230,7 @@ const Contact = () => {
                   value={form.phone}
                   onChange={handleChange}
                   placeholder="phone"
-                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-blue-500"
+                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-yellow-500"
                 />
               </div>
             </div>
@@ -243,7 +243,7 @@ const Contact = () => {
                   value={form.company}
                   onChange={handleChange}
                   placeholder="Company"
-                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-blue-500"
+                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-yellow-500"
                 />
               </div>
               <div>
@@ -296,7 +296,7 @@ const Contact = () => {
               <Label>Message</Label>
               <Textarea
                 rows={6}
-                className="resize-none mt-2 bg-slate-50 h-32 focus:ring-2 focus:ring-blue-500"
+                className="resize-none mt-2 bg-slate-50 h-32 focus:ring-2 focus:ring-yellow-500"
               />
             </div>
             <Button
@@ -304,7 +304,7 @@ const Contact = () => {
               variant="default"
               size="lg"
               disabled={loading}
-              className={`w-full bg-gradient-to-br from-blue-500 to-blue-700 text-white font-semibold rounded-xl shadow-lg hover:scale-[1.02] transition ${
+              className={`w-full bg-gradient-to-br from-yellow-500 to-yellow-700 text-white font-semibold rounded-xl shadow-lg hover:scale-[1.02] transition ${
                 loading ? "opacity-70 cursor-not-allowed" : ""
               }`}
             >
@@ -347,12 +347,13 @@ const Contact = () => {
           className="space-y-14 text-slate-900"
         >
           <div>
-            <h3 className="text-2xl flex items-center gap-2 font-semibold mb-3 text-sky-800">
-              <MapPinned className="text-sky-800" /> Head Office – Saudi Arabia
+            <h3 className="text-2xl flex items-center gap-2 font-semibold mb-3 text-amber-800">
+              <MapPinned className="text-amber-800" /> Head Office – Saudi
+              Arabia
             </h3>
             <p className="text-slate-700 leading-relaxed">
               <span className="font-semibold block">
-                ALYUSR Engineering Consulting
+                Milestonepm Engineering Consulting
               </span>
               Al Rawdah District, King Abdullah Road
               <br />
@@ -360,20 +361,21 @@ const Contact = () => {
             </p>
             <div className="mt-4 space-y-2 text-slate-800">
               <p className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-blue-500" /> +966 11 494 4444
+                <Phone className="w-4 h-4 text-yellow-500" /> +966 11 494 4444
               </p>
               <p className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-blue-500" /> Fax: +966 11 494
+                <MapPin className="w-4 h-4 text-yellow-500" /> Fax: +966 11 494
                 4440
               </p>
               <p className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-blue-500" /> info@alyusr.com.sa
+                <Mail className="w-4 h-4 text-yellow-500" />{" "}
+                info@Milestonepm.com.sa
               </p>
             </div>
           </div>
 
           <div>
-            <h3 className="text-2xl font-semibold flex items-center gap-2 mb-5 text-sky-800">
+            <h3 className="text-2xl font-semibold flex items-center gap-2 mb-5 text-amber-800">
               <Earth />
               International Offices
             </h3>

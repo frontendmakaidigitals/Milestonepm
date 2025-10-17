@@ -85,7 +85,7 @@ export default function Page() {
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
-              <span className="text-blue-500">EHS Management</span> Consulting
+              <span className="text-yellow-500">EHS Management</span> Consulting
             </h1>
             <p>
               At Al Yusr, we understand that protecting people and the
@@ -130,7 +130,7 @@ export default function Page() {
           {/* Right Content */}
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Our <span className="text-blue-600">Approach</span>
+              Our <span className="text-yellow-600">Approach</span>
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We offer practical, and cost-effective EHS solutions across
@@ -152,10 +152,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-white via-blue-50 to-white">
+      <section className="py-20 bg-gradient-to-br from-white via-yellow-50 to-white">
         <div className="container mx-auto ">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center">
-            What <span className="text-blue-600">Sets Us Apart</span>
+            What <span className="text-yellow-600">Sets Us Apart</span>
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
@@ -165,7 +165,7 @@ export default function Page() {
                 className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition"
               >
                 <div className=" gap-4">
-                  <div className="w-fit mb-5 p-3 bg-blue-100 rounded-xl text-blue-600">
+                  <div className="w-fit mb-5 p-3 bg-yellow-100 rounded-xl text-yellow-600">
                     <item.icon className="w-10 h-10" />
                   </div>
                   <div>
@@ -184,7 +184,7 @@ export default function Page() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 text-center">
-            Our <span className="text-blue-600">Services</span>
+            Our <span className="text-yellow-600">Services</span>
           </h2>
           <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
             We offer end-to-end EHS consulting support across the following key

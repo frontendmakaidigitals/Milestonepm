@@ -213,14 +213,14 @@ export default function Page() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <h2 className="text-4xl lg:text-5xl text-center mx-auto font-bold text-gray-900 mb-6">
-            Why Choose <span className="text-blue-600">Al Yusr</span> for Air
+            Why Choose <span className="text-yellow-600">Al Yusr</span> for Air
             Quality Assessment?
           </h2>
           <ul className="grid md:grid-cols-2 gap-6">
             {points.map((point, idx) => (
               <li
                 key={idx}
-                className="flex items-start bg-blue-50 p-4 rounded-lg gap-3"
+                className="flex items-start bg-yellow-50 p-4 rounded-lg gap-3"
               >
                 <span>
                   <BadgeCheck className="fill-green-500 text-white w-6 h-6  mt-1" />

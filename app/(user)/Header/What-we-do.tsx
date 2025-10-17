@@ -22,7 +22,7 @@ const WhatWeDo = ({ data, locationsData, onNavigate }: dataProps) => {
         <div className="flex flex-col lg:flex-row items-start gap-8">
           {data.map((service, idx) => (
             <ul key={idx} className="space-y-2 mt-2">
-              <h3 className="font-[500] text-blue-300 whitespace-nowrap">
+              <h3 className="font-[500] text-yellow-300 whitespace-nowrap">
                 {service.label}
               </h3>
               <div className="space-y-3">
@@ -59,7 +59,7 @@ const WhatWeDo = ({ data, locationsData, onNavigate }: dataProps) => {
        <div className="w-[280px] h-[420px] relative">
         <Link
           href={"/Services"}
-          className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-blue-500 text-white px-3 py-[.4rem] rounded-full text-xs border border-black"
+          className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-yellow-500 text-white px-3 py-[.4rem] rounded-full text-xs border border-black"
         >
           View All Services
         </Link>

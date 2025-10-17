@@ -44,27 +44,27 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/saudi-vision/banner.webp"
-          alt="ALYUSR Engineering Hero Background"
+          alt="Milestonepm Engineering Hero Background"
         />
       </motion.div>
       <section className="min-h-[85vh] py-20 lg:py-0 overflow-hidden relative">
         {/* Background image */}
         <BgLayer />
         {/* Left gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-sky-100/30 via-sky-200/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-100/30 via-amber-200/40 to-transparent" />
 
         {/* Container with text */}
         <div className="relative z-10 min-h-[85vh] flex flex-col h-full justify-center items-center">
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
               <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter  mb-4">
-                <span className="text-blue-500">Engineering</span> the Future of{" "}
-                <span className="text-teal-600">Saudi Arabia</span>
+                <span className="text-yellow-500">Engineering</span> the Future
+                of <span className="text-teal-600">Saudi Arabia</span>
               </h1>
               <p className="text-lg text-gray-700">
-                At ALYUSR Engineering Consulting, we are proud to play a vital
-                role in shaping the Kingdom’s bold transformation under Saudi
-                Vision 2030. Our work is rooted in national priorities,
+                At Milestonepm Engineering Consulting, we are proud to play a
+                vital role in shaping the Kingdom’s bold transformation under
+                Saudi Vision 2030. Our work is rooted in national priorities,
                 sustainable development, urban expansion, infrastructure
                 excellence, and economic diversification. <br /> As a Class A
                 certified firm, we are trusted partners on projects that define
@@ -75,7 +75,7 @@ export default function Page() {
 
               <Link
                 href={"/Contact"}
-                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#387EF0] to-[#2651C2] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
+                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
               >
                 Discover Our Story <ArrowUpRight />
               </Link>
@@ -100,7 +100,7 @@ export default function Page() {
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6"
           >
-            Building the <span className="text-blue-500">Kingdom</span> of
+            Building the <span className="text-yellow-500">Kingdom</span> of
             Tomorrow
           </motion.h2>
           <p className="text-gray-600 mb-12">
@@ -131,10 +131,10 @@ export default function Page() {
                 initial={{ opacity: 0, y: 20 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.2 }}
-                className="bg-white rounded-xl shadow-md border border-blue-100 hover:shadow-lg transition overflow-hidden"
+                className="bg-white rounded-xl shadow-md border border-yellow-100 hover:shadow-lg transition overflow-hidden"
               >
-                {/* Top blue accent bar */}
-                <div className="h-1 w-full bg-blue-500" />
+                {/* Top yellow accent bar */}
+                <div className="h-1 w-full bg-yellow-500" />
 
                 {/* Image */}
                 <div className="relative w-full h-[240px] mb-4">
@@ -155,7 +155,7 @@ export default function Page() {
       </section>
 
       {/* Contribution Section */}
-      <section className="relative bg-gradient-to-br from-white via-blue-50 to-white py-24 px-6 lg:px-24">
+      <section className="relative bg-gradient-to-br from-white via-yellow-50 to-white py-24 px-6 lg:px-24">
         <div className="max-w-6xl mx-auto text-center">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -164,7 +164,7 @@ export default function Page() {
             transition={{ duration: 0.5 }}
             className="text-4xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-14"
           >
-            Our <span className="text-blue-500">Contribution</span> to{" "}
+            Our <span className="text-yellow-500">Contribution</span> to{" "}
             <span>Vision 2030</span>
           </motion.h2>
 
@@ -195,7 +195,7 @@ export default function Page() {
                     transition={{ type: "spring", stiffness: 300 }}
                     className="flex items-start gap-4 p-4 rounded-xl bg-white shadow-sm hover:shadow-md"
                   >
-                    <CheckCircle className="text-blue-600 mt-1" size={22} />
+                    <CheckCircle className="text-yellow-600 mt-1" size={22} />
                     <span>{text}</span>
                   </motion.li>
                 ))}
@@ -218,10 +218,11 @@ export default function Page() {
             Local Roots, Global Vision
           </h2>
           <p className="text-gray-600 text-lg">
-            With headquarters in Riyadh and projects across the Kingdom, ALYUSR
-            unites local expertise and global standards to deliver world-class
-            outcomes. Our team of architects, planners, engineers, and advisors
-            is dedicated to engineering a sustainable, smart, and strong nation.
+            With headquarters in Riyadh and projects across the Kingdom,
+            Milestonepm unites local expertise and global standards to deliver
+            world-class outcomes. Our team of architects, planners, engineers,
+            and advisors is dedicated to engineering a sustainable, smart, and
+            strong nation.
           </p>
         </motion.div>
         <div className="w-full h-[400px]">

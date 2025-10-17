@@ -11,6 +11,7 @@ import EngineeringCTA from "@/app/(user)/app_chunks/CTA";
 import BgLayer from "../../app_chunks/BgLayer";
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
+import Link from "next/link";
 export default function Page() {
   const [sectionTop, setSectionTop] = useState(0);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -49,26 +50,26 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="https://images.pexels.com/photos/7942430/pexels-photo-7942430.jpeg"
-          alt="ALYUSR Engineering Hero Background"
+          alt="Milestonepm Engineering Hero Background"
         />
       </motion.div>
       <section className="min-h-[85vh] py-20 lg:py-0 overflow-hidden relative">
         {/* Background image */}
 
         {/* Left gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-sky-100/30 via-sky-200/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-100/30 via-amber-200/40 to-transparent" />
 
         {/* Container with text */}
         <div className="relative z-10 min-h-[85vh] flex flex-col h-full justify-center items-center">
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
               <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter  mb-4">
-                Our <span className="text-blue-500">Global</span> Standards &
+                Our <span className="text-yellow-500">Global</span> Standards &
                 Accreditations
               </h1>
               <p className="text-lg text-gray-700">
-                At ALYUSR Engineering Consulting, certifications are more than
-                just credentials; they reflect our ongoing commitment to
+                At Milestonepm Engineering Consulting, certifications are more
+                than just credentials; they reflect our ongoing commitment to
                 delivering high-quality, safe, and sustainable engineering
                 solutions. We proudly meet both national and international
                 standards, ensuring that every project we take on is executed
@@ -77,7 +78,7 @@ export default function Page() {
 
               <Link
                 href={"/Contact"}
-                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#387EF0] to-[#2651C2] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
+                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
               >
                 Discover Our Story <ArrowUpRight />
               </Link>
@@ -96,13 +97,13 @@ export default function Page() {
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto  grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-sky-800 mb-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-amber-800 mb-4">
               Class A Certificate: Engineering Excellence Recognized Nationally
             </h2>
             <p className="text-gray-700 mb-4">
-              ALYUSR holds the prestigious Class A Certificate in engineering
-              consultancy, a top-tier classification issued by regulatory
-              authorities in Saudi Arabia.
+              Milestonepm holds the prestigious Class A Certificate in
+              engineering consultancy, a top-tier classification issued by
+              regulatory authorities in Saudi Arabia.
             </p>
             <p className="text-gray-700 mb-6">
               This certification confirms our capability to handle large-scale,
@@ -118,7 +119,7 @@ export default function Page() {
                 "Full compliance with national engineering codes and regulations",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <BadgeCheck className="w-5 h-5 text-sky-600 mt-1" />
+                  <BadgeCheck className="w-5 h-5 text-amber-600 mt-1" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -135,10 +136,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-sky-50">
+      <section className="py-20 px-6 bg-amber-50">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12">
-            International <span className="text-blue-600">ISO</span>{" "}
+            International <span className="text-yellow-600">ISO</span>{" "}
             Certifications
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -181,7 +182,7 @@ export default function Page() {
                   />
                 </div>
                 <div className="p-5">
-                  <h3 className="text-xl font-bold text-sky-700 mb-1">
+                  <h3 className="text-xl font-bold text-amber-700 mb-1">
                     {iso.label}
                   </h3>
                   <p className="text-gray-600 ">{iso.desc}</p>
@@ -195,7 +196,7 @@ export default function Page() {
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12">
-            <span className="text-blue-500">Global</span> Memberships &
+            <span className="text-yellow-500">Global</span> Memberships &
             Registrations
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -206,12 +207,12 @@ export default function Page() {
                 desc: "Supporting sustainable building and green design practices",
               },
               {
-                icon: <Globe className="w-12 h-12 text-blue-600" />,
+                icon: <Globe className="w-12 h-12 text-yellow-600" />,
                 title: "ISOCARP Member",
                 desc: "Active in global urban planning dialogue and innovation",
               },
               {
-                icon: <BadgeCheck className="w-12 h-12 text-sky-600" />,
+                icon: <BadgeCheck className="w-12 h-12 text-amber-600" />,
                 title: "D-U-N-S Registered™",
                 desc: "Trusted identity verified by Dun & Bradstreet",
               },
@@ -223,7 +224,7 @@ export default function Page() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-sky-50 border border-sky-100 p-6 rounded-xl shadow-sm hover:shadow-md transition"
+                className="bg-amber-50 border border-amber-100 p-6 rounded-xl shadow-sm hover:shadow-md transition"
               >
                 <div className="  mb-6">{item.icon}</div>
                 <h3 className="text-lg font-semibold text-gray-800">

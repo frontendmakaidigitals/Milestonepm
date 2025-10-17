@@ -120,7 +120,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container   my-10">
-        <h1 className="text-4xl max-w-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl max-w-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Tunnels & Underground Infrastructure
         </h1>
       </div>
@@ -154,7 +154,7 @@ export default function ConstructionManagementPage() {
       <section className="py-24 container space-y-20">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            What We <span className="text-blue-500">Do</span>
+            What We <span className="text-yellow-500">Do</span>
           </h2>
           <p className="text-gray-700 text-lg">
             We offer services across the tunnel lifecycle, from early-stage
@@ -188,7 +188,7 @@ export default function ConstructionManagementPage() {
 
               {/* Content */}
               <div className={`${isEven ? "order-2" : "order-2 lg:order-1"}`}>
-                <h3 className="text-4xl font-semibold text-sky-800 mb-4">
+                <h3 className="text-4xl font-semibold text-amber-800 mb-4">
                   {item.title}
                 </h3>
                 <p className="text-gray-800 mb-4">{item.desc}</p>
@@ -208,9 +208,9 @@ export default function ConstructionManagementPage() {
         })}
       </section>
 
-      <section className="bg-blue-50 py-16">
+      <section className="bg-yellow-50 py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-blue-900 mb-12">
+          <h2 className="text-4xl lg:text-5xl font-bold text-center text-yellow-900 mb-12">
             Why Choose Al Yusr?
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -221,12 +221,12 @@ export default function ConstructionManagementPage() {
                   key={index}
                   whileHover={{ y: -6 }}
                   transition={{ type: "spring", stiffness: 100 }}
-                  className="bg-white rounded-2xl p-6 shadow-md border border-blue-100"
+                  className="bg-white rounded-2xl p-6 shadow-md border border-yellow-100"
                 >
-                  <div className="flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-800 rounded-full mb-4">
+                  <div className="flex items-center justify-center w-12 h-12 bg-yellow-100 text-yellow-800 rounded-full mb-4">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                  <h3 className="text-xl font-semibold text-yellow-900 mb-2">
                     {item.title}
                   </h3>
                   <p className="text-gray-700 text-sm">{item.description}</p>

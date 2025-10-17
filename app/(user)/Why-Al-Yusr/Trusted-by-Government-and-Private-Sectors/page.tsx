@@ -81,7 +81,7 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/why/govt-sector-hero.jpeg"
-          alt="ALYUSR Engineering Hero Background"
+          alt="Milestonepm Engineering Hero Background"
         />
       </motion.div>
 
@@ -89,11 +89,11 @@ export default function Page() {
       <div className="relative z-10 min-h-[85vh] py-20 lg:py-0 flex flex-col h-full justify-center items-center">
         <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
           <div className="max-w-2xl">
-            <h1 className="text-4xl lg:text-5xl font-semibold text-sky-800 leading-tighter mb-4">
+            <h1 className="text-4xl lg:text-5xl font-semibold text-amber-800 leading-tighter mb-4">
               Government and Private Sector Approved
             </h1>
             <p className="text-lg text-gray-700">
-              For over a decade, ALYUSR Engineering Consulting has been a
+              For over a decade, Milestonepm Engineering Consulting has been a
               trusted partner to some of the most prominent government entities,
               developers, and private organizations in the Kingdom of Saudi
               Arabia and beyond.
@@ -105,7 +105,7 @@ export default function Page() {
               high-impact private developments, and strategic consulting.
             </p>
 
-            <button className="mt-6 bg-gradient-to-br flex justify-center items-center gap-3 from-[#387EF0] to-[#2651C2] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition">
+            <button className="mt-6 bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition">
               Discover Our Story <ArrowUpRight />
             </button>
           </div>
@@ -121,7 +121,7 @@ export default function Page() {
       </div>
 
       {/* CERTIFICATIONS LIST */}
-      <section className="bg-gradient-to-b from-white via-sky-50 to-white py-24 lg:px-6">
+      <section className="bg-gradient-to-b from-white via-amber-50 to-white py-24 lg:px-6">
         <div className="container max-w-6xl mx-auto">
           {/* HEADLINE */}
           <div className="text-center mb-20">
@@ -129,7 +129,7 @@ export default function Page() {
               Trusted by Public & Private Sectors Alike
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              ALYUSR delivers excellence to both government authorities and
+              Milestonepm delivers excellence to both government authorities and
               leading private developers — united by a commitment to compliance,
               innovation, and results.
             </p>
@@ -139,8 +139,8 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-12 mb-16">
             <div className="bg-gradient-to-br from-yellow-50 via-amber-100 to-white border border-yellow-200 rounded-2xl p-8 shadow-md hover:shadow-xl transition">
               <div className="flex items-center gap-3 mb-4">
-                <Landmark className="w-6 h-6 text-sky-700" />
-                <h3 className="text-xl font-semibold text-sky-800">
+                <Landmark className="w-6 h-6 text-amber-700" />
+                <h3 className="text-xl font-semibold text-amber-800">
                   Preferred by Government Authorities
                 </h3>
               </div>
@@ -151,20 +151,20 @@ export default function Page() {
               </p>
               <ul className="space-y-3 text-gray-600 text-sm pl-1">
                 <li className="flex items-start gap-2">
-                  <ShieldCheck className="w-4 h-4 mt-1 text-sky-600" />
+                  <ShieldCheck className="w-4 h-4 mt-1 text-amber-600" />
                   Transparent processes and compliance with Saudi building codes
                 </li>
                 <li className="flex items-start gap-2">
-                  <Timer className="w-4 h-4 mt-1 text-sky-600" />
+                  <Timer className="w-4 h-4 mt-1 text-amber-600" />
                   Timely project delivery aligned with national priorities
                 </li>
                 <li className="flex items-start gap-2">
-                  <ClipboardList className="w-4 h-4 mt-1 text-sky-600" />
+                  <ClipboardList className="w-4 h-4 mt-1 text-amber-600" />
                   Experience with permitting, code approvals, and regulatory
                   frameworks
                 </li>
                 <li className="flex items-start gap-2">
-                  <Eye className="w-4 h-4 mt-1 text-sky-600" />
+                  <Eye className="w-4 h-4 mt-1 text-amber-600" />
                   Deep understanding of Vision 2030 objectives and governance
                   models
                 </li>
@@ -181,35 +181,37 @@ export default function Page() {
               </div>
               <p className="text-gray-700 mb-4">
                 From real estate and hospitality to industrial and commercial
-                sectors, ALYUSR delivers solutions to some of the region’s most
-                ambitious private ventures.
+                sectors, Milestonepm delivers solutions to some of the region’s
+                most ambitious private ventures.
               </p>
               <ul className="space-y-3 text-gray-600 text-sm pl-1">
                 <li className="flex items-start gap-2">
-                  <Users className="w-4 h-4 mt-1 text-sky-600" />
+                  <Users className="w-4 h-4 mt-1 text-amber-600" />
                   Agile project coordination and technical expertise
                 </li>
                 <li className="flex items-start gap-2">
-                  <DollarSign className="w-4 h-4 mt-1 text-sky-600" />
+                  <DollarSign className="w-4 h-4 mt-1 text-amber-600" />
                   Value engineering and cost-effective designs
                 </li>
                 <li className="flex items-start gap-2">
-                  <Cpu className="w-4 h-4 mt-1 text-sky-600" />
+                  <Cpu className="w-4 h-4 mt-1 text-amber-600" />
                   Integration of smart technologies and sustainability practices
                 </li>
                 <li className="flex items-start gap-2">
-                  <Repeat className="w-4 h-4 mt-1 text-sky-600" />
+                  <Repeat className="w-4 h-4 mt-1 text-amber-600" />
                   Full lifecycle consulting, from feasibility to handover
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* WHY CLIENTS CHOOSE ALYUSR */}
+          {/* WHY CLIENTS CHOOSE Milestonepm */}
           <div className="text-center mb-12">
             <h3 className="text-4xl lg:text-5xl font-semibold text-gray-800 mb-4">
               Why Public & Private{" "}
-              <span className="text-blue-500">Clients Choose ALYUSR</span>
+              <span className="text-yellow-500">
+                Clients Choose Milestonepm
+              </span>
             </h3>
           </div>
 
@@ -245,8 +247,8 @@ export default function Page() {
                   key={i}
                   className="group md:basis-1/2 !p-0 lg:basis-1/3 bg-slate-300 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all"
                 >
-                  <div className="group border bg-blue-500 border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
-                    <div className="relative h-[300px] w-full bg-sky-100">
+                  <div className="group border bg-yellow-500 border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                    <div className="relative h-[300px] w-full bg-amber-100">
                       <Image
                         src={point.img}
                         alt={point.title}
@@ -255,7 +257,7 @@ export default function Page() {
                       />
                     </div>
                     <div className="p-5">
-                      <p className="text-center  text-gray-50 text-sm font-semibold group-hover:text-sky-50 transition-colors duration-300">
+                      <p className="text-center  text-gray-50 text-sm font-semibold group-hover:text-amber-50 transition-colors duration-300">
                         {point.title}
                       </p>
                     </div>
@@ -269,14 +271,14 @@ export default function Page() {
             <button
               disabled={!canScrollPrev}
               onClick={() => api?.scrollPrev()}
-              className="bg-blue-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
+              className="bg-yellow-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
             >
               <ArrowLeft />
             </button>
             <button
               disabled={!canScrollNext}
               onClick={() => api?.scrollNext()}
-              className="bg-blue-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
+              className="bg-yellow-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
             >
               <ArrowRight />
             </button>

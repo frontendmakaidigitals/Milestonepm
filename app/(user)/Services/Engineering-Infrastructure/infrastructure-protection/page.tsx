@@ -22,63 +22,63 @@ export default function ConstructionManagementPage() {
   const sectors = [
     {
       title: "Government Ministries & Municipalities",
-      icon: <Building2 className="w-10 h-10 text-sky-600" />,
+      icon: <Building2 className="w-10 h-10 text-amber-600" />,
     },
     {
       title: "Airports, Ports & Transportation Systems",
-      icon: <Plane className="w-10 h-10 text-sky-600" />,
+      icon: <Plane className="w-10 h-10 text-amber-600" />,
     },
     {
       title: "Energy & Utility Providers",
-      icon: <Lightbulb className="w-10 h-10 text-sky-600" />,
+      icon: <Lightbulb className="w-10 h-10 text-amber-600" />,
     },
     {
       title: "Water & Wastewater Infrastructure",
-      icon: <Droplet className="w-10 h-10 text-sky-600" />,
+      icon: <Droplet className="w-10 h-10 text-amber-600" />,
     },
     {
       title: "Healthcare & Public Institutions",
-      icon: <HeartPulse className="w-10 h-10 text-sky-600" />,
+      icon: <HeartPulse className="w-10 h-10 text-amber-600" />,
     },
     {
       title: "Data Centers & Communication Networks",
-      icon: <Server className="w-10 h-10 text-sky-600" />,
+      icon: <Server className="w-10 h-10 text-amber-600" />,
     },
     {
       title: "Industrial & Petrochemical Facilities",
-      icon: <Factory className="w-10 h-10 text-sky-600" />,
+      icon: <Factory className="w-10 h-10 text-amber-600" />,
     },
   ];
   const expertiseData = [
     {
       title: "Cybersecurity & Information Protection",
       desc: "We develop comprehensive cyber defense strategies for operational technology (OT) and information systems, protecting networks from unauthorized access, disruption, and data loss. Our cybersecurity experts work closely with our engineers and planners to ensure secure-by-design infrastructure.",
-      icon: <Lock className="w-10 h-10 text-sky-600" />,
+      icon: <Lock className="w-10 h-10 text-amber-600" />,
     },
     {
       title: "Physical Security Planning & Design",
       desc: "From secure perimeters to intrusion detection systems, we design layered physical protection systems for facilities, transport systems, and high-value assets. This includes threat assessment, access control design, and blast mitigation solutions.",
-      icon: <Shield className="w-10 h-10 text-sky-600" />,
+      icon: <Shield className="w-10 h-10 text-amber-600" />,
     },
     {
       title: "Risk Assessment & Threat Modeling",
       desc: "We conduct vulnerability analyses and risk evaluations to identify critical weaknesses in infrastructure systems. Using simulation, GIS tools, and scenario planning, we help prioritize investments and mitigation strategies.",
-      icon: <AlertTriangle className="w-10 h-10 text-sky-600" />,
+      icon: <AlertTriangle className="w-10 h-10 text-amber-600" />,
     },
     {
       title: "Resilience Planning & Business Continuity",
       desc: "We prepare organizations to withstand and recover from disruptive events, whether cyber breaches, power outages, or geopolitical incidents. Our plans emphasize continuity of operations, emergency response, and post-event recovery protocols.",
-      icon: <RefreshCcw className="w-10 h-10 text-sky-600" />,
+      icon: <RefreshCcw className="w-10 h-10 text-amber-600" />,
     },
     {
       title: "Integrated Systems & Smart Monitoring",
       desc: "Using smart technologies and integrated platforms, we design real-time monitoring and response systems that support situational awareness, early warning, and coordinated command and control operations.",
-      icon: <MonitorSmartphone className="w-10 h-10 text-sky-600" />,
+      icon: <MonitorSmartphone className="w-10 h-10 text-amber-600" />,
     },
     {
       title: "Governance, Policy & Compliance",
       desc: "We help clients navigate regulatory frameworks and implement effective governance structures for security and resilience. Our strategies align with local, national, and international standards (e.g., NIST, ISO, SAMA, Vision 2030).",
-      icon: <FileCheck className="w-10 h-10 text-sky-600" />,
+      icon: <FileCheck className="w-10 h-10 text-amber-600" />,
     },
   ];
   const reasons = [
@@ -91,7 +91,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Critical Infrastructure Protection
         </h1>
       </div>
@@ -110,7 +110,7 @@ export default function ConstructionManagementPage() {
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Section */}
           <div className="order-2 lg:order-1">
-            <h2 className="text-3xl lg:text-5xl font-bold text-sky-800 mb-6">
+            <h2 className="text-3xl lg:text-5xl font-bold text-amber-800 mb-6">
               Securing the Foundations of Modern Life
             </h2>
             <p className="text-gray-700 text-lg mb-4 leading-relaxed">
@@ -155,7 +155,7 @@ export default function ConstructionManagementPage() {
 
           {/* Text Section */}
           <div className="order-2">
-            <h2 className="text-3xl lg:text-5xl font-bold text-sky-800 mb-6">
+            <h2 className="text-3xl lg:text-5xl font-bold text-amber-800 mb-6">
               A Converged Approach to Resilience
             </h2>
             <p className="text-gray-700 text-lg mb-4 leading-relaxed">
@@ -177,7 +177,7 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto">
-          <h2 className="text-3xl lg:text-5xl font-bold text-sky-800 mb-12 text-center">
+          <h2 className="text-3xl lg:text-5xl font-bold text-amber-800 mb-12 text-center">
             Our Expertise Includes:
           </h2>
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-3">
@@ -200,7 +200,7 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="py-20 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-3xl lg:text-5xl font-bold text-sky-800 mb-12 text-center">
+          <h2 className="text-3xl lg:text-5xl font-bold text-amber-800 mb-12 text-center">
             Sectors We Serve
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -220,7 +220,7 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl lg:text-5xl font-bold text-sky-800 mb-12 text-center">
+          <h2 className="text-3xl lg:text-5xl font-bold text-amber-800 mb-12 text-center">
             Why Al Yusr for Critical Infrastructure Protection?
           </h2>
           <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8">

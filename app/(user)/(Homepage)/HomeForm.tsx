@@ -85,7 +85,7 @@ const HomeForm = () => {
     <div className="py-28">
       <div className="container mx-auto">
         <h1 className="text-4xl lg:text-5xl font-[600] text-center">
-          Get in <span className="text-blue-500">Touch with Us</span>
+          Get in <span className="text-yellow-500">Touch with Us</span>
         </h1>
         <div className="grid grid-cols-1 place-items-center lg:grid-cols-[.8fr_1.2fr]  mt-12">
           <div className="w-full h-[350px] lg:rounded-l-xl overflow-hidden lg:h-[630px]">
@@ -99,7 +99,7 @@ const HomeForm = () => {
             onSubmit={handleSubmit}
             className="bg-white/70 backdrop-blur-xl border border-slate-200 shadow-xl p-10 lg:rounded-r-xl space-y-6 w-full"
           >
-            <h2 className="text-3xl font-bold text-slate-800 mb-4 border-l-4 border-blue-500 pl-3">
+            <h2 className="text-3xl font-bold text-slate-800 mb-4 border-l-4 border-yellow-500 pl-3">
               Enquiry Form
             </h2>
 
@@ -111,7 +111,7 @@ const HomeForm = () => {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="John Andrews"
-                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-blue-500"
+                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-yellow-500"
                   required
                 />
               </div>
@@ -123,7 +123,7 @@ const HomeForm = () => {
                   value={form.phone}
                   onChange={handleChange}
                   placeholder="+971 234 5678"
-                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-blue-500"
+                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-yellow-500"
                   required
                 />
               </div>
@@ -138,7 +138,7 @@ const HomeForm = () => {
                   value={form.email}
                   onChange={handleChange}
                   placeholder="example@email.com"
-                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-blue-500"
+                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-yellow-500"
                   required
                 />
               </div>
@@ -150,7 +150,7 @@ const HomeForm = () => {
                   name="company"
                   value={form.company}
                   onChange={handleChange}
-                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-blue-500"
+                  className="mt-2 h-12 bg-slate-50 focus:ring-2 focus:ring-yellow-500"
                 />
               </div>
             </div>
@@ -210,7 +210,7 @@ const HomeForm = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="Enter your message"
-                className="resize-none mt-2 bg-slate-50 h-32 focus:ring-2 focus:ring-blue-500"
+                className="resize-none mt-2 bg-slate-50 h-32 focus:ring-2 focus:ring-yellow-500"
               />
             </div>
 
@@ -219,7 +219,7 @@ const HomeForm = () => {
               variant="default"
               size="lg"
               disabled={loading}
-              className={`w-full bg-gradient-to-br from-blue-500 to-blue-700 text-white font-semibold rounded-xl shadow-lg hover:scale-[1.02] transition ${
+              className={`w-full bg-gradient-to-br from-yellow-500 to-yellow-700 text-white font-semibold rounded-xl shadow-lg hover:scale-[1.02] transition ${
                 loading ? "opacity-70 cursor-not-allowed" : ""
               }`}
             >

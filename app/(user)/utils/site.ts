@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Alyusr",
+  name: "Milestonepm",
   description: "",
   navItems: [
     {
@@ -312,7 +312,7 @@ export const siteConfig = {
           link: "Globally-Certified-Standards",
           label: "Globally Certified Standards",
           description:
-            "At ALYUSR, engineering is about people as much as structures. Guided by globally certified standards, we design with purpose to build spaces that shape better futures",
+            "At Milestonepm, engineering is about people as much as structures. Guided by globally certified standards, we design with purpose to build spaces that shape better futures",
           img: "https://images.pexels.com/photos/6474498/pexels-photo-6474498.jpeg",
         },
         {
@@ -380,7 +380,7 @@ export type SiteConfig = {
   };
 };
 
-type NavItem = WhoWeAreNav | WhyAlYusrNav | WhatWeDoNav | SimpleLink;
+type NavItem = WhoWeAreNav | WhyMilestonepmNav | WhatWeDoNav | SimpleLink;
 
 type WhoWeAreNav = {
   label: "Who We Are";
@@ -411,7 +411,7 @@ type WhatWeDoNav = {
   };
 };
 
-type WhyAlYusrNav = {
+type WhyMilestonepmNav = {
   label: "Why Al Yusr";
   tagLine: string;
   contactNum: string;

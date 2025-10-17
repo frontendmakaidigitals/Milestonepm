@@ -17,7 +17,7 @@ export default function Page() {
     {
       title: "Visualize Operations & Layouts",
       desc: "Bring your operations to life in 2D and 3D models for better clarity.",
-      icon: <MonitorPlay className="w-10 h-10 text-blue-600" />,
+      icon: <MonitorPlay className="w-10 h-10 text-yellow-600" />,
     },
     {
       title: "Test Capital Improvement Strategies",
@@ -119,7 +119,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Process Simulation Models
         </h1>
       </div>
@@ -201,7 +201,7 @@ export default function Page() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12">
-            <span className="text-blue-500">Application</span> Across Sectors
+            <span className="text-yellow-500">Application</span> Across Sectors
           </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

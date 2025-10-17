@@ -24,7 +24,7 @@ const Marquee = () => {
     <section className="pt-20 text-center bg-white">
       {/* Heading */}
       <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold max-w-3xl mx-auto">
-        Our Trusted <span className="text-blue-600">Partners</span>
+        Our Trusted <span className="text-yellow-600">Partners</span>
       </h1>
 
       {/* Client Logo Slider */}
@@ -67,7 +67,7 @@ const Marquee = () => {
           </p>
           <Link
             href="/brochure/brochure.pdf"
-            target="_blank" 
+            target="_blank"
             rel="noopener noreferrer"
             className="mt-5 px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black transition-all"
           >

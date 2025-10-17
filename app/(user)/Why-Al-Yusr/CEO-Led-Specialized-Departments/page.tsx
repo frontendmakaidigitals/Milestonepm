@@ -64,13 +64,13 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/ceo-hero-img.jpeg"
-          alt="ALYUSR Engineering Hero Background"
+          alt="Milestonepm Engineering Hero Background"
         />
       </motion.div>
 
       {/* WHAT SETS US APART */}
       <section className="lg:min-h-[85vh] py-20 lg:py-0 overflow-hidden relative">
-        <div className="absolute  inset-0 bg-gradient-to-r from-sky-100/30 via-sky-200/40 to-transparent" />
+        <div className="absolute  inset-0 bg-gradient-to-r from-amber-100/30 via-amber-200/40 to-transparent" />
         <BgLayer />
         {/* Background image */}
 
@@ -78,12 +78,12 @@ export default function Page() {
         <div className="relative z-10 lg:min-h-[85vh] flex flex-col h-full justify-center items-center">
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
-              <h1 className="text-4xl lg:text-5xl font-semibold text-sky-800 leading-tighter  mb-4">
+              <h1 className="text-4xl lg:text-5xl font-semibold text-amber-800 leading-tighter  mb-4">
                 Departments Built for Precision
               </h1>
               <p className="text-lg text-gray-700">
-                At ALYUSR Engineering Consulting, excellence starts at the top.
-                Our operations are led directly by the CEO and executive
+                At Milestonepm Engineering Consulting, excellence starts at the
+                top. Our operations are led directly by the CEO and executive
                 leadership, ensuring each project is delivered with strategic
                 direction, accountability, and industry insight.
               </p>
@@ -97,7 +97,7 @@ export default function Page() {
 
               <Link
                 href={"/Contact"}
-                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#387EF0] to-[#2651C2] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
+                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
               >
                 Discover Our Story <ArrowUpRight />
               </Link>
@@ -118,14 +118,15 @@ export default function Page() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-20">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              A <span className="text-blue-500">Structure Designed</span> for
+              A <span className="text-yellow-500">Structure Designed</span> for
               Success
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              Each department within ALYUSR is built around a focused area of
-              expertise, with dedicated leaders overseeing quality, innovation,
-              and client satisfaction. This structure enables us to deliver
-              fully integrated solutions across the entire project lifecycle.
+              Each department within Milestonepm is built around a focused area
+              of expertise, with dedicated leaders overseeing quality,
+              innovation, and client satisfaction. This structure enables us to
+              deliver fully integrated solutions across the entire project
+              lifecycle.
             </p>
           </div>
 
@@ -175,7 +176,7 @@ export default function Page() {
                   className="relative bg-white/60 backdrop-blur-md border border-white/40 shadow-xl rounded-2xl p-6 hover:-translate-y-1 transition-transform duration-300"
                 >
                   {/* Floating Icon */}
-                  <div className="absolute -top-6 left-6 bg-white shadow-md w-14 h-14 rounded-full flex items-center justify-center text-sky-700">
+                  <div className="absolute -top-6 left-6 bg-white shadow-md w-14 h-14 rounded-full flex items-center justify-center text-amber-700">
                     <Icon className="w-7 h-7" />
                   </div>
 
@@ -197,16 +198,17 @@ export default function Page() {
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             We Are Driven by{" "}
-            <span className="text-blue-500">Process & Backed</span> by Expertise
+            <span className="text-yellow-500">Process & Backed</span> by
+            Expertise
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            At ALYUSR, executive leadership is hands-on — present at every
+            At Milestonepm, executive leadership is hands-on — present at every
             critical step of your project journey.
           </p>
         </div>
 
         <div className="relative pl-8 max-w-3xl mx-auto">
-          <div className="absolute -left-2 top-1/2 -translate-y-1/2 bg-blue-200 w-1 h-full" />
+          <div className="absolute -left-2 top-1/2 -translate-y-1/2 bg-yellow-200 w-1 h-full" />
           {[
             {
               title: "Proposal & Planning Review",
@@ -235,12 +237,12 @@ export default function Page() {
             },
           ].map(({ title, desc, icon: Icon }, i) => (
             <div key={i} className="relative mb-12">
-              <div className="absolute -left-14 top-1/2 -translate-y-1/2 bg-sky-600 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg">
+              <div className="absolute -left-14 top-1/2 -translate-y-1/2 bg-amber-600 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg">
                 <Icon className="w-5 h-5" />
               </div>
 
               {/* Content */}
-              <div className="bg-sky-50 rounded-xl p-6 shadow border border-sky-100">
+              <div className="bg-amber-50 rounded-xl p-6 shadow border border-amber-100">
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {title}
                 </h3>
@@ -257,10 +259,11 @@ export default function Page() {
       </section>
 
       {/* WHY IT MATTERS */}
-      <section className="bg-sky-100 py-20 ">
+      <section className="bg-amber-100 py-20 ">
         <div className="container ">
           <h2 className="text-4xl lg:text-5xl text-center font-semibold text-gray-800 mb-8">
-            Why It Matters to <span className="text-blue-500">Our Clients</span>
+            Why It Matters to{" "}
+            <span className="text-yellow-500">Our Clients</span>
           </h2>
 
           <Carousel
@@ -302,8 +305,8 @@ export default function Page() {
                       className="object-cover  w-full h-full"
                     />
                   </div>
-                  <div className="p-5 bg-blue-500">
-                    <p className="text-center text-white text-lg font-semibold group-hover:text-sky-100 transition-colors duration-300">
+                  <div className="p-5 bg-yellow-500">
+                    <p className="text-center text-white text-lg font-semibold group-hover:text-amber-100 transition-colors duration-300">
                       {point.title}
                     </p>
                   </div>
@@ -318,7 +321,7 @@ export default function Page() {
 
       <CTA
         title="Your Project. Our People. One Team."
-        desc=" With fully in-house capabilities, ALYUSR offers clients unmatched
+        desc=" With fully in-house capabilities, Milestonepm offers clients unmatched
             efficiency, precision, and project confidence. We're not just
             consultants, we’re your engineering partner from concept to
             completion."

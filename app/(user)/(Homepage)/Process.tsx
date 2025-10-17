@@ -74,7 +74,7 @@ const Process = () => {
       <div className="flex flex-col lg:flex-row  items-center gap-5">
         <div>
           <motion.h2 className="text-4xl  lg:text-5xl font-bold mb-2 text-start">
-            The <span className="text-blue-500">Process we</span> Follow
+            The <span className="text-yellow-500">Process we</span> Follow
           </motion.h2>
 
           <motion.p
@@ -95,14 +95,14 @@ const Process = () => {
             <button
               disabled={!canScrollPrev}
               onClick={() => api?.scrollPrev()}
-              className="bg-blue-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
+              className="bg-yellow-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
             >
               <ArrowLeft />
             </button>
             <button
               disabled={!canScrollNext}
               onClick={() => api?.scrollNext()}
-              className="bg-blue-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
+              className="bg-yellow-500 disabled:bg-slate-400 cursor-pointer text-white p-2 rounded-full"
             >
               <ArrowRight />
             </button>
@@ -124,7 +124,7 @@ const Process = () => {
                     {i + 1}
                   </motion.h2>
 
-                  <div className="bg-blue-50  h-full relative shadow-sm">
+                  <div className="bg-yellow-50  h-full relative shadow-sm">
                     <div className="h-[360px] lg:h-[450px] w-full overflow-hidden rounded-lg relative">
                       <div className="absolute inset-0 w-full h-full bg-black/10" />
                       <Image
@@ -136,7 +136,7 @@ const Process = () => {
                       />
                       <BgLayer color="bg-black/40" />
                     </div>
-                    <h3 className="bg-blue-600/70  m-2 rounded-lg  font-semibold absolute max-w-[90%] text-blue-100 px-3 py-[.4rem] bottom-0  left-0">
+                    <h3 className="bg-yellow-600/70  m-2 rounded-lg  font-semibold absolute max-w-[90%] text-yellow-100 px-3 py-[.4rem] bottom-0  left-0">
                       {phase.title}
                     </h3>
                   </div>

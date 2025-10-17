@@ -51,7 +51,7 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/company overview/banner.webp"
-          alt="ALYUSR Engineering Hero Background"
+          alt="Milestonepm Engineering Hero Background"
         />
       </motion.div>
 
@@ -69,7 +69,7 @@ export default function Page() {
 
           {/* Text second on mobile, first on desktop */}
           <div className="order-2 lg:order-1">
-            <h2 className="text-4xl lg:text-5xl font-semibold text-sky-800 mb-4">
+            <h2 className="text-4xl lg:text-5xl font-semibold text-amber-800 mb-4">
               Company Overview
             </h2>
             <p className="text-gray-700 text-lg mb-4">
@@ -86,7 +86,7 @@ export default function Page() {
               2030.
             </p>
             <p className="mt-4 text-lg">
-              At ALYUSR, we don’t just build projects, we build trust,
+              At Milestonepm, we don’t just build projects, we build trust,
               innovation, and lasting impact.
             </p>
           </div>
@@ -105,11 +105,11 @@ export default function Page() {
             />
           </div>
           <div>
-            <h2 className="text-4xl lg:text-5xl font-semibold text-sky-800 mb-4">
+            <h2 className="text-4xl lg:text-5xl font-semibold text-amber-800 mb-4">
               Our History
             </h2>
             <p className="text-gray-700 text-lg mb-4">
-              ALYUSR was founded in Saudi Arabia with a vision to raise the
+              Milestonepm was founded in Saudi Arabia with a vision to raise the
               standard of engineering consulting across the Kingdom and beyond.
               Built on deep industry knowledge, strong ethics, and technical
               innovation, the company has grown into a trusted name for
@@ -118,7 +118,7 @@ export default function Page() {
             </p>
             <p className="text-gray-700 text-lg">
               From its early days delivering site studies and engineering plans,
-              ALYUSR has evolved into a multi-disciplinary consultancy
+              Milestonepm has evolved into a multi-disciplinary consultancy
               contributing directly to national transformation goals under
               Vision 2030. Today, our diverse portfolio spans government
               projects, private sector developments, and international
@@ -131,12 +131,12 @@ export default function Page() {
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl lg:text-5xl font-semibold text-center mb-12">
-            Fast <span className="text-sky-800">Facts</span>
+            Fast <span className="text-amber-800">Facts</span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: <MapPin className="text-sky-600 w-12 h-12" />,
+                icon: <MapPin className="text-amber-600 w-12 h-12" />,
                 text: "Headquartered in Riyadh, with offices in UK, Egypt, and Sri Lanka",
               },
               {
@@ -148,7 +148,7 @@ export default function Page() {
                 text: "80+ major projects delivered across sectors",
               },
               {
-                icon: <Globe className="text-blue-600 w-12 h-12" />,
+                icon: <Globe className="text-yellow-600 w-12 h-12" />,
                 text: "Recognized by USGBC (LEED), ISOCARP, D-U-N-S Registered™",
               },
               {
@@ -162,7 +162,7 @@ export default function Page() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="bg-sky-50 border border-sky-100 rounded-xl p-6  shadow hover:shadow-md transition"
+                className="bg-amber-50 border border-amber-100 rounded-xl p-6  shadow hover:shadow-md transition"
               >
                 {item.icon}
                 <p className="text-gray-700 text-lg font-medium leading-snug mt-4">
@@ -175,7 +175,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Engineering the Future of Saudi Arabia and Beyond"
-        desc="  From Riyadh to the world, ALYUSR delivers visionary engineering and design solutions that
+        desc="  From Riyadh to the world, Milestonepm delivers visionary engineering and design solutions that
     support national transformation and global standards. Backed by ISO certifications and a
     proven project track record, we are your trusted partner in building sustainable, smart,
     and impactful environments."

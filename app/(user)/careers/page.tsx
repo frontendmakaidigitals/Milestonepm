@@ -59,7 +59,7 @@ export default function CareersPage() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum
           </h2>
-          <button className="text-slate-50 flex items-center gap-2 rounded-lg bg-blue-500 font-[600] px-5 py-[.6rem] mt-2">
+          <button className="text-slate-50 flex items-center gap-2 rounded-lg bg-yellow-500 font-[600] px-5 py-[.6rem] mt-2">
             <ArrowDown className="" />
             Job openings
           </button>
@@ -139,7 +139,7 @@ function CareersForm() {
   };
 
   return (
-    <section className="relative py-16 bg-blue-50">
+    <section className="relative py-16 bg-yellow-50">
       <div className="max-w-6xl mx-auto ">
         <h2 className="text-4xl lg:text-5xl font-bold text-start text-gray-800 mb-6">
           Let's begin our creative journey together
@@ -149,7 +149,7 @@ function CareersForm() {
           <ul className="space-y-10">
             <li>
               <h2 className="text-2xl font-[600]">For Enquiry</h2>
-              <p>M.yousif@alyusrco.com</p>
+              <p>M.yousif@Milestonepmco.com</p>
             </li>
             <li>
               <h2 className="text-2xl font-[600]">Contact</h2>
@@ -183,7 +183,7 @@ function CareersForm() {
                 placeholder="Full Name"
                 value={form.name}
                 onChange={handleChange}
-                className="w-full px-3 py-[.7rem] border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                className="w-full px-3 py-[.7rem] border border-gray-300 rounded-xl focus:ring-2 focus:ring-yellow-500 outline-none"
                 required
               />
               <input
@@ -192,7 +192,7 @@ function CareersForm() {
                 placeholder="Email Address"
                 value={form.email}
                 onChange={handleChange}
-                className="w-full px-3 py-[.7rem] border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                className="w-full px-3 py-[.7rem] border border-gray-300 rounded-xl focus:ring-2 focus:ring-yellow-500 outline-none"
                 required
               />
             </div>
@@ -204,7 +204,7 @@ function CareersForm() {
                 placeholder="Phone Number"
                 value={form.phone}
                 onChange={handleChange}
-                className="w-full px-3 py-[.7rem] border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                className="w-full px-3 py-[.7rem] border border-gray-300 rounded-xl focus:ring-2 focus:ring-yellow-500 outline-none"
               />
               <input
                 type="text"
@@ -212,7 +212,7 @@ function CareersForm() {
                 placeholder="Position You’re Applying For"
                 value={form.position}
                 onChange={handleChange}
-                className="w-full px-3 py-[.7rem] border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                className="w-full px-3 py-[.7rem] border border-gray-300 rounded-xl focus:ring-2 focus:ring-yellow-500 outline-none"
                 required
               />
             </div>
@@ -223,7 +223,7 @@ function CareersForm() {
               value={form.message}
               onChange={handleChange}
               rows={4}
-              className="w-full px-3 resize-none py-[.7rem] border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+              className="w-full px-3 resize-none py-[.7rem] border border-gray-300 rounded-xl focus:ring-2 focus:ring-yellow-500 outline-none"
             ></textarea>
             <div>
               <label className="block mb-2 text-gray-700 font-medium">
@@ -232,7 +232,7 @@ function CareersForm() {
 
               <label
                 htmlFor="resume"
-                className="flex items-center justify-between gap-3 w-full px-3 py-[.7rem] border border-gray-300 rounded-xl bg-gray-50 cursor-pointer focus-within:ring-2 focus-within:ring-blue-500 outline-none"
+                className="flex items-center justify-between gap-3 w-full px-3 py-[.7rem] border border-gray-300 rounded-xl bg-gray-50 cursor-pointer focus-within:ring-2 focus-within:ring-yellow-500 outline-none"
               >
                 <div className="flex flex-col text-sm text-gray-700">
                   {form.resume ? (
@@ -270,7 +270,7 @@ function CareersForm() {
                         href={previewUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 rounded-lg bg-blue-100 text-blue-600 hover:bg-blue-200 transition"
+                        className="p-2 rounded-lg bg-yellow-100 text-yellow-600 hover:bg-yellow-200 transition"
                         aria-label="View Resume"
                       >
                         <Eye className="w-4 h-4" />
@@ -290,7 +290,7 @@ function CareersForm() {
             </div>
             <button
               type="submit"
-              className="w-full cursor-pointer px-3 py-[.7rem] bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-lg transition-all"
+              className="w-full cursor-pointer px-3 py-[.7rem] bg-yellow-600 hover:bg-yellow-700 text-white font-semibold rounded-xl shadow-lg transition-all"
             >
               Submit Application
             </button>

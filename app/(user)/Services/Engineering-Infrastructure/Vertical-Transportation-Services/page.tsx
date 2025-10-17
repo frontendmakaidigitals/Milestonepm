@@ -92,7 +92,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Vertical Transportation Services
         </h1>
       </div>
@@ -127,7 +127,7 @@ export default function ConstructionManagementPage() {
         <div className="container place-items-center grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
             <h1 className="text-4xl lg:text-5xl font-semibold">
-              Our <span className="text-blue-500">Approach</span>
+              Our <span className="text-yellow-500">Approach</span>
             </h1>
             <p className="mt-3 text-lg">
               We work closely with building owners, developers, architects,
@@ -151,10 +151,10 @@ export default function ConstructionManagementPage() {
         </div>
       </section>
       {/* Features */}
-      <section className="bg-blue-50 py-20">
+      <section className="bg-yellow-50 py-20">
         <div className="container">
           <h2 className="text-4xl lg:text-5xl font-bold text-center  mb-12">
-            Our <span className="text-blue-500">Services</span>
+            Our <span className="text-yellow-500">Services</span>
           </h2>
           <div className="grid gap-10 grid-cols-1 lg:grid-cols-2">
             {services.map((service, index) => (
@@ -162,9 +162,9 @@ export default function ConstructionManagementPage() {
                 key={index}
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 100 }}
-                className="bg-white rounded-2xl p-6 shadow-md border border-blue-100"
+                className="bg-white rounded-2xl p-6 shadow-md border border-yellow-100"
               >
-                <h3 className="text-3xl font-semibold text-sky-800 mb-4">
+                <h3 className="text-3xl font-semibold text-amber-800 mb-4">
                   {service.title}
                 </h3>
                 <ul className=" space-y-2 text-gray-700">
@@ -186,7 +186,7 @@ export default function ConstructionManagementPage() {
         <div className="container">
           <h2 className="text-4xl lg:text-5xl max-w-5xl mx-auto font-bold text-center text-black mb-12">
             Why Choose Al Yusr for{" "}
-            <span className="text-blue-500">Vertical Transportation?</span>
+            <span className="text-yellow-500">Vertical Transportation?</span>
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((item, index) => {
@@ -196,12 +196,12 @@ export default function ConstructionManagementPage() {
                   key={index}
                   whileHover={{ y: -6 }}
                   transition={{ type: "spring", stiffness: 100 }}
-                  className="bg-white rounded-2xl p-6 shadow-md border border-blue-100"
+                  className="bg-white rounded-2xl p-6 shadow-md border border-yellow-100"
                 >
-                  <div className="flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-800 rounded-full mb-4">
+                  <div className="flex items-center justify-center w-12 h-12 bg-yellow-100 text-yellow-800 rounded-full mb-4">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                  <h3 className="text-xl font-semibold text-yellow-900 mb-2">
                     {item.title}
                   </h3>
                   <p className="text-gray-700 text-sm">{item.description}</p>

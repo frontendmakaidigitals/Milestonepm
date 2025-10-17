@@ -14,7 +14,7 @@ interface dataProps {
   onNavigate?: () => void;
 }
 
-const WhyAlYusr = ({ data, tabs, onNavigate }: dataProps) => {
+const WhyMilestonepm = ({ data, tabs, onNavigate }: dataProps) => {
   return (
     <div className="flex flex-col lg:flex-row justify-between items-start gap-10 text-white">
       {/* Left Section */}
@@ -37,7 +37,7 @@ const WhyAlYusr = ({ data, tabs, onNavigate }: dataProps) => {
           >
             Contact us
           </Link>
-          <button className="bg-blue-500 text-white px-4 py-1.5 font-medium rounded">
+          <button className="bg-yellow-500 text-white px-4 py-1.5 font-medium rounded">
             Follow
           </button>
           <Instagram className="w-5 h-5" />
@@ -69,7 +69,7 @@ const WhyAlYusr = ({ data, tabs, onNavigate }: dataProps) => {
                 />
               </div>
               <div>
-                <h3 className="text-blue-300 font-medium">{item.label}</h3>
+                <h3 className="text-yellow-300 font-medium">{item.label}</h3>
                 <p className="text-sm opacity-80">{item.description}</p>
               </div>
             </Link>
@@ -83,7 +83,7 @@ const WhyAlYusr = ({ data, tabs, onNavigate }: dataProps) => {
                 key={idx}
                 onClick={onNavigate}
                 href={tab.link}
-                className="border text-blue-300 border-blue-200/60 rounded-full px-5 py-[.7rem] lg:px-4 lg:py-1 text-sm"
+                className="border text-yellow-300 border-yellow-200/60 rounded-full px-5 py-[.7rem] lg:px-4 lg:py-1 text-sm"
               >
                 {tab.label}
               </Link>
@@ -95,4 +95,4 @@ const WhyAlYusr = ({ data, tabs, onNavigate }: dataProps) => {
   );
 };
 
-export default WhyAlYusr;
+export default WhyMilestonepm;

@@ -126,7 +126,7 @@ const BlogListPage = () => {
                         onClick={() =>
                           router.push(`/dashboard/Blogs/edit/${blog.id}`)
                         }
-                        className="px-3 py-1 text-xs font-medium text-white bg-blue-600 hover:bg-blue-700 rounded"
+                        className="px-3 py-1 text-xs font-medium text-white bg-yellow-600 hover:bg-yellow-700 rounded"
                       >
                         Edit
                       </button>
@@ -142,7 +142,10 @@ const BlogListPage = () => {
               ))
             ) : (
               <tr>
-                <td colSpan={6} className="text-center text-lg p-6 text-slate-500">
+                <td
+                  colSpan={6}
+                  className="text-center text-lg p-6 text-slate-500"
+                >
                   No Blogs found
                 </td>
               </tr>

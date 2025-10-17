@@ -39,7 +39,7 @@ export default function Page() {
       title: "Add Value",
       desc: "Better data informs better design, enabling cost-efficient and sustainable solutions.",
       icon: LineChart,
-      color: "text-blue-600 bg-blue-50",
+      color: "text-yellow-600 bg-yellow-50",
     },
   ];
 
@@ -95,7 +95,7 @@ export default function Page() {
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
               <span className="text-green-500">Environmental</span>{" "}
-              <span className="text-blue-500">Contracting</span>
+              <span className="text-yellow-500">Contracting</span>
             </h1>
             <p>
               Ground risks and environmental challenges are among the leading
@@ -153,7 +153,7 @@ export default function Page() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <h2 className="text-4xl lg:text-5xl text-center font-bold text-gray-900 mb-12">
-            <span className="text-blue-500">Our Services</span> at a Glance
+            <span className="text-yellow-500">Our Services</span> at a Glance
           </h2>
 
           <div className="grid gap-2 grid-cols-1 lg:grid-cols-4">
@@ -181,10 +181,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-100">
+      <section className="py-20 bg-gradient-to-br from-yellow-50 via-white to-yellow-100">
         <div className="max-w-6xl mx-auto px-6 lg:px-12 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
-            Why Choose <span className="text-blue-600">Al Yusr</span>
+            Why Choose <span className="text-yellow-600">Al Yusr</span>
           </h2>
 
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-2">

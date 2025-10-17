@@ -125,14 +125,14 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/our division 2/banner.webp"
-          alt="ALYUSR Engineering Hero Background"
+          alt="Milestonepm Engineering Hero Background"
         />
       </motion.div>
       <section className="min-h-[85vh] py-20 lg:py-0 overflow-hidden relative">
         {/* Background image */}
 
         {/* Left gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-sky-100/30 via-sky-200/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-100/30 via-amber-200/40 to-transparent" />
         <BgLayer />
         {/* Container with text */}
         <div className="relative z-10 min-h-[85vh] flex flex-col h-full justify-center items-center">
@@ -140,23 +140,24 @@ export default function Page() {
             <div className="max-w-2xl">
               <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter  mb-4">
                 Expertise Across Every{" "}
-                <span className="text-blue-500">Sector</span>
+                <span className="text-yellow-500">Sector</span>
               </h1>
               <p className="text-lg text-gray-700">
-                At <span className="text-blue-600">ALYUSR</span> Engineering
-                Consulting, our strength lies in our structure. We operate
-                through dedicated, expert-led divisions that work together to
-                deliver smart, sustainable, and fully integrated engineering
-                solutions. Each division is equipped with the tools, talent, and
-                technical knowledge needed to serve clients across sectors,
-                whether it&apos;s infrastructure, architecture, urban planning,
-                or digital transformation. Together, we bring precision,
-                quality, and agility to every stage of the project lifecycle.
+                At <span className="text-yellow-600">Milestonepm</span>{" "}
+                Engineering Consulting, our strength lies in our structure. We
+                operate through dedicated, expert-led divisions that work
+                together to deliver smart, sustainable, and fully integrated
+                engineering solutions. Each division is equipped with the tools,
+                talent, and technical knowledge needed to serve clients across
+                sectors, whether it&apos;s infrastructure, architecture, urban
+                planning, or digital transformation. Together, we bring
+                precision, quality, and agility to every stage of the project
+                lifecycle.
               </p>
 
               <Link
                 href={"/Contact"}
-                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#387EF0] to-[#2651C2] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
+                className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
               >
                 Discover Our Story <ArrowUpRight />
               </Link>
@@ -173,7 +174,7 @@ export default function Page() {
       </section>
       <section className="bg-white py-16 px-4 sm:px-8 lg:px-16">
         <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12 text-gray-800">
-          Our <span className="text-blue-500">Core</span> Divisions
+          Our <span className="text-yellow-500">Core</span> Divisions
         </h2>
         <div className="grid lg:grid-cols-2 gap-10">
           {divisions.map((division, index) => (
@@ -183,7 +184,7 @@ export default function Page() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-blue-50 border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-md transition"
+              className="bg-yellow-50 border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-md transition"
             >
               <div className="relative h-[300px] w-full">
                 <Image
@@ -195,7 +196,7 @@ export default function Page() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-3xl text-sky-800 font-semibold  mb-2">
+                <h3 className="text-3xl text-amber-800 font-semibold  mb-2">
                   {division.title}
                 </h3>
                 <p className="text-sm text-gray-600 mb-4">
@@ -219,7 +220,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Working Together to Build the Future"
-        desc="Each division operates with full autonomy and cross-functional coordination. This structure allows ALYUSR to stay agile, reduce delays, and deliver high-quality, end-to-end solutions for complex, multidisciplinary projects."
+        desc="Each division operates with full autonomy and cross-functional coordination. This structure allows Milestonepm to stay agile, reduce delays, and deliver high-quality, end-to-end solutions for complex, multidisciplinary projects."
       />
     </div>
   );

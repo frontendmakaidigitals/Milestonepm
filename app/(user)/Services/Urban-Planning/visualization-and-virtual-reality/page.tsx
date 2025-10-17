@@ -75,7 +75,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl  md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl  md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           Visualization and Virtual Reality
         </h1>
       </div>
@@ -109,8 +109,8 @@ export default function ConstructionManagementPage() {
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 place-items-center">
           <div>
             <h1 className="text-4xl lg:text-5xl font-[700]">
-              <span className="text-blue-500">Engaging</span> People,{" "}
-              <span className="text-blue-500">Empowering</span> Places
+              <span className="text-yellow-500">Engaging</span> People,{" "}
+              <span className="text-yellow-500">Empowering</span> Places
             </h1>
             <p className="mt-4">
               We approach engagement as more than just information sharing;
@@ -142,7 +142,7 @@ export default function ConstructionManagementPage() {
       <section className="py-16 bg-white">
         <div className=" container ">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-            What <span className="text-blue-500">We Do</span>
+            What <span className="text-yellow-500">We Do</span>
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
@@ -181,7 +181,7 @@ export default function ConstructionManagementPage() {
           >
             <h2 className="text-4xl font-bold text-gray-900">
               Enhancing{" "}
-              <span className="text-blue-500">
+              <span className="text-yellow-500">
                 Communication Across All Project
               </span>{" "}
               Stages
@@ -226,7 +226,7 @@ export default function ConstructionManagementPage() {
       <section className="py-16 bg-muted/30">
         <div className="container">
           <h2 className="text-4xl lg:text-5xl text-center font-bold text-gray-900 mb-10">
-            Why Choose <span className="text-blue-500">Al Yusr</span>?
+            Why Choose <span className="text-yellow-500">Al Yusr</span>?
           </h2>
           <div className="grid gap-6 grid-cols-1 lg:grid-cols-3">
             {features.map((item, idx) => (
@@ -234,7 +234,7 @@ export default function ConstructionManagementPage() {
                 key={idx}
                 className="flex items-start p-6 bg-white rounded-2xl shadow-sm border hover:shadow-md transition-shadow"
               >
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-600/10 flex items-center justify-center text-blue-600 mr-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-yellow-600/10 flex items-center justify-center text-yellow-600 mr-4">
                   <item.icon size={24} />
                 </div>
                 <p className="text-gray-700">{item.title}</p>

@@ -124,8 +124,8 @@ export default function Page() {
           {/* Text second on mobile, first on desktop */}
           <div className="space-y-3 order-2 lg:order-1">
             <h1 className="text-4xl lg:text-5xl font-[600]">
-              <span className="text-blue-500">IT</span> &{" "}
-              <span className="text-sky-500">Cybersecurity</span> Services
+              <span className="text-yellow-500">IT</span> &{" "}
+              <span className="text-amber-500">Cybersecurity</span> Services
             </h1>
             <p>
               At Al Yusr, we understand that information technology and
@@ -144,7 +144,7 @@ export default function Page() {
           {/* Heading */}
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
-              How <span className="text-blue-500">We Deliver</span> Value
+              How <span className="text-yellow-500">We Deliver</span> Value
             </h2>
           </div>
 
@@ -225,7 +225,7 @@ export default function Page() {
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
-            Why Choose <span className="text-blue-600">Al Yusr?</span>
+            Why Choose <span className="text-yellow-600">Al Yusr?</span>
           </h2>
 
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-2">
@@ -234,7 +234,7 @@ export default function Page() {
                 key={idx}
                 className="flex items-start gap-5 p-6 rounded-2xl shadow-md bg-white hover:shadow-lg transition-all"
               >
-                <item.icon className="w-12 h-12 text-blue-600 flex-shrink-0" />
+                <item.icon className="w-12 h-12 text-yellow-600 flex-shrink-0" />
                 <div className="text-left">
                   <h3 className="text-xl font-semibold text-gray-800">
                     {item.title}

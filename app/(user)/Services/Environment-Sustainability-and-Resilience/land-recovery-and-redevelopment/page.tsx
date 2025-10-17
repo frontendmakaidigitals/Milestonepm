@@ -122,8 +122,8 @@ export default function Page() {
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600] text-gray-900">
-              <span className="text-blue-500"> Land Recovery</span> and{" "}
-              <span className="text-sky-500">Redevelopment</span>
+              <span className="text-yellow-500"> Land Recovery</span> and{" "}
+              <span className="text-amber-500">Redevelopment</span>
             </h1>
 
             <p>
@@ -161,7 +161,7 @@ export default function Page() {
             className="text-center mb-14"
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-              Our <span className="text-blue-500">Approach</span>
+              Our <span className="text-yellow-500">Approach</span>
             </h2>
             <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
               At Al Yusr, we don’t just remediate sites—we reimagine their
@@ -182,7 +182,7 @@ export default function Page() {
                 className="bg-white rounded-2xl shadow-md p-5 hover:shadow-xl transition-shadow"
               >
                 {/* Icon */}
-                <div className="flex-shrink-0  p-3 bg-blue-100 rounded-xl w-fit mb-5">
+                <div className="flex-shrink-0  p-3 bg-yellow-100 rounded-xl w-fit mb-5">
                   {item.icon}
                 </div>
 
@@ -202,7 +202,7 @@ export default function Page() {
       <section className="py-20 bg-gray-50">
         <div className="container text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-12">
-            Our <span className="text-blue-500">Services</span>
+            Our <span className="text-yellow-500">Services</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {services.map((service, idx) => (
@@ -235,7 +235,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-              Why Choose <span className="text-blue-500">Al Yusr?</span>
+              Why Choose <span className="text-yellow-500">Al Yusr?</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               Trusted expertise, innovative tools, and a commitment to

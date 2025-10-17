@@ -164,7 +164,7 @@ export default function Page() {
               {benefits.map((point) => (
                 <li
                   key={point}
-                  className="flex items-start gap-3 bg-blue-50 rounded-lg p-3"
+                  className="flex items-start gap-3 bg-yellow-50 rounded-lg p-3"
                 >
                   <BadgeCheck className="h-6 w-6 shrink-0 text-white fill-green-500 mt-0.5" />
                   <span className="text-lg leading-7 text-slate-700">

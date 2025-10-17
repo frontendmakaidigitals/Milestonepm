@@ -114,7 +114,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
           City Planning Services
         </h1>
       </div>
@@ -149,7 +149,7 @@ export default function ConstructionManagementPage() {
       <section className="bg-gray-50 py-20 px-4 md:px-8">
         <div className="container mb-16 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Urban <span className="text-blue-500">Planning</span> &{" "}
+            Urban <span className="text-yellow-500">Planning</span> &{" "}
             <span className="text-green-500">Sustainable</span> Design
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -171,14 +171,14 @@ export default function ConstructionManagementPage() {
                     fill
                     className="object-cover"
                   />
-                  <div className="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full absolute bottom-0 translate-y-1/2 left-6">
-                    <Icon className="text-blue-600 w-6 h-6" />
+                  <div className="w-12 h-12 flex items-center justify-center bg-yellow-100 rounded-full absolute bottom-0 translate-y-1/2 left-6">
+                    <Icon className="text-yellow-600 w-6 h-6" />
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-6 mt-3 space-y-4">
-                  <h3 className="text-xl font-semibold text-sky-700">
+                  <h3 className="text-xl font-semibold text-amber-700">
                     {item.title}
                   </h3>
                   <p className="text-gray-600">{item.desc}</p>
@@ -202,7 +202,7 @@ export default function ConstructionManagementPage() {
       <section className="bg-gray-50 py-20 px-4 md:px-8">
         <div className="container text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            <span className="text-blue-500">Supporting</span> Services
+            <span className="text-yellow-500">Supporting</span> Services
           </h2>
         </div>
 
@@ -234,7 +234,7 @@ export default function ConstructionManagementPage() {
       <section className="bg-gray-50 py-20 px-6 md:px-12">
         <div className="container text-center mb-16">
           <h2 className="text-4xl lg:text-5xl  font-bold text-gray-900 mb-4">
-            What <span className="text-blue-500">Sets Us</span> Apart?
+            What <span className="text-yellow-500">Sets Us</span> Apart?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Delivering more than plans — we build purpose-driven, resilient
@@ -251,8 +251,8 @@ export default function ConstructionManagementPage() {
                 key={index}
                 className="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-left flex flex-col gap-4"
               >
-                <div className="bg-blue-100 p-3 w-fit rounded-md">
-                  <Icon className="w-6 h-6 text-blue-600" />
+                <div className="bg-yellow-100 p-3 w-fit rounded-md">
+                  <Icon className="w-6 h-6 text-yellow-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800">
                   {item.title}
