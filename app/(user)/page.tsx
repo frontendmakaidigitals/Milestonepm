@@ -16,7 +16,7 @@ export default function Home() {
       <Services />
       <Marquee />
       <GlobalSection />
-      <CTASection />
+
       <Process />
      
       <Industry />

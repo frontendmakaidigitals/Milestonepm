@@ -65,7 +65,7 @@ export default function Page() {
     },
     {
       title: "Outsourced EHS Support",
-      desc: "Al Yusr can function as your embedded EHS partner, supporting day-to-day compliance and strategic EHS initiatives.",
+      desc: "Milestone Project Management can function as your embedded EHS partner, supporting day-to-day compliance and strategic EHS initiatives.",
       img: "/Environment-Sustainability/ehs-management-consulting/Outsourced EHS Support.webp",
     },
     {
@@ -88,19 +88,20 @@ export default function Page() {
               <span className="text-yellow-500">EHS Management</span> Consulting
             </h1>
             <p>
-              At Al Yusr, we understand that protecting people and the
-              environment is not just a regulatory obligation, it’s a necessity.
-              Our Environmental, Health, and Safety (EHS) Management Consulting
-              services are designed to help organizations reduce risk, enhance
-              operational performance, and ensure long-term sustainability.
+              At Milestone Project Management, we understand that protecting
+              people and the environment is not just a regulatory obligation,
+              it’s a necessity. Our Environmental, Health, and Safety (EHS)
+              Management Consulting services are designed to help organizations
+              reduce risk, enhance operational performance, and ensure long-term
+              sustainability.
               <br /> <br />
               In today’s evolving regulatory landscape, stakeholders, from
               regulators to investors and communities, expect businesses to
-              operate responsibly. Al Yusr provides a full spectrum of EHS
-              consulting and compliance services that help clients across
-              industries align with global best practices and local regulations
-              while improving safety, minimizing environmental impact, and
-              driving value creation.
+              operate responsibly. Milestone Project Management provides a full
+              spectrum of EHS consulting and compliance services that help
+              clients across industries align with global best practices and
+              local regulations while improving safety, minimizing environmental
+              impact, and driving value creation.
             </p>
           </div>
           <div className="w-full h-[400px] bg-slate-100 rounded-lg">
@@ -216,8 +217,8 @@ export default function Page() {
         </div>
       </section>
       <EngineeringCTA
-        title="Partner with Al Yusr for EHS Excellence"
-        desc="With a strong presence in the region and access to a global network of regulatory and technical experts, Al Yusr is your trusted EHS consulting partner. We combine strategy, science, and compliance expertise to help organizations meet stakeholder expectations, maintain operational integrity, and protect the planet."
+        title="Partner with Milestone Project Management for EHS Excellence"
+        desc="With a strong presence in the region and access to a global network of regulatory and technical experts, Milestone Project Management is your trusted EHS consulting partner. We combine strategy, science, and compliance expertise to help organizations meet stakeholder expectations, maintain operational integrity, and protect the planet."
         btn="Contact Us Today"
       />
     </main>

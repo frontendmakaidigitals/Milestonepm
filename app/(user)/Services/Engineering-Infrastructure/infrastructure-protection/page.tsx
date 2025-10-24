@@ -116,11 +116,11 @@ export default function ConstructionManagementPage() {
             <p className="text-gray-700 text-lg mb-4 leading-relaxed">
               In an era where digital systems and physical infrastructure are
               deeply intertwined, protecting critical infrastructure is no
-              longer optional; it is essential. At Al Yusr Engineering
-              Consulting, our Critical Infrastructure Protection (CIP) services
-              provide an integrated, resilient approach to safeguarding the
-              systems that support national security, public safety, economic
-              stability, and everyday life.
+              longer optional; it is essential. At Milestone Project Management
+              Engineering Consulting, our Critical Infrastructure Protection
+              (CIP) services provide an integrated, resilient approach to
+              safeguarding the systems that support national security, public
+              safety, economic stability, and everyday life.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
               From power grids and water networks to transportation hubs, data
@@ -221,7 +221,8 @@ export default function ConstructionManagementPage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl lg:text-5xl font-bold text-amber-800 mb-12 text-center">
-            Why Al Yusr for Critical Infrastructure Protection?
+            Why Milestone Project Management for Critical Infrastructure
+            Protection?
           </h2>
           <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {reasons.map((reason, idx) => (
@@ -238,7 +239,7 @@ export default function ConstructionManagementPage() {
       </section>
       <EngineeringCTA
         title="Protecting What Matters Most"
-        desc="In a world where threats are unpredictable and ever-evolving, resilience must be designed, not hoped for. At Al Yusr, we bring together strategy, security, and innovation to ensure that your critical infrastructure is prepared for the future."
+        desc="In a world where threats are unpredictable and ever-evolving, resilience must be designed, not hoped for. At Milestone Project Management, we bring together strategy, security, and innovation to ensure that your critical infrastructure is prepared for the future."
         btn="Contact Us Today"
       />
     </main>

@@ -81,7 +81,7 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/why/govt-sector-hero.jpeg"
-          alt="Milestonepm Engineering Hero Background"
+          alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
 
@@ -93,10 +93,10 @@ export default function Page() {
               Government and Private Sector Approved
             </h1>
             <p className="text-lg text-gray-700">
-              For over a decade, Milestonepm Engineering Consulting has been a
-              trusted partner to some of the most prominent government entities,
-              developers, and private organizations in the Kingdom of Saudi
-              Arabia and beyond.
+              For over a decade, Milestone Project Management Engineering
+              Consulting has been a trusted partner to some of the most
+              prominent government entities, developers, and private
+              organizations in the Kingdom of Saudi Arabia and beyond.
             </p>
             <p className="mt-3">
               Our Class A certification and ISO-accredited methodologies reflect
@@ -129,9 +129,9 @@ export default function Page() {
               Trusted by Public & Private Sectors Alike
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Milestonepm delivers excellence to both government authorities and
-              leading private developers — united by a commitment to compliance,
-              innovation, and results.
+              Milestone Project Management delivers excellence to both
+              government authorities and leading private developers — united by
+              a commitment to compliance, innovation, and results.
             </p>
           </div>
 
@@ -181,8 +181,8 @@ export default function Page() {
               </div>
               <p className="text-gray-700 mb-4">
                 From real estate and hospitality to industrial and commercial
-                sectors, Milestonepm delivers solutions to some of the region’s
-                most ambitious private ventures.
+                sectors, Milestone Project Management delivers solutions to some
+                of the region’s most ambitious private ventures.
               </p>
               <ul className="space-y-3 text-gray-600 text-sm pl-1">
                 <li className="flex items-start gap-2">
@@ -205,12 +205,12 @@ export default function Page() {
             </div>
           </div>
 
-          {/* WHY CLIENTS CHOOSE Milestonepm */}
+          {/* WHY CLIENTS CHOOSE Milestone Project Management */}
           <div className="text-center mb-12">
             <h3 className="text-4xl lg:text-5xl font-semibold text-gray-800 mb-4">
               Why Public & Private{" "}
               <span className="text-yellow-500">
-                Clients Choose Milestonepm
+                Clients Choose Milestone Project Management
               </span>
             </h3>
           </div>

@@ -125,7 +125,7 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/our division 2/banner.webp"
-          alt="Milestonepm Engineering Hero Background"
+          alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
       <section className="min-h-[85vh] py-20 lg:py-0 overflow-hidden relative">
@@ -143,7 +143,10 @@ export default function Page() {
                 <span className="text-yellow-500">Sector</span>
               </h1>
               <p className="text-lg text-gray-700">
-                At <span className="text-yellow-600">Milestonepm</span>{" "}
+                At{" "}
+                <span className="text-yellow-600">
+                  Milestone Project Management
+                </span>{" "}
                 Engineering Consulting, our strength lies in our structure. We
                 operate through dedicated, expert-led divisions that work
                 together to deliver smart, sustainable, and fully integrated
@@ -220,7 +223,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Working Together to Build the Future"
-        desc="Each division operates with full autonomy and cross-functional coordination. This structure allows Milestonepm to stay agile, reduce delays, and deliver high-quality, end-to-end solutions for complex, multidisciplinary projects."
+        desc="Each division operates with full autonomy and cross-functional coordination. This structure allows Milestone Project Management to stay agile, reduce delays, and deliver high-quality, end-to-end solutions for complex, multidisciplinary projects."
       />
     </div>
   );

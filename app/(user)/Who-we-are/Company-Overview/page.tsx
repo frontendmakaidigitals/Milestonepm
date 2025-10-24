@@ -51,7 +51,7 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/company overview/banner.webp"
-          alt="Milestonepm Engineering Hero Background"
+          alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
 
@@ -86,8 +86,8 @@ export default function Page() {
               2030.
             </p>
             <p className="mt-4 text-lg">
-              At Milestonepm, we don’t just build projects, we build trust,
-              innovation, and lasting impact.
+              At Milestone Project Management, we don’t just build projects, we
+              build trust, innovation, and lasting impact.
             </p>
           </div>
         </div>
@@ -109,18 +109,18 @@ export default function Page() {
               Our History
             </h2>
             <p className="text-gray-700 text-lg mb-4">
-              Milestonepm was founded in Saudi Arabia with a vision to raise the
-              standard of engineering consulting across the Kingdom and beyond.
-              Built on deep industry knowledge, strong ethics, and technical
-              innovation, the company has grown into a trusted name for
-              large-scale infrastructure, urban development, and architectural
-              design projects.
+              Milestone Project Management was founded in Saudi Arabia with a
+              vision to raise the standard of engineering consulting across the
+              Kingdom and beyond. Built on deep industry knowledge, strong
+              ethics, and technical innovation, the company has grown into a
+              trusted name for large-scale infrastructure, urban development,
+              and architectural design projects.
             </p>
             <p className="text-gray-700 text-lg">
               From its early days delivering site studies and engineering plans,
-              Milestonepm has evolved into a multi-disciplinary consultancy
-              contributing directly to national transformation goals under
-              Vision 2030. Today, our diverse portfolio spans government
+              Milestone Project Management has evolved into a multi-disciplinary
+              consultancy contributing directly to national transformation goals
+              under Vision 2030. Today, our diverse portfolio spans government
               projects, private sector developments, and international
               partnerships.
             </p>
@@ -175,7 +175,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Engineering the Future of Saudi Arabia and Beyond"
-        desc="  From Riyadh to the world, Milestonepm delivers visionary engineering and design solutions that
+        desc="  From Riyadh to the world, Milestone Project Management delivers visionary engineering and design solutions that
     support national transformation and global standards. Backed by ISO certifications and a
     proven project track record, we are your trusted partner in building sustainable, smart,
     and impactful environments."

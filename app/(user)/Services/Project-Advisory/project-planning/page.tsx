@@ -74,12 +74,12 @@ export default function Page() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr Engineering Consulting, we provide end-to-end project
-          planning services that lay the groundwork for successful, sustainable,
-          and cost-effective development. From early feasibility studies to
-          detailed execution strategies, our planning experts combine technical
-          excellence with strategic insight to guide every phase of the project
-          life cycle.
+          At Milestone Project Management Engineering Consulting, we provide
+          end-to-end project planning services that lay the groundwork for
+          successful, sustainable, and cost-effective development. From early
+          feasibility studies to detailed execution strategies, our planning
+          experts combine technical excellence with strategic insight to guide
+          every phase of the project life cycle.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           Whether we’re supporting urban regeneration, infrastructure expansion,
@@ -131,11 +131,11 @@ export default function Page() {
               Our Capabilities at a Glance
             </h2>
             <p className="text-gray-600 mb-6">
-              At Al Yusr, our project planning services go beyond traditional
-              documentation. We work across scales, regional, citywide, and
-              site-specific, delivering plans that are creative, practical, and
-              deeply informed by policy, community input, and environmental
-              responsibility.
+              At Milestone Project Management, our project planning services go
+              beyond traditional documentation. We work across scales, regional,
+              citywide, and site-specific, delivering plans that are creative,
+              practical, and deeply informed by policy, community input, and
+              environmental responsibility.
             </p>
             <h3 className="text-lg font-semibold mb-4">
               Our services include:
@@ -194,7 +194,7 @@ export default function Page() {
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Why Choose Al Yusr for{" "}
+            Why Choose Milestone Project Management for{" "}
             <span className="text-yellow-500">Project Planning?</span>
           </h2>
           <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
@@ -221,7 +221,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Your Vision, Our Strategy"
-        desc="From unlocking site potential to steering large-scale programs, Al Yusr delivers planning services that turn complex ideas into executable, high-impact solutions. If you're seeking a reliable partner to guide your next project with clarity, insight, and strategic excellence—we're ready to help."
+        desc="From unlocking site potential to steering large-scale programs, Milestone Project Management delivers planning services that turn complex ideas into executable, high-impact solutions. If you're seeking a reliable partner to guide your next project with clarity, insight, and strategic excellence—we're ready to help."
         btn="Contact Us Today"
       />
     </main>

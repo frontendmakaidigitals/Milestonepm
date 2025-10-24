@@ -64,7 +64,7 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/ceo-hero-img.jpeg"
-          alt="Milestonepm Engineering Hero Background"
+          alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
 
@@ -82,10 +82,11 @@ export default function Page() {
                 Departments Built for Precision
               </h1>
               <p className="text-lg text-gray-700">
-                At Milestonepm Engineering Consulting, excellence starts at the
-                top. Our operations are led directly by the CEO and executive
-                leadership, ensuring each project is delivered with strategic
-                direction, accountability, and industry insight.
+                At Milestone Project Management Engineering Consulting,
+                excellence starts at the top. Our operations are led directly by
+                the CEO and executive leadership, ensuring each project is
+                delivered with strategic direction, accountability, and industry
+                insight.
               </p>
               <p className="mt-3">
                 Our departmental structure is not only specialized, it’s
@@ -122,11 +123,11 @@ export default function Page() {
               Success
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              Each department within Milestonepm is built around a focused area
-              of expertise, with dedicated leaders overseeing quality,
-              innovation, and client satisfaction. This structure enables us to
-              deliver fully integrated solutions across the entire project
-              lifecycle.
+              Each department within Milestone Project Management is built
+              around a focused area of expertise, with dedicated leaders
+              overseeing quality, innovation, and client satisfaction. This
+              structure enables us to deliver fully integrated solutions across
+              the entire project lifecycle.
             </p>
           </div>
 
@@ -202,8 +203,8 @@ export default function Page() {
             Expertise
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            At Milestonepm, executive leadership is hands-on — present at every
-            critical step of your project journey.
+            At Milestone Project Management, executive leadership is hands-on —
+            present at every critical step of your project journey.
           </p>
         </div>
 
@@ -321,7 +322,7 @@ export default function Page() {
 
       <CTA
         title="Your Project. Our People. One Team."
-        desc=" With fully in-house capabilities, Milestonepm offers clients unmatched
+        desc=" With fully in-house capabilities, Milestone Project Management offers clients unmatched
             efficiency, precision, and project confidence. We're not just
             consultants, we’re your engineering partner from concept to
             completion."

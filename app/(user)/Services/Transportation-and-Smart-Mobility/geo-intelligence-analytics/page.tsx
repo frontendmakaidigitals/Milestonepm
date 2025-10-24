@@ -119,11 +119,11 @@ export default function Page() {
             <p>
               In today’s fast-moving, data-driven world, the ability to see,
               understand, and act on geographic information can transform
-              decision-making. At Al Yusr Engineering Consulting, our
-              Geo-Intelligence & Analysis services combine cutting-edge
-              geospatial technology with deep domain expertise, empowering our
-              clients to plan smarter, respond faster, and operate more
-              efficiently.
+              decision-making. At Milestone Project Management Engineering
+              Consulting, our Geo-Intelligence & Analysis services combine
+              cutting-edge geospatial technology with deep domain expertise,
+              empowering our clients to plan smarter, respond faster, and
+              operate more efficiently.
               <br /> <br /> Whether the goal is to map complex infrastructure,
               predict environmental change, monitor assets, or support critical
               decision-making, we deliver end-to-end geospatial solutions that
@@ -281,7 +281,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Shaping Smarter, Safer Communities"
-        desc="At Al Yusr, our Geo-Intelligence & Analysis services are more than just maps; they are powerful decision-making tools that help our clients create sustainable, secure, and future-ready environments."
+        desc="At Milestone Project Management, our Geo-Intelligence & Analysis services are more than just maps; they are powerful decision-making tools that help our clients create sustainable, secure, and future-ready environments."
         btn="Contact Us Today"
       />
     </main>

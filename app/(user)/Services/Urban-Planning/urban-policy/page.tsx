@@ -77,13 +77,13 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr, we help cities and businesses redevelop and restore
-          contaminated or underused land safely and effectively. Our goal is to
-          turn these spaces into thriving, healthy, and economically useful
-          parts of the community. With decades of global experience, our team
-          handles complex urban redevelopment challenges using smart planning,
-          environmental science, and a deep understanding of local and national
-          policies.
+          At Milestone Project Management, we help cities and businesses
+          redevelop and restore contaminated or underused land safely and
+          effectively. Our goal is to turn these spaces into thriving, healthy,
+          and economically useful parts of the community. With decades of global
+          experience, our team handles complex urban redevelopment challenges
+          using smart planning, environmental science, and a deep understanding
+          of local and national policies.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           We don’t just clean up sites, we transform them into assets that
@@ -202,7 +202,10 @@ export default function ConstructionManagementPage() {
             viewport={{ once: true }}
             className="text-4xl lg:text-5xl font-bold"
           >
-            Why Choose <span className="text-yellow-500">Al Yusr</span>
+            Why Choose{" "}
+            <span className="text-yellow-500">
+              Milestone Project Management
+            </span>
           </motion.h2>
         </div>
 
@@ -229,7 +232,7 @@ export default function ConstructionManagementPage() {
       </section>
       <EngineeringCTA
         title="Ready to Redevelop?"
-        desc="Whether you're transforming industrial land, decommissioning facilities, or revitalizing urban zones, Al Yusr provides the expertise, tools, and vision to do it right."
+        desc="Whether you're transforming industrial land, decommissioning facilities, or revitalizing urban zones, Milestone Project Management provides the expertise, tools, and vision to do it right."
         btn="Contact Us Today"
       />
     </main>

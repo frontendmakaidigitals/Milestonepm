@@ -102,10 +102,11 @@ export default function ConstructionManagementPage() {
         <p className="mt-3 text-center w-full text-lg">
           In today’s fast-moving development landscape, traditional project
           delivery methods can’t always keep up with growing demands for speed,
-          cost-efficiency, and innovation. At Al Yusr, we offer Alternative
-          Delivery Models that go beyond the conventional. These models help
-          overcome funding challenges, reduce delays, and align every team under
-          a common goal, delivering excellence with agility.
+          cost-efficiency, and innovation. At Milestone Project Management, we
+          offer Alternative Delivery Models that go beyond the conventional.
+          These models help overcome funding challenges, reduce delays, and
+          align every team under a common goal, delivering excellence with
+          agility.
         </p>{" "}
         <p className="mt-2 text-lg text-center">
           Whether it&apos;s through Design-Build, Public-Private Partnerships,
@@ -199,11 +200,12 @@ export default function ConstructionManagementPage() {
               Our Value Proposition
             </h2>
             <p>
-              At Al Yusr, we bring a unique blend of regional expertise,
-              cross-disciplinary knowledge, and industry foresight to every
-              project. Our team understands that no two developments are the
-              same, which is why we customize delivery models that fit the
-              project&apos;s goals, budget, timeline, and risk profile.
+              At Milestone Project Management, we bring a unique blend of
+              regional expertise, cross-disciplinary knowledge, and industry
+              foresight to every project. Our team understands that no two
+              developments are the same, which is why we customize delivery
+              models that fit the project&apos;s goals, budget, timeline, and
+              risk profile.
             </p>
             <p>
               With a proven track record in large-scale public and private
@@ -232,7 +234,7 @@ export default function ConstructionManagementPage() {
           <h2 className="text-4xl lg:text-5xl max-w-5xl mx-auto font-bold text-center mb-14">
             <span className="text-green-600">Advantages</span> of{" "}
             <span className="text-yellow-500">Alternative Delivery</span> Models
-            with Al Yusr
+            with Milestone Project Management
           </h2>
           <div className="grid gap-10 grid-cols-1 lg:grid-cols-3">
             {advantages.map(({ title, description, icon: Icon }, idx) => (
@@ -253,8 +255,8 @@ export default function ConstructionManagementPage() {
         </div>
       </section>
       <EngineeringCTA
-        title="Partner with Al Yusr for Your Project Needs"
-        desc="If your project needs a faster, more efficient delivery approach, talk to the Al Yusr team. We'll help you select and implement a model that reduces complexity and ensures measurable success."
+        title="Partner with Milestone Project Management for Your Project Needs"
+        desc="If your project needs a faster, more efficient delivery approach, talk to the Milestone Project Management team. We'll help you select and implement a model that reduces complexity and ensures measurable success."
         btn="Contact Us Today"
       />
     </main>

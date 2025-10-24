@@ -44,7 +44,7 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/saudi-vision/banner.webp"
-          alt="Milestonepm Engineering Hero Background"
+          alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
       <section className="min-h-[85vh] py-20 lg:py-0 overflow-hidden relative">
@@ -62,15 +62,15 @@ export default function Page() {
                 of <span className="text-teal-600">Saudi Arabia</span>
               </h1>
               <p className="text-lg text-gray-700">
-                At Milestonepm Engineering Consulting, we are proud to play a
-                vital role in shaping the Kingdom’s bold transformation under
-                Saudi Vision 2030. Our work is rooted in national priorities,
-                sustainable development, urban expansion, infrastructure
-                excellence, and economic diversification. <br /> As a Class A
-                certified firm, we are trusted partners on projects that define
-                the future of Saudi Arabia, from smart cities and transportation
-                networks to eco-friendly buildings and strategic advisory
-                services that support long-term growth.
+                At Milestone Project Management Engineering Consulting, we are
+                proud to play a vital role in shaping the Kingdom’s bold
+                transformation under Saudi Vision 2030. Our work is rooted in
+                national priorities, sustainable development, urban expansion,
+                infrastructure excellence, and economic diversification. <br />{" "}
+                As a Class A certified firm, we are trusted partners on projects
+                that define the future of Saudi Arabia, from smart cities and
+                transportation networks to eco-friendly buildings and strategic
+                advisory services that support long-term growth.
               </p>
 
               <Link
@@ -219,10 +219,10 @@ export default function Page() {
           </h2>
           <p className="text-gray-600 text-lg">
             With headquarters in Riyadh and projects across the Kingdom,
-            Milestonepm unites local expertise and global standards to deliver
-            world-class outcomes. Our team of architects, planners, engineers,
-            and advisors is dedicated to engineering a sustainable, smart, and
-            strong nation.
+            Milestone Project Management unites local expertise and global
+            standards to deliver world-class outcomes. Our team of architects,
+            planners, engineers, and advisors is dedicated to engineering a
+            sustainable, smart, and strong nation.
           </p>
         </motion.div>
         <div className="w-full h-[400px]">

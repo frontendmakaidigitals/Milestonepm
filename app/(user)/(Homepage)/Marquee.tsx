@@ -20,8 +20,8 @@ const Marquee = () => {
   return (
     <section className="py-20">
       <h1 className="text-4xl lg:text-5xl text-center max-w-3xl mx-auto font-[600]">
-        Powering Precision{" "}
-        <span className="text-yellow-500">Through Innovation</span>
+        <span className="text-yellow-600">Smart Solutions</span> with Precise
+        Results
       </h1>
 
       <div className="mt-7">

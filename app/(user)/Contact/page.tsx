@@ -23,27 +23,29 @@ const Contact = () => {
   const internationalOffices = [
     {
       country: "United Kingdom",
-      city: "London Office",
-      email: "uk@Milestonepm.com.sa",
       flag: "/contact-flags/uk.webp",
       bg: "#E8EAF6", // indigo 50
       text: "#1A237E", // indigo 900
     },
     {
-      country: "Sri Lanka",
-      city: "Colombo Office",
-      email: "srilanka@Milestonepm.com.sa",
-      flag: "/contact-flags/srilanka.webp",
+      country: "KSA",
+
+      flag: "/contact-flags/ksa.webp",
       bg: "#FFF8E1", // amber 50
       text: "#FF6F00", // amber 900
     },
     {
       country: "Egypt",
-      city: "Cairo Office",
-      email: "egypt@Milestonepm.com.sa",
+
       flag: "/contact-flags/egypt.webp",
       bg: "#FFEBEE", // red 50
       text: "#B71C1C", // red 900
+    },
+    {
+      country: "India",
+      flag: "/contact-flags/india.webp",
+      bg: "#FFF8E1", // amber 50
+      text: "#FF6F00", // amber 900
     },
   ];
 
@@ -353,23 +355,19 @@ const Contact = () => {
             </h3>
             <p className="text-slate-700 leading-relaxed">
               <span className="font-semibold block">
-                Milestonepm Engineering Consulting
+                Milestone Project Management
               </span>
-              Al Rawdah District, King Abdullah Road
-              <br />
-              Riyadh 13313 – 8119, Saudi Arabia
+              Churchill Tower, Marasi Dr, Business Bay, Dubai <br /> PO Box:
+              29631
             </p>
             <div className="mt-4 space-y-2 text-slate-800">
               <p className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-yellow-500" /> +966 11 494 4444
+                <Phone className="w-4 h-4 text-yellow-500" /> +971 50 513 7580
               </p>
-              <p className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-yellow-500" /> Fax: +966 11 494
-                4440
-              </p>
+
               <p className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-yellow-500" />{" "}
-                info@Milestonepm.com.sa
+                hanyelnahas@milestonepm.co
               </p>
             </div>
           </div>
@@ -379,46 +377,30 @@ const Contact = () => {
               <Earth />
               International Offices
             </h3>
-            <ul className="space-y-6">
+            <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {internationalOffices.map((office, index) => (
                 <li
                   key={index}
-                  style={{ backgroundColor: office.bg }}
-                  className="flex items-center gap-5 border border-transparent rounded-2xl shadow-md p-3 hover:shadow-lg transition-transform transform hover:-translate-y-1"
+                  className=" border border-gray-300 rounded-2xl shadow-md py-2 px-2 "
                 >
                   {/* Flag image */}
-                  <div className="h-[85px] flex items-stretch">
+                  <div className="h-[120px] flex items-stretch">
                     <Image
                       src={office.flag}
                       alt={`${office.country} Flag`}
                       width={300}
                       height={300}
-                      className="rounded-lg h-full w-32 object-cover shadow-sm"
+                      className="rounded-lg h-full  w-full object-cover shadow-sm"
                     />
                   </div>
 
                   {/* Text section */}
-                  <div className="">
-                    <h4
-                      className="text-xl font-[600] tracking-wide"
-                      style={{ color: office.text }}
-                    >
-                      {office.country}
-                    </h4>
-                    <p
-                      className="text-sm font-normal"
-                      style={{ color: office.text, opacity: 0.85 }}
-                    >
-                      {office.city}
-                    </p>
-                    <div
-                      className="mt-2 flex items-center text-sm font-medium"
-                      style={{ color: office.text }}
-                    >
-                      <Mail className="w-4 h-4 mr-1 opacity-90" />
-                      {office.email}
-                    </div>
-                  </div>
+
+                  <h4
+                    className="text-lg font-[600] text-sgray-800 text-center mt-2 tracking-wide"
+                  >
+                    {office.country}
+                  </h4>
                 </li>
               ))}
             </ul>

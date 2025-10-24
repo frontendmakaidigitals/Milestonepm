@@ -51,7 +51,7 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/Leadership-Vision 2/banner.webp"
-          alt="Milestonepm Engineering Hero Background"
+          alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
 
@@ -64,11 +64,11 @@ export default function Page() {
               with Purpose
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              At Milestonepm, leadership is about inspiring progress, driving
-              innovation, and delivering value. Our CEO and department heads
-              across engineering, planning, design, safety, and project
-              management work collaboratively to embed quality, sustainability,
-              and innovation in every project.
+              At Milestone Project Management, leadership is about inspiring
+              progress, driving innovation, and delivering value. Our CEO and
+              department heads across engineering, planning, design, safety, and
+              project management work collaboratively to embed quality,
+              sustainability, and innovation in every project.
             </p>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>✓ Deep technical expertise across disciplines</li>
@@ -80,7 +80,7 @@ export default function Page() {
           <div className="rounded-xl h-[260px] lg:h-[450px] overflow-hidden">
             <img
               src="/our-ethics.jpg"
-              alt="Leadership at Milestonepm"
+              alt="Leadership at Milestone Project Management"
               className="w-full h-full object-cover"
             />
           </div>
@@ -94,7 +94,7 @@ export default function Page() {
             <div className="rounded-xl mb-4 h-[350px] overflow-hidden">
               <img
                 src="/Leadership-Vision 2/leadership.webp"
-                alt="Leadership at Milestonepm"
+                alt="Leadership at Milestone Project Management"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -112,7 +112,7 @@ export default function Page() {
             <div className="rounded-xl h-[350px] mb-4 overflow-hidden">
               <img
                 src="/Leadership-Vision 2/mission.webp"
-                alt="Leadership at Milestonepm"
+                alt="Leadership at Milestone Project Management"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -144,15 +144,17 @@ export default function Page() {
             </p>
             <p className="text-gray-700 text-lg mb-4">
               Whether we are shaping smart cities, supporting green
-              infrastructure, or modernizing essential services, Milestonepm is
-              committed to turning national goals into real-world outcomes.
+              infrastructure, or modernizing essential services, Milestone
+              Project Management is committed to turning national goals into
+              real-world outcomes.
             </p>
             <p className="text-gray-700 text-lg">
               As the Kingdom invests in infrastructure, smart cities, housing,
-              and sustainability, Milestonepm delivers engineering solutions
-              that support these goals across every sector. Our projects
-              directly align with Vision 2030’s core pillars: a vibrant society,
-              a thriving economy, and an ambitious nation.
+              and sustainability, Milestone Project Management delivers
+              engineering solutions that support these goals across every
+              sector. Our projects directly align with Vision 2030’s core
+              pillars: a vibrant society, a thriving economy, and an ambitious
+              nation.
             </p>
           </div>
 
@@ -227,7 +229,7 @@ export default function Page() {
 
       <EngineeringCTA
         title="Nationwide Impact"
-        desc="From Riyadh to NEOM, and from the Eastern Province to Tabuk, Milestonepm is helping reshape the Kingdom’s landscape, one project at a time. We partner with both public and private sector entities to deliver value, reduce environmental impact, and create long-lasting infrastructure for generations to come."
+        desc="From Riyadh to NEOM, and from the Eastern Province to Tabuk, Milestone Project Management is helping reshape the Kingdom’s landscape, one project at a time. We partner with both public and private sector entities to deliver value, reduce environmental impact, and create long-lasting infrastructure for generations to come."
       />
     </div>
   );

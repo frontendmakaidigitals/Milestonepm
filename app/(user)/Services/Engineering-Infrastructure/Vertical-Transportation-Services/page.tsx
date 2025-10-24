@@ -185,7 +185,7 @@ export default function ConstructionManagementPage() {
       <section className=" py-16">
         <div className="container">
           <h2 className="text-4xl lg:text-5xl max-w-5xl mx-auto font-bold text-center text-black mb-12">
-            Why Choose Al Yusr for{" "}
+            Why Choose Milestone Project Management for{" "}
             <span className="text-yellow-500">Vertical Transportation?</span>
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

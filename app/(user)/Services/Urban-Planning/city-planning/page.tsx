@@ -132,9 +132,10 @@ export default function ConstructionManagementPage() {
         <p className="mt-3 text-center w-full text-lg">
           As cities across the world face the pressures of rapid population
           growth, climate change, and shifting economies, strategic city
-          planning has never been more important. At Al Yusr, we bring together
-          experts in urban design, infrastructure, environment, and economics to
-          shape cities that are smart, inclusive, and sustainable.
+          planning has never been more important. At Milestone Project
+          Management, we bring together experts in urban design, infrastructure,
+          environment, and economics to shape cities that are smart, inclusive,
+          and sustainable.
         </p>{" "}
         <p className="mt-2 text-lg text-center">
           From concept to implementation, our city planning solutions are
@@ -267,7 +268,7 @@ export default function ConstructionManagementPage() {
       </section>
       <EngineeringCTA
         title="Ready to Plan the Cities of the Future?"
-        desc="Contact Al Yusr today to learn how we can help you plan, design, and deliver your next urban development or regeneration project. Together, we can build smarter, more resilient cities for generations to come."
+        desc="Contact Milestone Project Management today to learn how we can help you plan, design, and deliver your next urban development or regeneration project. Together, we can build smarter, more resilient cities for generations to come."
         btn="Contact Us Today"
       />
     </main>

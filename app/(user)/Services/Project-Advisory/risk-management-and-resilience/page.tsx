@@ -93,10 +93,10 @@ export default function Page() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr, we empower governments, developers, and businesses to
-          prepare for the unexpected. Our risk management and resilience
-          services are designed to protect your assets, ensure continuity, and
-          support sustainable growth, no matter the challenge.
+          At Milestone Project Management, we empower governments, developers,
+          and businesses to prepare for the unexpected. Our risk management and
+          resilience services are designed to protect your assets, ensure
+          continuity, and support sustainable growth, no matter the challenge.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           From climate-related threats to physical and digital risks, we help
@@ -206,10 +206,10 @@ export default function Page() {
               Post-Disaster Response & Recovery
             </h2>
             <p className="text-gray-700 mb-6">
-              When disaster strikes, Al Yusr is ready. Our team provides
-              immediate on-ground support to assess damage, restore
-              functionality, and help communities recover. We’ve supported
-              clients across:
+              When disaster strikes, Milestone Project Management is ready. Our
+              team provides immediate on-ground support to assess damage,
+              restore functionality, and help communities recover. We’ve
+              supported clients across:
             </p>
 
             <ul className="space-y-3 mb-6 text-gray-700">
@@ -258,8 +258,8 @@ export default function Page() {
         </div>
       </section>
       <EngineeringCTA
-        title="Build Resilience with Al Yusr"
-        desc="Let us help you protect what matters most. Contact Al Yusr today to learn how our risk management and resilience services can support your strategic goals, safeguard your assets, and ensure you're ready for tomorrow."
+        title="Build Resilience with Milestone Project Management"
+        desc="Let us help you protect what matters most. Contact Milestone Project Management today to learn how our risk management and resilience services can support your strategic goals, safeguard your assets, and ensure you're ready for tomorrow."
         btn="Contact Us Today"
       />
     </main>

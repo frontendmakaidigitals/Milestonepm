@@ -70,11 +70,11 @@ const Process = () => {
   }, [api]);
 
   return (
-    <section className="bg-white py-20 px-6 text-gray-900">
+    <section className=" py-20 px-6 text-gray-900">
       <div className="flex flex-col lg:flex-row  items-center gap-5">
         <div>
           <motion.h2 className="text-4xl  lg:text-5xl font-bold mb-2 text-start">
-            The <span className="text-yellow-500">Process we</span> Follow
+            <span className="text-yellow-500">Milestone Project</span>  Steps
           </motion.h2>
 
           <motion.p

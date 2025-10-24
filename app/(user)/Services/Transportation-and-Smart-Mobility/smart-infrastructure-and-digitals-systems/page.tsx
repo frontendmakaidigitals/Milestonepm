@@ -108,10 +108,10 @@ export default function Page() {
               Services
             </h1>
             <p>
-              At Al Yusr Engineering Consulting, we design, engineer, manage,
-              and operate digital infrastructure across its entire lifecycle,
-              empowering cities, businesses, and communities to be more
-              connected, intelligent, and resilient.
+              At Milestone Project Management Engineering Consulting, we design,
+              engineer, manage, and operate digital infrastructure across its
+              entire lifecycle, empowering cities, businesses, and communities
+              to be more connected, intelligent, and resilient.
               <br /> <br />
               From fiber networks and wireless systems to smart buildings and
               cybersecurity, we deliver end-to-end digital solutions that meet
@@ -174,8 +174,11 @@ export default function Page() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold text-center mb-12 mx-auto max-w-4xl">
-            Why Choose <span className="text-yellow-600">Al Yusr</span> for
-            Smart Infrastructure?
+            Why Choose{" "}
+            <span className="text-yellow-600">
+              Milestone Project Management
+            </span>{" "}
+            for Smart Infrastructure?
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -198,7 +201,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Powering the Kingdom’s Digital Transformation"
-        desc="Aligned with Saudi Vision 2030, Al Yusr’s Smart Infrastructure & Digital Services empower cities, businesses, and industries to embrace the Fourth Industrial Revolution, delivering not only connectivity but also sustainability, resilience, and smarter decision-making."
+        desc="Aligned with Saudi Vision 2030, Milestone Project Management’s Smart Infrastructure & Digital Services empower cities, businesses, and industries to embrace the Fourth Industrial Revolution, delivering not only connectivity but also sustainability, resilience, and smarter decision-making."
         btn="Contact Us Today"
       />
     </main>

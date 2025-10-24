@@ -19,8 +19,8 @@ const Footer = () => {
           <div>
             <Logo />
             <p className="text-sm text-slate-50 mt-5">
-              We deliver engineering and consulting solutions with global
-              expertise
+              Delivering high-quality engineering and project management
+              solutions across the globe.
             </p>
             {/* Social Links */}
             <div className="mt-8">
@@ -49,31 +49,31 @@ const Footer = () => {
               <ul className="space-y-2">
                 {[
                   {
-                    title: "Project Management",
+                    title: "Urban Planning",
                     href: "/Services/Project-Advisory/program-management",
                   },
                   {
-                    title: "Architectural & Engineering Design",
+                    title: "Construction Management",
                     href: "/Services/Urban-Planning/Architecture-Design",
                   },
                   {
-                    title: "Urban Design",
+                    title: "Structural Engineering ",
                     href: "/Services/Urban-Planning/urban-policy",
                   },
                   {
-                    title: "Technical Support & Supervision",
+                    title: "Foundation Solutions",
                     href: "/Services/Transportation-and-Smart-Mobility/it-and-cybersecurity",
                   },
                   {
-                    title: "Safety & Risk Analysis",
+                    title: "Climate Adaptation",
                     href: "/Services/Project-Advisory/risk-management-and-resilience",
                   },
                   {
-                    title: "Landscape Architecture",
+                    title: "Airport & Transit Hub",
                     href: "/Services/Urban-Planning/Landscape-Architecture",
                   },
                   {
-                    title: "Rail Network",
+                    title: "Tunnel Infrastructure",
                     href: "/Services/Transportation-and-Smart-Mobility/rail-network-modeling",
                   },
                 ].map(({ title, href }, i) => (
@@ -96,24 +96,18 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/Who-we-are/Company-Overview"
-                    className="hover:underline"
-                  >
-                    Who We Are
+                  <Link href="/" className="hover:underline">
+                    Our Services
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/Why-Al-Yusr/Trusted-by-Government-and-Private-Sectors"
-                    className="hover:underline"
-                  >
-                    Why Al Yusr
+                  <Link href="/" className="hover:underline">
+                    About us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Services" className="hover:underline">
-                    What We Do
+                  <Link href="/" className="hover:underline">
+                    Digital Solutions
                   </Link>
                 </li>
               </ul>
@@ -148,22 +142,18 @@ const Footer = () => {
                 <div className="flex items-start gap-2">
                   <MapPin className="w-5 h-5 mt-1" />
                   <p className="max-w-[250px]">
-                    {" "}
-                    Al Rawdah District, King Abdullah Road Riyadh 13313 – 8119,
-                    Saudi Arabia
+                    Churchill Tower, Marasi Dr, Business Bay, Dubai PO Box:
+                    29631
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  <span>+966 11 494 4444</span>
+                  <span>+971 50 513 7580</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Printer className="w-5 h-5" />
-                  <span>+966 11 494 4440</span>
-                </div>
+
                 <div className="flex items-center gap-2">
                   <Mail className="w-5 h-5" />
-                  <span>info@Milestonepmco.com</span>
+                  <span>hanyelnahas@milestonepm.co</span>
                 </div>
               </div>
             </div>
@@ -174,7 +164,7 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="bg-dimondra-tealDark text-slate-50 text-sm text-center py-3 relative z-10">
         &copy; {new Date().getFullYear()} All Rights Reserved – Powered by{" "}
-        <span className="text-yellow-500">Milestonepm Engineering</span>
+        <span className="text-yellow-500">Milestone Project Management</span>
       </div>
     </footer>
   );

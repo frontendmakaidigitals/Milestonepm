@@ -133,12 +133,13 @@ export default function Page() {
               events like floods, wildfires, droughts, and superstorms threaten
               lives, communities, and economies, costing over $250 billion
               annually in global damages.
-              <br /> <br /> At Al Yusr, we provide end-to-end climate adaptation
-              solutions that identify vulnerabilities, build resilience, and
-              prepare communities and businesses to thrive in a changing
-              environment. Our services combine engineering expertise,
-              environmental science, and strategic planning to deliver adaptive
-              and sustainable solutions that protect both people and assets.
+              <br /> <br /> At Milestone Project Management, we provide
+              end-to-end climate adaptation solutions that identify
+              vulnerabilities, build resilience, and prepare communities and
+              businesses to thrive in a changing environment. Our services
+              combine engineering expertise, environmental science, and
+              strategic planning to deliver adaptive and sustainable solutions
+              that protect both people and assets.
             </p>
           </div>
           <div className="w-full h-[400px] bg-slate-100 rounded-lg">
@@ -219,7 +220,7 @@ export default function Page() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl lg:text-5xl font-bold text-center text-slate-900">
-            Benefits of Partnering with Al Yusr
+            Benefits of Partnering with Milestone Project Management
           </h2>
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -242,7 +243,7 @@ export default function Page() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center text-slate-900">
-            Why Choose Al Yusr?
+            Why Choose Milestone Project Management?
           </h2>
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
@@ -267,7 +268,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Adapt today for a safer tomorrow."
-        desc=" Partner with Al Yusr to protect your assets, people, and communities from the impacts of climate change. Let’s design resilience together."
+        desc=" Partner with Milestone Project Management to protect your assets, people, and communities from the impacts of climate change. Let’s design resilience together."
         btn="Contact Us Today"
       />
     </main>

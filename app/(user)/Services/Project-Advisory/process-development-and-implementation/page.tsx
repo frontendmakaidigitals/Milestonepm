@@ -100,14 +100,14 @@ export default function Page() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr Engineering Consulting, we deliver advanced process
-          solutions that combine the best of science, engineering, and
-          sustainability. From concept to commissioning, we help industries,
-          developers, and public entities optimize their operations, reduce
-          environmental impact, and meet strict regulatory requirements. Whether
-          addressing air pollution, energy storage, water treatment, or carbon
-          capture, our process engineering services are tailored for long-term
-          performance and compliance.
+          At Milestone Project Management Engineering Consulting, we deliver
+          advanced process solutions that combine the best of science,
+          engineering, and sustainability. From concept to commissioning, we
+          help industries, developers, and public entities optimize their
+          operations, reduce environmental impact, and meet strict regulatory
+          requirements. Whether addressing air pollution, energy storage, water
+          treatment, or carbon capture, our process engineering services are
+          tailored for long-term performance and compliance.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           Whether you&apos;re a government authority managing public assets, a
@@ -236,7 +236,7 @@ export default function Page() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-10">
-            Why Choose Al Yusr for Process Development?
+            Why Choose Milestone Project Management for Process Development?
           </h2>
           <div className="grid gap-6 sm:grid-cols-2">
             {points.map((point, idx) => (
@@ -253,7 +253,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Let’s Build Better Processes Together"
-        desc="Whether you’re launching a greenfield facility, upgrading an existing system, or facing environmental compliance challenges, Al Yusr Engineering Consulting is your reliable partner for intelligent process development and implementation."
+        desc="Whether you’re launching a greenfield facility, upgrading an existing system, or facing environmental compliance challenges, Milestone Project Management Engineering Consulting is your reliable partner for intelligent process development and implementation."
         btn="Contact Us Today"
       />
     </main>

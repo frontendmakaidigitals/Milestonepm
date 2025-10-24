@@ -50,7 +50,7 @@ const safetyPrograms = [
   {
     icon: <CheckCircle className="w-6 h-6 text-amber-600" />,
     title: "Contractor & Partner Integration",
-    desc: "Subcontractors align with Milestonepm’s safety systems, with joint inspections and shared KPIs.",
+    desc: "Subcontractors align with Milestone Project Management’s safety systems, with joint inspections and shared KPIs.",
   },
   {
     icon: <Award className="w-6 h-6 text-yellow-600" />,
@@ -97,7 +97,7 @@ export default function SafetyCommitmentsPage() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src={"/safety commitments/umit-yildirim-9OB46apMbC4-unsplash.webp"}
-          alt="Milestonepm Engineering Hero Background"
+          alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
       <section className="relative overflow-hidden">
@@ -113,11 +113,11 @@ export default function SafetyCommitmentsPage() {
                 Our Commitment to Safety
               </h1>
               <p className="text-lg text-gray-700">
-                At Milestonepm Engineering Consulting, safety is more than a
-                policy; it is a core value embedded into our culture, our
-                people, and our projects. We are committed to ensuring the
-                physical, mental, and environmental well-being of every team
-                member, client, and community we work with.
+                At Milestone Project Management Engineering Consulting, safety
+                is more than a policy; it is a core value embedded into our
+                culture, our people, and our projects. We are committed to
+                ensuring the physical, mental, and environmental well-being of
+                every team member, client, and community we work with.
                 <br />
                 From project planning to execution, we apply proactive risk
                 management strategies to identify, reduce, and eliminate
@@ -188,9 +188,10 @@ export default function SafetyCommitmentsPage() {
             Safety Commitments
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            At Milestonepm Engineering Consulting, safety is a core value. We
-            embed it in our culture, people, and projects — from planning to
-            execution — following international standards like ISO 45001.
+            At Milestone Project Management Engineering Consulting, safety is a
+            core value. We embed it in our culture, people, and projects — from
+            planning to execution — following international standards like ISO
+            45001.
           </p>
         </div>
 
@@ -227,7 +228,7 @@ export default function SafetyCommitmentsPage() {
       </section>
       <EngineeringCTA
         title="Certifications & Compliance"
-        desc="Milestonepm is fully certified under ISO 45001:2018 – Occupational Health & Safety Management. All of our safety practices are aligned with local laws and international benchmarks to ensure consistent, high-standard outcomes."
+        desc="Milestone Project Management is fully certified under ISO 45001:2018 – Occupational Health & Safety Management. All of our safety practices are aligned with local laws and international benchmarks to ensure consistent, high-standard outcomes."
       />
     </section>
   );

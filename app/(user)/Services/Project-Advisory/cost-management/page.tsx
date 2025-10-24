@@ -114,13 +114,13 @@ export default function Page() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr, we help clients make smart financial decisions throughout
-          their project journey. Our cost management services are designed to
-          provide accurate cost control, financial transparency, and strategic
-          guidance, from project planning to completion. Whether it&apos;s a
-          commercial tower, residential development, infrastructure project, or
-          urban regeneration, we make sure your budget works harder and your
-          investment delivers real value.
+          At Milestone Project Management, we help clients make smart financial
+          decisions throughout their project journey. Our cost management
+          services are designed to provide accurate cost control, financial
+          transparency, and strategic guidance, from project planning to
+          completion. Whether it&apos;s a commercial tower, residential
+          development, infrastructure project, or urban regeneration, we make
+          sure your budget works harder and your investment delivers real value.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           We go beyond just estimating costs; we offer deep sector expertise,
@@ -222,8 +222,11 @@ export default function Page() {
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">
-            Why Choose <span className="text-yellow-600">Al Yusr</span> for Cost
-            Management
+            Why Choose{" "}
+            <span className="text-yellow-600">
+              Milestone Project Management
+            </span>{" "}
+            for Cost Management
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
             We bring clarity, control, and confidence to your project costs
@@ -276,7 +279,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Build with Confidence"
-        desc="Whether you're developing a mega project or managing a complex infrastructure upgrade, Al Yusr’s cost management services help you stay on budget, reduce risk, and achieve lasting value."
+        desc="Whether you're developing a mega project or managing a complex infrastructure upgrade, Milestone Project Management’s cost management services help you stay on budget, reduce risk, and achieve lasting value."
         btn="Contact Us Today"
       />
     </main>

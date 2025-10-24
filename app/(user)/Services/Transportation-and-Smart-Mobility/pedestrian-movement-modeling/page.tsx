@@ -76,13 +76,14 @@ export default function Page() {
               Planning
             </h1>
             <p>
-              At Al Yusr, we help shape spaces that move people, safely,
-              comfortably, and efficiently. Our Pedestrian Movement Planning
-              service leverages advanced dynamic modelling to simulate
-              real-world human behavior and crowd flows within various built
-              environments. Whether it’s a metro station, airport terminal,
-              shopping mall, stadium, or public plaza, we offer data-driven
-              insights to optimize pedestrian traffic and prevent congestion.
+              At Milestone Project Management, we help shape spaces that move
+              people, safely, comfortably, and efficiently. Our Pedestrian
+              Movement Planning service leverages advanced dynamic modelling to
+              simulate real-world human behavior and crowd flows within various
+              built environments. Whether it’s a metro station, airport
+              terminal, shopping mall, stadium, or public plaza, we offer
+              data-driven insights to optimize pedestrian traffic and prevent
+              congestion.
               <br /> <br />
               By simulating how people move, wait, and interact within a space,
               we support architects, urban planners, developers, and operators
@@ -247,20 +248,23 @@ export default function Page() {
       <section className="py-20 bg-gradient-to-r from-yellow-50 via-white to-yellow-100">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-            Why Choose <span className="text-yellow-500">Al Yusr?</span>
+            Why Choose{" "}
+            <span className="text-yellow-500">
+              Milestone Project Management?
+            </span>
           </h2>
           <p className="mt-6 text-lg text-gray-700 leading-relaxed">
             With deep expertise in urban design, infrastructure planning, and
-            simulation modelling, Al Yusr delivers practical, high-impact
-            pedestrian movement insights tailored to your project goals. Our
-            analysis helps you design inclusive, efficient, and future-ready
-            spaces where people feel safe and confident moving.
+            simulation modelling, Milestone Project Management delivers
+            practical, high-impact pedestrian movement insights tailored to your
+            project goals. Our analysis helps you design inclusive, efficient,
+            and future-ready spaces where people feel safe and confident moving.
           </p>
         </div>
       </section>
       <EngineeringCTA
         title="Need expert pedestrian planning for your next development?"
-        desc=" Contact Al Yusr today to simulate smarter movement, reduce crowd risk, and enhance the usability of your space."
+        desc=" Contact Milestone Project Management today to simulate smarter movement, reduce crowd risk, and enhance the usability of your space."
         btn="Contact Us Today"
       />
     </main>

@@ -67,10 +67,11 @@ export default function Page() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr, our Strategic Consulting practice is where design thinking
-          meets business intelligence. We help organizations navigate
-          complexity, adapt to change, and shape the future of the built
-          environment by aligning vision, operations, and spatial strategy.
+          At Milestone Project Management, our Strategic Consulting practice is
+          where design thinking meets business intelligence. We help
+          organizations navigate complexity, adapt to change, and shape the
+          future of the built environment by aligning vision, operations, and
+          spatial strategy.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           From public sector transformation to private sector innovation, we
@@ -96,11 +97,11 @@ export default function Page() {
             </h2>
 
             <p className="text-gray-700 mb-6">
-              We go beyond traditional consulting. At Al Yusr, we integrate
-              design methodologies, data analytics, and change management
-              principles to offer strategic solutions rooted in real-world
-              feasibility and creative problem-solving. Our cross-functional
-              team includes:
+              We go beyond traditional consulting. At Milestone Project
+              Management, we integrate design methodologies, data analytics, and
+              change management principles to offer strategic solutions rooted
+              in real-world feasibility and creative problem-solving. Our
+              cross-functional team includes:
             </p>
 
             <ul className="space-y-4 mb-6">
@@ -168,7 +169,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Let’s Build the Future Together"
-        desc="Whether you're shaping a new organization, reimagining your operations, or planning for smart growth, Al Yusr's Strategic Consulting team is your trusted partner for creating clarity, value, and vision."
+        desc="Whether you're shaping a new organization, reimagining your operations, or planning for smart growth, Milestone Project Management's Strategic Consulting team is your trusted partner for creating clarity, value, and vision."
         btn="Contact Us Today"
       />
     </main>

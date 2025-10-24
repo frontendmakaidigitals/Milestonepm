@@ -81,7 +81,7 @@ export default function TechnicalExpertisePage() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/technical expertise 2/banner.webp"
-          alt="Milestonepm Engineering Hero Background"
+          alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
       <section className=" bg-gradient-to-r from-amber-100/30 via-amber-200/40 to-transparent overflow-hidden relative">
@@ -93,9 +93,9 @@ export default function TechnicalExpertisePage() {
                 On
               </h1>
               <p className="text-lg text-gray-700">
-                At Milestonepm, technical excellence is at the core of
-                everything we do. Our strength lies in our ability to combine
-                deep domain knowledge with cutting-edge tools and a
+                At Milestone Project Management, technical excellence is at the
+                core of everything we do. Our strength lies in our ability to
+                combine deep domain knowledge with cutting-edge tools and a
                 results-driven approach. From concept to completion, our
                 engineers, architects, planners, and project managers apply
                 international standards and local insight to deliver

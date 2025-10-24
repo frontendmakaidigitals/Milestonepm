@@ -222,12 +222,13 @@ export default function Page() {
               An Integrated Team From Day One
             </h2>
             <p className="text-lg text-gray-700 mt-4">
-              At Al Yusr, we structure our interior architecture teams to
-              deliver cohesive, high-performance results. Designers, project
-              managers, and technical specialists are assigned from project
-              initiation and stay engaged through final delivery. This ensures
-              design intent is preserved, technical details are executed
-              correctly, and the project timeline stays on track.
+              At Milestone Project Management, we structure our interior
+              architecture teams to deliver cohesive, high-performance results.
+              Designers, project managers, and technical specialists are
+              assigned from project initiation and stay engaged through final
+              delivery. This ensures design intent is preserved, technical
+              details are executed correctly, and the project timeline stays on
+              track.
               <br /> <br /> Our collaborative model guarantees that while each
               team member focuses on their area of expertise, they maintain
               accountability for the overall vision, quality, and outcome of the
@@ -247,7 +248,7 @@ export default function Page() {
       <section className="bg-gradient-to-b from-yellow-50/50 to-white py-20 px-4">
         <div className="max-w-3xl container text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Why Choose Al Yusr for Interior Architecture?
+            Why Choose Milestone Project Management for Interior Architecture?
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Combining creativity with technical expertise, we deliver
@@ -276,7 +277,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Let’s Design the Future, Together"
-        desc="If you’re looking for architecture that performs as beautifully as it looks, Al Yusr Engineering Consulting is your partner in delivering spaces that are visionary, responsible, and truly transformative."
+        desc="If you’re looking for architecture that performs as beautifully as it looks, Milestone Project Management Engineering Consulting is your partner in delivering spaces that are visionary, responsible, and truly transformative."
         btn="Contact Us Today"
       />
     </main>

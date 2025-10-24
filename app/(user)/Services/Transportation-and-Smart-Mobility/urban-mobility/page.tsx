@@ -106,12 +106,12 @@ export default function Page() {
               traffic to shifts caused by remote work and flexible schedules,
               cities are rethinking how people and goods move.
               <br /> <br />
-              At Al Yusr, we combine deep expertise, advanced analytics, and
-              future-focused thinking to create transport networks that are
-              adaptable, efficient, and sustainable. Our solutions are not just
-              reactive; they are proactive frameworks designed to meet current
-              demands while preparing for the technological and social changes
-              of the next decade.
+              At Milestone Project Management, we combine deep expertise,
+              advanced analytics, and future-focused thinking to create
+              transport networks that are adaptable, efficient, and sustainable.
+              Our solutions are not just reactive; they are proactive frameworks
+              designed to meet current demands while preparing for the
+              technological and social changes of the next decade.
             </p>
           </div>
           <div className="w-full h-[450px] bg-slate-100 rounded-lg">
@@ -160,8 +160,9 @@ export default function Page() {
       </section>
       <section className="py-16 px-6 lg:px-20 bg-white">
         <h2 className="text-4xl font-bold text-center mb-12">
-          Why Choose <span className="text-yellow-600">Al Yusr</span> for Urban
-          Mobility?
+          Why Choose{" "}
+          <span className="text-yellow-600">Milestone Project Management</span>{" "}
+          for Urban Mobility?
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">

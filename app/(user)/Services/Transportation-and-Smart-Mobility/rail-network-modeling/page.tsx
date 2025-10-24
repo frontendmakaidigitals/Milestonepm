@@ -106,12 +106,12 @@ export default function Page() {
               Modeling & Simulation Services
             </h1>
             <p>
-              At Al Yusr, we deliver advanced rail network modeling and
-              simulation solutions to help our clients plan, optimize, and
-              future-proof rail systems. Using a suite of world-leading
-              simulation tools, we analyze everything from freight capacity to
-              passenger scheduling, rail electrification, and traction power
-              networks.
+              At Milestone Project Management, we deliver advanced rail network
+              modeling and simulation solutions to help our clients plan,
+              optimize, and future-proof rail systems. Using a suite of
+              world-leading simulation tools, we analyze everything from freight
+              capacity to passenger scheduling, rail electrification, and
+              traction power networks.
               <br /> <br />
               Our rail simulation capabilities enable stakeholders to make
               informed, evidence-based decisions on infrastructure investment,
@@ -195,7 +195,7 @@ export default function Page() {
           <h2 className="text-4xl font-bold mb-12">
             Why Choose{" "}
             <span className="bg-gradient-to-r from-yellow-600 via-amber-500 to-amber-600 bg-clip-text text-transparent">
-              Al Yusr
+              Milestone Project Management
             </span>{" "}
             for Rail Network Simulation?
           </h2>
@@ -245,8 +245,8 @@ export default function Page() {
         </div>
       </section>
       <EngineeringCTA
-        title="Plan Smarter and Build Better with Al Yusr"
-        desc="Contact Al Yusr today to discuss how our rail simulation expertise can transform your project from concept to optimized reality."
+        title="Plan Smarter and Build Better with Milestone Project Management"
+        desc="Contact Milestone Project Management today to discuss how our rail simulation expertise can transform your project from concept to optimized reality."
         btn="Contact Us Today"
       />
     </main>

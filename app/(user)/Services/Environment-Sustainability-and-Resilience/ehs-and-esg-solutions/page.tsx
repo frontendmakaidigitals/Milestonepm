@@ -111,10 +111,10 @@ export default function Page() {
               <span className="text-yellow-500">ESG</span> Solutions
             </h1>
             <p>
-              At Al Yusr Engineering Consulting, we help organizations
-              strengthen their Environmental, Health & Safety (EHS) and
-              Environmental, Social & Governance (ESG) performance through
-              integrated digital solutions. Our goal is simple: to make
+              At Milestone Project Management Engineering Consulting, we help
+              organizations strengthen their Environmental, Health & Safety
+              (EHS) and Environmental, Social & Governance (ESG) performance
+              through integrated digital solutions. Our goal is simple: to make
               compliance seamless, sustainability measurable, and reporting
               transparent, so you can build trust with your people,
               stakeholders, and investors.
@@ -209,8 +209,11 @@ export default function Page() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Why Choose <span className="text-yellow-500">Al Yusr</span> for EHS
-            & ESG?
+            Why Choose{" "}
+            <span className="text-yellow-500">
+              Milestone Project Management
+            </span>{" "}
+            for EHS & ESG?
           </motion.h2>
 
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -234,7 +237,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title=" Ready to strengthen your EHS and ESG systems?"
-        desc=" Let Al Yusr help you build sustainable, transparent, and resilient operations."
+        desc=" Let Milestone Project Management help you build sustainable, transparent, and resilient operations."
         btn="Contact Us Today"
       />
     </main>

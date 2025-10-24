@@ -114,11 +114,11 @@ export default function Page() {
             <p>
               As air quality regulations become stricter and environmental
               sustainability rises in global importance, effective air quality
-              management has never been more critical. Al Yusr partners with
-              governments, industries, and organizations to develop and
-              implement innovative compliance solutions that protect public
-              health, improve environmental outcomes, and ensure regulatory
-              alignment.
+              management has never been more critical. Milestone Project
+              Management partners with governments, industries, and
+              organizations to develop and implement innovative compliance
+              solutions that protect public health, improve environmental
+              outcomes, and ensure regulatory alignment.
               <br /> <br /> From addressing long-standing challenges in
               developed nations to guiding emerging economies through new air
               quality concerns, our expertise spans every region and sector. By
@@ -213,8 +213,11 @@ export default function Page() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <h2 className="text-4xl lg:text-5xl text-center mx-auto font-bold text-gray-900 mb-6">
-            Why Choose <span className="text-yellow-600">Al Yusr</span> for Air
-            Quality Assessment?
+            Why Choose{" "}
+            <span className="text-yellow-600">
+              Milestone Project Management
+            </span>{" "}
+            for Air Quality Assessment?
           </h2>
           <ul className="grid md:grid-cols-2 gap-6">
             {points.map((point, idx) => (
@@ -233,7 +236,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Take the Next Step Toward Cleaner Air"
-        desc=" At Al Yusr, we don’t just help you meet air quality standards,  we help you stay ahead of them. Contact us today to discuss how our air quality services can support your business, your community, and your sustainability goals."
+        desc=" At Milestone Project Management, we don’t just help you meet air quality standards,  we help you stay ahead of them. Contact us today to discuss how our air quality services can support your business, your community, and your sustainability goals."
         btn="Contact Us Today"
       />
     </main>

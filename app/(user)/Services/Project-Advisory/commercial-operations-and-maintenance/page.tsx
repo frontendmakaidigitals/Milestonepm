@@ -143,10 +143,11 @@ export default function Page() {
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
           In today’s fast-paced industries, critical facilities and production
-          environments require precision, reliability, and expert care. Al Yusr
-          offers commercial operations and maintenance services that meet the
-          unique demands of each client, ensuring maximum uptime, operational
-          efficiency, and long-term asset performance.
+          environments require precision, reliability, and expert care.
+          Milestone Project Management offers commercial operations and
+          maintenance services that meet the unique demands of each client,
+          ensuring maximum uptime, operational efficiency, and long-term asset
+          performance.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           Whether it’s an industrial plant, corporate campus, R&D facility, or
@@ -190,7 +191,9 @@ export default function Page() {
       </section>{" "}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-12">Why Choose Al Yusr?</h2>
+          <h2 className="text-3xl font-bold mb-12">
+            Why Choose Milestone Project Management?
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {reasons.map((reason, idx) => (
               <div
@@ -207,7 +210,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Ready to elevate your facility operations?"
-        desc="Partner with Al Yusr to ensure peak performance, long-term reliability, and smarter asset management."
+        desc="Partner with Milestone Project Management to ensure peak performance, long-term reliability, and smarter asset management."
         btn="Contact Us Today"
       />
     </main>

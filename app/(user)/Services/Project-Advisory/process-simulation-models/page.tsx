@@ -134,13 +134,13 @@ export default function Page() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr Engineering Consulting, we leverage advanced process
-          simulation modeling to analyze, predict, and optimize the performance
-          of complex infrastructure systems. These models are crucial tools in
-          planning and decision-making, allowing us and our clients to test
-          different operational scenarios, forecast performance, and visualize
-          the impact of proposed improvements before a single move is made
-          on-site.
+          At Milestone Project Management Engineering Consulting, we leverage
+          advanced process simulation modeling to analyze, predict, and optimize
+          the performance of complex infrastructure systems. These models are
+          crucial tools in planning and decision-making, allowing us and our
+          clients to test different operational scenarios, forecast performance,
+          and visualize the impact of proposed improvements before a single move
+          is made on-site.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           We offer both proprietary in-house simulation models and
@@ -227,7 +227,7 @@ export default function Page() {
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Why Choose Al Yusr for Simulation Modeling?
+            Why Choose Milestone Project Management for Simulation Modeling?
           </h2>
 
           <div className="grid sm:grid-cols-2 gap-8">
@@ -243,7 +243,7 @@ export default function Page() {
       );
       <EngineeringCTA
         title="Build with Confidence"
-        desc="Whether you're developing a mega project or managing a complex infrastructure upgrade, Al Yusr’s cost management services help you stay on budget, reduce risk, and achieve lasting value."
+        desc="Whether you're developing a mega project or managing a complex infrastructure upgrade, Milestone Project Management’s cost management services help you stay on budget, reduce risk, and achieve lasting value."
         btn="Contact Us Today"
       />
     </main>

@@ -77,19 +77,20 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr Engineering Consulting, we offer a variety of engineering
-          services that support every phase of your project, from early-stage
-          planning to post-construction support. With deep-rooted expertise and
-          a multidisciplinary team, we help planners, architects, and project
-          managers deliver infrastructure that performs, lasts, and leads.
+          At Milestone Project Management Engineering Consulting, we offer a
+          variety of engineering services that support every phase of your
+          project, from early-stage planning to post-construction support. With
+          deep-rooted expertise and a multidisciplinary team, we help planners,
+          architects, and project managers deliver infrastructure that performs,
+          lasts, and leads.
         </p>{" "}
         <p className="mt-3 text-center text-lg">
-          At Al Yusr Engineering Consulting, we offer a full spectrum of
-          engineering services designed to bring complex ideas to life with
-          accuracy, innovation, and reliability. From structural design and MEP
-          systems to infrastructure development and BIM-led coordination, our
-          work supports some of the most ambitious developments across the
-          region.
+          At Milestone Project Management Engineering Consulting, we offer a
+          full spectrum of engineering services designed to bring complex ideas
+          to life with accuracy, innovation, and reliability. From structural
+          design and MEP systems to infrastructure development and BIM-led
+          coordination, our work supports some of the most ambitious
+          developments across the region.
         </p>
       </section>
       {/* Features */}
@@ -116,9 +117,9 @@ export default function ConstructionManagementPage() {
               infrastructure, or high-performance systems, we are committed to
               delivering engineering excellence at every stage of the project
               life cycle. With ISO-certified methodologies and a track record of
-              delivering on time and within budget, Al Yusr stands as a trusted
-              partner for public and private sector developments across the GCC
-              and beyond.
+              delivering on time and within budget, Milestone Project Management
+              stands as a trusted partner for public and private sector
+              developments across the GCC and beyond.
             </p>
           </div>
           <div className="h-[500px] w-full ">
@@ -139,9 +140,9 @@ export default function ConstructionManagementPage() {
               Our <span className="text-yellow-500">Core Services</span>
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-              At Al Yusr Engineering Consulting, we deliver a multidisciplinary
-              range of services to shape high-performance, future-ready
-              infrastructure.
+              At Milestone Project Management Engineering Consulting, we deliver
+              a multidisciplinary range of services to shape high-performance,
+              future-ready infrastructure.
             </p>
           </div>
 
@@ -226,14 +227,14 @@ export default function ConstructionManagementPage() {
               optimize resources.
               <br />
               <br />
-              At Al Yusr Engineering Consulting, we believe that true
-              engineering excellence goes beyond technical design; it’s about
-              coordination, precision execution, and future-ready solutions.
-              That’s why we integrate Building Information Modeling (BIM) across
-              all stages of our engineering projects. BIM is more than just 3D
-              modeling; it’s a digital ecosystem that brings together
-              architects, engineers, consultants, and contractors on a single,
-              intelligent platform.
+              At Milestone Project Management Engineering Consulting, we believe
+              that true engineering excellence goes beyond technical design;
+              it’s about coordination, precision execution, and future-ready
+              solutions. That’s why we integrate Building Information Modeling
+              (BIM) across all stages of our engineering projects. BIM is more
+              than just 3D modeling; it’s a digital ecosystem that brings
+              together architects, engineers, consultants, and contractors on a
+              single, intelligent platform.
             </p>
           </div>
         </div>
@@ -242,8 +243,11 @@ export default function ConstructionManagementPage() {
         <div className="container">
           <div className="text-center mb-12 max-w-4xl mx-auto">
             <h2 className="text-4xl lg:text-5xl font-bold">
-              Why Choose <span className="text-yellow-500">Al Yusr</span> for
-              Engineering Services?
+              Why Choose{" "}
+              <span className="text-yellow-500">
+                Milestone Project Management
+              </span>{" "}
+              for Engineering Services?
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               Our approach is built on precision, credibility, and
@@ -269,7 +273,7 @@ export default function ConstructionManagementPage() {
       <EngineeringCTA
         title="Need Engineering Experts? Let’s Talk."
         desc={
-          "Whether it’s a high-rise tower, an infrastructure masterplan, or a complex facility, Al Yusr Engineering Consulting is your trusted partner for dependable engineering solutions."
+          "Whether it’s a high-rise tower, an infrastructure masterplan, or a complex facility, Milestone Project Management Engineering Consulting is your trusted partner for dependable engineering solutions."
         }
         btn="Contact Us"
       />

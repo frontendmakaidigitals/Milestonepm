@@ -120,10 +120,11 @@ export default function ConstructionManagementPage() {
             </p>
             <p className="mt-2 text-lg">
               With expertise in both local Saudi landscapes and international
-              planning standards, Al Yusr brings a thoughtful, holistic approach
-              to every urban design project. Whether you are planning a new
-              urban district or revitalizing an old neighborhood, we ensure
-              every space is designed with people in mind.
+              planning standards, Milestone Project Management brings a
+              thoughtful, holistic approach to every urban design project.
+              Whether you are planning a new urban district or revitalizing an
+              old neighborhood, we ensure every space is designed with people in
+              mind.
             </p>
           </div>
           <div className="w-full h-[450px] rounded-lg">
@@ -195,7 +196,8 @@ export default function ConstructionManagementPage() {
       <section className="bg-white py-20 px-4">
         <div className=" container text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold">
-            Why <span className="text-yellow-500">Choose</span> Al Yusr for{" "}
+            Why <span className="text-yellow-500">Choose</span> Milestone
+            Project Management for{" "}
             <span className="text-green-500">Urban Design</span>
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -229,7 +231,7 @@ export default function ConstructionManagementPage() {
       </section>
       <EngineeringCTA
         title="Let’s Plan the Future Together"
-        desc="From idea to implementation, Al Yusr supports you at every step of your urban development journey. Whether it’s a city-wide vision or a community-scale design, we help you build a smarter, greener, and more connected future."
+        desc="From idea to implementation, Milestone Project Management supports you at every step of your urban development journey. Whether it’s a city-wide vision or a community-scale design, we help you build a smarter, greener, and more connected future."
         btn="Contact Us Today"
       />
     </main>

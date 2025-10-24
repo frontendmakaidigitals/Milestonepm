@@ -149,7 +149,7 @@ function CareersForm() {
           <ul className="space-y-10">
             <li>
               <h2 className="text-2xl font-[600]">For Enquiry</h2>
-              <p>M.yousif@Milestonepmco.com</p>
+              <p>M.yousif@Milestone Project Managementco.com</p>
             </li>
             <li>
               <h2 className="text-2xl font-[600]">Contact</h2>

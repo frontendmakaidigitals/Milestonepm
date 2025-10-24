@@ -109,12 +109,12 @@ export default function Page() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr Engineering Consulting, our Asset Advisory Services are
-          designed to help clients make informed, future-ready decisions about
-          their buildings, infrastructure, and real estate portfolios. From
-          asset performance to lifecycle planning, we provide comprehensive
-          insights that reduce risk, optimize value, and ensure long-term
-          sustainability.
+          At Milestone Project Management Engineering Consulting, our Asset
+          Advisory Services are designed to help clients make informed,
+          future-ready decisions about their buildings, infrastructure, and real
+          estate portfolios. From asset performance to lifecycle planning, we
+          provide comprehensive insights that reduce risk, optimize value, and
+          ensure long-term sustainability.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           Whether you&apos;re a government authority managing public assets, a
@@ -214,7 +214,7 @@ export default function Page() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <h2 className="text-3xl md:text-4xl font-bold text-yellow-900 mb-12 text-center">
-            Why Choose Al Yusr for Asset Advisory?
+            Why Choose Milestone Project Management for Asset Advisory?
           </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -245,7 +245,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Future-Ready Assets"
-        desc="Your assets are more than buildings; they are long-term investments, community anchors, and engines of productivity. Let Al Yusr Engineering Consulting help you unlock their full potential with intelligent advisory, strategic insight, and real-world action."
+        desc="Your assets are more than buildings; they are long-term investments, community anchors, and engines of productivity. Let Milestone Project Management Engineering Consulting help you unlock their full potential with intelligent advisory, strategic insight, and real-world action."
         btn="Contact Us Today"
       />
     </main>

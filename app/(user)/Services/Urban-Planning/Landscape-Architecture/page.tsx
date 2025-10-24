@@ -99,11 +99,11 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr, our Landscape Architecture practice is rooted in the
-          belief that public spaces are the heart of resilient, inclusive, and
-          livable communities. We design thoughtful, multi-functional landscapes
-          that connect people to their environment, balancing beauty, culture,
-          and sustainability.
+          At Milestone Project Management, our Landscape Architecture practice
+          is rooted in the belief that public spaces are the heart of resilient,
+          inclusive, and livable communities. We design thoughtful,
+          multi-functional landscapes that connect people to their environment,
+          balancing beauty, culture, and sustainability.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           From urban park systems and civic plazas to waterfronts, campuses, and
@@ -229,12 +229,12 @@ export default function ConstructionManagementPage() {
                 Landscape Performance & Sustainability
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed">
-                At Al Yusr, we measure landscape performance to evaluate
-                ecological, social, and economic impact over time. We integrate
-                native planting, climate adaptation strategies, and low-impact
-                maintenance systems to ensure that our landscapes are not only
-                visually compelling but also environmentally responsible and
-                enduring.
+                At Milestone Project Management, we measure landscape
+                performance to evaluate ecological, social, and economic impact
+                over time. We integrate native planting, climate adaptation
+                strategies, and low-impact maintenance systems to ensure that
+                our landscapes are not only visually compelling but also
+                environmentally responsible and enduring.
               </p>
             </div>
           </div>
@@ -266,7 +266,7 @@ export default function ConstructionManagementPage() {
       </section>
       <EngineeringCTA
         title="Let's Shape Sustainable Landscapes Together"
-        desc="Whether you’re planning a regional open space network or a small urban plaza, Al Yusr's Landscape Architecture team brings creative insight, technical rigor, and a deep understanding of place."
+        desc="Whether you’re planning a regional open space network or a small urban plaza, Milestone Project Management's Landscape Architecture team brings creative insight, technical rigor, and a deep understanding of place."
         btn="Contact Us Today"
       />
     </main>

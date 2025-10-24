@@ -56,13 +56,14 @@ export default function Page() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr Engineering Consulting, we understand that managing today’s
-          infrastructure programs is about more than just delivering on time and
-          on budget. It&apos;s about aligning complex, multi-phase projects with
-          broader strategic goals, environmental, economic, and social. Our
-          Program Management services are designed to guide public and private
-          sector clients through every step of their development journey,
-          turning ambitious visions into sustainable, measurable outcomes.
+          At Milestone Project Management Engineering Consulting, we understand
+          that managing today’s infrastructure programs is about more than just
+          delivering on time and on budget. It&apos;s about aligning complex,
+          multi-phase projects with broader strategic goals, environmental,
+          economic, and social. Our Program Management services are designed to
+          guide public and private sector clients through every step of their
+          development journey, turning ambitious visions into sustainable,
+          measurable outcomes.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           We bring clarity and direction to large-scale programs by
@@ -112,11 +113,11 @@ export default function Page() {
               Glance
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-              At Al Yusr, our project planning services go beyond traditional
-              documentation. We work across scales—regional, citywide, and
-              site-specific—delivering plans that are creative, practical, and
-              deeply informed by policy, community input, and environmental
-              responsibility.
+              At Milestone Project Management, our project planning services go
+              beyond traditional documentation. We work across scales—regional,
+              citywide, and site-specific—delivering plans that are creative,
+              practical, and deeply informed by policy, community input, and
+              environmental responsibility.
             </p>
           </div>
 
@@ -202,7 +203,7 @@ export default function Page() {
           {/* Heading */}
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl max-w-5xl mx-auto font-bold">
-              Why Choose Al Yusr for{" "}
+              Why Choose Milestone Project Management for{" "}
               <span className="text-yellow-500">Program Management?</span>
             </h2>
           </div>
@@ -225,7 +226,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Shaping Transformation Through Program Excellence"
-        desc="At Al Yusr, we’re not just managing projects, we’re building legacies. Our program management solutions are designed to support long-term value, empower public institutions, and enable private clients to lead with confidence."
+        desc="At Milestone Project Management, we’re not just managing projects, we’re building legacies. Our program management solutions are designed to support long-term value, empower public institutions, and enable private clients to lead with confidence."
         btn="Contact Us Today"
       />
     </main>

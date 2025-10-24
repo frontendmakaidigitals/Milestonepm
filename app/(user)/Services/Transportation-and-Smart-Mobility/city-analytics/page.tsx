@@ -90,15 +90,15 @@ export default function Page() {
               <span className="text-yellow-500">Smarter Cities</span>
             </h1>
             <p>
-              At Al Yusr Engineering Consulting, our City Analytics services
-              empower urban planning through the strategic integration of data,
-              technology, and design. We help cities transform information into
-              insight, enabling smarter decisions, more resilient
-              infrastructure, and sustainable growth. <br /> <br /> By combining
-              cutting-edge analytics with urban expertise, we support the
-              planning and development of future-ready communities that are
-              efficient, inclusive, and aligned with long-term national goals
-              like Saudi Arabia’s Vision 2030.
+              At Milestone Project Management Engineering Consulting, our City
+              Analytics services empower urban planning through the strategic
+              integration of data, technology, and design. We help cities
+              transform information into insight, enabling smarter decisions,
+              more resilient infrastructure, and sustainable growth. <br />{" "}
+              <br /> By combining cutting-edge analytics with urban expertise,
+              we support the planning and development of future-ready
+              communities that are efficient, inclusive, and aligned with
+              long-term national goals like Saudi Arabia’s Vision 2030.
             </p>
           </div>
           <div className="w-full h-[400px] bg-slate-100 rounded-lg">
@@ -219,7 +219,7 @@ export default function Page() {
           {/* Heading */}
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-foreground">
-              Why Choose Al Yusr for City Analytics?
+              Why Choose Milestone Project Management for City Analytics?
             </h2>
           </div>
 
@@ -245,7 +245,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Turning Urban Data into Action"
-        desc="In a rapidly urbanizing world, the cities that succeed are the ones that plan with intelligence and act with insight. Al Yusr’s City Analytics services enable governments, developers, and planners to create better outcomes, economically, environmentally, and socially."
+        desc="In a rapidly urbanizing world, the cities that succeed are the ones that plan with intelligence and act with insight. Milestone Project Management’s City Analytics services enable governments, developers, and planners to create better outcomes, economically, environmentally, and socially."
         btn="Contact Us Today"
       />
     </main>

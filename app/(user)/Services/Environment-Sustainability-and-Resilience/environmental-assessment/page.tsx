@@ -128,13 +128,13 @@ export default function Page() {
               Environmental Assessment & Permitting
             </h1>
             <p>
-              At Al Yusr, we deliver smarter, faster, and more reliable
-              environmental assessment and permitting solutions that empower
-              clients to move projects forward with confidence. By integrating
-              innovative technologies, advanced data collection methods, and
-              decades of global expertise, we help organizations understand and
-              mitigate environmental and social impacts while achieving
-              compliance with regulatory frameworks.
+              At Milestone Project Management, we deliver smarter, faster, and
+              more reliable environmental assessment and permitting solutions
+              that empower clients to move projects forward with confidence. By
+              integrating innovative technologies, advanced data collection
+              methods, and decades of global expertise, we help organizations
+              understand and mitigate environmental and social impacts while
+              achieving compliance with regulatory frameworks.
               <br /> <br />
               From using drones for real-time data collection to creating
               interactive digital assessments that improve decision-making, we
@@ -212,7 +212,10 @@ export default function Page() {
       <section className="py-16 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center">
-            Why Choose <span className="text-yellow-600">Al Yusr</span>
+            Why Choose{" "}
+            <span className="text-yellow-600">
+              Milestone Project Management
+            </span>
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {reasons.map((item, idx) => (
@@ -236,7 +239,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Build Smarter and Greener Projects"
-        desc="At Al Yusr, we go beyond compliance; we help you unlock approvals faster, reduce risks, and build trust with communities while protecting the environment. Whether you’re planning a new development, upgrading existing infrastructure, or restoring ecosystems, our Environmental Assessment & Permitting team has the expertise and technology to deliver results."
+        desc="At Milestone Project Management, we go beyond compliance; we help you unlock approvals faster, reduce risks, and build trust with communities while protecting the environment. Whether you’re planning a new development, upgrading existing infrastructure, or restoring ecosystems, our Environmental Assessment & Permitting team has the expertise and technology to deliver results."
         btn="Contact Us Today"
       />
     </main>

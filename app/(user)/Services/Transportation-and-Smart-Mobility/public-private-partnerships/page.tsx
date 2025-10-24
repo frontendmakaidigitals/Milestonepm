@@ -66,10 +66,10 @@ export default function Page() {
               innovation, efficiency, and capital to deliver world-class
               infrastructure that communities need.
               <br /> <br />
-              At Al Yusr Engineering Consulting, we help governments,
-              concessionaires, developers, and investors structure and execute
-              P3 projects that deliver exceptional value, minimize risk, and
-              maximize long-term benefits.
+              At Milestone Project Management Engineering Consulting, we help
+              governments, concessionaires, developers, and investors structure
+              and execute P3 projects that deliver exceptional value, minimize
+              risk, and maximize long-term benefits.
             </p>
           </div>
           <div className="w-full h-[400px] bg-slate-100 rounded-lg">
@@ -207,7 +207,7 @@ export default function Page() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
-            Why Choose Al Yusr for P3 Projects
+            Why Choose Milestone Project Management for P3 Projects
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -293,7 +293,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Delivering Value Through Collaboration"
-        desc="A successful P3 is more than a contract; it’s a long-term relationship built on trust, shared goals, and clear accountability. At Al Yusr, we act as a bridge between public vision and private capability, ensuring every partnership results in infrastructure that is financially viable, socially impactful, and built to last."
+        desc="A successful P3 is more than a contract; it’s a long-term relationship built on trust, shared goals, and clear accountability. At Milestone Project Management, we act as a bridge between public vision and private capability, ensuring every partnership results in infrastructure that is financially viable, socially impactful, and built to last."
         btn="Contact Us Today"
       />
     </main>

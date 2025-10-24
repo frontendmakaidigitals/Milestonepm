@@ -241,8 +241,11 @@ export default function Page() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl max-w-4xl mx-auto font-bold text-center  mb-12">
-            Why Choose <span className="text-yellow-500">Al Yusr</span> for{" "}
-            <span className="text-green-500">Engineering Economics?</span>
+            Why Choose{" "}
+            <span className="text-yellow-500">
+              Milestone Project Management
+            </span>{" "}
+            for <span className="text-green-500">Engineering Economics?</span>
           </h2>
 
           <div className="grid gird-cols-1 lg:grid-cols-3 gap-5">
@@ -269,7 +272,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Smart Economics for Smarter Cities"
-        desc="At Al Yusr, we believe engineering economics is not just a technical exercise; it’s a strategic enabler. It connects vision to feasibility, ambition to accountability, and cost to real value. When your project needs clarity, credibility, and economic direction, we’re here to guide you through."
+        desc="At Milestone Project Management, we believe engineering economics is not just a technical exercise; it’s a strategic enabler. It connects vision to feasibility, ambition to accountability, and cost to real value. When your project needs clarity, credibility, and economic direction, we’re here to guide you through."
         btn="Contact Us Today"
       />
     </main>

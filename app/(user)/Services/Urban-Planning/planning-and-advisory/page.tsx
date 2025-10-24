@@ -93,14 +93,14 @@ export default function ConstructionManagementPage() {
   const sections = [
     {
       title: "Integrated Team Collaboration",
-      desc: `At Milestonepm, we believe that successful planning requires collaboration across a wide range of disciplines. Our planning experts work side by side with architects, engineers, environmental consultants, economists, and legal advisors to ensure a truly integrated approach. 
+      desc: `At Milestone Project Management, we believe that successful planning requires collaboration across a wide range of disciplines. Our planning experts work side by side with architects, engineers, environmental consultants, economists, and legal advisors to ensure a truly integrated approach. 
 This teamwork allows us to address every aspect of a project, technical, regulatory, financial, and social, through a unified lens. By combining expertise from different fields, we create solutions that are not only visionary in scope but also realistic, cost-effective, and fully compliant with local and national regulations. 
 This process leads to stronger outcomes, better coordination, and a smoother path from concept to execution. Whether it’s a complex urban development or a strategic infrastructure project, our interdisciplinary method ensures that every detail is thoughtfully considered and aligned with the project’s long-term goals.`,
       img: "/urban-planning/planning-and-advisory/team.webp",
     },
     {
       title: "Community & Stakeholder Engagement",
-      desc: `We recognize that great planning is not done in isolation; it is shaped by the people it impacts. At Milestonepm, we are committed to inclusive planning that actively involves the voices of communities and stakeholders.
+      desc: `We recognize that great planning is not done in isolation; it is shaped by the people it impacts. At Milestone Project Management, we are committed to inclusive planning that actively involves the voices of communities and stakeholders.
 Through public consultation sessions, surveys, community workshops, and focus groups, we gather valuable insights from residents, local businesses, government bodies, and interest groups. These inputs help us understand the real needs, challenges, and aspirations of the people we serve. 
 Our approach ensures that strategies are not just designed from the top down, but are informed by on-the-ground realities and lived experiences. This two-way dialogue builds trust, transparency, and stronger community ownership of development outcomes. Ultimately, it leads to more sustainable and widely supported solutions that enhance quality of life and create places people are proud to call home.`,
       img: "/urban-planning/planning-and-advisory/community.webp",
@@ -125,11 +125,11 @@ Our approach ensures that strategies are not just designed from the top down, bu
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr, we provide forward-thinking planning and advisory
-          solutions to meet the evolving needs of cities, governments,
-          developers, and industries. Our goal is to help clients create spaces
-          that are economically viable, socially inclusive, and environmentally
-          resilient.
+          At Milestone Project Management, we provide forward-thinking planning
+          and advisory solutions to meet the evolving needs of cities,
+          governments, developers, and industries. Our goal is to help clients
+          create spaces that are economically viable, socially inclusive, and
+          environmentally resilient.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           Whether you&apos;re planning a large-scale infrastructure project,
@@ -288,7 +288,7 @@ Our approach ensures that strategies are not just designed from the top down, bu
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold text-center mb-12"
           >
-            Why Choose Al Yusr Planning Solutions?
+            Why Choose Milestone Project Management Planning Solutions?
           </motion.h2>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -317,7 +317,7 @@ Our approach ensures that strategies are not just designed from the top down, bu
       </section>
       <EngineeringCTA
         title="Let’s Plan the Future Together"
-        desc="Whether it’s a new master plan or a detailed development study, Al Yusr is your trusted planning and advisory partner."
+        desc="Whether it’s a new master plan or a detailed development study, Milestone Project Management is your trusted planning and advisory partner."
         btn="Contact Us Today"
       />
     </main>

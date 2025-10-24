@@ -105,13 +105,13 @@ export default function Page() {
               transit hubs, airports to hospitals, vertical mobility shapes how
               people interact with the built environment.
               <br /> <br />
-              At Al Yusr, our dedicated Vertical Transportation (VT) team
-              delivers integrated, forward-thinking solutions that enhance
-              mobility, reduce downtime, and optimize space and energy
-              performance. We support new installations, system modernizations,
-              and refurbishments across a variety of sectors, always balancing
-              cost-efficiency, user comfort, compliance, and cutting-edge
-              technology.
+              At Milestone Project Management, our dedicated Vertical
+              Transportation (VT) team delivers integrated, forward-thinking
+              solutions that enhance mobility, reduce downtime, and optimize
+              space and energy performance. We support new installations, system
+              modernizations, and refurbishments across a variety of sectors,
+              always balancing cost-efficiency, user comfort, compliance, and
+              cutting-edge technology.
             </p>
           </div>
           <div className="w-full h-[450px] bg-slate-100 rounded-lg">
@@ -198,8 +198,11 @@ export default function Page() {
             viewport={{ once: true }}
             className="text-4xl lg:text-4xl lg:text-5xl font-bold text-center mb-14"
           >
-            Why Choose <span className="text-yellow-600">Al Yusr</span> for
-            Vertical Transportation?
+            Why Choose{" "}
+            <span className="text-yellow-600">
+              Milestone Project Management
+            </span>{" "}
+            for Vertical Transportation?
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -224,7 +227,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Elevate Your Project with Smart Mobility Solutions"
-        desc="Whether you're planning a new development, upgrading an existing system, or troubleshooting complex elevator performance issues, Al Yusr’s Vertical Transportation team is here to help."
+        desc="Whether you're planning a new development, upgrading an existing system, or troubleshooting complex elevator performance issues, Milestone Project Management’s Vertical Transportation team is here to help."
         btn="Contact us today"
       />
     </main>

@@ -157,13 +157,13 @@ export default function Page() {
               Pedestrian <span className="text-yellow-500">Flow Analysis</span>
             </h1>
             <p>
-              At Al Yusr, our Pedestrian Flow Analysis service uses dynamic
-              simulation techniques to accurately model the movement of people
-              through spaces, whether in buildings, transit hubs, urban areas,
-              or event venues. By simulating real-world pedestrian behavior, we
-              help architects, planners, and operators make informed decisions
-              that enhance safety, efficiency, and user experience in both
-              normal operations and emergency scenarios.
+              At Milestone Project Management, our Pedestrian Flow Analysis
+              service uses dynamic simulation techniques to accurately model the
+              movement of people through spaces, whether in buildings, transit
+              hubs, urban areas, or event venues. By simulating real-world
+              pedestrian behavior, we help architects, planners, and operators
+              make informed decisions that enhance safety, efficiency, and user
+              experience in both normal operations and emergency scenarios.
             </p>
           </div>
           <div className="w-full h-[400px] bg-slate-100 rounded-lg">
@@ -282,7 +282,7 @@ export default function Page() {
           {/* Text Content */}
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Choose Al Yusr for Pedestrian Simulation?
+              Why Choose Milestone Project Management for Pedestrian Simulation?
             </h2>
             <p className="text-lg text-gray-600 mb-8">
               Our team combines human behavior modeling, engineering insights,
@@ -306,7 +306,7 @@ export default function Page() {
           <div>
             <img
               src="/Transportation-mobility/pedestrian-flow-analysis/why-choose.webp"
-              alt="Why Choose Al Yusr"
+              alt="Why Choose Milestone Project Management"
               className="rounded-2xl shadow-lg w-full h-[450px] object-cover"
             />
           </div>
@@ -339,7 +339,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Shaping Smarter, Safer Communities"
-        desc="At Al Yusr, our Geo-Intelligence & Analysis services are more than just maps; they are powerful decision-making tools that help our clients create sustainable, secure, and future-ready environments."
+        desc="At Milestone Project Management, our Geo-Intelligence & Analysis services are more than just maps; they are powerful decision-making tools that help our clients create sustainable, secure, and future-ready environments."
         btn="Contact Us Today"
       />
     </main>

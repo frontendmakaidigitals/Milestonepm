@@ -39,17 +39,18 @@ export default function Page() {
                 Our <span className="text-yellow-500">Ethics</span>
               </h1>
               <p className="text-lg text-gray-700">
-                At Milestonepm Engineering Consulting, we believe that ethical
-                behavior is the foundation of long-term success. We are fully
-                committed to upholding the highest standards of integrity,
-                transparency, and compliance in everything we do, from how we
-                deliver projects to how we engage with clients, employees,
-                partners, and communities. Our reputation as a trusted
-                engineering consultancy is built not only on the quality of our
-                work, but also on the values that guide us. We hold ourselves
-                accountable to both Saudi regulations and international
-                standards, ensuring that our business practices are lawful,
-                ethical, and respectful across all markets we operate in.
+                At Milestone Project Management Engineering Consulting, we
+                believe that ethical behavior is the foundation of long-term
+                success. We are fully committed to upholding the highest
+                standards of integrity, transparency, and compliance in
+                everything we do, from how we deliver projects to how we engage
+                with clients, employees, partners, and communities. Our
+                reputation as a trusted engineering consultancy is built not
+                only on the quality of our work, but also on the values that
+                guide us. We hold ourselves accountable to both Saudi
+                regulations and international standards, ensuring that our
+                business practices are lawful, ethical, and respectful across
+                all markets we operate in.
               </p>
 
               <Link
@@ -173,8 +174,8 @@ export default function Page() {
             className="max-w-4xl mx-auto space-y-6 text-gray-700"
           >
             <p>
-              Milestonepm follows a strict Code of Ethics and Business Conduct,
-              which outlines:
+              Milestone Project Management follows a strict Code of Ethics and
+              Business Conduct, which outlines:
             </p>
 
             <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8">

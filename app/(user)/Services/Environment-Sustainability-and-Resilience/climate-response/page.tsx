@@ -95,10 +95,11 @@ export default function Page() {
               impacts already being felt through rising temperatures, extreme
               weather, sea-level rise, and shifting ecosystems. While the
               challenge is long-term, the need for immediate action is urgent.
-              At Al Yusr, we help governments, organizations, and communities
-              define climate challenges clearly, design effective strategies,
-              and implement sustainable solutions that not only protect people
-              and assets but also secure long-term resilience.
+              At Milestone Project Management, we help governments,
+              organizations, and communities define climate challenges clearly,
+              design effective strategies, and implement sustainable solutions
+              that not only protect people and assets but also secure long-term
+              resilience.
               <br /> <br /> Our approach combines science, engineering, policy,
               and stakeholder engagement to ensure climate initiatives gain
               public trust, political support, and financing. By bringing
@@ -179,7 +180,7 @@ export default function Page() {
       <section className="py-16 bg-slate-50">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-slate-900 text-center">
-            Why Choose Al Yusr for Climate Response?
+            Why Choose Milestone Project Management for Climate Response?
           </h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {reasons.map((reason, idx) => (
@@ -201,7 +202,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Let’s Build Climate Resilience Together"
-        desc="Climate change demands immediate action and long-term vision. Partner with Al Yusr to develop practical, science-based, and sustainable solutions that protect your assets, your community, and the generations to come."
+        desc="Climate change demands immediate action and long-term vision. Partner with Milestone Project Management to develop practical, science-based, and sustainable solutions that protect your assets, your community, and the generations to come."
         btn="Contact Us Today"
       />
     </main>

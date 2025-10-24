@@ -100,9 +100,10 @@ export default function Page() {
             <p>
               Ground risks and environmental challenges are among the leading
               causes of delays and cost overruns in major infrastructure
-              projects. At Al Yusr Engineering Consulting, we recognize that the
-              most effective way to prevent these issues is to address them
-              early in the project lifecycle, before construction begins.
+              projects. At Milestone Project Management Engineering Consulting,
+              we recognize that the most effective way to prevent these issues
+              is to address them early in the project lifecycle, before
+              construction begins.
               <br /> <br />
               Our Environmental Contracting services provide a single,
               integrated solution that combines ground investigation,
@@ -184,7 +185,10 @@ export default function Page() {
       <section className="py-20 bg-gradient-to-br from-yellow-50 via-white to-yellow-100">
         <div className="max-w-6xl mx-auto px-6 lg:px-12 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
-            Why Choose <span className="text-yellow-600">Al Yusr</span>
+            Why Choose{" "}
+            <span className="text-yellow-600">
+              Milestone Project Management
+            </span>
           </h2>
 
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-2">
@@ -213,7 +217,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Building Certainty from the Ground Up"
-        desc="At Al Yusr, we believe that better data leads to better outcomes. By addressing ground and environmental risks at the earliest stages, we help clients deliver infrastructure projects that are safer, more sustainable, and more cost-efficient."
+        desc="At Milestone Project Management, we believe that better data leads to better outcomes. By addressing ground and environmental risks at the earliest stages, we help clients deliver infrastructure projects that are safer, more sustainable, and more cost-efficient."
         btn="Contact Us Today"
       />
     </main>

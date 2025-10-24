@@ -128,13 +128,14 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr, our Structural Legacy Consulting services are designed to
-          support infrastructure and development projects with deep technical
-          insight, precision engineering, and a commitment to long-term
-          performance. Utilizing the expertise of Legacy Foundations, a leading
-          self-perform geotechnical and foundation contractor since the 1990s,
-          we offer consulting solutions that ensure complex foundation and
-          ground engineering challenges are met with confidence and success.
+          At Milestone Project Management, our Structural Legacy Consulting
+          services are designed to support infrastructure and development
+          projects with deep technical insight, precision engineering, and a
+          commitment to long-term performance. Utilizing the expertise of Legacy
+          Foundations, a leading self-perform geotechnical and foundation
+          contractor since the 1990s, we offer consulting solutions that ensure
+          complex foundation and ground engineering challenges are met with
+          confidence and success.
         </p>{" "}
         <p className="mt-3 text-center text-lg">
           From high-rise structures and industrial zones to offshore platforms
@@ -260,7 +261,7 @@ export default function ConstructionManagementPage() {
               transition={{ duration: 0.5 }}
               className="text-4xl lg:text-5xl font-bold text-start text-amber-900 mb-10"
             >
-              Why Partner with Al Yusr?
+              Why Partner with Milestone Project Management?
             </motion.h2>
             <ul className="space-y-6">
               {reasons.map((reason, index) => (
@@ -289,7 +290,7 @@ export default function ConstructionManagementPage() {
       <EngineeringCTA
         title="Need Engineering Experts? Let’s Talk."
         desc={
-          "Whether it’s a high-rise tower, an infrastructure masterplan, or a complex facility, Al Yusr Engineering Consulting is your trusted partner for dependable engineering solutions."
+          "Whether it’s a high-rise tower, an infrastructure masterplan, or a complex facility, Milestone Project Management Engineering Consulting is your trusted partner for dependable engineering solutions."
         }
         btn="Contact Us"
       />

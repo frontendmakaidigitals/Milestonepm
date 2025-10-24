@@ -7,7 +7,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import BgLayer from "../app_chunks/BgLayer";
 import { motion } from "motion/react";
 
@@ -15,10 +15,33 @@ const Herosection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [api, setApi] = useState<CarouselApi>();
 
+  const slides = [
+    {
+      title: "Global Construction Outlook 2025",
+      desc: " Explore key insights into international construction trends, cost forecasts, and innovations driving the industry forward.",
+      img: "/global-construction.jpg",
+    },
+    {
+      title: " Accelerating the Net-Zero Future by Decarbonizing ",
+      desc: "Discover how Milestone PM is helping clients achieve sustainability goals through innovative engineering, renewable solutions, and carbon-conscious design.",
+      img: "/Net-Zero.jpg",
+    },
+    {
+      title: "Designing Resilient Infrastructure for a Changing Climate",
+      desc: " How climate resilience, material innovation, and adaptive planning are shaping sustainable urban and industrial ecosystems.",
+      img: "/Resilient Infrastructure.jpg",
+    },
+    {
+      title: "The New Era of Project Delivery",
+      desc: "Learn how coordination, data-driven decision-making, and agile execution are reducing risks and driving faster, smarter outcomes.",
+      img: "/Project Delivery.webp",
+    },
+  ];
+
   // Auto slide
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % 5);
+      setActiveIndex((prev) => (prev + 1) % slides.length);
     }, 8000);
     return () => clearInterval(interval);
   }, []);
@@ -29,67 +52,26 @@ const Herosection = () => {
     api.scrollTo(activeIndex);
   }, [activeIndex, api]);
 
-  const titles = [
-    { title: "Vision 2030", link: "/Who-we-are/Leadership-and-Vision" },
-    {
-      title: "Smart Cities",
-      link: "/Services/Transportation-and-Smart-Mobility/smart-infrastructure-and-digitals-systems",
-    },
-    {
-      title: "Engineering",
-      link: "/Services/Engineering-Infrastructure/Engineering-Services",
-    },
-    {
-      title: "Architecture & Infrastructure",
-      link: "/Services/Urban-Planning/Architecture-Design",
-    },
-    {
-      title: "Foundation",
-      link: "/Services/Engineering-Infrastructure/Foundation-Engineering-Solutions",
-    },
-  ];
+  const handlePrev = () =>
+    setActiveIndex((prev) => (prev - 1 + slides.length) % slides.length);
+  const handleNext = () => setActiveIndex((prev) => (prev + 1) % slides.length);
 
-  const slides = [
-    {
-      title: "TRUSTED GLOBAL INFRASTRUCTURE LEADER",
-      desc: "Delivering transformative engineering solutions that power the future of cities, industries, and communities.",
-      img: "/global.webp",
-    },
-    {
-      title: "ENGINEERING THE FUTURE OF GLOBAL MEGA PROJECTS",
-      desc: "Delivering world-class infrastructure, smart cities, and sustainable solutions: trusted by governments, developers, and industries across regions.",
-      img: "/mega.webp",
-    },
-    {
-      title: "DRIVEN BY INDUSTRY-LED EXPERTISE",
-      desc: "Powered by certified professionals, advanced tools, and proven methodologies to deliver complex projects with confidence and precision.",
-      img: "/experts.webp",
-    },
-    {
-      title: "TRUSTED GLOBAL INFRASTRUCTURE LEADER",
-      desc: "Delivering transformative engineering solutions that power the future of cities, industries, and communities.",
-      img: "/global.webp",
-    },
-    {
-      title: "ENGINEERING THE FUTURE OF GLOBAL MEGA PROJECTS",
-      desc: "Delivering world-class infrastructure, smart cities, and sustainable solutions: trusted by governments, developers, and industries across regions.",
-      img: "/mega.webp",
-    },
-  ];
   return (
-    <section className="relative min-h-[500px] h-[50vh] lg:h-[58vh]">
+    <section className="relative min-h-[500px] h-[50vh] lg:h-[65vh]">
       <Carousel
         opts={{
-          watchDrag: false, // Disable drag functionality
+          watchDrag: false,
         }}
         className="w-full"
         setApi={setApi}
       >
         <CarouselContent>
-          {titles.map((_, index) => (
+          {slides.map((_, index) => (
             <CarouselItem key={index}>
-              <div className="h-[50vh] min-h-[500px] lg:h-[58vh] relative overflow-hidden">
-                <div className="absolute  z-10 w-full top-1/2 -translate-y-1/2">
+              <div className="h-[50vh] min-h-[500px] lg:h-[65vh] relative overflow-hidden">
+                {/* Left & Right Arrows */}
+
+                <div className="absolute z-10 w-full top-1/2 -translate-y-1/2">
                   <div className="w-full mx-auto container">
                     <motion.h1
                       key={slides[activeIndex].title}
@@ -134,9 +116,10 @@ const Herosection = () => {
                     </Link>
                   </div>
                 </div>
+
                 <BgLayer />
                 <img
-                  src={`/home-hero${slides[activeIndex].img}`}
+                  src={`/hero-slider${slides[activeIndex].img}`}
                   alt=""
                   className="w-full h-full object-cover object-bottom"
                 />
@@ -144,53 +127,22 @@ const Herosection = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
+
+        <div className="absolute bottom-5 bg-yellow-500/30 p-1 rounded-full flex items-center gap-2 right-5">
+          <button
+            onClick={handlePrev}
+            className=" z-20 bg-amber-500/40 cursor-pointer backdrop-blur-2xl backdrop-filter text-amber-800 hover:text-amber-500 p-2 rounded-full hover:bg-amber-700/50 transition"
+          >
+            <ChevronLeft size={24} />
+          </button>
+          <button
+            onClick={handleNext}
+            className=" z-20 bg-amber-500/40  cursor-pointer backdrop-blur-2xl backdrop-filter text-amber-800 hover:text-amber-500 p-2 rounded-full hover:bg-amber-700/50 transition"
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
       </Carousel>
-
-      {/* Overlay Info */}
-      <div className="absolute hidden lg:block bottom-0 left-0 w-full bg-black/10 backdrop-blur-md z-10 border-slate-200">
-        <ul className="max-w-6xl mx-auto grid grid-cols-5">
-          {titles.slice(0, 5).map((title, idx) => (
-            <li
-              key={idx}
-              className={`relative py-4 px-4 text-center border-slate-300 ${
-                idx < 4 ? "border-r" : ""
-              }`}
-            >
-              <Link href={title.link}>
-                <span className="relative z-10 text-slate-50 block text-sm font-medium whitespace-nowrap overflow-hidden text-ellipsis">
-                  {title.title}
-                </span>
-                {idx === activeIndex % 4 && (
-                  <>
-                    <span
-                      className="absolute bottom-0  left-0 h-1 z-0 w-full"
-                      style={{
-                        animation:
-                          "fillBar 8s cubic-bezier(0.19, 1, 0.22, 1) forwards",
-                        height: "100%",
-                      }}
-                      key={activeIndex}
-                    >
-                      <span className="absolute inset-0 w-full h-full  bg-gradient-to-r from-[#F57C00] via-[#FFB300] to-[#F57C00]" />
-                    </span>
-                  </>
-                )}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <style jsx>{`
-        @keyframes fillBar {
-          0% {
-            width: 0%;
-          }
-          100% {
-            width: 100%;
-          }
-        }
-      `}</style>
     </section>
   );
 };

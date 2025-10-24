@@ -14,35 +14,29 @@ const offices = [
     color: "from-purple-600 to-pink-500",
     img: "/locations/ksa.webp",
     content:
-      "Saudi Arabia is the foundation of our journey and the location of our headquarters. For decades, Al Yusr has played an important role in the Kingdom’s development, supporting projects that align with Vision 2030 and the nation’s ambitious transformation agenda. From large-scale infrastructure and energy projects to urban planning, architectural design, and engineering consultancy, our work helps shape the cities and communities of tomorrow. With a highly skilled local and international team, we have built long-standing partnerships with government ministries, private developers, and industrial leaders, making us one of the most trusted consultancy firms in the region. Our presence here is not just about delivering projects, it’s about contributing to the sustainable growth and prosperity of the Kingdom.",
+      "Our presence in Saudi Arabia highlights our role as a trusted partner in the Kingdom’s continued transformation. We deliver a wide range of project management, engineering, and advisory services that support infrastructure expansion and urban modernization across the region. By working closely with public and private sector clients, we help deliver projects that align with the Kingdom’s goals for growth, sustainability, and economic diversification. Our experienced team in KSA ensures that every project follows international standards, while adapting to local conditions and regulations. Through commitment, collaboration, and innovation, we continue to contribute to the Kingdom’s evolving built environment.",
   },
-  {
-    country: "United Kingdom (UK)",
-    color: "from-indigo-600 to-yellow-500",
-    img: "/locations/uk.webp",
-    content:
-      "In the UK, Al Yusr taps into one of the world’s most advanced ecosystems of engineering, research, and sustainable design practices. Our UK office connects us to cutting-edge technologies and global best practices, enabling us to integrate innovation into every project we deliver. From strategic consulting and advanced engineering to sustainability-driven solutions, our UK presence strengthens our ability to provide clients with world-class expertise combined with local adaptability. Serving as a global bridge, our UK operations ensure that projects across the Middle East, Africa, and Asia benefit from the lessons, standards, and innovations developed in one of the most progressive markets in the world.",
-  },
-  {
-    country: "Sri Lanka",
-    color: "from-teal-600 to-emerald-500",
-    img: "/locations/sriLanka.webp",
-    content:
-      "Our presence in Sri Lanka reflects our commitment to supporting regional development and nurturing talent in South Asia. With its growing demand for infrastructure, energy, and urban development projects, Sri Lanka provides Al Yusr with the opportunity to deliver cost-effective, sustainable, and technically sound solutions. Our team in Sri Lanka brings together local expertise with Al Yusr’s global network, enabling us to deliver high-value outcomes while building capacity within the local engineering and consultancy community. Beyond projects, our presence in Sri Lanka emphasizes collaboration, knowledge-sharing, and creating opportunities for local professionals to thrive in an increasingly interconnected global market.",
-  },
+
   {
     country: "Egypt",
     color: "from-amber-600 to-orange-500",
     img: "/locations/egypt.webp",
     content:
-      "Egypt is a hub of innovation and growth in North Africa, and Al Yusr is proud to contribute to its transformation journey. From transportation and infrastructure projects to urban redevelopment and energy solutions, our Egypt office supports the country’s ambitious plans for modernization and sustainable development. With a rapidly growing population and increasing demand for smart infrastructure, our role in Egypt is to deliver solutions that are resilient, scalable, and future-ready. By combining local market knowledge with global expertise, Al Yusr helps clients unlock new opportunities while overcoming challenges such as regulatory requirements, environmental considerations, and cost efficiency. Our work in Egypt underscores our belief that strategic engineering solutions can drive both economic growth and community well-being.",
+      "In Egypt, we are proud to be part of one of the region’s fastest-growing markets. Our team focuses on infrastructure, real estate, and transportation projects that support the nation’s rapid urban development. We deliver cost-efficient, sustainable, and high-quality project management and engineering solutions that help both public and private clients achieve their goals. With deep knowledge of local regulations and strong technical expertise, we bring international best practices to every stage of project delivery. Our work in Egypt reflects our mission to create long-term value through smart planning, sustainable design, and reliable project execution.",
   },
   {
     country: "United Arab Emirates (UAE)",
     color: "from-pink-600 to-rose-500",
     img: "/locations/uae.webp",
     content:
-      "The UAE is more than just a regional office for Al Yusr; it is a hub that connects our operations across the Middle East and beyond. With its global outlook, strong infrastructure pipeline, and vision-driven leadership, the UAE provides us with a platform to deliver projects that are innovative, sustainable, and technologically advanced. From smart cities and digital infrastructure to engineering consultancy and project management, our UAE team supports both government initiatives and private sector developments. The country’s focus on sustainability, resilience, and global connectivity aligns perfectly with Al Yusr’s mission, making our UAE presence an essential driver of our regional and international growth.",
+      "The United Arab Emirates is the center of our operations and the foundation of our success. From our head office in Dubai, we manage projects that shape the nation’s infrastructure, skyline, and communities. Our work includes real estate, smart city, transportation, and large-scale infrastructure projects, designed to meet the UAE’s ambitious growth and sustainability goals. With a diverse and talented team, we bring together innovation, accuracy, and strong project controls to ensure every project is delivered on time and within scope. As a leading project management company in Dubai, we are proud to support the UAE’s long-term vision for development and sustainability.",
+  },
+  {
+    country: "India",
+    color: "from-indigo-600 to-yellow-500",
+    img: "/location/red-fort.webp",
+    content:
+      "Our presence in India strengthens our ability to deliver world-class solutions across South Asia. India’s dynamic market allows us to combine local insights with global project management expertise, offering solutions that meet diverse client needs. We focus on infrastructure, construction, and urban development projects, where efficiency, innovation, and precision make the difference. By investing in skilled professionals and digital tools, we ensure every project is completed with the highest level of safety, quality, and cost control. Through our operations in India, we aim to support regional growth while empowering local talent to be part of global-standard developments.",
   },
 ];
 
@@ -51,7 +45,7 @@ export default function OurPresence() {
     <section className="relative overflow-hidden">
       {/* Heading */}
       <section className="text-start container my-10">
-        <h1 className="text-4xl lg:text-5xl text-amber-800 font-bold">
+        <h1 className="text-4xl lg:text-5xl text-yellow-600 font-bold">
           Our Presence
         </h1>
       </section>
@@ -68,12 +62,16 @@ export default function OurPresence() {
 
       <section className="max-w-5xl mx-auto mt-10">
         <p className="text-center text-lg text-gray-700 leading-relaxed">
-          At Al Yusr, our strength lies in our ability to combine global
-          expertise with local knowledge. With a strong footprint across Saudi
-          Arabia, the United Kingdom, Sri Lanka, Egypt, and the United Arab
-          Emirates, we are positioned to deliver engineering and consultancy
-          services that meet the unique needs of every market. Each office
-          reflects our commitment to innovation, sustainability, and excellence.
+          At Milestone Project Management, we bring together global expertise
+          and local understanding to deliver successful projects across the
+          region. Headquartered in Dubai, United Arab Emirates, we have expanded
+          our footprint to Saudi Arabia, Egypt, and India. Each of our offices
+          operates with the same commitment to deliver high-quality project
+          management, engineering consultancy, and construction advisory
+          services that add value to every stage of development. By combining
+          modern technology, proven project delivery systems, and experienced
+          professionals, we help our clients build projects that are
+          sustainable, efficient, and future-ready.
         </p>
       </section>
 
@@ -188,7 +186,7 @@ function OfficeCard({
     tl.fromTo(
       img,
       { scale: 1.08 },
-      { scale: 1, duration: 0.4, ease: "power3.out" },
+      { scale: 1, duration: 0.2, ease: "power3.out" },
       0
     );
 
@@ -199,7 +197,7 @@ function OfficeCard({
         {
           // map each element to its corresponding final clip-path
           clipPath: (index: number) => finalClipPaths[group[index]],
-          duration: 0.9,
+          duration: 0.4,
           stagger: 0.06,
         },
         i * 0.18

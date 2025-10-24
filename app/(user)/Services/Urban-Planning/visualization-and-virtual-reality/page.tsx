@@ -90,11 +90,11 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr, we believe that design should not only be seen, it should
-          be experienced. Our Visualization and Virtual Reality (VR) services
-          bring ideas to life with striking clarity and realism, helping
-          clients, stakeholders, and the public understand the full potential of
-          a project before it’s built.
+          At Milestone Project Management, we believe that design should not
+          only be seen, it should be experienced. Our Visualization and Virtual
+          Reality (VR) services bring ideas to life with striking clarity and
+          realism, helping clients, stakeholders, and the public understand the
+          full potential of a project before it’s built.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           From immersive VR walk-throughs to photorealistic 3D renders, our
@@ -226,7 +226,11 @@ export default function ConstructionManagementPage() {
       <section className="py-16 bg-muted/30">
         <div className="container">
           <h2 className="text-4xl lg:text-5xl text-center font-bold text-gray-900 mb-10">
-            Why Choose <span className="text-yellow-500">Al Yusr</span>?
+            Why Choose{" "}
+            <span className="text-yellow-500">
+              Milestone Project Management
+            </span>
+            ?
           </h2>
           <div className="grid gap-6 grid-cols-1 lg:grid-cols-3">
             {features.map((item, idx) => (
@@ -245,7 +249,7 @@ export default function ConstructionManagementPage() {
       </section>
       <EngineeringCTA
         title="Let’s Build with the Community, Not Around It"
-        desc="If you’re planning a project that touches people’s lives, make sure their voices are part of the process from the start. At Al Yusr, we turn engagement into impact, helping clients gain insight, build consensus, and deliver with purpose."
+        desc="If you’re planning a project that touches people’s lives, make sure their voices are part of the process from the start. At Milestone Project Management, we turn engagement into impact, helping clients gain insight, build consensus, and deliver with purpose."
         btn="Contact Us Today"
       />
     </main>

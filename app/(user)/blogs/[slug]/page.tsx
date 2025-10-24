@@ -24,9 +24,12 @@ function slugify(text: string): string {
 }
 
 async function getBlogs(): Promise<Blog[]> {
-  const res = await fetch(`${"https://www.Milestonepm-co.com/"}/api/blogs`, {
-    next: { revalidate: 60 },
-  });
+  const res = await fetch(
+    `${"https://www.Milestone Project Management-co.com/"}/api/blogs`,
+    {
+      next: { revalidate: 60 },
+    }
+  );
 
   if (!res.ok) throw new Error("Failed to fetch blogs");
   const data = await res.json();
@@ -52,7 +55,7 @@ export async function generateMetadata({
       title: blog?.metaTitle || blog?.title,
       description: blog?.metaDesc || "",
       images: blog?.imageURL ? [blog.imageURL] : [],
-      url: `https://Milestonepm-co.com/blog/${slug}`,
+      url: `https://Milestone Project Management-co.com/blog/${slug}`,
     },
     twitter: {
       card: "summary_large_image",

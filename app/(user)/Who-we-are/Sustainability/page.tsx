@@ -42,7 +42,8 @@ export default function Page() {
       >
         <div className="relative z-30 container py-10 flex flex-col justify-center items-center h-full max-w-4xl text-center">
           <h1 className="text-2xl  text-slate-50">
-            Sustainability at Al Yusr Engineering Consultancy
+            Sustainability at Milestone Project Management Engineering
+            Consultancy
             <br className="hidden sm:block" />
           </h1>
           <p className="mt-3 text-slate-200 text-5xl lg:text-6xl font-semibold">
@@ -54,7 +55,7 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-bottom"
           src="/sustainability 2/banner.webp"
-          alt="Milestonepm Engineering Hero Background"
+          alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
 
@@ -73,12 +74,13 @@ export default function Page() {
                 <span className="text-bllue-500">Sustainability</span>
               </h1>
               <p className="text-lg text-gray-700">
-                At Al Yusr Engineering Consultancy, we believe that true
-                progress means leaving a positive, lasting impact on people and
-                the planet. Our commitment to sustainability drives everything
-                we do, helping clients and partners embed responsible practices
-                that nurture communities, protect the environment, and create
-                resilient infrastructure for generations to come.
+                At Milestone Project Management Engineering Consultancy, we
+                believe that true progress means leaving a positive, lasting
+                impact on people and the planet. Our commitment to
+                sustainability drives everything we do, helping clients and
+                partners embed responsible practices that nurture communities,
+                protect the environment, and create resilient infrastructure for
+                generations to come.
               </p>
 
               <Link
@@ -119,9 +121,9 @@ export default function Page() {
               sustainable solutions.
             </p>
             <p className="text-gray-700">
-              At Al Yusr, we bring knowledge, innovation, and experience to
-              support this journey, helping organizations align their goals with
-              global environmental and social priorities.
+              At Milestone Project Management, we bring knowledge, innovation,
+              and experience to support this journey, helping organizations
+              align their goals with global environmental and social priorities.
             </p>
           </div>
         </div>
@@ -208,11 +210,11 @@ export default function Page() {
               Our <span className="text-yellow-500">Global</span> Commitment
             </h2>
             <p className="text-gray-700 text-lg">
-              Al Yusr supports international frameworks such as the Global
-              Biodiversity Framework, pledging to help reverse nature loss by
-              2030. Our projects and practices align with these commitments,
-              ensuring our consultancy leads by example in environmental
-              stewardship.
+              Milestone Project Management supports international frameworks
+              such as the Global Biodiversity Framework, pledging to help
+              reverse nature loss by 2030. Our projects and practices align with
+              these commitments, ensuring our consultancy leads by example in
+              environmental stewardship.
             </p>
           </div>
         </div>
@@ -269,7 +271,7 @@ export default function Page() {
 
       <EngineeringCTA
         title="Stay Informed with Our Insights"
-        desc="We regularly share knowledge and case studies on sustainability trends, challenges, and solutions. Discover how Al Yusr is helping clients transition to nature-positive practices, navigate carbon markets, and embrace climate-resilient infrastructure."
+        desc="We regularly share knowledge and case studies on sustainability trends, challenges, and solutions. Discover how Milestone Project Management is helping clients transition to nature-positive practices, navigate carbon markets, and embrace climate-resilient infrastructure."
       />
     </div>
   );

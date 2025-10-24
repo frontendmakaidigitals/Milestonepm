@@ -67,8 +67,9 @@ const Industry = () => {
           <span className="text-yellow-500">Case</span> Studies
         </h1>
         <h2 className="text-center mt-3 text-lg text-gray-600 max-w-3xl mx-auto">
-          In-depth articles on engineering trends, smart infrastructure,
-          sustainability, and Vision 2030 impact.
+          Explore our in-depth articles, case studies, and thought leadership on
+          the latest trends in project management, smart infrastructure,
+          sustainable construction, and urban development
         </h2>
         <Carousel
           opts={{ align: "start" }}
@@ -84,19 +85,21 @@ const Industry = () => {
                     idx < 3 ? "mb-[120px]" : ""
                   } rounded-xl`}
                 >
-                  <img
-                    src={item.img}
+                  <Image
+                    width={300}
+                    height={400}
+                     src={`/api/uploads/${item.image}`}
                     alt={item.title}
                     className="absolute inset-0 w-full h-full object-cover "
                   />
                   <BgLayer />
-                  <div className="absolute bottom-0 translate-y-1/2 bg-white shadow-lg rounded-lg p-6 w-[90%] left-1/2 transform -translate-x-1/2">
+                  <div className="absolute bottom-0 translate-y-1/2 bg-yellow-50 shadow-lg rounded-lg py-8 px-5 w-[90%] left-1/2 transform -translate-x-1/2">
                     <div className="mb-4 flex items-center gap-2 text-yellow-600">
-                      <h2 className="text-2xl text-slate-600 mt-8 font-semibold w-full text-center">
+                      <h2 className="text-2xl text-slate-900 font-semibold w-full text-center">
                         {item.title}
                       </h2>
                     </div>
-                    <div className="mt-1 text-sm text-gray-600">
+                    <div className="mt-1 text-sm text-gray-700">
                       {item.content ? (
                         <Editor
                           editorSerializedState={
@@ -110,13 +113,12 @@ const Industry = () => {
                         />
                       ) : null}
                     </div>
-                    <div className="w-full flex justify-center">
-                      {" "}
+                    <div className="w-full flex justify-center mt-3">
                       <Link
                         href={`/blogs/${encodeURIComponent(
                           item.title.toLowerCase().replace(/\s+/g, "-")
                         )}`}
-                        className="text-black font-[600] hover:underline text-sm"
+                        className="text-amber-600 underline font-[600] hover:underline text-sm"
                       >
                         Read more
                       </Link>

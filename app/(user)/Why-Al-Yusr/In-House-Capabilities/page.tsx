@@ -124,7 +124,7 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="/why-in-hero-house.jpeg"
-          alt="Milestonepm Engineering Hero Background"
+          alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
       <section className="min-h-[85vh] py-20 lg:py-0 overflow-hidden relative">
@@ -141,14 +141,15 @@ export default function Page() {
                 Expertise Under One Roof
               </h1>
               <p className="text-lg text-gray-700">
-                At Milestonepm Engineering Consulting, we proudly deliver all
-                major services in-house, ensuring tighter control over
-                timelines, budgets, and quality at every stage of the project
-                lifecycle. Our multidisciplinary teams work side by side,
-                sharing resources, tools, and knowledge under one roof to offer
-                clients a seamless and efficient experience. Whether it&apos;s
-                feasibility studies, architectural design, engineering, or
-                project supervision, we don’t outsource the core. We own it.
+                At Milestone Project Management Engineering Consulting, we
+                proudly deliver all major services in-house, ensuring tighter
+                control over timelines, budgets, and quality at every stage of
+                the project lifecycle. Our multidisciplinary teams work side by
+                side, sharing resources, tools, and knowledge under one roof to
+                offer clients a seamless and efficient experience. Whether
+                it&apos;s feasibility studies, architectural design,
+                engineering, or project supervision, we don’t outsource the
+                core. We own it.
               </p>
 
               <Link
@@ -176,9 +177,9 @@ export default function Page() {
               <span className="text-yellow-500">In-House Model</span> Apart?
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Milestonepm’s integrated approach ensures precision, speed, and
-              collaboration across all project touchpoints — led by expert teams
-              under one roof.
+              Milestone Project Management’s integrated approach ensures
+              precision, speed, and collaboration across all project touchpoints
+              — led by expert teams under one roof.
             </p>
           </div>
 
@@ -190,7 +191,7 @@ export default function Page() {
               "Streamlined Project Management",
             ].map((title, idx) => {
               const descriptions = [
-                "All critical services are executed by Milestonepm’s internal teams, reducing risk and ensuring quality control from start to finish.",
+                "All critical services are executed by Milestone Project Management’s internal teams, reducing risk and ensuring quality control from start to finish.",
                 "Architects, engineers, planners, and consultants work together in real-time, minimizing delays and communication gaps.",
                 "We cover every phase of the project: design, documentation, permitting, supervision, and post-construction support, within our firm.",
                 "Clients benefit from a single point of contact and clear accountability throughout the project lifecycle.",

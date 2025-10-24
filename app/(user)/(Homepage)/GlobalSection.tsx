@@ -11,19 +11,22 @@ const GlobalSection = () => {
       <div className="grid grid-cols-1 place-items-center lg:grid-cols-2 gap-12 container mx-auto">
         <div ref={ref} className="">
           <h1 className="text-4xl lg:text-6xl font-[500]">
-            A Worldwide Footprint,{" "}
-            <span className="text-yellow-500">Globally Present</span>
+            A <span className="text-blue-500">Global Presence</span> with Local Expertise
           </h1>
           <p className="mt-5">
-            Milestonepm Engineering Consulting proudly operates across multiple
-            regions, reflecting its commitment to delivering world-class
-            engineering solutions with local insight. Headquartered in Riyadh,
-            Saudi Arabia, the company has expanded its footprint with strategic
-            offices in Egypt, the United Kingdom, and Sri Lanka. This global
-            presence enables Milestonepm to serve a diverse client base, adapt
-            to international standards, and seamlessly manage projects across
-            borders, while maintaining a deep understanding of local
-            regulations, culture, and market dynamics.
+            Milestone Project Management operates across multiple regions,
+            delivering world-class project management and engineering
+            consultancy services with a deep understanding of local markets.
+            Headquartered in Dubai, United Arab Emirates, Milestone has expanded
+            its regional footprint with offices in Saudi Arabia, India, and
+            Egypt, strengthening our ability to manage complex projects
+            seamlessly across borders. <br /> Our global presence allows us to
+            combine international best practices with local insights, ensuring
+            that every project meets the highest standards of quality,
+            efficiency, and sustainability. Whether managing large-scale
+            infrastructure, urban developments, or industrial projects, we bring
+            the same precision, commitment, and excellence to every milestone we
+            deliver.
           </p>
         </div>
 

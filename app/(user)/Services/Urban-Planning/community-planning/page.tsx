@@ -106,13 +106,13 @@ export default function Page() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr, we believe that well-planned communities are the
-          foundation of successful cities. Our Community Planning services focus
-          on creating people-centered, sustainable environments that balance
-          development with livability, functionality, and cultural identity.
-          Whether it’s a new township, a revitalized district, or a strategic
-          growth corridor, we help clients transform spaces into thriving
-          communities with lasting impact.
+          At Milestone Project Management, we believe that well-planned
+          communities are the foundation of successful cities. Our Community
+          Planning services focus on creating people-centered, sustainable
+          environments that balance development with livability, functionality,
+          and cultural identity. Whether it’s a new township, a revitalized
+          district, or a strategic growth corridor, we help clients transform
+          spaces into thriving communities with lasting impact.
         </p>{" "}
       </section>
       <section className="bg-gray-100 py-20 px-4">
@@ -202,12 +202,13 @@ export default function Page() {
             viewport={{ once: true }}
             className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto"
           >
-            We recognize that successful planning begins with listening. Al Yusr
-            facilitates structured stakeholder consultations, public workshops,
-            and digital engagement platforms to ensure that the community’s
-            voice is part of every major planning decision. This approach gives
-            transparency, builds trust, and results in spaces that genuinely
-            reflect the needs and aspirations of their future users.
+            We recognize that successful planning begins with listening.
+            Milestone Project Management facilitates structured stakeholder
+            consultations, public workshops, and digital engagement platforms to
+            ensure that the community’s voice is part of every major planning
+            decision. This approach gives transparency, builds trust, and
+            results in spaces that genuinely reflect the needs and aspirations
+            of their future users.
           </motion.p>
         </div>
       </section>
@@ -320,7 +321,10 @@ export default function Page() {
             viewport={{ once: true }}
             className="text-4xl lg:text-5xl font-bold text-gray-800 mb-10"
           >
-            Why <span className="text-yellow-500">Al Yusr?</span>
+            Why{" "}
+            <span className="text-yellow-500">
+              Milestone Project Management?
+            </span>
           </motion.h2>
 
           <div className="grid gap-6 md:grid-cols-2 text-left max-w-5xl mx-auto">
@@ -343,7 +347,7 @@ export default function Page() {
 
       <EngineeringCTA
         title="Let’s Plan the Future Together"
-        desc="From idea to implementation, Al Yusr supports you at every step of your urban development journey. Whether it’s a city-wide vision or a community-scale design, we help you build a smarter, greener, and more connected future."
+        desc="From idea to implementation, Milestone Project Management supports you at every step of your urban development journey. Whether it’s a city-wide vision or a community-scale design, we help you build a smarter, greener, and more connected future."
         btn="Contact Us Today"
       />
     </main>

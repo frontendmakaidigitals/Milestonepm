@@ -186,11 +186,12 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At <strong>Al Yusr</strong> Engineering Consulting, we provide
-          construction and project management services for the engineering and
-          architectural sectors. Backed by decades of experience and a
-          commitment to best practices, our expert team ensures every project is
-          managed with precision, from initial planning to final handover.
+          At <strong>Milestone Project Management</strong> Engineering
+          Consulting, we provide construction and project management services
+          for the engineering and architectural sectors. Backed by decades of
+          experience and a commitment to best practices, our expert team ensures
+          every project is managed with precision, from initial planning to
+          final handover.
         </p>{" "}
         <p className="mt-2 text-center text-lg">
           Our structured approach follows globally recognized standards. We make
@@ -315,7 +316,8 @@ export default function ConstructionManagementPage() {
           initial="hidden"
           whileInView="visible"
         >
-          <span className="text-yellow-500">Technical Strength</span> of Al Yusr
+          <span className="text-yellow-500">Technical Strength</span> of
+          Milestone Project Management
         </motion.h2>
         <motion.p
           className="text-center max-w-5xl container mb-10"
@@ -323,10 +325,11 @@ export default function ConstructionManagementPage() {
           whileInView="visible"
         >
           With a Class A license in Saudi Arabia, ISO certifications, and a team
-          of in-house engineers, architects, and planners, Al Yusr delivers
-          smart solutions that adapt to complex construction challenges. Whether
-          it&apos;s a high-rise, industrial plant, or civic infrastructure
-          project, our approach ensures client satisfaction at every milestone.
+          of in-house engineers, architects, and planners, Milestone Project
+          Management delivers smart solutions that adapt to complex construction
+          challenges. Whether it&apos;s a high-rise, industrial plant, or civic
+          infrastructure project, our approach ensures client satisfaction at
+          every milestone.
         </motion.p>
 
         <motion.h3
@@ -378,10 +381,10 @@ export default function ConstructionManagementPage() {
             },
           }}
         >
-          At Al Yusr Engineering Consulting, we go beyond traditional project
-          management. Our strength lies in our ability to integrate vision,
-          precision, and innovation into every phase of the construction
-          lifecycle.
+          At Milestone Project Management Engineering Consulting, we go beyond
+          traditional project management. Our strength lies in our ability to
+          integrate vision, precision, and innovation into every phase of the
+          construction lifecycle.
         </motion.p>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -411,7 +414,7 @@ export default function ConstructionManagementPage() {
       </section>
       <EngineeringCTA
         title=" Need Reliable Project Oversight?"
-        desc="Al Yusr Engineering Consulting is here to take your project from concept to completion with confidence, clarity, and control. Let our seasoned team manage the process so you can focus on the bigger picture."
+        desc="Milestone Project Management Engineering Consulting is here to take your project from concept to completion with confidence, clarity, and control. Let our seasoned team manage the process so you can focus on the bigger picture."
         btn="Contact Us Today"
       />
     </main>

@@ -1,0 +1,77 @@
+"use client";
+import { motion } from "motion/react";
+import React from "react";
+import { SiteConfig } from "../utils/site";
+import Image from "next/image";
+import Link from "next/link";
+import BgLayer from "../app_chunks/BgLayer";
+
+type AboutMenuProps = {
+  menu: { label: string; href: string }[];
+};
+const AboutMenu: React.FC<AboutMenuProps> = ({ menu }) => {
+  const images = [
+    { img: "/contact-us.jpg", title: "Contact us", href: "/Contact" },
+    { img: "/about-us.jpg", title: "About us", href: "/About" },
+    {
+      img: "/collage.png",
+      title: "Our Locations",
+      href: "/our-presence",
+    },
+  ];
+  return (
+    <div className="flex justify-between gap-10 ">
+      <div className="">
+        <h1 className="text-xl mb-4 font-[600]">About us</h1>
+        <ul className="w-full min-w-2xs">
+          {menu.map((item, idx) => (
+            <li key={idx} className="w-full">
+              <Link
+                href={item.href}
+                className="block text-lg w-full rounded-lg py-[.4rem] font-medium transition-all duration-300 ease-in-out hover:bg-yellow-100 hover:px-6"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="grid flex-1  grid-cols-3 gap-5">
+        {images.map((item, idx) => (
+          <Link href={item.href} className="min-h-[330px] " key={idx}>
+            <motion.div
+              initial={{ y: -200, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 1.1,
+                delay: 0.1 * idx,
+                ease: [0.19, 1, 0.22, 1],
+              }}
+              whileHover={{
+                scale: 1.04,
+                boxShadow: "0 10px 15px rgba(0, 0, 0, 0.1)",
+              }}
+              exit={{ y: -200, opacity: 0 }}
+              className="w-full h-full hover:shadow-md rounded-xl overflow-hidden relative"
+            >
+              <BgLayer />
+              <Image
+                src={item.img}
+                alt=""
+                className="w-full h-full object-cover"
+                width={300}
+                height={300}
+              />
+              <h2 className="text-xl text-white absolute bottom-4 left-3">
+                {item.title}
+              </h2>
+            </motion.div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default AboutMenu;

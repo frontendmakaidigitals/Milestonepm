@@ -15,40 +15,60 @@ const Services = () => {
       img: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg",
     },
     {
-      title: "Engineering",
+      title: "Structural Engineering",
       link: "/Services/Engineering-Infrastructure/Engineering-Services",
       img: "https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg",
     },
     {
-      title: "Environmental Services",
-      link: "/Services/Environment-Sustainability-and-Resilience/environmental-services",
+      title: "Electrical and Mechanical Advisory",
+      link: "/Services/Engineering-Infrastructure/Electrical-and-Mechanical-Advisory",
       img: "https://images.pexels.com/photos/30589066/pexels-photo-30589066.jpeg",
     },
     {
-      title: "IT and Cybersecurity",
-      link: "/Services/Transportation-and-Smart-Mobility/it-and-cybersecurity",
-      img: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg",
+      title: "Foundation Solutions",
+      link: "/Services/Engineering-Infrastructure/Foundation-Solutions",
+      img: "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg",
     },
     {
-      title: "Planning and Consulting",
+      title: "Tunnel Infrastructure",
+      link: "/Services/Engineering-Infrastructure/Tunnel-Infrastructure",
+      img: "https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg",
+    },
+    {
+      title: "City Master Planning",
       link: "/Services/Urban-Planning/planning-and-advisory",
       img: "https://images.pexels.com/photos/4098228/pexels-photo-4098228.jpeg",
     },
     {
-      title: "Process Developement & Implementation",
+      title: "Urban Planning",
+      link: "/Services/Urban-Planning/planning-and-advisory",
+      img: "https://images.pexels.com/photos/4098228/pexels-photo-4098228.jpeg",
+    },
+    {
+      title: "Community Planning",
       link: "/Services/Project-Advisory/process-development-and-implementation",
       img: "https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg",
     },
     {
-      title: "Cost Planning",
-      link: "/Services/Project-Advisory/cost-management",
-      img: "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg",
-    },
-    {
-      title: "Community Engagement",
-      link: "/Services/Environment-Sustainability-and-Resilience/climate-adaptation",
+      title: "Interior & Spatial Design",
+      link: "/Services/Urban-Planning/interior-spatial-design",
       img: "https://images.pexels.com/photos/3280130/pexels-photo-3280130.jpeg",
     },
+    {
+      title: "Visualization & 3D Modeling",
+      link: "/Services/Urban-Planning/visualization-3d-modeling",
+      img: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg",
+    },
+    {
+      title: "Program & Portfolio Management",
+      link: "/Services/Project-Advisory/process-development-and-implementation",
+      img: "https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg",
+    },
+    {
+      title: "Project Scheduling",
+      link: "/Services/Project-Advisory/cost-management",
+      img: "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg",
+    }
   ];
   const serviceRef = useRef(null);
   const inView = useInView(serviceRef, {
@@ -62,7 +82,7 @@ const Services = () => {
   return (
     <section className="container py-20 mx-auto">
       <h1 className="text-4xl lg:text-5xl font-semibold text-center">
-        Our Services
+        Our <span className="text-yellow-500">Services</span>
       </h1>
       <motion.ul
         transition={{ staggerChildren: 1 }}

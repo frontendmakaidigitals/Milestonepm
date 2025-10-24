@@ -84,7 +84,7 @@ export default function Page() {
       title: "Sustainable and Resilient by Design",
       image: "/urban-planning/architecture/Sustainable design.webp",
       description:
-        "In line with Vision 2030 and global environmental goals, Al Yusr’s architecture services are focused on minimizing environmental impact and maximizing building resilience. We design for:",
+        "In line with Vision 2030 and global environmental goals, Milestone Project Management’s architecture services are focused on minimizing environmental impact and maximizing building resilience. We design for:",
       bullets: [
         "Reduced embodied and operational carbon",
         "Energy efficiency and passive strategies",
@@ -176,8 +176,9 @@ export default function Page() {
             </h2>
             <p className="text-lg text-gray-700 mt-4">
               With a multidisciplinary in-house team and access to global best
-              practices, Al Yusr provides architectural design services that
-              integrate form, function, and future-readiness.
+              practices, Milestone Project Management provides architectural
+              design services that integrate form, function, and
+              future-readiness.
             </p>
           </div>
 
@@ -267,8 +268,11 @@ export default function Page() {
       <section className="py-16 bg-white">
         <div className="max-w-3xl container text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-            Why Choose <span className="text-yellow-600">Al Yusr</span> for
-            Architecture?
+            Why Choose{" "}
+            <span className="text-yellow-600">
+              Milestone Project Management
+            </span>{" "}
+            for Architecture?
           </h2>
         </div>
         <div className="mt-8 grid gap-6 container max-w-6xl md:grid-cols-2 text-left">
@@ -287,7 +291,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Let’s Design the Future, Together"
-        desc="If you’re looking for architecture that performs as beautifully as it looks, Al Yusr Engineering Consulting is your partner in delivering spaces that are visionary, responsible, and truly transformative."
+        desc="If you’re looking for architecture that performs as beautifully as it looks, Milestone Project Management Engineering Consulting is your partner in delivering spaces that are visionary, responsible, and truly transformative."
         btn="Contact Us Today"
       />
     </main>

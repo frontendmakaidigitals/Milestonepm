@@ -30,7 +30,7 @@ export default function Page() {
   const solutions = [
     {
       title: "Cybersecurity Solutions",
-      desc: "In an increasingly digital world, threats evolve daily. Al Yusr provides strategic and technical cybersecurity solutions to ensure the confidentiality, integrity, and availability of your systems, whether your data is in use, in motion, or at rest. We protect both IT and Operational Technology (OT) environments across government, infrastructure, and private sector organizations.",
+      desc: "In an increasingly digital world, threats evolve daily. Milestone Project Management provides strategic and technical cybersecurity solutions to ensure the confidentiality, integrity, and availability of your systems, whether your data is in use, in motion, or at rest. We protect both IT and Operational Technology (OT) environments across government, infrastructure, and private sector organizations.",
       img: "/Transportation-mobility/it-and-cybersecurity/advance-tech.webp",
       points: [
         "Cyber Risk Assessment & Management",
@@ -42,7 +42,7 @@ export default function Page() {
     },
     {
       title: "Cloud & Virtual Infrastructure",
-      desc: "Al Yusr partners with leading cloud providers to offer secure, scalable, and compliant cloud solutions. From virtual data centers to multi-cloud management, we help clients transition smoothly into the cloud while maintaining the highest security and performance standards.",
+      desc: "Milestone Project Management partners with leading cloud providers to offer secure, scalable, and compliant cloud solutions. From virtual data centers to multi-cloud management, we help clients transition smoothly into the cloud while maintaining the highest security and performance standards.",
       img: "/Transportation-mobility/it-and-cybersecurity/cloud-ingra.webp",
       points: [
         "Secure Cloud Architecture & Migration",
@@ -128,11 +128,11 @@ export default function Page() {
               <span className="text-amber-500">Cybersecurity</span> Services
             </h1>
             <p>
-              At Al Yusr, we understand that information technology and
-              cybersecurity are no longer support functions; they are the
-              foundation of business continuity, operational efficiency, and
-              national security. Our IT & Cybersecurity services are built to
-              protect, streamline, and future-proof our clients’ digital
+              At Milestone Project Management, we understand that information
+              technology and cybersecurity are no longer support functions; they
+              are the foundation of business continuity, operational efficiency,
+              and national security. Our IT & Cybersecurity services are built
+              to protect, streamline, and future-proof our clients’ digital
               infrastructure.
             </p>
           </div>
@@ -225,7 +225,10 @@ export default function Page() {
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
-            Why Choose <span className="text-yellow-600">Al Yusr?</span>
+            Why Choose{" "}
+            <span className="text-yellow-600">
+              Milestone Project Management?
+            </span>
           </h2>
 
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-2">
@@ -248,7 +251,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Shaping Smarter, Safer Communities"
-        desc="At Al Yusr, our Geo-Intelligence & Analysis services are more than just maps; they are powerful decision-making tools that help our clients create sustainable, secure, and future-ready environments."
+        desc="At Milestone Project Management, our Geo-Intelligence & Analysis services are more than just maps; they are powerful decision-making tools that help our clients create sustainable, secure, and future-ready environments."
         btn="Contact Us Today"
       />
     </main>

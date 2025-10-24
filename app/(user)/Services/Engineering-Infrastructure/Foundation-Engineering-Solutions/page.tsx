@@ -94,9 +94,10 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr, we specialize in delivering advanced foundation
-          engineering services that support the success of major infrastructure,
-          industrial, and commercial projects across Saudi Arabia and beyond.
+          At Milestone Project Management, we specialize in delivering advanced
+          foundation engineering services that support the success of major
+          infrastructure, industrial, and commercial projects across Saudi
+          Arabia and beyond.
         </p>{" "}
         <p className="mt-2 text-lg text-center">
           Our expertise covers everything from deep foundation systems and
@@ -173,7 +174,7 @@ export default function ConstructionManagementPage() {
       <section className="bg-yellow-50 py-16">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-yellow-900 mb-12">
-            Why Choose Al Yusr?
+            Why Choose Milestone Project Management?
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {features.map((item, index) => {

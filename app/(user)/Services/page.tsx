@@ -311,11 +311,11 @@ const Page = () => {
               Services
             </h1>
             <h2 className=" text-xl text-slate-700 font-normal leading-relaxed">
-              Milestonepm partners with public and private sector clients to
-              solve their most complex engineering and development challenges,
-              transforming ambitious visions into excellent results. Across
-              Saudi Arabia and international markets, our expert teams push the
-              boundaries of innovation and precision.
+              Milestone Project Management partners with public and private
+              sector clients to solve their most complex engineering and
+              development challenges, transforming ambitious visions into
+              excellent results. Across Saudi Arabia and international markets,
+              our expert teams push the boundaries of innovation and precision.
             </h2>
           </div>
           <div className="lg:col-span-6">

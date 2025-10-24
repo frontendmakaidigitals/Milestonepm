@@ -136,12 +136,13 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr Engineering Consulting, we bring expert insight and proven
-          methodology to address one of the most critical aspects of any
-          construction project, the ground it stands on. From desert plains to
-          coastal developments and high-risk flood zones, our Ground Engineering
-          specialists design stable, safe, and cost-effective solutions tailored
-          to complex geotechnical conditions across the Kingdom and beyond.
+          At Milestone Project Management Engineering Consulting, we bring
+          expert insight and proven methodology to address one of the most
+          critical aspects of any construction project, the ground it stands on.
+          From desert plains to coastal developments and high-risk flood zones,
+          our Ground Engineering specialists design stable, safe, and
+          cost-effective solutions tailored to complex geotechnical conditions
+          across the Kingdom and beyond.
         </p>{" "}
         <p className="mt-2 text-lg text-center">
           Whether you’re building major transportation links, energy facilities,
@@ -218,7 +219,7 @@ export default function ConstructionManagementPage() {
       <section className="bg-yellow-50 py-16">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl lg:text-5xl font-bold text-center text-yellow-900 mb-12">
-            Why Choose Al Yusr?
+            Why Choose Milestone Project Management?
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {whatSetsUsApart.map((item, index) => {
@@ -245,7 +246,7 @@ export default function ConstructionManagementPage() {
       </section>
       <EngineeringCTA
         title="Building Confidence from the Ground Up"
-        desc="At Al Yusr, we understand that strong, sustainable infrastructure begins with solid ground. Whether you're working with uncertain subsurface conditions or challenging timelines, our Ground Engineering team is here to provide solutions that minimize risk, ensure safety, and drive performance from concept to construction."
+        desc="At Milestone Project Management, we understand that strong, sustainable infrastructure begins with solid ground. Whether you're working with uncertain subsurface conditions or challenging timelines, our Ground Engineering team is here to provide solutions that minimize risk, ensure safety, and drive performance from concept to construction."
         btn="Contact Us Today"
       />
     </main>

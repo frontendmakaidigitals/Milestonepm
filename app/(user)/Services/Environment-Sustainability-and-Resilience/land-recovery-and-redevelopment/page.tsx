@@ -129,11 +129,12 @@ export default function Page() {
             <p>
               Effectively addressing contaminated land is not only critical for
               ongoing business activities but also for the health of communities
-              and ecosystems. At Al Yusr, we combine scientific rigor, proven
-              methodologies, and innovative technologies to restore impaired
-              sites safely and sustainably. Our goal is to transform
-              environmental liabilities into valuable, productive assets that
-              serve both business needs and public interests.
+              and ecosystems. At Milestone Project Management, we combine
+              scientific rigor, proven methodologies, and innovative
+              technologies to restore impaired sites safely and sustainably. Our
+              goal is to transform environmental liabilities into valuable,
+              productive assets that serve both business needs and public
+              interests.
               <br /> <br />
               We work across industries and government sectors to manage a wide
               variety of contaminants, from legacy industrial pollution to
@@ -164,9 +165,10 @@ export default function Page() {
               Our <span className="text-yellow-500">Approach</span>
             </h2>
             <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-              At Al Yusr, we don’t just remediate sites—we reimagine their
-              potential. By integrating remediation with redevelopment planning,
-              we maximize both environmental and economic value.
+              At Milestone Project Management, we don’t just remediate sites—we
+              reimagine their potential. By integrating remediation with
+              redevelopment planning, we maximize both environmental and
+              economic value.
             </p>
           </motion.div>
 
@@ -235,7 +237,10 @@ export default function Page() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-              Why Choose <span className="text-yellow-500">Al Yusr?</span>
+              Why Choose{" "}
+              <span className="text-yellow-500">
+                Milestone Project Management?
+              </span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               Trusted expertise, innovative tools, and a commitment to
@@ -265,7 +270,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Let’s Talk About Your Project"
-        desc=" Al Yusr can help unlock the hidden potential of your contaminated sites. Contact us to discuss tailored solutions for remediation, restoration, and redevelopment."
+        desc=" Milestone Project Management can help unlock the hidden potential of your contaminated sites. Contact us to discuss tailored solutions for remediation, restoration, and redevelopment."
         btn="Contact Us Today"
       />
     </main>

@@ -69,7 +69,7 @@ export default function CertificationsPage() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-top"
           src="/why/global-standard.jpg"
-          alt="Milestonepm Engineering Hero Background"
+          alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
       {/* OVERVIEW SECTION */}
@@ -87,17 +87,17 @@ export default function CertificationsPage() {
                 Certified for Global Excellence
               </h1>
               <p className="text-lg text-gray-700">
-                At Milestonepm Engineering Consulting, our work meets and
-                exceeds the highest international standards. Our certifications
-                reflect our commitment to quality assurance, environmental
-                responsibility, occupational health and safety, and project risk
-                management across every service we deliver.
+                At Milestone Project Management Engineering Consulting, our work
+                meets and exceeds the highest international standards. Our
+                certifications reflect our commitment to quality assurance,
+                environmental responsibility, occupational health and safety,
+                and project risk management across every service we deliver.
               </p>
               <p className="mt-3">
                 With a globally aligned operating model and internationally
-                certified methodologies, Milestonepm is equipped to manage
-                large-scale, multidisciplinary projects with precision and
-                accountability.
+                certified methodologies, Milestone Project Management is
+                equipped to manage large-scale, multidisciplinary projects with
+                precision and accountability.
               </p>
 
               <Link
@@ -188,8 +188,9 @@ export default function CertificationsPage() {
               Memberships
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our global accreditations reflect Milestonepm’s dedication to
-              world-class practices, sustainability, and verified credibility.
+              Our global accreditations reflect Milestone Project Management’s
+              dedication to world-class practices, sustainability, and verified
+              credibility.
             </p>
           </div>
 
@@ -324,10 +325,10 @@ export default function CertificationsPage() {
           Certified to Deliver. Committed to Excellence.
         </h3>
         <p className="max-w-3xl mx-auto mb-8">
-          At Milestonepm, we don&apos;t just follow global standards; we embed
-          them into everything we do. These certifications are not just badges;
-          they&apos;re our promise to clients, partners, and the communities we
-          serve.
+          At Milestone Project Management, we don&apos;t just follow global
+          standards; we embed them into everything we do. These certifications
+          are not just badges; they&apos;re our promise to clients, partners,
+          and the communities we serve.
         </p>
         <button className="bg-white text-amber-900 font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-100 transition">
           Explore Our Services

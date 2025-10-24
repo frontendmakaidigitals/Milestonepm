@@ -50,7 +50,7 @@ export default function Page() {
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
           src="https://images.pexels.com/photos/7942430/pexels-photo-7942430.jpeg"
-          alt="Milestonepm Engineering Hero Background"
+          alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
       <section className="min-h-[85vh] py-20 lg:py-0 overflow-hidden relative">
@@ -68,12 +68,12 @@ export default function Page() {
                 Accreditations
               </h1>
               <p className="text-lg text-gray-700">
-                At Milestonepm Engineering Consulting, certifications are more
-                than just credentials; they reflect our ongoing commitment to
-                delivering high-quality, safe, and sustainable engineering
-                solutions. We proudly meet both national and international
-                standards, ensuring that every project we take on is executed
-                with precision, compliance, and care.
+                At Milestone Project Management Engineering Consulting,
+                certifications are more than just credentials; they reflect our
+                ongoing commitment to delivering high-quality, safe, and
+                sustainable engineering solutions. We proudly meet both national
+                and international standards, ensuring that every project we take
+                on is executed with precision, compliance, and care.
               </p>
 
               <Link
@@ -101,9 +101,9 @@ export default function Page() {
               Class A Certificate: Engineering Excellence Recognized Nationally
             </h2>
             <p className="text-gray-700 mb-4">
-              Milestonepm holds the prestigious Class A Certificate in
-              engineering consultancy, a top-tier classification issued by
-              regulatory authorities in Saudi Arabia.
+              Milestone Project Management holds the prestigious Class A
+              Certificate in engineering consultancy, a top-tier classification
+              issued by regulatory authorities in Saudi Arabia.
             </p>
             <p className="text-gray-700 mb-6">
               This certification confirms our capability to handle large-scale,

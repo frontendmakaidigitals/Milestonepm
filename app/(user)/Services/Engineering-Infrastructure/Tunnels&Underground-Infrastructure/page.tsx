@@ -105,7 +105,7 @@ export default function ConstructionManagementPage() {
     },
     {
       title: "Resident Engineering & Construction Support",
-      desc: "Al Yusr provides full-time engineering support during construction, ensuring quality, compliance, and safety. Our services include:",
+      desc: "Milestone Project Management provides full-time engineering support during construction, ensuring quality, compliance, and safety. Our services include:",
       points: [
         "Resident engineering and site supervision",
         "Contractor coordination",
@@ -135,12 +135,12 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr Engineering Consulting, we deliver reliable, future-ready
-          tunneling and underground infrastructure solutions that meet the
-          growing demands of modern cities and complex industrial developments.
-          Whether it’s transportation, utilities, water management, or energy
-          distribution, we engineer below-ground systems with precision, safety,
-          and resilience in mind.
+          At Milestone Project Management Engineering Consulting, we deliver
+          reliable, future-ready tunneling and underground infrastructure
+          solutions that meet the growing demands of modern cities and complex
+          industrial developments. Whether it’s transportation, utilities, water
+          management, or energy distribution, we engineer below-ground systems
+          with precision, safety, and resilience in mind.
         </p>{" "}
         <p className="mt-2 text-lg text-center">
           With extensive regional and international experience, our tunneling
@@ -211,7 +211,7 @@ export default function ConstructionManagementPage() {
       <section className="bg-yellow-50 py-16">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl lg:text-5xl font-bold text-center text-yellow-900 mb-12">
-            Why Choose Al Yusr?
+            Why Choose Milestone Project Management?
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {reasons.map((item, index) => {
@@ -238,7 +238,7 @@ export default function ConstructionManagementPage() {
       </section>
       <EngineeringCTA
         title="Let’s Build What’s Below the Surface"
-        desc="From mega infrastructure to local utility tunnels, Al Yusr Engineering Consulting is your trusted partner in delivering efficient, resilient, and safe underground infrastructure."
+        desc="From mega infrastructure to local utility tunnels, Milestone Project Management Engineering Consulting is your trusted partner in delivering efficient, resilient, and safe underground infrastructure."
         btn="Contact Us Today"
       />
     </main>

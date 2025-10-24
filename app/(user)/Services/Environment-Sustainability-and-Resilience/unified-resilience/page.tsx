@@ -120,12 +120,12 @@ export default function Page() {
               Protecting Infrastructure, Enabling Continuity
             </h2>
             <p>
-              At Al Yusr, we recognize that resilience today goes far beyond
-              traditional risk management. In an increasingly complex world
-              where physical, digital, and operational systems are
-              interconnected, our Unified Resilience solutions safeguard
-              organizations against disruption, whether from natural disasters,
-              cyber threats, or operational breakdowns.
+              At Milestone Project Management, we recognize that resilience
+              today goes far beyond traditional risk management. In an
+              increasingly complex world where physical, digital, and
+              operational systems are interconnected, our Unified Resilience
+              solutions safeguard organizations against disruption, whether from
+              natural disasters, cyber threats, or operational breakdowns.
               <br /> <br />
               We bring together expertise across critical infrastructure,
               information systems, and governance frameworks to ensure that our
@@ -221,7 +221,10 @@ export default function Page() {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-12"
           >
-            Why Choose <span className="text-yellow-500">Al Yusr?</span>
+            Why Choose{" "}
+            <span className="text-yellow-500">
+              Milestone Project Management?
+            </span>
           </motion.h2>
 
           {/* Features Grid */}
@@ -254,7 +257,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Build Resilience That Lasts"
-        desc=" Let Al Yusr help you design and deliver unified resilience strategies that protect your assets, people, and operations."
+        desc=" Let Milestone Project Management help you design and deliver unified resilience strategies that protect your assets, people, and operations."
         btn="Contact Us Today"
       />
     </main>

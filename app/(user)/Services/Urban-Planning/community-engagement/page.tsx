@@ -94,12 +94,12 @@ export default function Page() {
       </section>
       <section className="px-4 max-w-5xl mt-10 mx-auto">
         <p className="mt-3 text-center w-full text-lg">
-          At Al Yusr Engineering Consulting, we believe that great projects are
-          built with people, not just for them. Our Community Engagement
-          services are designed to bring people into the conversation early,
-          meaningfully, and creatively. We help our clients build trust, gather
-          insights, and ensure that development reflects the needs, values, and
-          aspirations of the communities it serves.
+          At Milestone Project Management Engineering Consulting, we believe
+          that great projects are built with people, not just for them. Our
+          Community Engagement services are designed to bring people into the
+          conversation early, meaningfully, and creatively. We help our clients
+          build trust, gather insights, and ensure that development reflects the
+          needs, values, and aspirations of the communities it serves.
         </p>
         <p className="mt-3 text-center w-full text-lg">
           Our experienced outreach practitioners specialize in translating
@@ -216,9 +216,9 @@ export default function Page() {
             </h2>
             <p className="text-muted-foreground">
               With over a decade of experience in Saudi Arabia and the wider
-              region, Al Yusr is proud to be part of a new wave of
-              community-first planning. We’ve helped introduce concepts like
-              tactical urbanism, temporary placemaking, and creative
+              region, Milestone Project Management is proud to be part of a new
+              wave of community-first planning. We’ve helped introduce concepts
+              like tactical urbanism, temporary placemaking, and creative
               consultation tools that make participation exciting and effective.
             </p>
             <p className="text-muted-foreground">
@@ -254,10 +254,10 @@ export default function Page() {
             </ul>
           </div>
 
-          {/* Why Choose Al Yusr for Community Engagement */}
+          {/* Why Choose Milestone Project Management for Community Engagement */}
           <div className="bg-green-100 shadow-lg rounded-2xl p-8 border border-gray-900/10">
             <h2 className="text-4xl font-bold mb-8 text-green-700 border-b border-green-700/20 pb-4">
-              Why Choose Al Yusr for Community Engagement?
+              Why Choose Milestone Project Management for Community Engagement?
             </h2>
             <ul className="space-y-5 flex-grow">
               {reasonsChoose.map((reason, index) => (
@@ -277,7 +277,7 @@ export default function Page() {
 
       <EngineeringCTA
         title="Let’s Build with the Community, Not Around It"
-        desc="If you’re planning a project that touches people’s lives, make sure their voices are part of the process from the start. At Al Yusr, we turn engagement into impact, helping clients gain insight, build consensus, and deliver with purpose."
+        desc="If you’re planning a project that touches people’s lives, make sure their voices are part of the process from the start. At Milestone Project Management, we turn engagement into impact, helping clients gain insight, build consensus, and deliver with purpose."
         btn="Contact Us Today"
       />
     </main>
