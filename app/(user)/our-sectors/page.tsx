@@ -1,7 +1,7 @@
 "use client";
 import { ArrowUpRight, BadgeCheck } from "lucide-react";
 import Image from "next/image";
-import BgLayer from "../../app_chunks/BgLayer";
+import BgLayer from "../app_chunks/BgLayer";
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import EngineeringCTA from "@/app/(user)/app_chunks/CTA";
@@ -18,7 +18,7 @@ const divisions = [
       "Roads, Drainage & Hydrology",
       "Telecom & Low-Current Systems",
     ],
-    image: "/our division 2/Engineering-Design Division.webp", // Replace with your local or remote image
+    image: "/our division 2/Engineering-Design Division.webp",
   },
   {
     title: "Architecture & Urban Planning Division",
@@ -113,11 +113,11 @@ export default function Page() {
       >
         <div className="relative z-30 container py-10 flex flex-col justify-center items-center h-full max-w-4xl text-center">
           <h1 className="text-2xl  text-slate-50">
-            Company Overview
+            Our Sectors
             <br className="hidden sm:block" />
           </h1>
           <p className="mt-3 text-slate-200 text-5xl lg:text-6xl font-semibold">
-            Trusted Engineering Experts Supporting Saudi Vision 2030
+            Specialized Sectors for Smart Project Management
           </p>
         </div>
         <BgLayer color="bg-black/60 z-20" />
@@ -140,7 +140,7 @@ export default function Page() {
             <div className="max-w-2xl">
               <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter  mb-4">
                 Expertise Across Every{" "}
-                <span className="text-yellow-500">Sector</span>
+                <span className="text-amber-600">Sector</span>
               </h1>
               <p className="text-lg text-gray-700">
                 At{" "}
@@ -199,7 +199,7 @@ export default function Page() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-3xl text-amber-800 font-semibold  mb-2">
+                <h3 className="text-3xl text-[#B59410] font-semibold  mb-2">
                   {division.title}
                 </h3>
                 <p className="text-sm text-gray-600 mb-4">
@@ -223,7 +223,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title="Working Together to Build the Future"
-        desc="Each division operates with full autonomy and cross-functional coordination. This structure allows Milestone Project Management to stay agile, reduce delays, and deliver high-quality, end-to-end solutions for complex, multidisciplinary projects."
+        desc="Every sector at Milestone PM works in close coordination to deliver complete, end-to-end project solutions. This integrated approach allows us to stay agile, reduce risks, and achieve the highest quality outcomes across all project types."
       />
     </div>
   );

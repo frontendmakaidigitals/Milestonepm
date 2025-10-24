@@ -12,10 +12,9 @@ type AboutMenuProps = {
 const AboutMenu: React.FC<AboutMenuProps> = ({ menu }) => {
   const images = [
     { img: "/contact-us.jpg", title: "Contact us", href: "/Contact" },
-    { img: "/about-us.jpg", title: "About us", href: "/About" },
     {
       img: "/collage.png",
-      title: "Our Locations",
+      title: "Our Presence",
       href: "/our-presence",
     },
   ];
@@ -39,7 +38,7 @@ const AboutMenu: React.FC<AboutMenuProps> = ({ menu }) => {
 
       <div className="grid flex-1  grid-cols-3 gap-5">
         {images.map((item, idx) => (
-          <Link href={item.href} className="min-h-[330px] " key={idx}>
+          <Link href={item.href} className={` max-h-[350px]  ${idx == images.length - 1 ? 'col-span-2' : '' }`} key={idx}>
             <motion.div
               initial={{ y: -200, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

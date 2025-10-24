@@ -1,33 +1,19 @@
 "use client";
 import { ArrowUpRight, BadgeCheck } from "lucide-react";
 import Image from "next/image";
-import BgLayer from "../../app_chunks/BgLayer";
-import { useState, useEffect, useRef } from "react";
-import { motion, useScroll, useTransform } from "motion/react";
+import BgLayer from "../app_chunks/BgLayer";
+import { motion } from "motion/react";
 import EngineeringCTA from "@/app/(user)/app_chunks/CTA";
 import Link from "next/link";
 const codeItems = [
-  "Legal compliance requirements under local and international law",
-  "Guidelines for ethical decision-making in daily operations",
-  "Principles for fair treatment, anti-corruption, and anti-bribery",
-  "Responsibilities related to environmental, health, and workplace safety",
-  "Commitments to fair competition, client confidentiality, and data protection",
+  "Commitment to legal and regulatory compliance across all operations.",
+  "Clear ethical guidelines guiding every business decision and interaction.",
+  "Zero tolerance for bribery, corruption, or any form of misconduct.",
+  "Responsibility for ensuring health, safety, and environmental care in all projects.",
+  "Promise of fairness, confidentiality, and transparency in every client relationship.",
 ];
 
 export default function Page() {
-  const [sectionTop, setSectionTop] = useState(0);
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const { scrollY } = useScroll();
-  const yTransform = useTransform(
-    scrollY,
-    [sectionTop, sectionTop + 400],
-    [0, 100]
-  );
-
-  useEffect(() => {
-    const top = sectionRef.current?.offsetTop || 0;
-    setSectionTop(top);
-  }, []);
   return (
     <main className="">
       <section className="min-h-[85vh] py-12 lg:py-0 overflow-hidden relative">
@@ -36,21 +22,19 @@ export default function Page() {
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
               <h1 className="text-5xl font-semibold leading-tighter  mb-4">
-                Our <span className="text-yellow-500">Ethics</span>
+                Our Compliance
               </h1>
               <p className="text-lg text-gray-700">
-                At Milestone Project Management Engineering Consulting, we
-                believe that ethical behavior is the foundation of long-term
-                success. We are fully committed to upholding the highest
-                standards of integrity, transparency, and compliance in
-                everything we do, from how we deliver projects to how we engage
-                with clients, employees, partners, and communities. Our
-                reputation as a trusted engineering consultancy is built not
-                only on the quality of our work, but also on the values that
-                guide us. We hold ourselves accountable to both Saudi
-                regulations and international standards, ensuring that our
-                business practices are lawful, ethical, and respectful across
-                all markets we operate in.
+                At Milestone Project Management, we believe that success is
+                built on integrity, responsibility, and trust. Our commitment to
+                compliance goes beyond following rules, it’s about doing
+                business with honesty and fairness in everything we do. We make
+                sure that our operations, partnerships, and project practices
+                meet the highest ethical, legal, and professional standards
+                across all the countries we work in.{" "}
+                <span className="block mt-2" /> Our reputation is built not only
+                on our technical excellence but also on our promise to act
+                transparently and ethically at all times.
               </p>
 
               <Link
@@ -79,7 +63,7 @@ export default function Page() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-bold text-amber-800 text-center mb-12"
+            className="text-4xl md:text-5xl font-bold text-[#B59410] text-center mb-12"
           >
             Our Ethical Culture
           </motion.h2>
@@ -110,15 +94,15 @@ export default function Page() {
               className="w-full lg:w-1/2 space-y-6"
             >
               <p>
-                Our business culture is grounded in fairness, professionalism,
-                and respect. Ethical decision-making is encouraged at every
-                level of our organization, from executive leadership to field
-                operations. We lead by example, taking a zero-tolerance approach
-                to bribery, corruption, discrimination, and non-compliance.
-              </p>
-              <p>
-                We actively promote a culture of accountability, where speaking
-                up is encouraged, and doing the right thing is expected, always.
+                We maintain a strong culture of integrity within our
+                organization. Every member of the Milestone PM team is expected
+                to uphold ethical values, make responsible decisions, and act in
+                the best interest of our clients and communities. We do not
+                tolerate any form of unethical behavior, including corruption,
+                bribery, or unfair practices. <span className="block mt-2" />{" "}
+                Our leadership leads by example, ensuring that respect,
+                accountability, and transparency guide every project and
+                partnership.
               </p>
 
               {/* Training & Awareness */}
@@ -127,27 +111,29 @@ export default function Page() {
                   Training & Awareness
                 </h3>
                 <p className="mb-4">
-                  All employees receive mandatory ethics and compliance training
-                  to help them identify, report, and avoid unethical behavior.
-                  Training includes:
+                  We believe that compliance starts with awareness. All
+                  employees receive regular training to understand our standards
+                  of ethics and conduct. These sessions help our teams identify
+                  and prevent risks while promoting a culture of honesty and
+                  respect at work.
                 </p>
                 <ul className="space-y-2">
                   {[
-                    "Understanding the Code of Conduct",
-                    "Recognizing conflicts of interest",
-                    "Anti-bribery and anti-corruption policies",
+                    "Understanding the company’s Code of Conduct",
+                    "Recognizing and managing conflicts of interest",
+                    "Anti-bribery and anti-corruption practices",
+                    "Workplace respect and equal opportunity",
                     "Data protection and client confidentiality",
-                    "Respect in the workplace",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <BadgeCheck className="w-5 h-5 text-green-600 mt-1 shrink-0" />
+                      <BadgeCheck className="w-5 h-5 fill-green-600 text-yellow-50 mt-1 shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <p className="mt-4">
-                  Training is regularly updated to reflect emerging risks and
-                  global best practices.
+                  We review and update our training programs regularly to
+                  reflect international best practices and evolving regulations.
                 </p>
               </div>
             </motion.div>
@@ -161,9 +147,9 @@ export default function Page() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-bold text-amber-800 text-center mb-12"
+            className="text-4xl md:text-5xl font-bold text-[#B59410] text-center mb-8"
           >
-            Code of Ethics & Conduct
+            Code of Conduct
           </motion.h2>
 
           <motion.div
@@ -171,11 +157,12 @@ export default function Page() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto space-y-6 text-gray-700"
+            className="max-w-4xl mx-auto  space-y-6 text-gray-700"
           >
-            <p>
-              Milestone Project Management follows a strict Code of Ethics and
-              Business Conduct, which outlines:
+            <p className="text-center">
+              Our Code of Conduct is the foundation of how we operate. It
+              defines clear principles and expectations for every employee,
+              partner, and contractor associated with Milestone PM.
             </p>
 
             <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -184,13 +171,13 @@ export default function Page() {
                   key={i}
                   className="flex bg-amber-100 p-2 rounded-lg items-start gap-3"
                 >
-                  <BadgeCheck className="w-5 h-5 text-green-600 mt-1 shrink-0" />
+                  <BadgeCheck className="w-5 h-5 text-yellow-50 fill-green-500 mt-1 shrink-0" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
 
-            <p>
+            <p className="text-xs">
               This code is shared with all employees, consultants, and
               subcontractors to ensure a consistent standard of ethical behavior
               throughout every project.
@@ -200,7 +187,7 @@ export default function Page() {
       </section>
       <EngineeringCTA
         title=" Governance & Oversight"
-        desc="Our internal Ethics & Compliance Committee, led by senior management, ensures regular review of our ethics policies, incident reports, and internal audits. This committee works closely with department heads and legal advisors to implement improvements and ensure company-wide accountability."
+        desc="To maintain high standards, our Compliance Committee, led by senior management, oversees all ethical and operational practices. The committee monitors compliance performance, conducts reviews, and ensures continuous improvement across all departments. We believe that accountability builds trust."
       />
     </main>
   );

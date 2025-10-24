@@ -83,7 +83,7 @@ export default function CertificationsPage() {
         <div className="relative z-10 min-h-[85vh] flex flex-col h-full justify-center items-center">
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
-              <h1 className="text-4xl lg:text-5xl font-semibold text-amber-800 leading-tighter  mb-4">
+              <h1 className="text-4xl lg:text-5xl font-semibold text-[#B59410] leading-tighter  mb-4">
                 Certified for Global Excellence
               </h1>
               <p className="text-lg text-gray-700">
@@ -167,7 +167,7 @@ export default function CertificationsPage() {
                     {i + 1}
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-amber-800 mb-2">
+                <h3 className="text-lg font-semibold text-[#B59410] mb-2">
                   {cert.title}
                 </h3>
                 <p className="text-gray-700 text-sm leading-relaxed">

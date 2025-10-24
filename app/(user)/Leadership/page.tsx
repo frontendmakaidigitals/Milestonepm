@@ -9,7 +9,7 @@ import {
   TreeDeciduous,
   Network,
 } from "lucide-react";
-import BgLayer from "../../app_chunks/BgLayer";
+import BgLayer from "../app_chunks/BgLayer";
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import EngineeringCTA from "@/app/(user)/app_chunks/CTA";
@@ -27,6 +27,38 @@ export default function Page() {
     const top = sectionRef.current?.offsetTop || 0;
     setSectionTop(top);
   }, []);
+  const services = [
+    {
+      icon: <Building2 className="w-6 h-6 text-amber-700" />,
+      title: "Urban Development & Smart Cities",
+      desc: "Planning and managing residential, commercial, and mixed-use communities that support the UAE’s urban and sustainability goals.",
+    },
+    {
+      icon: <Network className="w-6 h-6 text-amber-700" />,
+      title: "Infrastructure & Connectivity",
+      desc: "Delivering projects that strengthen connectivity, from roads and bridges to utilities and public transport systems.",
+    },
+    {
+      icon: <Globe className="w-6 h-6 text-amber-700" />,
+      title: "Digital Transformation",
+      desc: "Adopting modern tools like BIM, GIS, and digital project monitoring to improve coordination, accuracy, and sustainability.",
+    },
+    {
+      icon: <TreeDeciduous className="w-6 h-6 text-amber-700" />,
+      title: "Sustainability & Environment",
+      desc: "Promoting eco-friendly engineering, green design, and energy-efficient solutions that reduce carbon impact and protect natural resources.",
+    },
+    {
+      icon: <Brain className="w-6 h-6 text-amber-700" />,
+      title: "Private Sector Enablement",
+      desc: "Supporting developers, investors, and government partners with expert project management, advisory, and supervision services.",
+    },
+    {
+      icon: <Compass className="w-6 h-6 text-amber-700" />,
+      title: "Nationwide Impact",
+      desc: "From NEOM to Tabuk, delivering value that lasts for generations.",
+    },
+  ];
   return (
     <div className="bg-white text-gray-800">
       {/* Hero Section */}
@@ -43,7 +75,7 @@ export default function Page() {
             <br className="hidden sm:block" />
           </h1>
           <p className="mt-3 text-slate-200 text-5xl lg:text-6xl font-semibold">
-            Guiding Innovation. Engineering the Future.
+            Guiding Innovation. Building the Future.
           </p>
         </div>
         <BgLayer color="bg-black/60 z-20" />
@@ -60,22 +92,24 @@ export default function Page() {
         <div className="container grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-              <span className="text-yellow-500">Leadership</span> That Builds
-              with Purpose
+              Leadership That Inspires Progress
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              At Milestone Project Management, leadership is about inspiring
-              progress, driving innovation, and delivering value. Our CEO and
-              department heads across engineering, planning, design, safety, and
-              project management work collaboratively to embed quality,
-              sustainability, and innovation in every project.
+              At Milestone Project Management (Milestone PM), leadership is not
+              just about managing projects; it’s about creating impact, driving
+              innovation, and shaping the future of engineering and development.
+              Led by an experienced management team and skilled department
+              heads, we bring together strong technical expertise, strategic
+              direction, and a passion for excellence in every project we
+              deliver.
             </p>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li>✓ Deep technical expertise across disciplines</li>
-              <li>✓ Streamlined structure that empowers teams</li>
-              <li>✓ Collaborative and accountable project execution</li>
-              <li>✓ High ethical and professional standards</li>
-            </ul>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Our leadership team includes professionals from diverse
+              backgrounds in project management, design, construction, digital
+              transformation, and engineering consultancy. Together, they ensure
+              that each milestone we achieve reflects our core values —
+              integrity, quality, innovation, and sustainability.
+            </p>
           </div>
           <div className="rounded-xl h-[260px] lg:h-[450px] overflow-hidden">
             <img
@@ -102,10 +136,10 @@ export default function Page() {
               Our Vision
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              We aim to be a driving force in the Kingdom’s transformation by
-              providing high-impact engineering and consulting services that
-              support national growth, infrastructure development, and quality
-              of life.
+              To be a leading project management and engineering consultancy
+              that helps build the cities of tomorrow, advancing sustainable
+              growth, modern infrastructure, and innovation across the UAE and
+              beyond.
             </p>
           </div>
           <div>
@@ -120,9 +154,11 @@ export default function Page() {
               Our Mission
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              To deliver future-ready solutions in engineering, design, and
-              project management. We create value from planning to delivery and
-              long-term impact.
+              To deliver smart, efficient, and future-ready project management
+              solutions that create real value for clients, communities, and the
+              environment. We focus on every stage of a project, from early
+              planning and feasibility to execution and long-term performance,
+              ensuring success that lasts.
             </p>
           </div>
         </div>
@@ -173,42 +209,11 @@ export default function Page() {
       <section className="pt-12 lg:py-20 px-6">
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            How We Support <span className="text-yellow-500">Vision 2030</span>
+            How We Support <span className="text-yellow-500">UAE vision</span>
           </h2>
         </div>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            {
-              icon: <Building2 className="w-6 h-6 text-amber-700" />,
-              title: "Urban Development & Housing",
-              desc: "Designing livable communities and master plans that enhance life.",
-            },
-            {
-              icon: <Network className="w-6 h-6 text-amber-700" />,
-              title: "Infrastructure & Connectivity",
-              desc: "Planning roads, utilities, and logistics hubs powering the future.",
-            },
-            {
-              icon: <Globe className="w-6 h-6 text-amber-700" />,
-              title: "Digital Transformation",
-              desc: "Using BIM, GIS, and smart tools for efficient project delivery.",
-            },
-            {
-              icon: <TreeDeciduous className="w-6 h-6 text-amber-700" />,
-              title: "Sustainability & Environment",
-              desc: "Green building, energy efficiency, and eco-focused design.",
-            },
-            {
-              icon: <Brain className="w-6 h-6 text-amber-700" />,
-              title: "Private Sector Enablement",
-              desc: "Partnering with developers and PPPs for strategic growth.",
-            },
-            {
-              icon: <Compass className="w-6 h-6 text-amber-700" />,
-              title: "Nationwide Impact",
-              desc: "From NEOM to Tabuk, delivering value that lasts for generations.",
-            },
-          ].map((item, i) => (
+          {services.map((item, i) => (
             <div
               key={i}
               className="bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition"
@@ -229,7 +234,7 @@ export default function Page() {
 
       <EngineeringCTA
         title="Nationwide Impact"
-        desc="From Riyadh to NEOM, and from the Eastern Province to Tabuk, Milestone Project Management is helping reshape the Kingdom’s landscape, one project at a time. We partner with both public and private sector entities to deliver value, reduce environmental impact, and create long-lasting infrastructure for generations to come."
+        desc="From Dubai to Abu Dhabi, and across Sharjah, Ras Al Khaimah, and beyond, Milestone PM plays a key role in delivering infrastructure and development projects that support the UAE’s growth vision. We work hand-in-hand with both public and private sector clients to ensure that every project contributes to a more sustainable, resilient, and innovative nation."
       />
     </div>
   );

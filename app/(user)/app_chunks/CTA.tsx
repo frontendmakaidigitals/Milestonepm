@@ -11,7 +11,7 @@ export default function EngineeringCTA({
   btn?: string;
 }) {
   return (
-    <section className="relative rounded-xl overflow-hidden bg-gradient-to-b from-amber-400 via-yellow-400 to-amber-500 my-24 container max-w-6xl mx-auto">
+    <section className="relative rounded-xl overflow-hidden bg-gradient-to-b from-amber-400 via-yellow-400 to-amber-500 my-24 container max-w-5xl mx-auto">
       {/* Decorative Circles */}
       <div className="absolute -top-10 -left-12 w-48 h-48 border-4 border-white border-dashed rounded-full opacity-10 pointer-events-none z-0" />
       <div className="absolute -bottom-20 -right-20 w-64 h-64 border-8 border-white border-dotted rounded-full opacity-10 pointer-events-none z-0" />

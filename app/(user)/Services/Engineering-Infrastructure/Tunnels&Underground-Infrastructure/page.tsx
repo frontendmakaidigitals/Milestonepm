@@ -120,7 +120,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container   my-10">
-        <h1 className="text-4xl max-w-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
+        <h1 className="text-4xl max-w-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           Tunnels & Underground Infrastructure
         </h1>
       </div>
@@ -188,7 +188,7 @@ export default function ConstructionManagementPage() {
 
               {/* Content */}
               <div className={`${isEven ? "order-2" : "order-2 lg:order-1"}`}>
-                <h3 className="text-4xl font-semibold text-amber-800 mb-4">
+                <h3 className="text-4xl font-semibold text-[#B59410] mb-4">
                   {item.title}
                 </h3>
                 <p className="text-gray-800 mb-4">{item.desc}</p>

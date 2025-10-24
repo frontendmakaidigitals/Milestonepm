@@ -41,7 +41,7 @@ const ServicesMenu: React.FC<ServicesProps> = ({ services }) => {
       </div>
       <div className="grid flex-1 max-w-2xl grid-cols-2 gap-5">
         {images.map((item, idx) => (
-          <Link href={item.href} className="min-h-[330px] " key={idx}>
+          <Link href={item.href} className="max-h-[350px] min-h-[350px]" key={idx}>
             <motion.div
               initial={{ y: -200, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

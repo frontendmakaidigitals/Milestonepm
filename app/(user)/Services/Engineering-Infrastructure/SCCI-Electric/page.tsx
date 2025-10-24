@@ -89,7 +89,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           SCCI Electric
         </h1>
       </div>
@@ -184,7 +184,7 @@ export default function ConstructionManagementPage() {
 
                 {/* Text column */}
                 <div className={`${isEven ? "lg:order-1" : "lg:order-2"}`}>
-                  <h3 className="text-3xl text-amber-800 font-semibold mb-2">
+                  <h3 className="text-3xl text-[#B59410] font-semibold mb-2">
                     {item.title}
                   </h3>
                   <p className="text-black/90 mb-4">{item.desc}</p>

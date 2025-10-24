@@ -91,7 +91,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           Community Planning
         </h1>
       </div>
@@ -223,7 +223,7 @@ export default function Page() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl font-bold mb-6 text-amber-800">
+              <h2 className="text-4xl font-bold mb-6 text-[#B59410]">
                 Sustainable & Resilient Communities
               </h2>
               <p className="mb-6 text-gray-700">

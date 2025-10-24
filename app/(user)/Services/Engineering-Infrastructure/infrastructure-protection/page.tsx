@@ -91,7 +91,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           Critical Infrastructure Protection
         </h1>
       </div>
@@ -110,7 +110,7 @@ export default function ConstructionManagementPage() {
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Section */}
           <div className="order-2 lg:order-1">
-            <h2 className="text-3xl lg:text-5xl font-bold text-amber-800 mb-6">
+            <h2 className="text-3xl lg:text-5xl font-bold text-[#B59410] mb-6">
               Securing the Foundations of Modern Life
             </h2>
             <p className="text-gray-700 text-lg mb-4 leading-relaxed">
@@ -155,7 +155,7 @@ export default function ConstructionManagementPage() {
 
           {/* Text Section */}
           <div className="order-2">
-            <h2 className="text-3xl lg:text-5xl font-bold text-amber-800 mb-6">
+            <h2 className="text-3xl lg:text-5xl font-bold text-[#B59410] mb-6">
               A Converged Approach to Resilience
             </h2>
             <p className="text-gray-700 text-lg mb-4 leading-relaxed">
@@ -177,7 +177,7 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto">
-          <h2 className="text-3xl lg:text-5xl font-bold text-amber-800 mb-12 text-center">
+          <h2 className="text-3xl lg:text-5xl font-bold text-[#B59410] mb-12 text-center">
             Our Expertise Includes:
           </h2>
           <div className="grid gap-8 grid-cols-1 lg:grid-cols-3">
@@ -200,7 +200,7 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="py-20 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-3xl lg:text-5xl font-bold text-amber-800 mb-12 text-center">
+          <h2 className="text-3xl lg:text-5xl font-bold text-[#B59410] mb-12 text-center">
             Sectors We Serve
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -220,7 +220,7 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl lg:text-5xl font-bold text-amber-800 mb-12 text-center">
+          <h2 className="text-3xl lg:text-5xl font-bold text-[#B59410] mb-12 text-center">
             Why Milestone Project Management for Critical Infrastructure
             Protection?
           </h2>

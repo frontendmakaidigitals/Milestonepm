@@ -97,7 +97,7 @@ export default function Page() {
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto  grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-amber-800 mb-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#B59410] mb-4">
               Class A Certificate: Engineering Excellence Recognized Nationally
             </h2>
             <p className="text-gray-700 mb-4">

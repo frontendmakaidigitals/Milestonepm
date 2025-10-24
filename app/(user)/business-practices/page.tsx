@@ -1,61 +1,61 @@
 "use client";
 import React from "react";
 import {
-  ShieldCheck,
-  Users,
-  Activity,
-  AlertTriangle,
-  Award,
-  ClipboardCheck,
-  CheckCircle,
-  HeartPulse,
+  Scale,
+  FileCheck,
+  Shield,
+  Leaf,
+  Lock,
+  Ban,
+  Users2,
+  Handshake,
   ArrowUpRight,
 } from "lucide-react";
-import BgLayer from "../../app_chunks/BgLayer";
+import BgLayer from "../app_chunks/BgLayer";
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import EngineeringCTA from "@/app/(user)/app_chunks/CTA";
 import Link from "next/link";
-const safetyPrograms = [
+const ethicsAndGovernance = [
   {
-    icon: <ShieldCheck className="w-6 h-6 text-emerald-600" />,
-    title: "Leadership-Driven Safety Culture",
-    desc: "Senior managers and project heads lead all safety efforts to ensure visibility, resource allocation, and improvement.",
+    icon: <Scale className="w-6 h-6 text-amber-700" />,
+    title: "Ethical Leadership",
+    desc: "Our leadership team leads by example, ensuring that every decision upholds integrity, transparency, and professional excellence.",
   },
   {
-    icon: <Users className="w-6 h-6 text-yellow-600" />,
-    title: "Employee Participation & Awareness",
-    desc: "All staff are engaged in planning, audits, toolbox talks, and encouraged to report hazards and suggest improvements.",
+    icon: <Handshake className="w-6 h-6 text-green-700" />,
+    title: "Fair and Transparent Dealings",
+    desc: "We maintain open communication and clear documentation in all transactions, ensuring fairness and mutual respect with all stakeholders.",
   },
   {
-    icon: <ClipboardCheck className="w-6 h-6 text-indigo-600" />,
-    title: "Training & Safety Orientation",
-    desc: "Every employee undergoes safety training relevant to their role and site, with regular refreshers.",
+    icon: <FileCheck className="w-6 h-6 text-blue-700" />,
+    title: "Compliance and Governance",
+    desc: "We adhere to all local and international regulations, with strong internal controls and audits to ensure accountability and continuous improvement.",
   },
   {
-    icon: <Activity className="w-6 h-6 text-orange-600" />,
-    title: "Risk-Based Planning",
-    desc: "Risk assessments and mitigation strategies are integrated into every project phase.",
+    icon: <Leaf className="w-6 h-6 text-emerald-700" />,
+    title: "Sustainable and Responsible Practices",
+    desc: "Sustainability is integrated into our projects and operations — minimizing waste, conserving resources, and promoting eco-friendly practices.",
   },
   {
-    icon: <AlertTriangle className="w-6 h-6 text-rose-600" />,
-    title: "Incident Prevention & Response",
-    desc: "A robust system for reporting, investigating, and correcting incidents with root cause analysis.",
+    icon: <Lock className="w-6 h-6 text-indigo-700" />,
+    title: "Data Protection and Confidentiality",
+    desc: "We safeguard client and project data through strict cybersecurity and privacy protocols to maintain confidentiality and trust.",
   },
   {
-    icon: <HeartPulse className="w-6 h-6 text-pink-600" />,
-    title: "Fit-for-Duty Policy",
-    desc: "Employees must be mentally and physically ready for work. Health programs support wellness.",
+    icon: <Ban className="w-6 h-6 text-rose-700" />,
+    title: "Anti-Corruption and Anti-Bribery Policy",
+    desc: "Zero tolerance for corruption or unethical conduct. All employees and partners must adhere to our integrity standards and reporting system.",
   },
   {
-    icon: <CheckCircle className="w-6 h-6 text-amber-600" />,
-    title: "Contractor & Partner Integration",
-    desc: "Subcontractors align with Milestone Project Management’s safety systems, with joint inspections and shared KPIs.",
+    icon: <Users2 className="w-6 h-6 text-purple-700" />,
+    title: "Fair Employment and Diversity",
+    desc: "We provide equal opportunities and foster an inclusive workplace that values talent, collaboration, and respect for all.",
   },
   {
-    icon: <Award className="w-6 h-6 text-yellow-600" />,
-    title: "Recognition & Rewards",
-    desc: "Exceptional safety performance is celebrated with awards and internal recognition.",
+    icon: <Shield className="w-6 h-6 text-yellow-700" />,
+    title: "Client-Centric Approach",
+    desc: "Every decision at Milestone PM is made with the client in mind — ensuring transparency, understanding, and value-driven solutions.",
   },
 ];
 
@@ -89,7 +89,8 @@ export default function SafetyCommitmentsPage() {
             <br className="hidden sm:block" />
           </h1>
           <p className="mt-3 text-slate-200 text-5xl lg:text-6xl font-semibold">
-            Expertise You Can Trust. Delivery You Can Count On.
+            Building trust through transparency, accountability, and sustainable
+            growth.
           </p>
         </div>
         <BgLayer color="bg-black/60 z-20" />
@@ -110,20 +111,20 @@ export default function SafetyCommitmentsPage() {
             {/* Text */}
             <div className="max-w-2xl">
               <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter mb-4">
-                Our Commitment to Safety
+                Our Business Practices
               </h1>
               <p className="text-lg text-gray-700">
-                At Milestone Project Management Engineering Consulting, safety
-                is more than a policy; it is a core value embedded into our
-                culture, our people, and our projects. We are committed to
-                ensuring the physical, mental, and environmental well-being of
-                every team member, client, and community we work with.
-                <br />
-                From project planning to execution, we apply proactive risk
-                management strategies to identify, reduce, and eliminate
-                hazards. Our approach is guided by international safety
-                standards, including ISO 45001, and reinforced by strong
-                leadership, clear procedures, and empowered teams.
+                At Milestone Project Management, we believe that excellence
+                begins with strong values and ethical business conduct. Our
+                success is built on trust, transparency, and integrity,
+                principles that guide every decision we make and every project
+                we deliver. We are fully committed to operating responsibly,
+                ensuring fairness, accountability, and respect for our clients,
+                employees, partners, and the communities we serve.{" "}
+                <span className="block mt-2" />
+                Our business practices are aligned with international standards
+                and designed to promote sustainable growth, innovation, and
+                long-term relationships.
               </p>
               <Link
                 href={"/Contact"}
@@ -159,16 +160,16 @@ export default function SafetyCommitmentsPage() {
             {/* Text */}
             <div className="max-w-2xl">
               <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter mb-4">
-                Our Culture of Safety
+                Our Culture of Integrity
               </h1>
               <p className="text-lg text-gray-700">
-                Our internal safety culture is built on three pillars:{" "}
-                <strong>Commitment</strong>, <strong>Accountability</strong>,
-                and <strong>Participation</strong>. We train and encourage every
-                employee to play an active role in maintaining a safe and
-                healthy workplace, from the office to the job site. Our safety
-                programs are designed to prevent incidents, improve performance,
-                and promote continuous learning across all departments.
+                Our internal culture is built on three key principles:
+                <strong>Transparency</strong>, <strong>Responsibility</strong>,{" "}
+                <strong>Respect</strong>. We encourage our teams to act with
+                honesty and fairness in all business dealings, from project
+                planning and procurement to client relations and delivery. Every
+                member of our organization is expected to uphold these values as
+                part of our shared commitment to ethical business behavior.
               </p>
               <Link
                 href={"/Contact"}
@@ -185,20 +186,14 @@ export default function SafetyCommitmentsPage() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">
-            Safety Commitments
+            Key Business Practices & Principles
           </h1>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            At Milestone Project Management Engineering Consulting, safety is a
-            core value. We embed it in our culture, people, and projects — from
-            planning to execution — following international standards like ISO
-            45001.
-          </p>
         </div>
 
         {/* Safety Cards Grid */}
         {/* Safety Cards Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-20">
-          {safetyPrograms.map((item, i) => (
+          {ethicsAndGovernance.map((item, i) => (
             <div
               key={i}
               className="group bg-white border border-gray-100 p-6 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-in-out"
@@ -228,7 +223,7 @@ export default function SafetyCommitmentsPage() {
       </section>
       <EngineeringCTA
         title="Certifications & Compliance"
-        desc="Milestone Project Management is fully certified under ISO 45001:2018 – Occupational Health & Safety Management. All of our safety practices are aligned with local laws and international benchmarks to ensure consistent, high-standard outcomes."
+        desc="Milestone PM follows globally recognized standards in quality and ethical management. Our systems are regularly reviewed and aligned with best practices in governance, safety, and sustainability, ensuring our clients receive reliable, responsible, and high-quality service every time."
       />
     </section>
   );

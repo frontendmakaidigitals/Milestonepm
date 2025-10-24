@@ -119,7 +119,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           Architecture
         </h1>
       </div>
@@ -137,7 +137,7 @@ export default function Page() {
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div>
             {" "}
-            <h1 className="text-4xl lg:text-5xl font-[600] text-amber-800">
+            <h1 className="text-4xl lg:text-5xl font-[600] text-[#B59410]">
               Design with Purpose
             </h1>
             <p className="mt-4">

@@ -92,7 +92,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           Vertical Transportation Services
         </h1>
       </div>
@@ -164,7 +164,7 @@ export default function ConstructionManagementPage() {
                 transition={{ type: "spring", stiffness: 100 }}
                 className="bg-white rounded-2xl p-6 shadow-md border border-yellow-100"
               >
-                <h3 className="text-3xl font-semibold text-amber-800 mb-4">
+                <h3 className="text-3xl font-semibold text-[#B59410] mb-4">
                   {service.title}
                 </h3>
                 <ul className=" space-y-2 text-gray-700">

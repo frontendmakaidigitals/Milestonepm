@@ -1,7 +1,7 @@
 "use client";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import BgLayer from "../../app_chunks/BgLayer";
+import BgLayer from "../app_chunks/BgLayer";
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import EngineeringCTA from "@/app/(user)/app_chunks/CTA";
@@ -18,38 +18,32 @@ export default function TechnicalExpertisePage() {
   const capabilities = [
     {
       title: "Structural Engineering",
-      desc: "Design of safe, efficient, and code-compliant structures for buildings and infrastructure.",
-
+      desc: "Designing safe, efficient, and cost-effective structures that comply with international standards and local regulations.",
       img: "/technical expertise 2/structural engineering.webp",
     },
     {
       title: "Mechanical, Electrical & Plumbing (MEP)",
-      desc: "Integrated building systems that ensure functionality, energy efficiency, and comfort.",
-
-      img: "/technical expertise 2/mep.webp",
+      desc: "Delivering integrated building systems that enhance functionality, energy efficiency, and occupant comfort.",
+      img: "/construction/certified.webp",
     },
     {
       title: "Infrastructure Design",
-      desc: "Roads, utilities, drainage, and networks are designed for high performance and resilience.",
-
+      desc: "Planning and designing roads, utilities, and service networks to ensure long-term reliability and operational efficiency.",
       img: "/technical expertise 2/Infrastructure Design.webp",
     },
     {
       title: "Water, Drainage & Hydrology",
-      desc: "Smart water management solutions, including stormwater systems and hydraulic modeling.",
-
-      img: "/technical expertise 2/Water-Drainage-Hydrology.webp",
+      desc: "Developing sustainable water management systems, including stormwater drainage and hydraulic analysis.",
+      img: "/technical expertise 2/mep.webp",
     },
     {
-      title: "Telecommunication & Low Current Systems",
-      desc: "Reliable, secure systems for modern connectivity and building automation.",
-
+      title: "Telecommunication & Low-Voltage Systems",
+      desc: "Implementing advanced low-current systems for communication, data, and smart building automation.",
       img: "/technical expertise 2/Telecommunication-Low Current Systems.webp",
     },
     {
       title: "Urban & Regional Planning",
-      desc: "Large-scale planning with a focus on smart growth, land optimization, and community livability.",
-
+      desc: "Creating master plans and land-use strategies focused on accessibility, sustainability, and community growth.",
       img: "/technical expertise 2/Urban-Regional Planning.webp",
     },
   ];
@@ -73,7 +67,8 @@ export default function TechnicalExpertisePage() {
             <br className="hidden sm:block" />
           </h1>
           <p className="mt-3 text-slate-200 text-5xl lg:text-6xl font-semibold">
-            Expertise You Can Trust. Delivery You Can Count On.
+            Bridging innovation, precision, and performance across every
+            discipline.
           </p>
         </div>
         <BgLayer color="bg-black/60 z-20" />
@@ -89,21 +84,22 @@ export default function TechnicalExpertisePage() {
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
               <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter  mb-4">
-                <span className="text-yellow-500">Expertise</span> You Can Rely
-                On
+                Our Expertise
               </h1>
               <p className="text-lg text-gray-700">
-                At Milestone Project Management, technical excellence is at the
-                core of everything we do. Our strength lies in our ability to
-                combine deep domain knowledge with cutting-edge tools and a
-                results-driven approach. From concept to completion, our
-                engineers, architects, planners, and project managers apply
-                international standards and local insight to deliver
-                high-impact, future-ready solutions. <br /> <br />
-                With experience across residential, commercial, industrial, and
-                infrastructure sectors, we bring specialized expertise to every
-                phase of the project lifecycle, ensuring accuracy, efficiency,
-                and sustainability at every step.
+                At Milestone Project Management, technical precision and
+                professional excellence are at the heart of everything we do.
+                Our expertise lies in combining deep industry knowledge with
+                modern technology and a practical, results-driven mindset. From
+                concept to handover, our engineers, designers, and project
+                managers apply international best practices while understanding
+                local regulations and client needs.{" "}
+                <span className="block mt-2" /> This approach ensures that every
+                project we handle is efficient, sustainable, and built to the
+                highest standards. With proven experience across residential,
+                commercial, industrial, and infrastructure developments, we
+                deliver solutions that balance innovation, quality, and
+                performance at every stage of the project lifecycle.
               </p>
 
               <Link
@@ -132,7 +128,7 @@ export default function TechnicalExpertisePage() {
             Capabilities
           </h2>
           <p className="mb-16 mt-3 text-center text-gray-600">
-            We offer a wide range of technical services across:
+          We offer a comprehensive range of technical and management services across multiple disciplines, including:
           </p>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -176,8 +172,8 @@ export default function TechnicalExpertisePage() {
             <span className="text-yellow-500">Tools & Technologies</span>
           </h2>
           <p className="text-gray-700 mb-6">
-            To deliver precision and speed, we rely on globally recognized tools
-            such as:
+            To maintain accuracy, quality, and coordination, we use globally
+            recognized software and equipment, including:
           </p>
           <ul className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 text-sm text-gray-700">
             {[
@@ -192,7 +188,7 @@ export default function TechnicalExpertisePage() {
             ].map((tool, i) => (
               <li
                 key={i}
-                className="border border-slate-100/30 text-amber-800 font-medium rounded-lg px-4 py-2 text-center shadow-sm"
+                className="border border-slate-100/30 text-[#B59410] font-medium rounded-lg px-4 py-2 text-center shadow-sm"
               >
                 <div className="w-full h-[100px] ">
                   <img
@@ -208,8 +204,8 @@ export default function TechnicalExpertisePage() {
         </div>
       </section>
       <EngineeringCTA
-        title="Trusted by Public & Private Sectors"
-        desc="Our technical expertise has earned the trust of government agencies, real estate developers, infrastructure contractors, and industrial clients. From large-scale urban master plans to specialized facility designs, we provide tailored solutions that meet both regulatory and operational goals."
+        title="Trusted by Leading Clients"
+        desc="Milestone PM serves both public and private sectors, delivering tailored solutions for projects from master-planned communities to industrial developments. Our commitment to quality, reliability, and client satisfaction has earned the trust of developers, government agencies, and contractors across the UAE, Saudi Arabia, India, and Egypt."
       />
     </main>
   );

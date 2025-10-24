@@ -84,7 +84,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           Landscape Architecture
         </h1>
       </div>
@@ -203,7 +203,7 @@ export default function ConstructionManagementPage() {
                 className={`rounded-xl shadow-md p-6 bg-yellow-50`}
               >
                 <div className="mb-4 ">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-2 text-amber-800">
+                <h3 className="text-xl font-semibold mb-2 text-[#B59410]">
                   {service.title}
                 </h3>
                 <p className="text-sm">{service.description}</p>

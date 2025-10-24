@@ -99,7 +99,7 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-amber-800">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           Cost Management Services
         </h1>
       </div>
@@ -163,7 +163,7 @@ export default function Page() {
                   </div>
                 )}
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-amber-800">
+                  <h3 className="text-lg font-semibold text-[#B59410]">
                     {service.title}
                   </h3>
                   <p className="text-sm text-gray-500 mt-1 leading-relaxed">

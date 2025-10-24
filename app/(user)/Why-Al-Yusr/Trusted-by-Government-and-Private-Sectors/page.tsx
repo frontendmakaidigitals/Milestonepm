@@ -89,7 +89,7 @@ export default function Page() {
       <div className="relative z-10 min-h-[85vh] py-20 lg:py-0 flex flex-col h-full justify-center items-center">
         <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
           <div className="max-w-2xl">
-            <h1 className="text-4xl lg:text-5xl font-semibold text-amber-800 leading-tighter mb-4">
+            <h1 className="text-4xl lg:text-5xl font-semibold text-[#B59410] leading-tighter mb-4">
               Government and Private Sector Approved
             </h1>
             <p className="text-lg text-gray-700">
@@ -140,7 +140,7 @@ export default function Page() {
             <div className="bg-gradient-to-br from-yellow-50 via-amber-100 to-white border border-yellow-200 rounded-2xl p-8 shadow-md hover:shadow-xl transition">
               <div className="flex items-center gap-3 mb-4">
                 <Landmark className="w-6 h-6 text-amber-700" />
-                <h3 className="text-xl font-semibold text-amber-800">
+                <h3 className="text-xl font-semibold text-[#B59410]">
                   Preferred by Government Authorities
                 </h3>
               </div>

@@ -349,8 +349,8 @@ const Contact = () => {
           className="space-y-14 text-slate-900"
         >
           <div>
-            <h3 className="text-2xl flex items-center gap-2 font-semibold mb-3 text-amber-800">
-              <MapPinned className="text-amber-800" /> Head Office – Saudi
+            <h3 className="text-2xl flex items-center gap-2 font-semibold mb-3 text-[#B59410]">
+              <MapPinned className="text-[#B59410]" /> Head Office – Saudi
               Arabia
             </h3>
             <p className="text-slate-700 leading-relaxed">
@@ -373,7 +373,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-semibold flex items-center gap-2 mb-5 text-amber-800">
+            <h3 className="text-2xl font-semibold flex items-center gap-2 mb-5 text-[#B59410]">
               <Earth />
               International Offices
             </h3>
@@ -396,9 +396,7 @@ const Contact = () => {
 
                   {/* Text section */}
 
-                  <h4
-                    className="text-lg font-[600] text-sgray-800 text-center mt-2 tracking-wide"
-                  >
+                  <h4 className="text-lg font-[600] text-sgray-800 text-center mt-2 tracking-wide">
                     {office.country}
                   </h4>
                 </li>
