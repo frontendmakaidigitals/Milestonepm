@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "motion/react";
 import React from "react";
-
 import Image from "next/image";
 import Link from "next/link";
 import type { ServiceCategory } from "../utils/site";
@@ -16,9 +15,9 @@ const ServicesMenu: React.FC<ServicesProps> = ({ services }) => {
     { img: "/contact-us.jpg", href: "/Contact", label: "Contact us" },
   ];
   return (
-    <div className="flex justify-between gap-10 ">
+    <div className="flex flex-col lg:flex-row justify-between gap-10 ">
       <div className="">
-        <ul className="flex gap-12">
+        <ul className="flex flex-col lg:flex-row gap-12">
           {services.map((service, index) => (
             <li key={index} className="">
               <h3 className="text-xl mb-4 font-[600]">{service.label}</h3>
@@ -39,9 +38,9 @@ const ServicesMenu: React.FC<ServicesProps> = ({ services }) => {
           ))}
         </ul>
       </div>
-      <div className="grid flex-1 max-w-2xl grid-cols-2 gap-5">
+      <div className="grid flex-1 max-w-2xl grid-cols-1 lg:grid-cols-2 gap-5">
         {images.map((item, idx) => (
-          <Link href={item.href} className="max-h-[350px] min-h-[350px]" key={idx}>
+          <Link href={item.href} className=" max-h-[150px] lg:max-h-[350px] lg:min-h-[350px]" key={idx}>
             <motion.div
               initial={{ y: -200, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

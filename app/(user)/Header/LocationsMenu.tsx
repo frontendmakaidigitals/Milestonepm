@@ -12,10 +12,10 @@ const LocationMenu = () => {
     { label: "India", href: "", img: "red-fort.webp" },
   ];
   return (
-    <div className="flex justify-between gap-10 ">
+    <div className="w-full">
       <div className="">
         <h1 className="text-xl mb-4 font-[700]">Our Location Sites</h1>
-        <ul className="grid grid-cols-4 gap-10">
+        <ul className="grid  grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-10">
           {locationsites.map((location, index) => (
             <motion.li
               initial={{ y: -100 }}
@@ -32,13 +32,13 @@ const LocationMenu = () => {
                 href={location.href}
                 className=" text-lg w-full rounded-lg "
               >
-                <div className="h-[350px] w-full rounded-lg overflow-hidden">
+                <div className="h-[150px] lg:h-[350px] w-full rounded-lg overflow-hidden">
                   <Image
                     src={`/location/${location.img}`}
                     alt=""
                     width={300}
                     height={300}
-                    className=""
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <h2 className="text-lg font-[600] mt-4">{location.label}</h2>

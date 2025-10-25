@@ -19,9 +19,9 @@ const AboutMenu: React.FC<AboutMenuProps> = ({ menu }) => {
     },
   ];
   return (
-    <div className="flex justify-between gap-10 ">
+    <div className="flex flex-col lg:flex-row justify-between gap-10">
       <div className="">
-        <h1 className="text-xl mb-4 font-[600]">About us</h1>
+        <h1 className="text-xl hidden lg:block mb-4 font-[600]">About us</h1>
         <ul className="w-full min-w-2xs">
           {menu.map((item, idx) => (
             <li key={idx} className="w-full">
@@ -36,9 +36,9 @@ const AboutMenu: React.FC<AboutMenuProps> = ({ menu }) => {
         </ul>
       </div>
 
-      <div className="grid flex-1  grid-cols-3 gap-5">
+      <div className="grid flex-1 grid-cols-1 lg:grid-cols-3 gap-5">
         {images.map((item, idx) => (
-          <Link href={item.href} className={` max-h-[350px]  ${idx == images.length - 1 ? 'col-span-2' : '' }`} key={idx}>
+          <Link href={item.href} className={`max-h-[150px] lg:max-h-[350px]  ${idx == images.length - 1 ? 'lg:col-span-2' : '' }`} key={idx}>
             <motion.div
               initial={{ y: -200, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

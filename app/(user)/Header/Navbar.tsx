@@ -17,6 +17,7 @@ import {
   AccordionContent,
 } from "../app_chunks/Accordion";
 import type { NavItem, AboutNavItem, ServicesNavItem } from "../utils/site";
+import { sortedLastIndexOf } from "lodash";
 const Navbar = () => {
   const [currIdx, setCurrIdx] = useState<null | number>(null);
   const [prevIdx, setPrevIdx] = useState<null | number>(null);
@@ -88,10 +89,10 @@ const Navbar = () => {
                     className="absolute inset-0 w-full bg-gradient-to-tr from-yellow-700 to-amber-600 z-[10]"
                     transition={{ duration: 0.4, ease: "easeInOut" }}
                   />
-                  <span className="relative group-hover:text-white z-20">
+                  <span className="relative group-hover:text-black z-20">
                     {site.label}
                   </span>
-                  <ChevronDown className="size-3 group-hover:text-white relative z-10 text-black" />
+                  <ChevronDown className="size-3 group-hover:text-black relative z-10 text-black" />
                 </motion.button>
               ) : (
                 site.href && (
@@ -107,7 +108,7 @@ const Navbar = () => {
                         className="absolute inset-0 w-full bg-gradient-to-tr from-yellow-700 to-amber-600 z-[10]"
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                       />
-                      <span className="relative z-20 group-hover:text-white">
+                      <span className="relative z-20 group-hover:text-black">
                         {site.label}
                       </span>
                     </motion.span>
@@ -207,9 +208,9 @@ const MenuMobile = ({ menu }: { menu: SiteConfig["navItems"] }) => {
         className="p-2 rounded-lg bg-slate-50/40"
       >
         {isOpen ? (
-          <X className="text-white" />
+          <X className="text-black" />
         ) : (
-          <Menu className="text-white" />
+          <Menu className="text-black" />
         )}
       </button>
 
@@ -220,17 +221,17 @@ const MenuMobile = ({ menu }: { menu: SiteConfig["navItems"] }) => {
             animate={{ x: "0%" }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.4, ease: [0.19, 1, 0.22, 1] }}
-            className="fixed z-50 bg-black w-screen h-[calc(100vh-86px)] left-0 top-[86px] p-6 overflow-y-auto"
+            className="fixed z-50 bg-[#fffef6] w-screen h-[calc(100vh-86px)] left-0 top-[86px] p-6 overflow-y-auto"
           >
             <Accordion type="single" collapsible className="space-y-4">
               {menu.map((item, idx) =>
-                "services" in item && item.services ? (
+                item.isDropDown ? (
                   <AccordionItem
                     key={idx}
                     value={`item-${idx}`}
-                    className="border-b border-slate-700"
+                    className="border-b border-amber-200"
                   >
-                    <AccordionTrigger className="text-white flex items-center justify-between">
+                    <AccordionTrigger className="text-black text-lg flex items-center justify-between">
                       {item.label}
                     </AccordionTrigger>
                     <AccordionContent className="pt-4 pb-6">
@@ -251,10 +252,15 @@ const MenuMobile = ({ menu }: { menu: SiteConfig["navItems"] }) => {
                 ) : (
                   "href" in item &&
                   item.href && (
-                    <div key={idx} className="border-b border-slate-700 py-3">
+                    <div
+                      key={idx}
+                      className={`${
+                        idx !== menu.length - 1 ? "border-b " : ""
+                      } border-amber-200 py-3 `}
+                    >
                       <Link
                         href={item.href}
-                        className="text-white text-base hover:text-amber-400"
+                        className="text-black text-lg font-[500]  hover:text-amber-400"
                         onClick={() => setIsOpen(false)}
                       >
                         {item.label}
