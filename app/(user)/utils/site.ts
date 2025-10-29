@@ -30,33 +30,73 @@ export const siteConfig: SiteConfig = {
           children: [
             {
               label: "Construction Management",
-              href: "/construction-management",
-            },
-            {
-              label: "Structural Engineering",
-              href: "/structural-engineering",
+              href: "/engineering-and-infrastructure-solutions/construction-management",
             },
             {
               label: "Electrical & Mechanical Advisory",
-              href: "/electrical-mechanical-advisory",
+              href: "/engineering-and-infrastructure-solutions/electrical-and-mechanical-advisory",
             },
-            { label: "Foundation Solutions", href: "/foundation-solutions" },
-            { label: "Tunnel Infrastructure", href: "/tunnel-infrastructure" },
+            {
+              label: "Foundation Solutions",
+              href: "/engineering-and-infrastructure-solutions/foundation-solutions",
+            },
+            {
+              label: "Structural Engineering",
+              href: "/engineering-and-infrastructure-solutions/structural-engineering",
+            },
+            {
+              label: "Tunnel Infrastructure",
+              href: "/engineering-and-infrastructure-solutions/tunnel-infrastructure",
+            },
           ],
         },
         {
           label: "Urban Planning & Design",
           children: [
-            { label: "City Master Planning", href: "/city-master-planning" },
-            { label: "Urban Planning", href: "/urban-planning" },
-            { label: "Community Planning", href: "/community-planning" },
+            {
+              label: "City Master Planning",
+              href: "/urban-planning-and-design/city-planning",
+            },
+            {
+              label: "community-design",
+              href: "/urban-planning-and-design/community-design",
+            },
             {
               label: "Interior & Spatial Design",
-              href: "/interior-spatial-design",
+              href: "/urban-planning-and-design/interior-and-spatial-design",
+            },
+            {
+              label: "Urban Planning",
+              href: "/urban-planning-and-design/urban-planning",
             },
             {
               label: "Visualization & 3D Modeling",
-              href: "/visualization-3d-modeling",
+              href: "/urban-planning-and-design/visualization-and-3d-modeling",
+            },
+          ],
+        },
+        {
+          label: " Transportation & Smart Mobility",
+          children: [
+            {
+              label: "City Development",
+              href: "/transportation-and-smart-mobility/city-development",
+            },
+            {
+              label: "Pedestrian Mobility",
+              href: "/transportation-and-smart-mobility/pedestrian-mobility",
+            },
+            {
+              label: "Rail & Transit Advisory",
+              href: "/transportation-and-smart-mobility/rail-and-transit-advisory",
+            },
+            {
+              label: "Urban Planning",
+              href: "/transportation-and-smart-mobility/urban-planning",
+            },
+            {
+              label: "Vertical Mobility Solutions",
+              href: "/transportation-and-smart-mobility/vertical-mobility-solutions",
             },
           ],
         },

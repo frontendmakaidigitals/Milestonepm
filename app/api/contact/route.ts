@@ -2,6 +2,11 @@ import { NextResponse } from "next/server";
 import { nanoid } from "nanoid";
 import fs from "fs";
 import path from "path";
+import { Resend } from "resend";
+
+// Initialize Resend client
+const resend = new Resend(process.env.RESEND_API_KEY || 're_bpWiAQYJ_FMLDT1xMbULYJqYacyJGHnfh');
+
 type Contact = {
   id: string;
   name: string;
@@ -13,6 +18,7 @@ type Contact = {
   interest: string;
   location: string;
 };
+
 type DbData = {
   contacts: Contact[];
 };
@@ -43,9 +49,6 @@ export async function POST(req: Request) {
     const rawData = fs.readFileSync(dbPath, "utf-8");
     const db: DbData = JSON.parse(rawData);
 
-    // Ensure contacts array exists
-    if (!Array.isArray(db.contacts)) db.contacts = [];
-
     // Create new contact
     const newContact: Contact = {
       id: nanoid(),
@@ -60,8 +63,26 @@ export async function POST(req: Request) {
     };
 
     db.contacts.push(newContact);
-
     fs.writeFileSync(dbPath, JSON.stringify(db, null, 2), "utf-8");
+
+    // ✅ Send email using Resend
+    const emailResponse = await resend.emails.send({
+      from: "Milestone Contact <onboarding@resend.dev>", // Must use verified sender or Resend default
+      to: "frontendmakaidigitals@gmail.com", // Replace with where you want to receive the form submission
+      subject: `New Contact from ${name}`,
+      html: `
+        <h2>New Contact Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Company:</strong> ${company}</p>
+        <p><strong>Interest:</strong> ${interest}</p>
+        <p><strong>Location:</strong> ${location}</p>
+        <p><strong>Message:</strong> ${message}</p>
+      `,
+    });
+
+    console.log("Email sent via Resend:", emailResponse);
 
     return NextResponse.json({ success: true, contact: newContact });
   } catch (err) {
@@ -72,11 +93,10 @@ export async function POST(req: Request) {
     );
   }
 }
+
 export async function GET() {
   try {
     const dbPath = path.join(process.cwd(), "data", "db.json");
-
-    // If db.json doesn’t exist, return empty array
     if (!fs.existsSync(dbPath)) {
       return NextResponse.json({ success: true, contacts: [] });
     }

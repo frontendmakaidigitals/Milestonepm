@@ -76,7 +76,7 @@ export default function Page() {
         <motion.img
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
-          src="/company overview/banner.webp"
+          src="/Leadership-Vision 2/vision.webp"
           alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
@@ -87,7 +87,7 @@ export default function Page() {
           {/* Image first on mobile, second on desktop */}
           <div className="order-1 lg:order-2">
             <img
-              src="/company overview/company overview.webp"
+              src="/Leadership-Vision 2/leadership.webp"
               alt="Company Overview"
               className="rounded-xl shadow-lg w-full h-full object-cover"
             />
@@ -118,14 +118,16 @@ export default function Page() {
           </div>
         </div>
       </section>
-
+      <div className="container">
+        <hr />
+      </div>
       {/* History Section */}
       <section className="py-20 ">
         <div className="container grid md:grid-cols-2 gap-12">
           {" "}
           <div>
             <img
-              src="/sustainability 2/banner.webp"
+              src="/company overview/company overview.webp"
               alt="Company Overview"
               className="rounded-xl shadow-lg w-full h-full object-cover"
             />

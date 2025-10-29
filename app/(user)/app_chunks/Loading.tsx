@@ -20,13 +20,8 @@ const Loader = () => {
   const query = searchParams.get("name");
 
   useEffect(() => {
-    console.log(isLoading, "rendered");
-
     setIsLoading(true);
-    const timeout = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-
+    const timeout = setTimeout(() => setIsLoading(false), 1200);
     return () => clearTimeout(timeout);
   }, [pathname, query]);
 
@@ -34,69 +29,83 @@ const Loader = () => {
     <AnimatePresence mode="wait">
       {isLoading && (
         <motion.div
-          exit={{ y: "-100%" }}
-          transition={{ duration: 0.5 }}
-          className="top-0 left-0 flex items-center justify-center h-screen w-screen fixed shadow-lg bg-indigo-50 z-[9999]"
+          key="page-loader"
+          initial={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: "-100%" }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-indigo-100"
         >
-          <svg className="container2" viewBox="0 0 40 40" height="100" width="100">
-            <circle
-              className="track"
-              cx="20"
-              cy="20"
-              r="17.5"
-              pathLength="100"
-              strokeWidth="1.8px"
-              fill="none"
+          <motion.div
+            className="relative flex items-center justify-center"
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 60, damping: 12 }}
+          >
+            {/* Soft glowing circle */}
+            <motion.div
+              className="absolute rounded-full bg-indigo-300/40 blur-3xl"
+              initial={{ scale: 0.7, opacity: 0.4 }}
+              animate={{
+                scale: [0.9, 1.2, 0.9],
+                opacity: [0.4, 0.7, 0.4],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              style={{
+                width: 180,
+                height: 180,
+              }}
             />
-            <circle
-              className="car"
-              cx="20"
-              cy="20"
-              r="17.5"
-              pathLength="100"
-              strokeWidth="1.8px"
-              fill="none"
-            />
-          </svg>
 
-          <style>
-            {`
-  .container2 {
-    --uib-size: 100px;
-    --uib-color: black;
-    --uib-speed: 0.5s;
-    --uib-bg-opacity: 0.1;
-    height: var(--uib-size);
-    width: var(--uib-size);
-    transform-origin: center;
-    animation: rotate var(--uib-speed) linear infinite;
-    will-change: transform;
-    overflow: visible;
-  }
+            {/* Main spinning ring */}
+            <motion.div
+              className="relative"
+              animate={{
+                rotate: [0, 360],
+              }}
+              transition={{
+                duration: 2.8,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+            >
+              <svg viewBox="0 0 60 60" width="120" height="120">
+                <defs>
+                  <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#6366F1" />
+                    <stop offset="100%" stopColor="#A5B4FC" />
+                  </linearGradient>
+                </defs>
+                <circle
+                  cx="30"
+                  cy="30"
+                  r="26"
+                  stroke="url(#grad)"
+                  strokeWidth="4"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeDasharray="80 60"
+                  strokeDashoffset="0"
+                />
+              </svg>
+            </motion.div>
 
-  .car {
-    fill: none;
-    stroke: var(--uib-color);
-    stroke-dasharray: 25, 75;
-    stroke-dashoffset: 0;
-    stroke-linecap: round;
-    transition: stroke 0.3s ease;
-  }
-
-  .track {
-    fill: none;
-    stroke: var(--uib-color);
-    opacity: var(--uib-bg-opacity);
-    transition: stroke 0.3s ease;
-  }
-
-  @keyframes rotate {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-          `}
-          </style>
+            {/* Smooth pulse text */}
+            <motion.span
+              className="absolute text-indigo-700 font-semibold tracking-wide text-lg"
+              animate={{ opacity: [0.4, 1, 0.4] }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              Loading
+            </motion.span>
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>

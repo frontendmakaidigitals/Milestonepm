@@ -124,7 +124,7 @@ export default function Page() {
         <motion.img
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
-          src="/our division 2/banner.webp"
+          src="/Engineering-Infrastructure/alternative-delivery/construction-management.webp"
           alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
@@ -167,7 +167,7 @@ export default function Page() {
             </div>
             <div className="h-[450px] w-full">
               <img
-                src="/our division 2/heading.webp"
+                src="/Engineering-Infrastructure/structural/bridges.webp"
                 alt="About Background"
                 className=" w-full h-full object-cover"
               />
@@ -179,46 +179,55 @@ export default function Page() {
         <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12 text-gray-800">
           Our <span className="text-yellow-500">Core</span> Divisions
         </h2>
-        <div className="grid lg:grid-cols-2 gap-10">
-          {divisions.map((division, index) => (
-            <motion.div
-              key={division.title}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-yellow-50 border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-md transition"
-            >
-              <div className="relative h-[300px] w-full">
-                <Image
-                  src={division.image}
-                  alt={division.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-t-xl"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-3xl text-[#B59410] font-semibold  mb-2">
-                  {division.title}
-                </h3>
-                <p className="text-sm text-gray-600 mb-4">
-                  {division.description}
-                </p>
-                <ul className=" text-gray-700 space-y-1">
-                  {division.services.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-2 text-gray-700"
-                    >
-                      <BadgeCheck className="w-5 h-5 fill-green-600 stroke-slate-50 mt-0.6 shrink-0" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </motion.div>
-          ))}
+        <div className="grid  gap-10">
+          <div className="space-y-12">
+            {divisions.map((division, index) => (
+              <motion.div
+                key={division.title}
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                className="flex flex-col md:flex-row bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-500"
+              >
+                {/* Image Section */}
+                <div className="relative md:w-1/2 h-64 md:h-auto flex-shrink-0">
+                  <Image
+                    src={division.image}
+                    alt={division.title}
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform duration-500 ease-in-out hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-3xl" />
+                </div>
+
+                {/* Content Section */}
+                <div className="p-8 md:w-1/2 flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-4xl font-bold text-[#B59410] mb-4">
+                      {division.title}
+                    </h3>
+                    <p className="text-gray-700 text-lg mb-6">
+                      {division.description}
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap gap-3">
+                    {division.services.map((item) => (
+                      <span
+                        key={item}
+                        className="flex items-center text-sm gap-2 bg-yellow-50 px-4 py-2 rounded-full text-gray-800 font-medium shadow-sm hover:shadow-md transition"
+                      >
+                        <BadgeCheck className="w-5 h-5 text-green-600 shrink-0" />
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
       <EngineeringCTA

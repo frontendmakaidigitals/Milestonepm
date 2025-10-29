@@ -22,12 +22,12 @@ const AboutMenu: React.FC<AboutMenuProps> = ({ menu }) => {
     <div className="flex flex-col lg:flex-row justify-between gap-10">
       <div className="">
         <h1 className="text-xl hidden lg:block mb-4 font-[600]">About us</h1>
-        <ul className="w-full min-w-2xs">
+        <ul className="w-full min-w-2xs space-y-2">
           {menu.map((item, idx) => (
             <li key={idx} className="w-full">
               <Link
                 href={item.href}
-                className="block text-lg w-full rounded-lg py-[.4rem] font-medium transition-all duration-300 ease-in-out hover:bg-yellow-100 hover:px-6"
+                className="block text-[1rem] w-full rounded-lg py-[.4rem] font-[400] transition-all duration-300 ease-in-out hover:bg-yellow-100 hover:px-6"
               >
                 {item.label}
               </Link>
@@ -38,7 +38,13 @@ const AboutMenu: React.FC<AboutMenuProps> = ({ menu }) => {
 
       <div className="grid flex-1 grid-cols-1 lg:grid-cols-3 gap-5">
         {images.map((item, idx) => (
-          <Link href={item.href} className={`max-h-[150px] lg:max-h-[350px]  ${idx == images.length - 1 ? 'lg:col-span-2' : '' }`} key={idx}>
+          <Link
+            href={item.href}
+            className={`max-h-[150px] lg:max-h-[350px]  ${
+              idx == images.length - 1 ? "lg:col-span-2" : ""
+            }`}
+            key={idx}
+          >
             <motion.div
               initial={{ y: -200, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

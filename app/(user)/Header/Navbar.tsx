@@ -86,13 +86,13 @@ const Navbar = () => {
                 >
                   <motion.span
                     variants={hoverAnimation}
-                    className="absolute inset-0 w-full bg-gradient-to-tr from-yellow-700 to-amber-600 z-[10]"
+                    className="absolute inset-0 w-full   bg-gradient-to-tr from-yellow-700 to-amber-600 z-[10]"
                     transition={{ duration: 0.4, ease: "easeInOut" }}
                   />
-                  <span className="relative group-hover:text-black z-20">
+                  <span className="relative group-hover:text-white z-20">
                     {site.label}
                   </span>
-                  <ChevronDown className="size-3 group-hover:text-black relative z-10 text-black" />
+                  <ChevronDown className="size-3 group-hover:text-white relative z-10 text-black" />
                 </motion.button>
               ) : (
                 site.href && (
@@ -105,10 +105,10 @@ const Navbar = () => {
                     >
                       <motion.span
                         variants={hoverAnimation}
-                        className="absolute inset-0 w-full bg-gradient-to-tr from-yellow-700 to-amber-600 z-[10]"
+                        className="absolute inset-0 w-full bg-gradient-to-tr  from-yellow-700 to-amber-600 z-[10]"
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                       />
-                      <span className="relative z-20 group-hover:text-black">
+                      <span className="relative z-20 group-hover:text-white">
                         {site.label}
                       </span>
                     </motion.span>

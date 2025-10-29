@@ -7,7 +7,7 @@ const About = () => {
     <section className="min-h-[85vh] py-20 lg:py-0 overflow-hidden relative">
       {/* Background image */}
       <img
-        src="/Transportation-mobility/it-and-cybersecurity/solutions.webp"
+        src="/our division 2/Architecture-Urban Planning.webp"
         alt="About Background"
         className="absolute inset-0 w-full h-full object-cover"
       />

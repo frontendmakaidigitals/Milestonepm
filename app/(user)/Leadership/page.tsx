@@ -82,7 +82,7 @@ export default function Page() {
         <motion.img
           style={{ y: yTransform }}
           className="absolute scale-[1.3] inset-0 w-full h-full object-cover object-center"
-          src="/Leadership-Vision 2/banner.webp"
+          src="/urban-planning/community-planning/private-sector.webp"
           alt="Milestone Project Management Engineering Hero Background"
         />
       </motion.div>
@@ -91,7 +91,7 @@ export default function Page() {
       <section className="py-20 lg:px-6 bg-white">
         <div className="container grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+            <h2 className="text-4xl lg:text-5xl font-semibold text-slate-600 mb-4">
               Leadership That Inspires Progress
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -113,7 +113,7 @@ export default function Page() {
           </div>
           <div className="rounded-xl h-[260px] lg:h-[450px] overflow-hidden">
             <img
-              src="/our-ethics.jpg"
+              src="/why/in-house-Strategic-Alignment.jpeg"
               alt="Leadership at Milestone Project Management"
               className="w-full h-full object-cover"
             />
@@ -122,17 +122,17 @@ export default function Page() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="bg-amber-50 py-20 px-6">
+      <section className="bg-[#f8f8f8] py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           <div>
             <div className="rounded-xl mb-4 h-[350px] overflow-hidden">
               <img
-                src="/Leadership-Vision 2/leadership.webp"
+                src="/construction/ceo-led.webp"
                 alt="Leadership at Milestone Project Management"
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-3xl font-semibold text-gray-800 mb-3">
+            <h3 className="text-3xl font-semibold text-yellow-500 mb-3">
               Our Vision
             </h3>
             <p className="text-gray-700 leading-relaxed">
@@ -145,12 +145,12 @@ export default function Page() {
           <div>
             <div className="rounded-xl h-[350px] mb-4 overflow-hidden">
               <img
-                src="/Leadership-Vision 2/mission.webp"
+                src="/construction/tech.webp"
                 alt="Leadership at Milestone Project Management"
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-3xl font-semibold text-gray-800 mb-3">
+            <h3 className="text-3xl font-semibold text-yellow-500 mb-3">
               Our Mission
             </h3>
             <p className="text-gray-700 leading-relaxed">
@@ -167,9 +167,9 @@ export default function Page() {
         <div className="container mx-auto max-w-7xl grid md:grid-cols-2 gap-12 items-center">
           {/* LEFT TEXT BLOCK */}
           <div>
-            <h2 className="text-4xl font-bold text-gray-800 mb-6 leading-snug">
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-6">
               Our Commitment to <br className="hidden sm:inline" />
-              <span className="text-amber-700">Vision 2030</span>
+              <span className="text-yellow-500">Vision 2030</span>
             </h2>
             <p className="text-gray-700 text-lg mb-4">
               We proudly align with the Kingdom’s Vision 2030, contributing to
@@ -195,9 +195,9 @@ export default function Page() {
           </div>
 
           {/* RIGHT IMAGE BLOCK */}
-          <div className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-xl">
+          <div className="relative h-[350px] lg:h-[450px] w-full rounded-xl overflow-hidden shadow-xl">
             <img
-              src="/Leadership-Vision 2/vision 2030.webp"
+              src="/construction/certified.webp"
               alt="Vision 2030 Project"
               className="w-full h-full object-cover object-center"
             />
@@ -208,7 +208,7 @@ export default function Page() {
       {/* Vision 2030 Commitment */}
       <section className="pt-12 lg:py-20 px-6">
         <div className="text-center mb-12 max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-4">
             How We Support <span className="text-yellow-500">UAE vision</span>
           </h2>
         </div>

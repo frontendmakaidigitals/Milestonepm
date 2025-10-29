@@ -117,7 +117,7 @@ const Herosection = () => {
                   </div>
                 </div>
 
-                <BgLayer />
+                <BgLayer color="bg-black/40" />
                 <img
                   src={`/hero-slider${slides[activeIndex].img}`}
                   alt=""
@@ -131,13 +131,13 @@ const Herosection = () => {
         <div className="absolute bottom-5 bg-yellow-500/30 p-1 rounded-full flex items-center gap-2 right-5">
           <button
             onClick={handlePrev}
-            className=" z-20 bg-amber-500/40 cursor-pointer backdrop-blur-2xl backdrop-filter text-[#B59410] hover:text-amber-500 p-2 rounded-full hover:bg-amber-700/50 transition"
+            className=" z-20 bg-amber-500/40 cursor-pointer backdrop-blur-2xl backdrop-filter text-[#f9e69a] hover:text-amber-500 p-2 rounded-full hover:bg-amber-700/50 transition"
           >
             <ChevronLeft size={24} />
           </button>
           <button
             onClick={handleNext}
-            className=" z-20 bg-amber-500/40  cursor-pointer backdrop-blur-2xl backdrop-filter text-[#B59410] hover:text-amber-500 p-2 rounded-full hover:bg-amber-700/50 transition"
+            className=" z-20 bg-amber-500/40  cursor-pointer backdrop-blur-2xl backdrop-filter text-[#f9e69a] hover:text-amber-500 p-2 rounded-full hover:bg-amber-700/50 transition"
           >
             <ChevronRight size={24} />
           </button>

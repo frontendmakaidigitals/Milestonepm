@@ -11,5 +11,17 @@
       "image": "hero.avif"
     }
   ],
-  "contacts": []
+  "contacts": [
+    {
+      "id": "HUdPsVcZU1s1deZ0Z8z9y",
+      "name": "mak ai",
+      "phone": "8588047098",
+      "email": "admin@gmail.com",
+      "message": "asdfadsfa asdfasfdadsf",
+      "company": "asfasdfasdf",
+      "interest": "Investor Relations",
+      "location": "Europe, Middle East, India & Africa",
+      "createdAt": "2025-10-25T11:47:15.598Z"
+    }
+  ]
 }

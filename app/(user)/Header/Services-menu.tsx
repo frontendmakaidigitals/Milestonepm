@@ -12,7 +12,6 @@ type ServicesProps = {
 const ServicesMenu: React.FC<ServicesProps> = ({ services }) => {
   const images = [
     { img: "/view-all.jpg", href: "/services", label: "View all services" },
-    { img: "/contact-us.jpg", href: "/Contact", label: "Contact us" },
   ];
   return (
     <div className="flex flex-col lg:flex-row justify-between gap-10 ">
@@ -20,14 +19,14 @@ const ServicesMenu: React.FC<ServicesProps> = ({ services }) => {
         <ul className="flex flex-col lg:flex-row gap-12">
           {services.map((service, index) => (
             <li key={index} className="">
-              <h3 className="text-xl mb-4 font-[600]">{service.label}</h3>
+              <h2 className="text-xl mb-4 font-[600]">{service.label}</h2>
               {service.children && (
                 <ul className="space-y-3 mt-4">
                   {service.children.map((child, idx) => (
                     <Link
-                      href={child.href}
+                      href={`/services${child.href}`}
                       key={idx}
-                      className="block text-lg w-full rounded-lg py-[.4rem] font-medium transition-all duration-300 ease-in-out hover:bg-yellow-100 hover:px-6"
+                      className="block text-[1rem] w-full rounded-lg py-[.4rem] font-[400] transition-all duration-300 ease-in-out hover:bg-yellow-100 hover:px-6"
                     >
                       {child.label}
                     </Link>
@@ -38,9 +37,13 @@ const ServicesMenu: React.FC<ServicesProps> = ({ services }) => {
           ))}
         </ul>
       </div>
-      <div className="grid flex-1 max-w-2xl grid-cols-1 lg:grid-cols-2 gap-5">
+      <div className="grid flex-1 max-w-xs grid-cols-1 gap-5">
         {images.map((item, idx) => (
-          <Link href={item.href} className=" max-h-[150px] lg:max-h-[350px] lg:min-h-[350px]" key={idx}>
+          <Link
+            href={item.href}
+            className=" max-h-[150px] lg:max-h-[300px] lg:min-h-[300px]"
+            key={idx}
+          >
             <motion.div
               initial={{ y: -200, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

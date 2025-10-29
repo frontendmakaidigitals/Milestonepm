@@ -7,11 +7,11 @@ const GlobalSection = () => {
   const { ref, inView } = useInView({ amount: 0.9, once: true });
 
   return (
-    <div className="py-20  bg-gradient-to-br from-[#ebf3ff] to-[#e2ecff]">
+    <div className="py-20 bg-[#F6F6F5]">
       <div className="grid grid-cols-1 place-items-center lg:grid-cols-2 gap-12 container mx-auto">
         <div ref={ref} className="">
           <h1 className="text-4xl lg:text-6xl font-[500]">
-            A <span className="text-blue-500">Global Presence</span> with Local Expertise
+            A <span className="text-gray-500">Global Presence</span> with Local Expertise
           </h1>
           <p className="mt-5">
             Milestone Project Management operates across multiple regions,
@@ -34,7 +34,7 @@ const GlobalSection = () => {
           animate={{ scale: inView ? 1 : 0 }}
           transition={{ duration: 0.9, type: "spring" }}
           className="w-full object-contain h-[330px] xl:h-[520px] 2xl:h-[550px]"
-          src={"/Global.webp"}
+          src={"/global-connectivity.png"}
         />
       </div>
     </div>
