@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://Milestonepm-co.com/
-
-# Sitemaps
-Sitemap: https://Milestonepm-co.com/sitemap.xml

@@ -13,7 +13,7 @@ export default function Page() {
         "Integrated ICT Platforms: Unified data systems for efficient communication and interoperability.",
       ],
       image:
-        "/Transportation-mobility/smart-infrastructure/urban-connectivity.webp",
+        "/Transportation-mobility/smart-infrastructure/global-connectivity.webp",
     },
     {
       title: "Smart Building Systems",
@@ -35,7 +35,7 @@ export default function Page() {
         "Cyber Protection: Safeguarding networks, systems, and data from digital threats.",
       ],
       image:
-        "/Transportation-mobility/smart-infrastructure/safety-security.webp",
+        "/Transportation-mobility/smart-infrastructure/security.jpg",
     },
     {
       title: "Smart Mobility & Transportation",
@@ -46,7 +46,7 @@ export default function Page() {
         "Smart Parking: Automated management systems with live availability updates.",
       ],
       image:
-        "/Transportation-mobility/smart-infrastructure/smart-mobility.webp",
+        "/Transportation-mobility/smart-infrastructure/smart-mobility.jpg",
     },
     {
       title: "Data Management & Digital Services",
@@ -56,7 +56,7 @@ export default function Page() {
         "AI-Driven Insights: Transforming raw data into actionable intelligence for city planning.",
         "Smart Dashboards: Centralized platforms for utility, energy, and operations monitoring.",
       ],
-      image: "/Transportation-mobility/smart-infrastructure/data-services.webp",
+      image: "/Transportation-mobility/smart-infrastructure/data-server.jpg",
     },
   ];
 
@@ -89,12 +89,13 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-semibold">
-              Digital Infrastructure & Smart City Systems
+              <span className="text-blue-500">Digital</span> Infrastructure &
+              Smart City Systems
             </h1>
             <p>
               At Milestone PM, we plan, design, and deliver intelligent digital
@@ -113,24 +114,27 @@ export default function Page() {
           </div>
           <div className="w-full h-[450px] bg-slate-100 rounded-lg">
             <img
-              src={"/Transportation-mobility/smart-infrastructure/hero.webp"}
+              src={"/Transportation-mobility/smart-infrastructure/smart-city.webp"}
               className="w-full h-full object-cover"
               alt={""}
             />
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
-        <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
-          Our Smart Infrastructure Capabilities
-        </h2>
-        <p className="mt-3 text-slate-600">
-          We bring together digital engineering, urban planning, and data
-          technology to deliver integrated systems that keep cities running
-          smarter and smoother.
-        </p>
+      <section className="py-20 container">
+        <div className="max-w-4xl mx-auto mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-center ">
+            Our <span className="text-blue-500">Smart Infrastructure</span>{" "}
+            Capabilities
+          </h2>
+          <p className="mt-3 text-slate-600 text-center">
+            We bring together digital engineering, urban planning, and data
+            technology to deliver integrated systems that keep cities running
+            smarter and smoother.
+          </p>
+        </div>
 
-        <div className="space-y-24 container">
+        <div className="space-y-24 max-w-6xl mx-auto">
           {capabilities.map((cap, idx) => (
             <div
               key={idx}
@@ -149,7 +153,7 @@ export default function Page() {
 
               {/* Text */}
               <div className="w-full md:w-1/2 space-y-4">
-                <h3 className="text-3xl font-semibold text-gray-800">
+                <h3 className="text-3xl font-semibold text-blue-900">
                   {cap.title}
                 </h3>
                 <ul className="list-disc list-inside space-y-2 text-lg text-gray-600">
@@ -162,17 +166,17 @@ export default function Page() {
           ))}
         </div>
       </section>{" "}
-      <section className="py-20 bg-white">
+      <section className="py-20 container">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold text-center mb-12 mx-auto max-w-4xl">
-            Why Choose Milestone PM for Smart City Infrastructure?
+          <h2 className="text-4xl  lg:text-5xl font-bold text-center mb-12 mx-auto max-w-4xl">
+            Why Choose Milestone PM for <span className="text-blue-500">Smart City</span> Infrastructure?
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {reasons.map((item, idx) => (
               <div
                 key={idx}
-                className="flex flex-col items-start bg-gray-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+                className="flex flex-col items-start bg-amber-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
               >
                 <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-yellow-100 text-yellow-600 mb-4">
                   <item.icon size={28} />

@@ -14,7 +14,7 @@ export default function Page() {
         "Performance monitoring and KPI development",
         "Innovation strategy and market positioning",
       ],
-      img: "/project-advisory/strategic-consulting/business-growth.webp", // business meeting or growth strategy
+      img: "/project-advisory/strategic-consulting/strategy.webp", // business meeting or growth strategy
     },
     {
       title: "Organizational Change & Leadership Development",
@@ -26,7 +26,7 @@ export default function Page() {
         "Team development and performance improvement",
         "Continuous support during implementation phases",
       ],
-      img: "/project-advisory/strategic-consulting/leadership-development.webp", // leadership or teamwork
+      img: "/project-advisory/strategic-consulting/leadership.jpeg", // leadership or teamwork
     },
     {
       title: "Spatial & Infrastructure Strategy",
@@ -38,7 +38,7 @@ export default function Page() {
         "Infrastructure and resource planning",
         "Space utilization and operational mapping",
       ],
-      img: "/project-advisory/strategic-consulting/spatial-strategy.webp", // city planning or infrastructure
+      img: "/project-advisory/strategic-consulting/Business-mangement.webp", // city planning or infrastructure
     },
   ];
 
@@ -73,16 +73,16 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <div className="container  my-10">
         <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           Sustainable Consulting
         </h1>
       </div>
-      <section className=" w-full h-[500px] text-center ">
+      <section className=" w-full h-[300px] lg:h-[500px] text-center ">
         <Image
-          src={"/project-advisory/strategic-consulting/design-led.webp"}
-          className="w-full h-full object-cover object-bottom"
+          src={"/project-advisory/strategic-consulting/hero_sus.webp"}
+          className="w-full h-full object-cover"
           alt={""}
           width={1200}
           height={800}
@@ -101,8 +101,8 @@ export default function Page() {
           practical, people-centered, and designed for long-term success.
         </p>
       </section>
-      <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center bg-white rounded-2xl shadow-lg overflow-hidden">
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center overflow-hidden">
           <div className="h-full w-full">
             <img
               src="/project-advisory/strategic-consulting/design-led.webp" // 🔹 Replace with your actual image
@@ -113,7 +113,7 @@ export default function Page() {
 
           {/* Right Content */}
           <div className="p-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-amber-700 mb-4">
               Business-Driven Transformation
             </h2>
 
@@ -144,10 +144,11 @@ export default function Page() {
           </div>
         </div>
       </section>{" "}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-            Our Strategic Consulting Services
+      <section className="py-16 container">
+        <div className="max-w-7xl mx-auto ">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center">
+            Our <span className="text-amber-400">Strategic Consulting</span>{" "}
+            Services
           </h2>
           <div className="space-y-20">
             {services.map((service, i) => (
@@ -159,16 +160,18 @@ export default function Page() {
               >
                 {/* Image */}
                 <div className="lg:w-1/2">
-                  <img
+                  <Image
+                    width={400}
+                    height={400}
                     src={service.img}
                     alt={service.title}
-                    className="w-full h-[420px] object-cover rounded-2xl shadow-lg"
+                    className="w-full h-[270px] lg:h-[420px] object-cover rounded-2xl shadow-lg"
                   />
                 </div>
 
                 {/* Text */}
                 <div className="lg:w-1/2">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                  <h3 className="text-3xl font-semibold text-amber-700 mb-4">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{service.desc}</p>
@@ -188,17 +191,17 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-slate-900">
-            Why Choose Milestone PM?
+          <h2 className="text-4xl lg:text-5xl font-bold text-center text-slate-900">
+            Why <span className="text-amber-400">Choose Milestone PM?</span>
           </h2>
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
             {reasons.map((reason, idx) => (
               <div
                 key={idx}
-                className="flex items-start gap-4 bg-slate-50 rounded-2xl p-6 shadow hover:shadow-lg transition"
+                className="flex items-start gap-4 bg-amber-50 rounded-2xl p-6 shadow hover:shadow-lg transition"
               >
                 <BadgeCheck className="w-6 h-6 text-green-600 shrink-0 mt-1" />
                 <div>

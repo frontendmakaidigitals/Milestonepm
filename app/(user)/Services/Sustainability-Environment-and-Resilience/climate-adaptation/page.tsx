@@ -168,7 +168,7 @@ export default function Page() {
             {capabilities.map((cap, idx) => (
               <div
                 key={idx}
-                className="flex items-start gap-4 p-6 bg-slate-50 rounded-2xl shadow-sm hover:shadow-md transition"
+                className="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition"
               >
                 <cap.icon className="w-10 h-10 text-green-600 shrink-0" />
                 <div>
@@ -184,10 +184,10 @@ export default function Page() {
           </div>
         </div>
       </section>{" "}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 ">
         <div className="container ">
           <h2 className="text-4xl max-w-5xl mx-auto lg:text-5xl font-bold text-slate-900 text-center">
-            Climate Adaptation Services
+            <span className="text-amber-400">Climate</span> Adaptation Services
           </h2>
           <p className="mt-4 text-slate-600 text-center max-w-3xl mx-auto">
             Practical, data-driven, and future-ready solutions to build
@@ -198,7 +198,7 @@ export default function Page() {
             {services.map((service, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition"
+                className="bg-amber-100/60 rounded-2xl overflow-hidden shadow hover:shadow-lg transition"
               >
                 <img
                   src={service.img}

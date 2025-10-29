@@ -31,68 +31,49 @@ export default function Page() {
     {
       title: "Baseline Environmental Surveys",
       desc: "Conduct ecological, biological, and environmental studies to identify sensitive habitats, species, and resources critical for informed decision-making.",
-      img: "/Environment-Sustainability/Environmental Assessment/Baseline-Environmental-Surveys.webp",
+      img: "/Environment-Sustainability/climate-response/climate-risk.webp",
     },
     {
       title: "Cultural & Heritage Assessments",
       desc: "Evaluate historical, archaeological, and cultural sites to ensure their protection and compliance with local and international heritage regulations.",
-      img: "/Environment-Sustainability/Environmental Assessment/Cultural-Heritage-Assessments.webp",
+      img: "/Environment-Sustainability/climate-response/heritage.jpg",
     },
     {
       title: "Digital Environmental Analysis",
       desc: "Deliver interactive environmental reports and GIS-based maps using drones and digital platforms to accelerate permitting and improve transparency.",
-      img: "/Environment-Sustainability/Environmental Assessment/Digital-Environmental-Analysis.webp",
+      img: "/Environment-Sustainability/climate-response/digital.webp",
     },
     {
       title: "Ecological Restoration & Sustainable Design",
       desc: "Design and implement habitat restoration, sustainable landscapes, and resilient ecosystems that promote biodiversity and long-term environmental health.",
-      img: "/Environment-Sustainability/Environmental Assessment/Ecological-Restoration.webp",
+      img: "/Environment-Sustainability/Environmental Assessment/Environmental-Planning.webp",
     },
     {
       title: "Impact Assessments & Compliance Documentation",
       desc: "Prepare environmental and social impact assessments aligned with both local and international regulatory frameworks for smooth project approvals.",
-      img: "/Environment-Sustainability/Environmental Assessment/Impact-Assessments.webp",
+      img: "/Environment-Sustainability/Environmental Assessment/Noise Impact Assessments.webp",
     },
     {
       title: "Mitigation Planning & Monitoring",
       desc: "Develop and implement strategies to minimize environmental impacts during construction and operations, supported by continuous monitoring programs.",
-      img: "/Environment-Sustainability/Environmental Assessment/Mitigation-Planning.webp",
+      img: "/Environment-Sustainability/Environmental Assessment/climate-chnage.webp",
     },
     {
       title: "Policy Development & Advisory",
       desc: "Assist organizations in crafting and implementing environmental policies that align with best practices, sustainability goals, and compliance standards.",
-      img: "/Environment-Sustainability/Environmental Assessment/Policy-Development.webp",
+      img: "/Environment-Sustainability/Environmental Assessment/policies.jpg",
     },
     {
       title: "Permit Acquisition & Regulatory Support",
       desc: "Manage environmental permitting processes, negotiate with regulatory bodies, and resolve compliance challenges efficiently and proactively.",
-      img: "/Environment-Sustainability/Environmental Assessment/Permit-Acquisition.webp",
+      img: "/Environment-Sustainability/Environmental Assessment/permit.webp",
     },
     {
       title: "Site Feasibility & Program Oversight",
       desc: "Assess site suitability, guide environmental approval processes, and provide end-to-end program management to support sustainable project delivery.",
-      img: "/Environment-Sustainability/Environmental Assessment/Site-Feasibility.webp",
+      img: "/Environment-Sustainability/Environmental Assessment/Digital Analyses-Data Conveyance.webp",
     },
-    {
-      title: "Community & Stakeholder Engagement",
-      desc: "Facilitate consultations, workshops, and digital outreach to promote transparency, gather feedback, and strengthen community trust and participation.",
-      img: "/Environment-Sustainability/Environmental Assessment/Community-Engagement.webp",
-    },
-    {
-      title: "Dispersion & Environmental Modeling",
-      desc: "Model air, water, and soil pollutant movement to predict potential impacts, inform mitigation measures, and support evidence-based decisions.",
-      img: "/Environment-Sustainability/Environmental Assessment/Dispersion-Modeling.webp",
-    },
-    {
-      title: "Visual & Acoustic Assessments",
-      desc: "Analyze visual and noise impacts on surrounding environments and recommend design strategies to minimize disruptions and preserve landscape quality.",
-      img: "/Environment-Sustainability/Environmental Assessment/Visual-Acoustic-Assessments.webp",
-    },
-    {
-      title: "Climate Adaptation & Resilience Planning",
-      desc: "Integrate climate risk and resilience strategies into environmental planning to ensure long-term sustainability and adaptability of developments.",
-      img: "/Environment-Sustainability/Environmental Assessment/Climate-Resilience.webp",
-    },
+   
   ];
 
   const reasons = [
@@ -123,12 +104,12 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
-              Environmental Compliance
+              <span className="text-green-500">Environmental</span> Compliance
             </h1>
             <p>
               At Milestone PM, we provide efficient, reliable, and
@@ -146,7 +127,7 @@ export default function Page() {
               sustainability and community engagement.
             </p>
           </div>
-          <div className="w-full h-[400px] bg-slate-100 rounded-lg">
+          <div className="w-full h-[270px] lg:h-[400px] bg-slate-100 rounded-lg">
             <img
               src={
                 "/Environment-Sustainability/Environmental Assessment/hero.webp"
@@ -157,15 +138,15 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+      <section className="py-20 container ">
+        <div className="max-w-5xl mx-auto ">
+          <h2 className="text-4xl lg:text-5xl text-center font-bold text-gray-900 mb-12">
             Our <span className="text-yellow-600">Approach</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-10">
             {items.map((item, idx) => (
-              <div key={idx} className="flex items-start gap-4">
-                <div className="p-3 bg-yellow-100 rounded-xl">
+              <div key={idx} className="flex bg-amber-100 p-3 rounded-lg items-start gap-4">
+                <div className="p-3 bg-amber-100/70 rounded-xl">
                   <item.icon className="w-7 h-7 text-yellow-600" />
                 </div>
                 <div>
@@ -179,7 +160,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 ">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center">
             Our <span className="text-green-600">Services</span>
@@ -189,7 +170,7 @@ export default function Page() {
             {services.map((service, idx) => (
               <div
                 key={idx}
-                className="bg-white p-1 rounded-2xl shadow-sm hover:shadow-lg transition flex flex-col"
+                className="bg-green-100 p-1 rounded-2xl shadow-sm hover:shadow-lg transition flex flex-col"
               >
                 <div className="relative w-full h-[250px] rounded-xl overflow-hidden">
                   <Image
@@ -210,7 +191,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-16 ">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center">
             Why Choose <span className="text-yellow-500">Milestone PM?</span>
@@ -219,7 +200,7 @@ export default function Page() {
             {reasons.map((item, idx) => (
               <div
                 key={idx}
-                className="flex bg-slate-100 p-3 rounded-xl items-start space-x-4"
+                className="flex bg-amber-100 p-3 rounded-xl items-start space-x-4"
               >
                 <span>
                   <BadgeCheck className="w-7 h-7 fill-green-500 text-white flex-shrink-0 mt-1" />
@@ -235,11 +216,13 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <EngineeringCTA
-        title="Build Smarter, Sustainable Projects"
-        desc="At Milestone PM, we go beyond regulatory compliance. We help clients achieve faster approvals, minimize risks, and strengthen relationships with communities while protecting the environment. Whether developing new infrastructure, upgrading existing facilities, or restoring ecosystems, our Environmental Compliance team delivers results with efficiency, accuracy, and innovation."
-        btn="Contact Us Today"
-      />
+      <section className="container">
+        <EngineeringCTA
+          title="Build Smarter, Sustainable Projects"
+          desc="At Milestone PM, we go beyond regulatory compliance. We help clients achieve faster approvals, minimize risks, and strengthen relationships with communities while protecting the environment. Whether developing new infrastructure, upgrading existing facilities, or restoring ecosystems, our Environmental Compliance team delivers results with efficiency, accuracy, and innovation."
+          btn="Contact Us Today"
+        />
+      </section>
     </main>
   );
 }
