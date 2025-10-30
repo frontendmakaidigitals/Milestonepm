@@ -14,7 +14,7 @@ import { Editor } from "@/components/blocks/editor-00/editor";
 
 export default function BlogClient({ blog }: { blog: any }) {
   const pathname = usePathname();
-  const blogURL = `https://Milestone Project Management-co.com/${pathname}`;
+  const blogURL = `https://www.milestonepm.co//${pathname}`;
   const blogTitle = blog?.title || "";
 
   function calculateReadTime(text: string) {

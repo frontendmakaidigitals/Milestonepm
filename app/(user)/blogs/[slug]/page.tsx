@@ -25,7 +25,7 @@ function slugify(text: string): string {
 
 async function getBlogs(): Promise<Blog[]> {
   const res = await fetch(
-    `${"https://www.Milestone Project Management-co.com/"}/api/blogs`,
+    `${"https://www.milestonepm.co/"}/api/blogs`,
     {
       next: { revalidate: 60 },
     }
@@ -55,7 +55,7 @@ export async function generateMetadata({
       title: blog?.metaTitle || blog?.title,
       description: blog?.metaDesc || "",
       images: blog?.imageURL ? [blog.imageURL] : [],
-      url: `https://Milestone Project Management-co.com/blog/${slug}`,
+      url: `https://www.milestonepm.co//${slug}`,
     },
     twitter: {
       card: "summary_large_image",
