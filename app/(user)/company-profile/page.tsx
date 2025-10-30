@@ -183,11 +183,8 @@ export default function Page() {
         </div>
       </section>
       <EngineeringCTA
-        title="Engineering the Future of Saudi Arabia and Beyond"
-        desc="  From Riyadh to the world, Milestone Project Management delivers visionary engineering and design solutions that
-    support national transformation and global standards. Backed by ISO certifications and a
-    proven project track record, we are your trusted partner in building sustainable, smart,
-    and impactful environments."
+        title="Engineering the Future of the UAE and Beyond"
+        desc=" From Dubai to the world, Milestone Project Management is driving innovation across engineering, design, and project management to shape the future of the built environment. Guided by the UAE’s vision for sustainable growth and smart infrastructure, we deliver projects that meet global standards while reflecting regional ambition and excellence."
       />
     </div>
   );
