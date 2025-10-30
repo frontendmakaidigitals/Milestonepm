@@ -65,7 +65,7 @@ export default function Page() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Project Scheduling
         </h1>
       </div>
@@ -193,7 +193,7 @@ export default function Page() {
       </section>
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Why Choose <span className="text-amber-400">Milestone PM</span> for
             Project Scheduling?
           </h2>

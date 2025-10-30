@@ -45,7 +45,7 @@ export default function OurPresence() {
     <section className="relative overflow-hidden">
       {/* Heading */}
       <section className="text-start container my-10">
-        <h1 className="text-4xl lg:text-5xl text-yellow-600 font-bold">
+        <h1 className="text-3xl lg:text-4xl text-yellow-600 font-bold">
           Our Presence
         </h1>
       </section>
@@ -235,7 +235,7 @@ function OfficeCard({
 
       {/* Content */}
       <div className={`${idx % 2 === 1 ? "lg:order-1" : "lg:order-2"}`}>
-        <h2 className="text-4xl lg:text-5xl py-1 font-[600] mb-3 bg-gradient-to-r from-yellow-600 via-amber-500 to-yellow-400 bg-clip-text text-transparent">
+        <h2 className="text-3xl lg:text-4xl py-1 font-[600] mb-3 bg-gradient-to-r from-yellow-600 via-amber-500 to-yellow-400 bg-clip-text text-transparent">
           <span className="text-5xl lg:text-6xl text-gray-700">0{idx + 1}</span>{" "}
           {office.country}
         </h2>

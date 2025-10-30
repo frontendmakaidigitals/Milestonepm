@@ -110,7 +110,7 @@ export default function SafetyCommitmentsPage() {
           <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-4">
             {/* Text */}
             <div className="max-w-2xl">
-              <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter mb-4">
+              <h1 className="text-3xl lg:text-4xl font-semibold leading-tighter mb-4">
                 Our Business Practices
               </h1>
               <p className="text-lg text-gray-700">
@@ -159,7 +159,7 @@ export default function SafetyCommitmentsPage() {
             </div>
             {/* Text */}
             <div className="max-w-2xl">
-              <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter mb-4">
+              <h1 className="text-3xl lg:text-4xl font-semibold leading-tighter mb-4">
                 Our Culture of Integrity
               </h1>
               <p className="text-lg text-gray-700">

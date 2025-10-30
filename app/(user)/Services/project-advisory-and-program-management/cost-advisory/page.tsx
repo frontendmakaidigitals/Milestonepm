@@ -102,7 +102,7 @@ export default function Page() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Cost Advisory & Scheduling
         </h1>
       </div>
@@ -140,7 +140,7 @@ export default function Page() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl lg:text-5xl font-bold text-gray-800 mb-5 text-center"
+            className="text-3xl lg:text-4xl font-bold text-gray-800 mb-5 text-center"
           >
             Our Services
           </motion.h2>
@@ -229,7 +229,7 @@ export default function Page() {
       </section>{" "}
       <section className="py-16 px-6  ">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
             Why Choose <span className="text-amber-400">Milestone PM</span> for
             Cost Advisory
           </h2>
@@ -259,7 +259,7 @@ export default function Page() {
       </section>{" "}
       <section className="py-16 px-6 bg-yellow-100/20">
         <div className="max-w-5xl mx-auto text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
             Our Cost{" "}
             <span className="text-amber-400">Advisory Capabilities</span>
           </h2>

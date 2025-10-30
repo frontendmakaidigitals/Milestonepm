@@ -140,7 +140,7 @@ export default function Page() {
       </section>
       <section className="py-20 container ">
         <div className="max-w-5xl mx-auto ">
-          <h2 className="text-4xl lg:text-5xl text-center font-bold text-gray-900 mb-12">
+          <h2 className="text-3xl lg:text-4xl text-center font-bold text-gray-900 mb-12">
             Our <span className="text-yellow-600">Approach</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-10">
@@ -162,7 +162,7 @@ export default function Page() {
       </section>
       <section className="py-20 ">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">
             Our <span className="text-green-600">Services</span>
           </h2>
 
@@ -193,7 +193,7 @@ export default function Page() {
       </section>
       <section className="py-16 ">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">
             Why Choose <span className="text-yellow-500">Milestone PM?</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-8">

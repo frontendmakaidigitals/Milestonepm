@@ -92,7 +92,7 @@ export default function Page() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Community Design
         </h1>
       </div>
@@ -121,7 +121,7 @@ export default function Page() {
       </section>
       <section className=" py-20 px-4">
         <div className="container text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
             Our <span className="text-yellow-500">Design Framework</span>
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -140,7 +140,7 @@ export default function Page() {
               viewport={{ once: true }}
               className={`rounded-2xl p-6 text-white shadow-xl ${item.gradient}`}
             >
-              <div className="text-4xl lg:text-5xl font-bold text-black/60 shrink-0 mb-4">
+              <div className="text-3xl lg:text-4xl font-bold text-black/60 shrink-0 mb-4">
                 {item.step}
               </div>
               <div className="mt-3">
@@ -156,7 +156,7 @@ export default function Page() {
 
       <section className="py-20 bg-amber-50">
         <div className="container ">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-10 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-10 text-center">
             What We <span className="text-yellow-500">Deliver</span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -194,7 +194,7 @@ export default function Page() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl lg:text-5xl font-[700] mb-6 bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+            className="text-3xl lg:text-4xl font-[700] mb-6 bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
           >
             Community Engagement
           </motion.h2>

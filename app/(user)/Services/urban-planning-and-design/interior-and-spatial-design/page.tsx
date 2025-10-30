@@ -98,7 +98,7 @@ export default function Page() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Interior & Spatial Design
         </h1>
       </div>
@@ -115,7 +115,7 @@ export default function Page() {
       <section className="">
         <div className="container py-12 grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div>
-            <h2 className="text-4xl lg:text-5xl text-amber-700 font-bold ">
+            <h2 className="text-3xl lg:text-4xl text-amber-700 font-bold ">
               Collaborative, Creative, and Purpose-Driven
             </h2>
             <p className="text-lg text-gray-700 mt-4">
@@ -142,7 +142,7 @@ export default function Page() {
       </section>
       <section className="py-16 ">
         <div className="container max-w-7xl">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-12">
             Our <span className="text-yellow-600">Interior Architecture</span>{" "}
             Services
           </h2>
@@ -174,7 +174,7 @@ export default function Page() {
 
       <section className="max-w-7xl mx-auto px-4 py-20 space-y-16">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Sectors We Work In
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -218,7 +218,7 @@ export default function Page() {
       <section className="">
         <div className="container py-12 place-items-center grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div>
-            <h2 className="text-4xl lg:text-5xl font-[700] text-amber-700">
+            <h2 className="text-3xl lg:text-4xl font-[700] text-amber-700">
               Integrated Team from Start to Finish
             </h2>
             <p className="text-lg text-gray-700 mt-4">
@@ -242,7 +242,7 @@ export default function Page() {
 
       <section className=" py-20 px-4">
         <div className="max-w-3xl container text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Why Choose Milestone PM for Interior & Spatial Design
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">

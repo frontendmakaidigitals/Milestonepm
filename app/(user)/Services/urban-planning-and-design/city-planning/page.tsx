@@ -139,7 +139,7 @@ export default function Page() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           City Master Planning
         </h1>
       </div>
@@ -169,7 +169,7 @@ export default function Page() {
       </section>
       <section className=" py-20 px-4 md:px-8">
         <div className="container mb-16 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Our <span className="text-green-500">City Planning</span> Vision
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -222,7 +222,7 @@ export default function Page() {
 
       <section className=" py-20 px-4 md:px-8">
         <div className="container text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             <span className="text-green-500">Supporting</span> Services
           </h2>
         </div>
@@ -254,7 +254,7 @@ export default function Page() {
 
       <section className=" py-20 px-6 md:px-12">
         <div className="container text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl  font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl  font-bold text-gray-900 mb-4">
             Why Choose <span className="text-yellow-500">Milestone PM?</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">

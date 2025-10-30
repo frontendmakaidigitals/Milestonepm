@@ -63,7 +63,7 @@ export default function Page() {
         <div className="relative z-10 min-h-[85vh] flex flex-col h-full justify-center items-center">
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
-              <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter  mb-4">
+              <h1 className="text-3xl lg:text-4xl font-semibold leading-tighter  mb-4">
                 Our <span className="text-yellow-500">Global</span> Standards &
                 Accreditations
               </h1>
@@ -97,7 +97,7 @@ export default function Page() {
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto  grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#B59410] mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#B59410] mb-4">
               Class A Certificate: Engineering Excellence Recognized Nationally
             </h2>
             <p className="text-gray-700 mb-4">
@@ -138,7 +138,7 @@ export default function Page() {
 
       <section className="py-20 px-6 bg-amber-50">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-12">
             International <span className="text-yellow-600">ISO</span>{" "}
             Certifications
           </h2>
@@ -195,7 +195,7 @@ export default function Page() {
 
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-12">
             <span className="text-yellow-500">Global</span> Memberships &
             Registrations
           </h2>

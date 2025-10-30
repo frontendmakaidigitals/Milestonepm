@@ -23,7 +23,7 @@ const Marquee = () => {
   return (
     <section className="pt-20 text-center bg-white">
       {/* Heading */}
-      <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold max-w-3xl mx-auto">
+      <h1 className="text-4xl md:text-3xl lg:text-4xl font-semibold max-w-3xl mx-auto">
         Our Trusted <span className="text-yellow-600">Partners</span>
       </h1>
 
@@ -57,7 +57,8 @@ const Marquee = () => {
 
         <div className="relative  z-10 h-full flex flex-col justify-center items-center text-center lg:px-6 text-white">
           <h2 className="text-xl md:text-4xl max-w-2xl font-bold mb-2">
-            Your Trusted Partner in Nation-Building with Milestone Project Management
+            Your Trusted Partner in Nation-Building with Milestone Project
+            Management
           </h2>
           <p className="text-sm md:text-base max-w-3xl">
             Backed by in-house expertise and global certifications, we deliver

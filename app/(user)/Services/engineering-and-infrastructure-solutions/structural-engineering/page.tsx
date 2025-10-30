@@ -117,7 +117,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className="bg-white text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Structural Legacy Consulting
         </h1>
       </div>
@@ -148,7 +148,7 @@ export default function ConstructionManagementPage() {
 
       <section className="py-20 text-gray-900">
         <div className="container">
-          <h2 className="text-3xl max-w-5xl mx-auto md:text-4xl lg:text-5xl font-bold mb-5 text-center">
+          <h2 className="text-3xl max-w-5xl mx-auto md:text-3xl lg:text-4xl font-bold mb-5 text-center">
             Our <span className="text-yellow-500">Core Expertise</span>
           </h2>
           <p className="mt-1 text-center max-w-5xl mx-auto">
@@ -203,7 +203,7 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="bg-amber-50/80 py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-amber-600 mb-6">
+          <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold text-amber-600 mb-6">
             Specialized Capabilities
           </h2>
           <p className="text-slate-950 mb-12 max-w-3xl mx-auto">
@@ -227,7 +227,7 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="py-20 bg-gray-50">
         <div className="container px-4">
-          <h2 className="text-4xl lg:text-5xl text-center font-bold mb-12 text-gray-800">
+          <h2 className="text-3xl lg:text-4xl text-center font-bold mb-12 text-gray-800">
             <span className="text-yellow-500">Industries</span> We Serve
           </h2>
 
@@ -264,7 +264,7 @@ export default function ConstructionManagementPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-4xl lg:text-5xl font-bold text-start text-amber-500 mb-10"
+              className="text-3xl lg:text-4xl font-bold text-start text-amber-500 mb-10"
             >
               Why Partner with Milestone Project Management?
             </motion.h2>

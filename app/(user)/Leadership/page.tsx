@@ -88,10 +88,10 @@ export default function Page() {
       </motion.div>
 
       {/* Leadership Section */}
-      <section className="py-20 lg:px-6 bg-white">
+      <section className="py-20 lg:px-6 ">
         <div className="container grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h2 className="text-4xl lg:text-5xl font-semibold text-slate-600 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-semibold text-slate-600 mb-4">
               Leadership That Inspires Progress
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -122,7 +122,7 @@ export default function Page() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="bg-[#f8f8f8] py-20 px-6">
+      <section className=" py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           <div>
             <div className="rounded-xl mb-4 h-[350px] overflow-hidden">
@@ -163,7 +163,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="bg-gradient-to-br from-slate-50 to-white py-20 lg:px-6">
+      <section className=" py-20 lg:px-6">
         <div className="container mx-auto max-w-7xl grid md:grid-cols-2 gap-12 items-center">
           {/* LEFT TEXT BLOCK */}
           <div>
@@ -216,7 +216,7 @@ export default function Page() {
           {services.map((item, i) => (
             <div
               key={i}
-              className="bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition"
+              className="bg-amber-50 rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition"
             >
               <div className="flex items-center gap-3 mb-3">
                 {item.icon}

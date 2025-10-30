@@ -57,7 +57,7 @@ export default function Page() {
         <div className="relative z-10 min-h-[85vh] flex flex-col h-full justify-center items-center">
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
-              <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter  mb-4">
+              <h1 className="text-3xl lg:text-4xl font-semibold leading-tighter  mb-4">
                 Our Commitment: Building a Sustainable Future Together
               </h1>
               <p className="text-lg text-gray-700">
@@ -195,7 +195,7 @@ export default function Page() {
             />
           </div>
           <div className="max-w-5xl mx-auto mt-12 lg:mt-0 container">
-            <h2 className="text-4xl lg:text-5xl font-semibold mb-4">
+            <h2 className="text-3xl lg:text-4xl font-semibold mb-4">
               Our Global and Regional Commitment
             </h2>
             <p className="text-gray-700 text-lg">

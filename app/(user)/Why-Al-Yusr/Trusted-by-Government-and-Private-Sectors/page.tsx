@@ -68,7 +68,7 @@ export default function Page() {
         className="w-full relative overflow-hidden"
       >
         <div className="relative z-30 container py-10 flex flex-col justify-center items-center h-full max-w-4xl text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-slate-50">
+          <h1 className="text-3xl lg:text-4xl font-bold text-slate-50">
             Trusted by Government and Private Sectors
             <br className="hidden sm:block" />
           </h1>
@@ -89,7 +89,7 @@ export default function Page() {
       <div className="relative z-10 min-h-[85vh] py-20 lg:py-0 flex flex-col h-full justify-center items-center">
         <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
           <div className="max-w-2xl">
-            <h1 className="text-4xl lg:text-5xl font-semibold text-[#B59410] leading-tighter mb-4">
+            <h1 className="text-3xl lg:text-4xl font-semibold text-[#B59410] leading-tighter mb-4">
               Government and Private Sector Approved
             </h1>
             <p className="text-lg text-gray-700">
@@ -207,7 +207,7 @@ export default function Page() {
 
           {/* WHY CLIENTS CHOOSE Milestone Project Management */}
           <div className="text-center mb-12">
-            <h3 className="text-4xl lg:text-5xl font-semibold text-gray-800 mb-4">
+            <h3 className="text-3xl lg:text-4xl font-semibold text-gray-800 mb-4">
               Why Public & Private{" "}
               <span className="text-yellow-500">
                 Clients Choose Milestone Project Management

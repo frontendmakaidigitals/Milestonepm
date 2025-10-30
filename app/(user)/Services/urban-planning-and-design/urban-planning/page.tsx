@@ -138,7 +138,7 @@ export default function Page() {
       <section className="py-20 px-6 md:px-12 ">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
               Our <span className="text-green-500">Urban Planning</span>{" "}
               Services
             </h2>
@@ -172,7 +172,7 @@ export default function Page() {
       </section>
       <section className=" py-20">
         <div className="container text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-10">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-10">
             Our Capabilities
           </h2>
           <div className="grid gap-10 grid-cols-1 lg:grid-cols-4">
@@ -193,7 +193,7 @@ export default function Page() {
       </section>
       <section className=" py-20 px-4">
         <div className=" container max-w-6xl mx-auto text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl max-w-4xl mx-auto font-bold">
+          <h2 className="text-3xl lg:text-4xl max-w-4xl mx-auto font-bold">
             Why <span className="text-yellow-500">Choose</span> Milestone
             Project Management for{" "}
             <span className="text-green-500">Urban Design</span>

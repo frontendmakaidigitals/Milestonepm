@@ -138,7 +138,7 @@ export default function Page() {
         <div className="relative z-10 min-h-[85vh] flex flex-col h-full justify-center items-center">
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
-              <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter  mb-4">
+              <h1 className="text-3xl lg:text-4xl font-semibold leading-tighter  mb-4">
                 Expertise Across Every{" "}
                 <span className="text-amber-600">Sector</span>
               </h1>
@@ -176,7 +176,7 @@ export default function Page() {
         </div>
       </section>
       <section className="bg-white py-16 px-4 sm:px-8 lg:px-16">
-        <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-gray-800">
           Our <span className="text-yellow-500">Core</span> Divisions
         </h2>
         <div className="grid  gap-10">

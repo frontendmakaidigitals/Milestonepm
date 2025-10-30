@@ -95,7 +95,7 @@ export default function Page() {
 
           {/* Text second on mobile, first on desktop */}
           <div className="order-2 lg:order-1">
-            <h2 className="text-4xl lg:text-5xl font-semibold text-[#B59410] mb-4">
+            <h2 className="text-3xl lg:text-4xl font-semibold text-[#B59410] mb-4">
               Company Overview
             </h2>
             <p className="text-gray-700 text-lg mb-4">
@@ -133,7 +133,7 @@ export default function Page() {
             />
           </div>
           <div>
-            <h2 className="text-4xl lg:text-5xl font-semibold text-[#B59410] mb-4">
+            <h2 className="text-3xl lg:text-4xl font-semibold text-[#B59410] mb-4">
               Our History
             </h2>
             <p className="text-lg">
@@ -164,7 +164,7 @@ export default function Page() {
       {/* Fast Facts */}
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl lg:text-5xl font-semibold text-center mb-12">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-center mb-12">
             Fast <span className="text-[#B59410]">Facts</span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

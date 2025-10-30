@@ -22,8 +22,7 @@ export default function Page() {
         "Integrate smart traffic management systems to improve flow.",
         "Develop infrastructure for autonomous and connected transport.",
       ],
-      image:
-        "/Transportation-mobility/urban-mobility/tech-integeration.webp",
+      image: "/Transportation-mobility/urban-mobility/tech-integeration.webp",
     },
     {
       title: "Shared & Sustainable Mobility Solutions",
@@ -96,7 +95,7 @@ export default function Page() {
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
-            <h1 className="text-4xl lg:text-5xl font-semibold">
+            <h1 className="text-3xl lg:text-4xl font-semibold">
               Urban Planning
             </h1>
             <p className=" mt-2 ">
@@ -111,15 +110,17 @@ export default function Page() {
           </div>
           <div className="w-full h-[450px] bg-slate-100 rounded-lg">
             <img
-              src={"/Transportation-mobility/urban-mobility/Sustainable-planning.webp"}
+              src={
+                "/Transportation-mobility/urban-mobility/Sustainable-planning.webp"
+              }
               className="w-full h-full object-cover"
               alt={""}
             />
           </div>
         </div>
       </section>
-      <section className="py-16 px-6 lg:px-20 ">
-        <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12">
+      <section className=" py-16 ">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12">
           Our <span className="text-yellow-600">Scope of Work</span>
         </h2>
         <div className="space-y-20">
@@ -144,8 +145,8 @@ export default function Page() {
               {/* Image */}
               <div className="lg:w-1/2">
                 <Image
-                width={400}
-                height={400}
+                  width={400}
+                  height={400}
                   src={item.image}
                   alt={item.title}
                   className="rounded-2xl shadow-lg w-full h-80 object-cover"
@@ -155,7 +156,7 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <section className="py-16 px-6 lg:px-20 ">
+      <section className="py-16 ">
         <h2 className="text-4xl font-bold text-center mb-12">
           Why Choose <span className="text-yellow-500">Milestone PM</span> for{" "}
           <span className="text-blue-500">Urban Planning?</span>

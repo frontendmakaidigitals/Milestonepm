@@ -38,42 +38,42 @@ export default function Page() {
     {
       title: "Project Pulse: Centralized Project Intelligence",
       desc: "A cloud-based management hub that unifies project data, offering real-time visibility across performance, cost, and delivery. Enables faster, data-driven decisions and team alignment throughout the project lifecycle.",
-      img: "/Digital-Engineering/project-pulse.webp",
+      img: "/digital-engineering/Project Pulse.jpeg",
     },
     {
       title: "Vision 360: Immersive Communication Platform",
       desc: "A virtual engagement platform that transforms collaboration and visualization—allowing stakeholders to experience and interact with projects before they’re built.",
-      img: "/Digital-Engineering/vision-360.webp",
+      img: "/digital-engineering/vision-360.png",
     },
     {
       title: "Eco Twin: Smart Environmental Modeling",
       desc: "An advanced system integrating weather, energy, and environmental data to enhance sustainability and operational performance across infrastructure and utilities.",
-      img: "/Digital-Engineering/eco-twin.webp",
+      img: "/digital-engineering/Climate Resilience.webp",
     },
     {
       title: "Carbon Pathway: Net-Zero Planning Tool",
       desc: "A powerful, data-driven platform that measures emissions, identifies reduction opportunities, and supports organizations in achieving decarbonization goals efficiently.",
-      img: "/Digital-Engineering/carbon-pathway.webp",
+      img: "/digital-engineering/carbon-pathway.jpg",
     },
     {
       title: "Mobility Optimizer: Transport Strategy Planning",
       desc: "A digital transport modeling tool enabling planners to simulate, test, and optimize transport systems for better performance and investment outcomes.",
-      img: "/Digital-Engineering/mobility-optimizer.webp",
+      img: "/digital-engineering/Master Planning.webp",
     },
     {
       title: "Bridge Vision: Predictive Maintenance System",
       desc: "AI-powered monitoring and smart sensor analytics that track bridge and infrastructure health in real time—detecting issues before they impact safety or operations.",
-      img: "/Digital-Engineering/bridge-vision.webp",
+      img: "/digital-engineering/bridge.jpg",
     },
     {
       title: "SmartSpace: Building Performance Analytics",
       desc: "An intelligent analytics platform that evaluates space utilization, energy consumption, and occupant behavior to improve comfort, efficiency, and asset performance.",
-      img: "/Digital-Engineering/smartspace.webp",
+      img: "/digital-engineering/Définition-performance-commerciale.jpg",
     },
     {
       title: "EnergySense: Real-Time Energy Tracking",
       desc: "A live energy monitoring platform that enables organizations to reduce costs, meet sustainability goals, and comply with regulatory requirements through actionable insights.",
-      img: "/Digital-Engineering/energysense.webp",
+      img: "/digital-engineering/smart-energy-2.webp",
     },
   ];
 
@@ -91,7 +91,8 @@ export default function Page() {
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
-              Multi-Sector Digital Solutions
+              Multi-Sector{" "}
+              <span className="text-blue-500">Digital Solutions</span>
             </h1>
             <p>
               As industries evolve and technology reshapes the way we design,
@@ -100,14 +101,14 @@ export default function Page() {
               sectors to deliver innovative digital platforms that enhance
               decision-making, improve performance, and maximize long-term
               value. Our expertise spans diverse markets, from infrastructure
-              and energy to real estate and urban development. By combining
-              digital intelligence, real-time data, and practical insights, we
-              help organizations achieve smarter outcomes, reduce
-              inefficiencies, and embrace sustainable growth. Whether you are
-              improving transport networks, optimizing building operations, or
-              managing large-scale infrastructure, our digital solutions give
-              you the clarity, control, and confidence to move forward
-              efficiently.
+              and energy to real estate and urban development.{" "}
+              <span className="block mt-2" /> By combining digital intelligence,
+              real-time data, and practical insights, we help organizations
+              achieve smarter outcomes, reduce inefficiencies, and embrace
+              sustainable growth. Whether you are improving transport networks,
+              optimizing building operations, or managing large-scale
+              infrastructure, our digital solutions give you the clarity,
+              control, and confidence to move forward efficiently.
             </p>
           </div>
           <div className="w-full h-[400px] bg-slate-100 rounded-lg">
@@ -121,21 +122,21 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-16 ">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-slate-900">
+      <section className="py-16 container">
+        <div className="max-w-6xl mx-auto ">
+          <h2 className="text-4xl max-w-4xl mx-auto lg:text-5xl font-bold text-center text-slate-900">
             Our Differentiators
           </h2>
 
-          <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12   grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {differentiators.map((item, idx) => {
               const Icon = item.icon;
               return (
                 <div
                   key={idx}
-                  className="flex flex-col items-start bg-slate-50 rounded-2xl p-6 shadow hover:shadow-lg transition"
+                  className="flex flex-col items-start bg-amber-100/50 rounded-2xl p-6 shadow hover:shadow-lg transition"
                 >
-                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-green-100 text-green-700 mb-4">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-amber-200 text-slate-700 mb-4">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="text-lg font-semibold text-slate-900">
@@ -150,23 +151,24 @@ export default function Page() {
           </div>
         </div>
       </section>{" "}
-      <section className="py-20 bg-amber-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-3xl md:text-5xl font-bold text-center text-gray-900"
-          >
-            Our Services
-          </motion.h2>
+      <section className="py-20  bg-amber-50 ">
+        <div>
+          <div className="max-w-5xl mx-auto">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-3xl max-w-3xl mx-auto md:text-5xl font-bold text-center text-gray-900"
+            >
+              Our Services
+            </motion.h2>
+            <p className="mt-4 text-center text-gray-600 max-w-3xl mx-auto">
+              Delivering comprehensive air quality and environmental consulting
+              solutions, backed by science and global expertise.
+            </p>
+          </div>
 
-          <p className="mt-4 text-center text-gray-600 max-w-3xl mx-auto">
-            Delivering comprehensive air quality and environmental consulting
-            solutions, backed by science and global expertise.
-          </p>
-
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, idx) => (
               <motion.div
                 key={idx}
@@ -192,10 +194,10 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-amber-50">
+      <section className="py-20 ">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <h2 className="text-4xl lg:text-5xl text-center mx-auto font-bold text-gray-900 mb-6">
-            Why Choose Milestone PM?
+          <h2 className="text-3xl max-w-3xl  lg:text-4xl text-center mx-auto font-bold text-gray-900 mb-6">
+            Why Choose <span className="text-amber-400">Milestone PM?</span>
           </h2>
           <ul className="grid md:grid-cols-2 gap-6">
             {points.map((point, idx) => (
@@ -212,11 +214,13 @@ export default function Page() {
           </ul>
         </div>
       </section>
-      <EngineeringCTA
-        title="Take the Next Step Toward a Smarter Future"
-        desc="At Milestone PM, we don’t just deliver digital systems, we build smarter, more resilient frameworks for progress. Contact us today to discover how our Multi-Sector Digital Solutions can transform your business, strengthen your assets, and prepare your organization for the digital future."
-        btn="Contact Us Today"
-      />
+      <section className="container">
+        <EngineeringCTA
+          title="Take the Next Step Toward a Smarter Future"
+          desc="At Milestone PM, we don’t just deliver digital systems, we build smarter, more resilient frameworks for progress. Contact us today to discover how our Multi-Sector Digital Solutions can transform your business, strengthen your assets, and prepare your organization for the digital future."
+          btn="Contact Us Today"
+        />
+      </section>
     </main>
   );
 }

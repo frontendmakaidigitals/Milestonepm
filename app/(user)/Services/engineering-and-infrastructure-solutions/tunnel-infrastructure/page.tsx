@@ -120,7 +120,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className=" text-gray-900">
       <div className="container   my-10">
-        <h1 className="text-4xl max-w-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl max-w-3xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Tunnel Infrastructure Solutions
         </h1>
       </div>
@@ -150,7 +150,7 @@ export default function ConstructionManagementPage() {
       {/* Features */}
       <section className="py-24 container space-y-20">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             What We <span className="text-yellow-500">Offer</span>
           </h2>
         </div>

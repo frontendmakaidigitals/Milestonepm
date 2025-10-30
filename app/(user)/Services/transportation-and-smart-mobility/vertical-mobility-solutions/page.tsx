@@ -92,7 +92,7 @@ export default function Page() {
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
-            <h1 className="text-4xl lg:text-5xl font-semibold">
+            <h1 className="text-3xl lg:text-4xl font-semibold">
               Vertical <span className="text-yellow-600">Transportation</span>{" "}
               Services
             </h1>

@@ -69,7 +69,7 @@ export default function Page() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl  md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl  md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Visualization & 3D Modeling
         </h1>
       </div>
@@ -98,7 +98,7 @@ export default function Page() {
 
       <section className="py-16 ">
         <div className=" container ">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-12">
             What <span className="text-yellow-500">We Offer</span>
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -177,7 +177,7 @@ export default function Page() {
 
       <section className="py-16 bg-muted/30">
         <div className="container">
-          <h2 className="text-4xl lg:text-5xl text-center font-bold text-gray-900 mb-10">
+          <h2 className="text-3xl lg:text-4xl text-center font-bold text-gray-900 mb-10">
             Why Choose{" "}
             <span className="text-yellow-500">
               Milestone Project Management

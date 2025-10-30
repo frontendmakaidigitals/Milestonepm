@@ -38,27 +38,27 @@ export default function Page() {
     {
       title: "Occupant Experience Analytics",
       desc: "Immersive front-end applications designed to enhance comfort, productivity, and engagement for building occupants through real-time environmental and behavioral insights.",
-      img: "/Digital-Engineering/occupant-experience-analytics.webp",
+      img: "/digital-engineering/Experience Analytics.jpg",
     },
     {
       title: "Facility Management Optimization",
       desc: "An advanced analytics platform for facility managers and operators to monitor building systems, improve maintenance workflows, and optimize operational performance.",
-      img: "/Digital-Engineering/facility-management-optimization.webp",
+      img: "/digital-engineering/Facility Management.jpg",
     },
     {
       title: "Portfolio Management",
       desc: "A centralized dashboard that enables property owners to manage multiple assets, benchmark performance, and implement data-driven strategies across their entire portfolio.",
-      img: "/Digital-Engineering/portfolio-management.webp",
+      img: "/digital-engineering/portfolio-management.jpg",
     },
     {
       title: "Energy and Carbon Tracking",
       desc: "Comprehensive tools to monitor and analyze energy consumption and carbon emissions, supporting sustainability initiatives and regulatory compliance.",
-      img: "/Digital-Engineering/energy-carbon-tracking.webp",
+      img: "/digital-engineering/carbon-analytics.jpg",
     },
     {
       title: "Space Utilization Insights",
       desc: "Data-driven solutions that analyze space usage patterns to optimize layouts, improve efficiency, and enhance occupant satisfaction.",
-      img: "/Digital-Engineering/space-utilization-insights.webp",
+      img: "/digital-engineering/Space-Utilization.jpg",
     },
   ];
 
@@ -71,12 +71,13 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
-              Building Intelligent Digital Solutions
+              Building Intelligent{" "}
+              <span className="text-blue-500">Digital Solutions</span>
             </h1>
             <p>
               The way we design, operate, and manage buildings is evolving
@@ -95,21 +96,19 @@ export default function Page() {
               control, and measurable benefits for all stakeholders.
             </p>
           </div>
-          <div className="w-full h-[400px] bg-slate-100 rounded-lg">
+          <div className="w-full h-[400px] bg-slate-50 rounded-lg">
             <img
-              src={
-                "/Environment-Sustainability/Air-Quality-Assessment/hero.webp"
-              }
+              src={"/digital-engineering/data.jpg"}
               className="w-full h-full object-cover"
               alt={"air quality hero"}
             />
           </div>
         </div>
       </section>
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-slate-900">
-            Our Differentiators
+          <h2 className="text-3xl lg:text-4xl font-bold text-center text-slate-900">
+            Our <span className="text-amber-500">Differentiators</span>
           </h2>
 
           <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -118,9 +117,9 @@ export default function Page() {
               return (
                 <div
                   key={idx}
-                  className="flex flex-col items-start bg-slate-50 rounded-2xl p-6 shadow hover:shadow-lg transition"
+                  className="flex flex-col bg-amber-50 items-start  rounded-2xl p-6 shadow hover:shadow-lg transition"
                 >
-                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-green-100 text-green-700 mb-4">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-amber-300 text-slate-50 mb-4">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="text-lg font-semibold text-slate-900">
@@ -135,13 +134,13 @@ export default function Page() {
           </div>
         </div>
       </section>{" "}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-amber-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-5xl font-bold text-center text-gray-900"
+            className="text-3xl lg:text-4xl font-bold text-center text-gray-900"
           >
             Our Services
           </motion.h2>
@@ -159,7 +158,7 @@ export default function Page() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.05, duration: 0.5 }}
-                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden"
+                className=" rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden"
               >
                 <img
                   src={service.img}
@@ -177,16 +176,20 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <h2 className="text-4xl lg:text-5xl text-center mx-auto font-bold text-gray-900 mb-6">
-            Why Choose Milestone PM for Transport & Mobility Digital Solutions?
+      <section className="py-20 container">
+        <div className="">
+         <h2 className="text-3xl max-w-3xl  lg:text-4xl text-center mx-auto font-bold text-gray-900 mb-6">
+            Why Choose <span className="text-amber-400">Milestone PM</span> for{" "}
+            <span className="text-blue-500">
+              Transport & Mobility Digital Solutions
+            </span>{" "}
+            ?
           </h2>
-          <ul className="grid md:grid-cols-2 gap-6">
+          <ul className="grid max-w-6xl mx-auto md:grid-cols-2 gap-6">
             {points.map((point, idx) => (
               <li
                 key={idx}
-                className="flex items-start bg-yellow-50 p-4 rounded-lg gap-3"
+                className="flex items-start bg-amber-50 p-4 rounded-lg gap-3"
               >
                 <span>
                   <BadgeCheck className="fill-green-500 text-white w-6 h-6  mt-1" />

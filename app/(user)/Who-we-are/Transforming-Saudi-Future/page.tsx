@@ -57,7 +57,7 @@ export default function Page() {
         <div className="relative z-10 min-h-[85vh] flex flex-col h-full justify-center items-center">
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
-              <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter  mb-4">
+              <h1 className="text-3xl lg:text-4xl font-semibold leading-tighter  mb-4">
                 <span className="text-yellow-500">Engineering</span> the Future
                 of <span className="text-teal-600">Saudi Arabia</span>
               </h1>
@@ -98,7 +98,7 @@ export default function Page() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6"
+            className="text-3xl md:text-3xl lg:text-4xl font-semibold mb-6"
           >
             Building the <span className="text-yellow-500">Kingdom</span> of
             Tomorrow
@@ -162,7 +162,7 @@ export default function Page() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-4xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-14"
+            className="text-4xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-14"
           >
             Our <span className="text-yellow-500">Contribution</span> to{" "}
             <span>Vision 2030</span>

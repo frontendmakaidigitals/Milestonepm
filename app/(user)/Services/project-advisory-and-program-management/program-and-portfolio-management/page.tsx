@@ -85,7 +85,7 @@ export default function Page() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Program & Portfolio Management
         </h1>
       </div>
@@ -120,7 +120,7 @@ export default function Page() {
         <div className="container place-items-center grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
             {" "}
-            <h1 className="text-4xl lg:text-5xl text-amber-400 font-[600]">
+            <h1 className="text-3xl lg:text-4xl text-amber-400 font-[600]">
               Strategic, Outcome-Focused Management
             </h1>
             <p className="mt-3">
@@ -153,7 +153,7 @@ export default function Page() {
       <section className="py-20 ">
         <div className="container ">
           <div className="text-center max-w-6xl mx-auto mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
               Our <span className="text-amber-400">Program & Portfolio</span>{" "}
               <span className="text-blue-500">Capabilities</span>
             </h2>
@@ -217,7 +217,7 @@ export default function Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Text */}
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 <span className="text-blue-500">Technology-Enabled</span>{" "}
                 Program Delivery
               </h2>
@@ -247,7 +247,7 @@ export default function Page() {
         <div className="container">
           {/* Heading */}
           <div className="text-center max-w-5xl mx-auto mb-12">
-            <h2 className="text-4xl lg:text-5xl max-w-5xl mx-auto font-bold">
+            <h2 className="text-3xl lg:text-4xl max-w-5xl mx-auto font-bold">
               Why <span className="text-amber-400">Milestone PM?</span>
             </h2>
           </div>

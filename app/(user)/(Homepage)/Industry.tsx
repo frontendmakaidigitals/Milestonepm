@@ -62,7 +62,7 @@ const Industry = () => {
   return (
     <section className="py-20">
       <div className="container mx-auto">
-        <h1 className="text-4xl lg:text-5xl text-center font-semibold">
+        <h1 className="text-3xl lg:text-4xl text-center font-semibold">
           Industry <span className="text-yellow-500">Insights</span> and{" "}
           <span className="text-yellow-500">Case</span> Studies
         </h1>
@@ -88,7 +88,7 @@ const Industry = () => {
                   <Image
                     width={300}
                     height={400}
-                     src={`/api/uploads/${item.image}`}
+                    src={`/api/uploads/${item.image}`}
                     alt={item.title}
                     className="absolute inset-0 w-full h-full object-cover "
                   />

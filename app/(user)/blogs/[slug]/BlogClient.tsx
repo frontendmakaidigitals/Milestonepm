@@ -30,7 +30,7 @@ export default function BlogClient({ blog }: { blog: any }) {
         <p className="p-2 text-xs bg-teal-100 text-teal-700 rounded-lg font-bold font-quicksand text-center mb-2">
           {blog?.category}
         </p>
-        <h1 className="text-4xl lg:text-5xl  tracking-tighter font-[600] text-center">
+        <h1 className="text-3xl lg:text-4xl  tracking-tighter font-[600] text-center">
           {blog?.title}
         </h1>
       </div>

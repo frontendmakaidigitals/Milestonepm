@@ -7,12 +7,12 @@ import Link from "next/link";
 const LocationMenu = () => {
   const locationsites = [
     {
-      label: "AQI Management",
+      label: "Multi-Sector Solutions",
       href: "/digital-solutions/multi-sector-digital-solutions",
       img: "/digital/1703111233282.jpeg",
     },
     {
-      label: "Data Solutions",
+      label: "Digital Solutions",
       href: "/digital-solutions/intelligent-digital-solutions",
       img: "/digital/server.jpg",
     },
@@ -30,7 +30,7 @@ const LocationMenu = () => {
   return (
     <div className="w-full">
       <div className="">
-        <h1 className="text-xl mb-4 font-[700]">Our Location Sites</h1>
+        <h1 className="text-xl mb-4 font-[700]">Our Digital Solutions</h1>
         <ul className="grid  grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-10">
           {locationsites.map((location, index) => (
             <motion.li

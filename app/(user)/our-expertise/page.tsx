@@ -83,7 +83,7 @@ export default function TechnicalExpertisePage() {
         <div className="relative py-16 z-10  flex flex-col h-full justify-center items-center">
           <div className="container gap-10 place-items-center grid grid-cols-1 lg:grid-cols-2 px-4  ">
             <div className="max-w-2xl">
-              <h1 className="text-4xl lg:text-5xl font-semibold leading-tighter  mb-4">
+              <h1 className="text-3xl lg:text-4xl font-semibold leading-tighter  mb-4">
                 Our Expertise
               </h1>
               <p className="text-lg text-gray-700">
@@ -123,7 +123,7 @@ export default function TechnicalExpertisePage() {
 
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800">
+          <h2 className="text-4xl md:text-3xl lg:text-4xl font-bold text-center text-gray-800">
             <span className="text-yellow-500">Multidisciplinary</span>{" "}
             Capabilities
           </h2>
@@ -167,7 +167,7 @@ export default function TechnicalExpertisePage() {
 
       <section className="py-16 container ">
         <div className=" text-center">
-          <h2 className="text-4xl lg:text-5xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-800 mb-4">
             Advanced{" "}
             <span className="text-yellow-500">Tools & Technologies</span>
           </h2>

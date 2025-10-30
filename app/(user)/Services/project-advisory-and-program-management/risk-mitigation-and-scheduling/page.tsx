@@ -80,7 +80,7 @@ export default function Page() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Risk Mitigation & Scheduling
         </h1>
       </div>
@@ -135,7 +135,7 @@ export default function Page() {
       </section>{" "}
       <section className="py-20 ">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-6">
             Our <span className="text-yellow-500">Approach</span>
           </h2>
           <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
@@ -169,7 +169,7 @@ export default function Page() {
       </section>{" "}
       <section className="py-20 ">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-6">
             Key Services
           </h2>
           <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
@@ -206,7 +206,7 @@ export default function Page() {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               <span className="text-red-500">Post-Event</span> Recovery
             </h2>
             <p className="text-gray-700 mb-6">

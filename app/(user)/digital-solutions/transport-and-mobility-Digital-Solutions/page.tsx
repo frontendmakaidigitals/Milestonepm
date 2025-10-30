@@ -38,32 +38,32 @@ export default function Page() {
     {
       title: "Transport Strategy Optimizer",
       desc: "A cloud-hosted platform that identifies investment priorities and turns complex transport planning data into actionable strategies. It supports real-time scenario testing and stakeholder alignment to optimize transport investments efficiently.",
-      img: "/Digital-Engineering/transport-strategy-optimizer.webp",
+      img: "/digital-engineering/transport-strategy.webp",
     },
     {
       title: "Bridge Vision: Predictive Maintenance System",
       desc: "Using AI and smart sensors, this tool monitors bridge and infrastructure health in real-time, identifying issues before they impact safety or operations.",
-      img: "/Digital-Engineering/bridge-vision.webp",
+      img: "/digital-engineering/Artificial-Intelligence-sensor.jpg",
     },
     {
       title: "Mobility Analytics: Travel & Asset Performance",
       desc: "Advanced analytics tools that track traffic patterns, asset performance, and mobility trends to support strategic planning and operational optimization.",
-      img: "/Digital-Engineering/mobility-analytics.webp",
+      img: "/digital-engineering/travel-performance.jpg",
     },
     {
       title: "Smart Corridor Management",
       desc: "A digital platform that integrates IoT sensors, traffic management, and predictive modeling to improve flow, safety, and efficiency across key transport corridors.",
-      img: "/Digital-Engineering/smart-corridor.webp",
+      img: "/digital-engineering/smart-corridor.jpg",
     },
     {
       title: "Urban Mobility Insights",
       desc: "Solutions that provide real-time data on public transport usage, vehicle fleet efficiency, and pedestrian and cyclist patterns to optimize urban mobility and reduce environmental impact.",
-      img: "/Digital-Engineering/urban-mobility-insights.webp",
+      img: "/digital-engineering/mobility-insight.jpeg",
     },
     {
       title: "Energy & Emissions Monitoring for Transport",
       desc: "A platform that measures vehicle fleet energy consumption, emissions, and environmental impact to support sustainable transport strategies and regulatory compliance.",
-      img: "/Digital-Engineering/energy-emissions-transport.webp",
+      img: "/digital-engineering/carbon-analytics.jpg",
     },
   ];
 
@@ -76,12 +76,13 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
-              Transport & Mobility Digital Solutions
+              Transport & Mobility{" "}
+              <span className="text-blue-500">Digital Solutions</span>
             </h1>
             <p>
               The transportation sector faces increasing challenges, from
@@ -102,19 +103,17 @@ export default function Page() {
           </div>
           <div className="w-full h-[400px] bg-slate-100 rounded-lg">
             <img
-              src={
-                "/Environment-Sustainability/Air-Quality-Assessment/hero.webp"
-              }
+              src={"/digital-engineering/transport.jpg"}
               className="w-full h-full object-cover"
               alt={"air quality hero"}
             />
           </div>
         </div>
       </section>
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-slate-900">
-            Our Differentiators
+          <h2 className="text-3xl lg:text-4xl font-bold text-center text-slate-900">
+            Our <span className="text-amber-400">Differentiators</span>
           </h2>
 
           <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -123,7 +122,7 @@ export default function Page() {
               return (
                 <div
                   key={idx}
-                  className="flex flex-col items-start bg-slate-50 rounded-2xl p-6 shadow hover:shadow-lg transition"
+                  className="flex bg-amber-50 flex-col items-start  rounded-2xl p-6 shadow hover:shadow-lg transition"
                 >
                   <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-green-100 text-green-700 mb-4">
                     <Icon className="w-6 h-6" />
@@ -140,13 +139,13 @@ export default function Page() {
           </div>
         </div>
       </section>{" "}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-amber-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-5xl font-bold text-center text-gray-900"
+            className="text-3xl lg:text-4xl font-bold text-center text-gray-900"
           >
             Our Services
           </motion.h2>
@@ -164,7 +163,7 @@ export default function Page() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.05, duration: 0.5 }}
-                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden"
+                className=" rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden"
               >
                 <img
                   src={service.img}
@@ -184,8 +183,10 @@ export default function Page() {
       </section>
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <h2 className="text-4xl lg:text-5xl text-center mx-auto font-bold text-gray-900 mb-6">
-            Why Choose Milestone PM for Transport & Mobility Digital Solutions?
+          <h2 className="text-3xl max-w-3xl  lg:text-4xl text-center mx-auto font-bold text-gray-900 mb-6">
+            Why Choose <span className="text-amber-400">Milestone PM</span> for
+            Transport & Mobility{" "}
+            <span className="text-blue-500">Digital Solutions</span>?
           </h2>
           <ul className="grid md:grid-cols-2 gap-6">
             {points.map((point, idx) => (
@@ -196,17 +197,19 @@ export default function Page() {
                 <span>
                   <BadgeCheck className="fill-green-500 text-white w-6 h-6  mt-1" />
                 </span>
-                <span className="text-gray-700 text-lg">{point}</span>
+                <span className="text-gray-700">{point}</span>
               </li>
             ))}
           </ul>
         </div>
       </section>
-      <EngineeringCTA
-        title="Take the Next Step Toward Smarter Mobility"
-        desc="At Milestone PM, we don’t just deliver digital tools, we build intelligent, resilient, and sustainable transport frameworks. Contact us today to discover how our Transport & Mobility Digital Solutions can enhance your transport systems, optimize investments, and support smarter mobility for the future."
-        btn="Contact Us Today"
-      />
+      <section className="container">
+        <EngineeringCTA
+          title="Take the Next Step Toward Smarter Mobility"
+          desc="At Milestone PM, we don’t just deliver digital tools, we build intelligent, resilient, and sustainable transport frameworks. Contact us today to discover how our Transport & Mobility Digital Solutions can enhance your transport systems, optimize investments, and support smarter mobility for the future."
+          btn="Contact Us Today"
+        />
+      </section>
     </main>
   );
 }

@@ -141,7 +141,7 @@ function CareersForm() {
   return (
     <section className="relative py-16 bg-yellow-50">
       <div className="max-w-6xl mx-auto ">
-        <h2 className="text-4xl lg:text-5xl font-bold text-start text-gray-800 mb-6">
+        <h2 className="text-3xl lg:text-4xl font-bold text-start text-gray-800 mb-6">
           Let's begin our creative journey together
         </h2>
 

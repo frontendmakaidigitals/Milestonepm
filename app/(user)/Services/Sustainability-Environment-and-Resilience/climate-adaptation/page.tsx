@@ -156,7 +156,7 @@ export default function Page() {
       </section>
       <section className="py-16 ">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-green-900 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-green-900 text-center">
             Our Capabilities
           </h2>
           <p className="mt-4 text-slate-600 text-center max-w-3xl mx-auto">

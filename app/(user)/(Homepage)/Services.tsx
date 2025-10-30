@@ -68,7 +68,7 @@ const Services = () => {
       title: "Project Scheduling",
       link: "/Services/Project-Advisory/cost-management",
       img: "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg",
-    }
+    },
   ];
   const serviceRef = useRef(null);
   const inView = useInView(serviceRef, {
@@ -81,7 +81,7 @@ const Services = () => {
 
   return (
     <section className="container py-20 mx-auto">
-      <h1 className="text-4xl lg:text-5xl font-semibold text-center">
+      <h1 className="text-3xl lg:text-4xl font-[700] text-center">
         Our <span className="text-yellow-500">Services</span>
       </h1>
       <motion.ul

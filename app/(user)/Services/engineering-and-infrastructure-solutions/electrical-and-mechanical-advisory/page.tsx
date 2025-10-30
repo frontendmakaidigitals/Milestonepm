@@ -84,7 +84,7 @@ export default function Page() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Electrical & Mechanical Advisory
         </h1>
       </div>
@@ -115,7 +115,7 @@ export default function Page() {
       <section className="my-20">
         <div className="container place-items-center grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
-            <h1 className="text-4xl lg:text-5xl text-center lg:text-start font-semibold">
+            <h1 className="text-3xl lg:text-4xl text-center lg:text-start font-semibold">
               What We <span className="text-yellow-500">Do</span>
             </h1>
             <p className="mt-3 text-lg text-center lg:text-start">
@@ -142,7 +142,7 @@ export default function Page() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl lg:text-5xl font-bold mb-4"
+            className="text-3xl lg:text-4xl font-bold mb-4"
           >
             <span className="text-yellow-500">Markets</span> We Serve
           </motion.h2>

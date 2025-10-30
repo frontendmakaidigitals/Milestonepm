@@ -142,7 +142,7 @@ export default function Page() {
         <div className="container mx-auto px-6 lg:px-12">
           {/* Heading */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+            <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-foreground">
               Our <span className="text-green-500">City Development</span>{" "}
               Approach
             </h2>
@@ -180,7 +180,7 @@ export default function Page() {
         <div className="container mx-auto px-6 lg:px-12">
           {/* Heading */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+            <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-foreground">
               <span className="text-yellow-500">Tools</span> We Use
             </h2>
           </div>

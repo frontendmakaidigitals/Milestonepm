@@ -91,7 +91,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Reliable Foundation Solutions
         </h1>
       </div>
@@ -122,7 +122,7 @@ export default function ConstructionManagementPage() {
       {/* Features */}
       <section className=" mt-10 py-20">
         <div className="lg:container">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16">
             What We <span className="text-amber-500">Offer</span>
           </h2>
 

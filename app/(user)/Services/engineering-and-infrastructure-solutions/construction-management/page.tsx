@@ -171,7 +171,7 @@ export default function ConstructionManagementPage() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#8C7610]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#8C7610]">
           Construction Management
         </h1>
       </div>
@@ -197,7 +197,7 @@ export default function ConstructionManagementPage() {
       </section>
       {/* Features */}
       <section className="container my-20">
-        <motion.h2 className="text-4xl lg:text-5xl font-semibold text-center mb-12">
+        <motion.h2 className="text-3xl lg:text-4xl font-semibold text-center mb-12">
           Our Key <span className="text-yellow-500">Responsibilities</span>
         </motion.h2>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
@@ -308,7 +308,7 @@ export default function ConstructionManagementPage() {
 
       <section className="py-16 container">
         <motion.h2
-          className="text-4xl lg:text-5xl max-w-3xl mx-auto font-semibold text-center mb-6"
+          className="text-3xl lg:text-4xl max-w-3xl mx-auto font-semibold text-center mb-6"
           initial="hidden"
           whileInView="visible"
         >
@@ -354,7 +354,7 @@ export default function ConstructionManagementPage() {
       </section>
       <section className="py-16 container">
         <motion.h2
-          className="text-4xl lg:text-5xl font-semibold text-center mb-3"
+          className="text-3xl lg:text-4xl font-semibold text-center mb-3"
           initial="hidden"
           whileInView="visible"
           variants={{

@@ -93,7 +93,7 @@ export default function Page() {
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
-            <h1 className="text-4xl lg:text-5xl font-semibold">
+            <h1 className="text-3xl lg:text-4xl font-semibold">
               <span className="text-blue-500">Digital</span> Infrastructure &
               Smart City Systems
             </h1>
@@ -123,7 +123,7 @@ export default function Page() {
       </section>
       <section className="py-20 container">
         <div className="max-w-4xl mx-auto mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center ">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center ">
             Our <span className="text-blue-500">Smart Infrastructure</span>{" "}
             Capabilities
           </h2>

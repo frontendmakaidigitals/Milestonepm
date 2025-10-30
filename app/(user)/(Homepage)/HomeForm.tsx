@@ -90,7 +90,7 @@ const HomeForm = () => {
         <div className="grid grid-cols-1 place-items-center lg:grid-cols-[.8fr_1.2fr]  mt-12">
           <div className="w-full h-[350px] lg:rounded-l-xl overflow-hidden lg:h-[630px]">
             <img
-              className="w-full h-full object-cover"
+              className="w-full -scale-x-100 h-full object-bottom-right object-cover"
               src={"/contactImage.webp"}
               alt={""}
             />

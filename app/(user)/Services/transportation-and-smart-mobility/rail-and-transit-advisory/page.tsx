@@ -98,7 +98,7 @@ export default function Page() {
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
-            <h1 className="text-4xl lg:text-5xl font-semibold">
+            <h1 className="text-3xl lg:text-4xl font-semibold">
               <span className="text-yellow-500">Rail & Transit</span> Advisory
             </h1>
             <p>
@@ -122,7 +122,7 @@ export default function Page() {
         </div>
       </section>
       <section className="py-16 px-6 max-w-7xl mx-auto">
-        <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12">
           Our <span className="text-yellow-500">Rail & Transit</span>{" "}
           <span className="text-blue-500">Simulation Tools</span>
         </h2>

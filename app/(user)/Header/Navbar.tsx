@@ -244,7 +244,7 @@ const MenuMobile = ({ menu }: { menu: SiteConfig["navItems"] }) => {
                         <ServicesMenu services={item.services} />
                       ) : null}
 
-                      {item.label.toLowerCase() === "office locations" ? (
+                      {item.label.toLowerCase() === "digital solutions" ? (
                         <LocationMenu />
                       ) : null}
                     </AccordionContent>

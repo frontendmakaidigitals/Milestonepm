@@ -122,7 +122,7 @@ export default function Page() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Asset Lifecycle Advisory
         </h1>
       </div>
@@ -193,7 +193,7 @@ export default function Page() {
       </section>{" "}
       <section className="py-20  bg-gradient-to-b from-amber-50 via-white to-yellow-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-amber-600 mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center text-amber-600 mb-6">
             Our Core Services
           </h2>
 

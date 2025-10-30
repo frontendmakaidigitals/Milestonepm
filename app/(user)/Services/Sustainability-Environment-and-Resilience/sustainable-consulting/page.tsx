@@ -75,7 +75,7 @@ export default function Page() {
   return (
     <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#B59410]">
           Sustainable Consulting
         </h1>
       </div>
@@ -146,7 +146,7 @@ export default function Page() {
       </section>{" "}
       <section className="py-16 container">
         <div className="max-w-7xl mx-auto ">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">
             Our <span className="text-amber-400">Strategic Consulting</span>{" "}
             Services
           </h2>
@@ -193,7 +193,7 @@ export default function Page() {
       </section>
       <section className="py-16 ">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-slate-900">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center text-slate-900">
             Why <span className="text-amber-400">Choose Milestone PM?</span>
           </h2>
 
