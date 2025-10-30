@@ -7,33 +7,33 @@ import {
   TrendingUp,
   BadgeCheck,
 } from "lucide-react";
-
+import Image from "next/image";
 export default function Page() {
   const tools = [
     {
       title: "Freight Network Simulation",
       desc: "We model complex freight corridors to analyze capacity, scheduling, and operational constraints. From regional terminals to international routes, our simulations help optimize routing, reduce bottlenecks, and improve efficiency before major investments.",
-      img: "/Transportation-mobility/rail-network-modelling/Freight-Network.webp",
+      img: "/Transportation-mobility/rail-network-modelling/freight.jpg",
     },
     {
       title: "Passenger Rail Modeling",
       desc: "We simulate urban and intercity rail systems — from metros to high-speed lines — to enhance reliability, scheduling, and passenger comfort. Multiple service scenarios are tested to ensure optimized performance and efficiency.",
-      img: "/Transportation-mobility/rail-network-modelling/Passenger-Rail.webp",
+      img: "/Transportation-mobility/rail-network-modelling/Railway Electrification.webp",
     },
     {
       title: "Electrification & Energy Analysis",
       desc: "Our experts model standard electrification systems used in metros, commuter, and high-speed networks. We analyze traction power, energy use, and overall performance to ensure sustainable and efficient operations.",
-      img: "/Transportation-mobility/rail-network-modelling/Electrification-Analysis.webp",
+      img: "/Transportation-mobility/rail-network-modelling/electrification.jpg",
     },
     {
       title: "Train Performance & Track Analysis",
       desc: "We evaluate rolling stock performance across track alignments, analyzing acceleration, braking, and energy efficiency. This data helps refine train schedules, optimize energy consumption, and improve network reliability.",
-      img: "/Transportation-mobility/rail-network-modelling/Train-Performance.webp",
+      img: "/Transportation-mobility/rail-network-modelling/track-analysis.webp",
     },
     {
       title: "Flexible Multi-Scenario Simulation",
       desc: "Using advanced 2D and 3D simulation platforms, we create customizable models for urban, freight, and mixed-use networks. These simulations enable rapid scenario testing, visualization, and informed stakeholder decision-making.",
-      img: "/Transportation-mobility/rail-network-modelling/Multi-Scenario.webp",
+      img: "/Transportation-mobility/rail-network-modelling/sim.jpg",
     },
   ];
 
@@ -94,7 +94,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
@@ -152,9 +152,9 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 ">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-12">
+          <h2 className="text-4xl max-w-4xl mx-auto font-bold mb-12">
             Benefits of Our Rail Advisory Services
           </h2>
 
@@ -162,7 +162,7 @@ export default function Page() {
             {benefits.map((item, i) => (
               <div
                 key={i}
-                className="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition"
+                className="flex items-start gap-4 p-6  rounded-2xl shadow-md hover:shadow-lg transition"
               >
                 <div>{item.icon}</div>
                 <div className="text-left">
@@ -174,11 +174,11 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-amber-100/40">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-12">
-            Why Choose <span className="text-yellow-500">Milestone PM</span> for
-            <span className="textx-blue-500">Rail & Transit</span> Advisory?
+          <h2 className="text-4xl max-w-4xl mx-auto font-bold mb-12">
+            Why Choose <span className="text-yellow-500">Milestone PM</span> for{" "}
+            <span className="text-blue-500">Rail & Transit</span> Advisory?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -187,7 +187,9 @@ export default function Page() {
                 key={i}
                 className="relative group rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition"
               >
-                <img
+                <Image
+                  width={400}
+                  height={400}
                   src={item.img}
                   alt={item.title}
                   className="h-64 w-full object-cover group-hover:scale-105 transition duration-500"
@@ -202,7 +204,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 ">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-12">
             Our{" "}
@@ -216,20 +218,24 @@ export default function Page() {
             {services.map((service, i) => (
               <div
                 key={i}
-                className="flex items-start gap-3 p-5 bg-white rounded-2xl shadow hover:shadow-md transition"
+                className="flex items-start gap-3 p-5 bg-amber-50  rounded-2xl shadow hover:shadow-md transition"
               >
-                <BadgeCheck className="w-6 h-6 text-yellow-600 shrink-0 mt-1" />
+                <span>
+                  <BadgeCheck className="w-6 h-6 text-green-50 fill-green-500 shrink-0 mt-1" />
+                </span>
                 <p className="text-lg font-medium">{service}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <EngineeringCTA
-        title="Plan, Simulate, and Optimize with Milestone PM"
-        desc="From initial concept to operational readiness, Milestone PM helps clients build smarter, more efficient, and resilient rail networks. Our rail and transit advisory services ensure that every project is future-ready, cost-effective, and performance-driven."
-        btn="Contact Us Today"
-      />
+      <section className="container">
+        <EngineeringCTA
+          title="Plan, Simulate, and Optimize with Milestone PM"
+          desc="From initial concept to operational readiness, Milestone PM helps clients build smarter, more efficient, and resilient rail networks. Our rail and transit advisory services ensure that every project is future-ready, cost-effective, and performance-driven."
+          btn="Contact Us Today"
+        />
+      </section>
     </main>
   );
 }

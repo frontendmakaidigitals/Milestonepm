@@ -128,7 +128,7 @@ const Navbar = () => {
                       duration: 0.3,
                       delay: 0.25,
                     }}
-                    className="w-full absolute top-[85%] left-0 overflow-hidden bg-[#fffef6] z-[50]"
+                    className="w-full absolute shadow-lg top-[85%] left-0 overflow-hidden bg-[#fffef6] z-[50]"
                   >
                     <motion.div
                       key={`${idx}-content`}
