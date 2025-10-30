@@ -86,7 +86,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
@@ -121,7 +121,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center text-slate-900">
             Our Differentiators
@@ -150,7 +150,7 @@ export default function Page() {
           </div>
         </div>
       </section>{" "}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-amber-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -174,7 +174,7 @@ export default function Page() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.05, duration: 0.5 }}
-                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden"
+                className=" rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden"
               >
                 <img
                   src={service.img}
@@ -192,7 +192,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-amber-50">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <h2 className="text-4xl lg:text-5xl text-center mx-auto font-bold text-gray-900 mb-6">
             Why Choose Milestone PM?

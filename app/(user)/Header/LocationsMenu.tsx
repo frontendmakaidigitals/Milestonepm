@@ -8,8 +8,8 @@ const LocationMenu = () => {
   const locationsites = [
     {
       label: "AQI Management",
-      href: "/digital-solutions/air-quality-and-emissions-management",
-      img: "/digital/aqi.jpg",
+      href: "/digital-solutions/multi-sector-digital-solutions",
+      img: "/digital/1703111233282.jpeg",
     },
     {
       label: "Data Solutions",
