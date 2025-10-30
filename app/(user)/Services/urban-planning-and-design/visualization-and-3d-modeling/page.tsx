@@ -15,27 +15,27 @@ export default function Page() {
     {
       title: "High-Definition 3D Modeling",
       desc: "We build detailed digital models that capture form, texture, and proportions. These serve as the foundation for design validation, technical coordination, and stakeholder visualization.",
-      img: "/urban-planning/visualization/3D-Modeling.webp",
+      img: "/urban-planning/visualization/Virtual Reality.webp",
     },
     {
       title: "Architectural Rendering",
       desc: "Our lifelike 3D renders showcase projects in realistic lighting and material contexts, perfect for client presentations, marketing, and investor approvals.",
-      img: "/urban-planning/visualization/Architectural-Rendering.webp",
+      img: "/urban-planning/visualization/augumented.webp",
     },
     {
       title: "Virtual Walkthroughs",
       desc: "Step inside your project before construction begins. Our interactive tours allow clients to explore spatial layouts and experience real-time design flow.",
-      img: "/urban-planning/visualization/Virtual-Walkthroughs.webp",
+      img: "/urban-planning/visualization/animations.webp",
     },
     {
       title: "Animated Flythroughs",
       desc: "Cinematic motion visuals that take viewers on a guided journey through your project, ideal for launches, marketing, and stakeholder engagement.",
-      img: "/urban-planning/visualization/Animated-Flythroughs.webp",
+      img: "/urban-planning/visualization/Visualization.webp",
     },
     {
       title: "Real-World Integration",
       desc: "We blend proposed developments with real photography or drone footage to evaluate scale, placement, and environmental harmony with unmatched precision.",
-      img: "/urban-planning/visualization/Real-World-Integration.webp",
+      img: "/urban-planning/visualization/Photomontages.webp",
     },
   ];
 
@@ -67,7 +67,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <div className="container  my-10">
         <h1 className="text-4xl  md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           Visualization & 3D Modeling
@@ -75,8 +75,8 @@ export default function Page() {
       </div>
       <section className=" w-full h-[500px] text-center ">
         <Image
-          src={"/urban-planning/visualization/hero.webp"}
-          className="w-full h-full object-cover"
+          src={"/urban-planning/visualization/3d.jpg"}
+          className="w-full h-full object-cover object-top"
           alt={"hero"}
           width={1200}
           height={700}
@@ -96,7 +96,7 @@ export default function Page() {
         </p>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className=" container ">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
             What <span className="text-yellow-500">We Offer</span>
@@ -105,7 +105,7 @@ export default function Page() {
             {services.map((service, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 flex flex-col"
+                className=" rounded-lg shadow-md overflow-hidden border border-gray-100 flex flex-col"
               >
                 <div className="relative w-full h-48">
                   <Image
@@ -188,7 +188,7 @@ export default function Page() {
             {features.map((item, idx) => (
               <div
                 key={idx}
-                className="flex items-start p-6 bg-white rounded-2xl shadow-sm border hover:shadow-md transition-shadow"
+                className="flex items-start p-6  rounded-2xl shadow-sm border hover:shadow-md transition-shadow"
               >
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-yellow-600/10 flex items-center justify-center text-yellow-600 mr-4">
                   <item.icon size={24} />

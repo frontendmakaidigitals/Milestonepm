@@ -70,35 +70,35 @@ export default function Page() {
     {
       title: "Collaborative Expertise",
       desc: "We unite planners, engineers, designers, and sustainability specialists to deliver integrated, well-coordinated urban solutions.",
-      img: "/urban-planning/urban-design/Collaborative-Expertise.webp",
+      img: "/urban-planning/landscape/People-Centered.webp",
     },
     {
       title: "Locally Informed",
       desc: "Our projects reflect the UAE’s culture, climate, and long-term vision for smart, sustainable development.",
-      img: "/urban-planning/urban-design/Locally-Informed.webp",
+      img: "/urban-planning/landscape/Cultural.webp",
     },
     {
       title: "Future-Focused",
       desc: "Every plan is designed with economic, environmental, and social resilience in mind — ensuring lasting value for generations.",
-      img: "/urban-planning/urban-design/Future-Focused.webp",
+      img: "/urban-planning/landscape/global-vision.webp",
     },
     {
       title: "Community-Driven",
       desc: "We create people-centered spaces that promote inclusivity, cultural identity, and a strong sense of belonging.",
-      img: "/urban-planning/urban-design/Community-Driven.webp",
+      img: "/urban-planning/community-engagement/hero.webp",
     },
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <div className="container  my-10">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
+        <h1 className="text-4xl  lg:text-5xl font-bold mb-4 text-[#B59410]">
           Urban Planning
         </h1>
       </div>
       <section className=" w-full h-[500px] text-center ">
         <Image
-          src={"/urban-planning/urban-design/hero.webp"}
+          src={"/urban-planning/landscape/hero.webp"}
           className="w-full h-full object-cover object-bottom"
           alt={""}
           width={1200}
@@ -135,7 +135,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 px-6 md:px-12 bg-white">
+      <section className="py-20 px-6 md:px-12 ">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
@@ -170,7 +170,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="bg-white py-20">
+      <section className=" py-20">
         <div className="container text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-10">
             Our Capabilities
@@ -181,7 +181,7 @@ export default function Page() {
                 key={index}
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 80 }}
-                className="bg-gray-100 rounded-2xl p-8 text-left shadow-md"
+                className="bg-amber-50/70 rounded-2xl p-8 text-left shadow-md"
               >
                 <div className="mb-4">{item.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
@@ -191,9 +191,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="bg-white py-20 px-4">
-        <div className=" container text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold">
+      <section className=" py-20 px-4">
+        <div className=" container max-w-6xl mx-auto text-center mb-12">
+          <h2 className="text-4xl lg:text-5xl max-w-4xl mx-auto font-bold">
             Why <span className="text-yellow-500">Choose</span> Milestone
             Project Management for{" "}
             <span className="text-green-500">Urban Design</span>
@@ -208,7 +208,7 @@ export default function Page() {
           {reasons.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow overflow-hidden hover:shadow-md transition duration-300"
+              className=" rounded-xl shadow overflow-hidden hover:shadow-md transition duration-300"
             >
               <div className="w-full h-52 relative">
                 <Image
@@ -227,11 +227,13 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <EngineeringCTA
-        title="Partner With Us to Shape Tomorrow’s Cities"
-        desc="From strategy to design and delivery, Milestone Project Management partners with governments, developers, and investors to turn city visions into reality. Let’s work together to create smarter, greener, and more connected urban environments that define the future of modern living."
-        btn="Contact Us Today"
-      />
+      <section className="container">
+        <EngineeringCTA
+          title="Partner With Us to Shape Tomorrow’s Cities"
+          desc="From strategy to design and delivery, Milestone Project Management partners with governments, developers, and investors to turn city visions into reality. Let’s work together to create smarter, greener, and more connected urban environments that define the future of modern living."
+          btn="Contact Us Today"
+        />
+      </section>
     </main>
   );
 }

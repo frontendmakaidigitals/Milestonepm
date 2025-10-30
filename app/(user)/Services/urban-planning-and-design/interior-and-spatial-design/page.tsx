@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import EngineeringCTA from "@/app/(user)/app_chunks/CTA";
 import { BadgeCheck } from "lucide-react";
-import { LayoutGrid } from "lucide-react";
 
 export default function Page() {
   const services = [
@@ -97,7 +96,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <div className="container  my-10">
         <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           Interior & Spatial Design
@@ -105,7 +104,7 @@ export default function Page() {
       </div>
       <section className=" w-full h-[500px] text-center ">
         <Image
-          src={"/urban-planning/interior/interior.webp"}
+          src={"/urban-planning/interior/hero.jpg"}
           className="w-full h-full object-cover"
           alt={""}
           width={1200}
@@ -113,7 +112,7 @@ export default function Page() {
         />
       </section>
 
-      <section className="bg-gray-50 ">
+      <section className="">
         <div className="container py-12 grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div>
             <h2 className="text-4xl lg:text-5xl text-amber-700 font-bold ">
@@ -141,7 +140,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 ">
         <div className="container max-w-7xl">
           <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12">
             Our <span className="text-yellow-600">Interior Architecture</span>{" "}
@@ -151,7 +150,7 @@ export default function Page() {
             {services.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden"
+                className=" rounded-xl shadow-sm hover:shadow-md transition overflow-hidden"
               >
                 <div className="relative w-full h-48">
                   <Image
@@ -216,7 +215,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-gray-50 ">
+      <section className="">
         <div className="container py-12 place-items-center grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div>
             <h2 className="text-4xl lg:text-5xl font-[700] text-amber-700">
@@ -241,7 +240,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-b from-yellow-50/50 to-white py-20 px-4">
+      <section className=" py-20 px-4">
         <div className="max-w-3xl container text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Why Choose Milestone PM for Interior & Spatial Design
@@ -261,7 +260,7 @@ export default function Page() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="flex items-start gap-4 bg-slate-100 p-3 rounded-xl"
+              className="flex items-start gap-4 bg-amber-100/60 p-3 rounded-xl"
             >
               <span>
                 <BadgeCheck className="text-white fill-green-500 w-6 h-6 mt-1 shrink-0" />
@@ -271,11 +270,14 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <EngineeringCTA
-        title="Let’s Design Your Vision Together"
-        desc="Whether you are developing a new project or reimagining an existing space, Milestone Project Management will help you create an environment that inspires, performs, and lasts. Reach out to our team today to start your next Interior & Spatial Design project."
-        btn="Contact Us Today"
-      />
+      <section className="container">
+        {" "}
+        <EngineeringCTA
+          title="Let’s Design Your Vision Together"
+          desc="Whether you are developing a new project or reimagining an existing space, Milestone Project Management will help you create an environment that inspires, performs, and lasts. Reach out to our team today to start your next Interior & Spatial Design project."
+          btn="Contact Us Today"
+        />
+      </section>
     </main>
   );
 }

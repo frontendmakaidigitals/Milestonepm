@@ -164,7 +164,7 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="bg-dimondra-tealDark text-slate-50 text-sm text-center py-3 relative z-10">
         &copy; {new Date().getFullYear()} All Rights Reserved – Powered by{" "}
-        <span className="text-yellow-500">Milestone Project Management</span>
+        <span className="text-yellow-500">Insight Vision Marketing</span>
       </div>
     </footer>
   );
