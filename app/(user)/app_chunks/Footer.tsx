@@ -107,7 +107,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/intelligent-digital-solutions"
+                    href="/digital-solutions/intelligent-digital-solutions"
                     className="hover:underline"
                   >
                     Digital Solutions
