@@ -58,7 +58,7 @@ export const siteConfig: SiteConfig = {
               href: "/urban-planning-and-design/city-planning",
             },
             {
-              label: "community-design",
+              label: "Community Design",
               href: "/urban-planning-and-design/community-design",
             },
             {
