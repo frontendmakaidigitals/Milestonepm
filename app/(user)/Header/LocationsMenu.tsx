@@ -6,10 +6,26 @@ import Link from "next/link";
 
 const LocationMenu = () => {
   const locationsites = [
-    { label: "UAE", href: "", img: "uae.webp" },
-    { label: "KSA", href: "", img: "ksa.webp" },
-    { label: "Egypt", href: "", img: "egypt.webp" },
-    { label: "India", href: "", img: "red-fort.webp" },
+    {
+      label: "AQI Management",
+      href: "/digital-solutions/air-quality-and-emissions-management",
+      img: "/digital/aqi.jpg",
+    },
+    {
+      label: "Data Solutions",
+      href: "/digital-solutions/intelligent-digital-solutions",
+      img: "/digital/server.jpg",
+    },
+    {
+      label: "Resilience & Environmental Solutions",
+      href: "/digital-solutions/resilience-and-environmental-digital-solutions",
+      img: "/digital/environment.jpg",
+    },
+    {
+      label: "Transport & Mobility Solutions",
+      href: "/digital-solutions/transport-and-mobility-Digital-Solutions",
+      img: "/digital/transportaiton.jpg",
+    },
   ];
   return (
     <div className="w-full">
@@ -34,14 +50,14 @@ const LocationMenu = () => {
               >
                 <div className="h-[150px] lg:h-[350px] w-full rounded-lg overflow-hidden">
                   <Image
-                    src={`/location/${location.img}`}
+                    src={`${location.img}`}
                     alt=""
                     width={300}
                     height={300}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h2 className="text-lg font-[600] mt-4">{location.label}</h2>
+                <h2 className="text-sm font-[600] mt-4">{location.label}</h2>
               </Link>
             </motion.li>
           ))}

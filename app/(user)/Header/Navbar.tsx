@@ -162,7 +162,7 @@ const Navbar = () => {
                         <ServicesMenu services={site.services} />
                       ) : null}
 
-                      {site.label.toLowerCase() === "office locations" ? (
+                      {site.label.toLowerCase() === "digital solutions" ? (
                         <LocationMenu />
                       ) : null}
                     </motion.div>

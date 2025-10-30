@@ -126,7 +126,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       label: "Office Locations",
-      isDropDown: true,
+      href:'/our-presence'
     },
     {
       label: "Contact Us",

@@ -199,11 +199,14 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <EngineeringCTA
-        title="Experience the Power of Visualization"
-        desc="Whether you need a simple render or a full 3D virtual journey, Milestone PM helps you bring your design ideas to life,  visually, accurately, and creatively. Let’s make your vision real before it’s built."
-        btn="Contact Us Today"
-      />
+      <section className="container">
+        {" "}
+        <EngineeringCTA
+          title="Experience the Power of Visualization"
+          desc="Whether you need a simple render or a full 3D virtual journey, Milestone PM helps you bring your design ideas to life,  visually, accurately, and creatively. Let’s make your vision real before it’s built."
+          btn="Contact Us Today"
+        />
+      </section>
     </main>
   );
 }
