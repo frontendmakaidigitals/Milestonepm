@@ -50,31 +50,31 @@ const Footer = () => {
                 {[
                   {
                     title: "Urban Planning",
-                    href: "/Services/Project-Advisory/program-management",
+                    href: "/services/transportation-and-smart-mobility/urban-planning",
                   },
                   {
                     title: "Construction Management",
-                    href: "/Services/Urban-Planning/Architecture-Design",
+                    href: "/services/engineering-and-infrastructure-solutions/construction-management",
                   },
                   {
                     title: "Structural Engineering ",
-                    href: "/Services/Urban-Planning/urban-policy",
+                    href: "/services/engineering-and-infrastructure-solutions/structural-engineering",
                   },
                   {
                     title: "Foundation Solutions",
-                    href: "/Services/Transportation-and-Smart-Mobility/it-and-cybersecurity",
+                    href: "/services/engineering-and-infrastructure-solutions/foundation-solutions",
                   },
                   {
                     title: "Climate Adaptation",
-                    href: "/Services/Project-Advisory/risk-management-and-resilience",
+                    href: "/services/Sustainability-Environment-and-Resilience/climate-adaptation",
                   },
                   {
                     title: "Airport & Transit Hub",
                     href: "/Services/Urban-Planning/Landscape-Architecture",
                   },
                   {
-                    title: "Tunnel Infrastructure",
-                    href: "/Services/Transportation-and-Smart-Mobility/rail-network-modeling",
+                    title: "Vertical Mobility",
+                    href: "/services/transportation-and-smart-mobility/vertical-mobility-solutions",
                   },
                 ].map(({ title, href }, i) => (
                   <li key={i}>
@@ -96,17 +96,20 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="hover:underline">
+                  <Link href="/services" className="hover:underline">
                     Our Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="hover:underline">
-                    About us
+                  <Link href="/company-profile" className="hover:underline">
+                    Company Profile
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="hover:underline">
+                  <Link
+                    href="/intelligent-digital-solutions"
+                    className="hover:underline"
+                  >
                     Digital Solutions
                   </Link>
                 </li>

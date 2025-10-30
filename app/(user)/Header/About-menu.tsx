@@ -8,8 +8,9 @@ import BgLayer from "../app_chunks/BgLayer";
 
 type AboutMenuProps = {
   menu: { label: string; href: string }[];
+  menuProp?: React.Dispatch<React.SetStateAction<boolean>>;
 };
-const AboutMenu: React.FC<AboutMenuProps> = ({ menu }) => {
+const AboutMenu: React.FC<AboutMenuProps> = ({ menu, menuProp }) => {
   const images = [
     { img: "/contact-us.jpg", title: "Contact us", href: "/Contact" },
     {
@@ -26,6 +27,9 @@ const AboutMenu: React.FC<AboutMenuProps> = ({ menu }) => {
           {menu.map((item, idx) => (
             <li key={idx} className="w-full">
               <Link
+                onClick={() => {
+                  if (menuProp) menuProp(false);
+                }}
                 href={item.href}
                 className="block text-[1rem] w-full rounded-lg py-[.4rem] font-[400] transition-all duration-300 ease-in-out hover:bg-yellow-100 hover:px-6"
               >
@@ -44,6 +48,9 @@ const AboutMenu: React.FC<AboutMenuProps> = ({ menu }) => {
               idx == images.length - 1 ? "lg:col-span-2" : ""
             }`}
             key={idx}
+            onClick={() => {
+              if (menuProp) menuProp(false);
+            }}
           >
             <motion.div
               initial={{ y: -200, opacity: 0 }}

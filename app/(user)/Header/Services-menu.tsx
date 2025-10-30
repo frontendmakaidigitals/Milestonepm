@@ -8,8 +8,9 @@ import BgLayer from "../app_chunks/BgLayer";
 
 type ServicesProps = {
   services: ServiceCategory[];
+  menuProp?: React.Dispatch<React.SetStateAction<boolean>>;
 };
-const ServicesMenu: React.FC<ServicesProps> = ({ services }) => {
+const ServicesMenu: React.FC<ServicesProps> = ({ services, menuProp }) => {
   const images = [
     { img: "/view-all.jpg", href: "/services", label: "View all services" },
   ];
@@ -26,6 +27,9 @@ const ServicesMenu: React.FC<ServicesProps> = ({ services }) => {
                     <Link
                       href={`/services${child.href}`}
                       key={idx}
+                      onClick={() => {
+                        if (menuProp) menuProp(false); // ✅ Only run if true
+                      }}
                       className="block text-[1rem] w-full rounded-lg py-[.4rem] font-[400] transition-all duration-300 ease-in-out hover:bg-yellow-100 hover:px-6"
                     >
                       {child.label}
@@ -37,12 +41,15 @@ const ServicesMenu: React.FC<ServicesProps> = ({ services }) => {
           ))}
         </ul>
       </div>
-      <div className="grid flex-1 max-w-xs grid-cols-1 gap-5">
+      <div className="grid flex-1 lg:max-w-xs grid-cols-1 gap-5">
         {images.map((item, idx) => (
           <Link
             href={item.href}
             className=" max-h-[150px] lg:max-h-[300px] lg:min-h-[300px]"
             key={idx}
+            onClick={() => {
+              if (menuProp) menuProp(false); // ✅ Only run if true
+            }}
           >
             <motion.div
               initial={{ y: -200, opacity: 0 }}

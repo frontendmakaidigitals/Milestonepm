@@ -92,49 +92,49 @@ const services = [
   {
     title: "Pedestrian Mobility",
     link: "/transportation-and-smart-mobility/pedestrian-mobility",
-    img: "pedestrian-mobility.webp",
+    img: "pedestrian-modelling-in-action.webp",
   },
   {
     title: "Rail & Transit Advisory",
     link: "/transportation-and-smart-mobility/rail-and-transit-advisory",
-    img: "rail-and-transit-advisory.webp",
+    img: "rail-simulations.webp",
   },
   {
     title: "Urban Planning",
     link: "/transportation-and-smart-mobility/urban-planning",
-    img: "urban-planning.webp",
+    img: "urbanism-+-planning.webp",
   },
   {
     title: "Vertical Mobility Solutions",
     link: "/transportation-and-smart-mobility/vertical-mobility-solutions",
-    img: "vertical-mobility-solutions.webp",
+    img: "vertical-transportation-services-(north-america)-2.webp",
   },
 
   // Urban Planning & Design
   {
     title: "City Planning",
     link: "/urban-planning-and-design/city-planning",
-    img: "city-planning.webp",
+    img: "program-management.webp",
   },
   {
     title: "Community Design",
     link: "/urban-planning-and-design/community-design",
-    img: "community-design.webp",
+    img: "Planning.webp",
   },
   {
     title: "Interior & Spatial Design",
     link: "/urban-planning-and-design/interior-and-spatial-design",
-    img: "interior-and-spatial-design.webp",
+    img: "interior-architecture.webp",
   },
   {
     title: "Urban Planning",
     link: "/urban-planning-and-design/urban-planning",
-    img: "urban-planning-design.webp",
+    img: "urban-design.webp",
   },
   {
     title: "Visualization & 3D Modeling",
     link: "/urban-planning-and-design/visualization-and-3d-modeling",
-    img: "visualization-and-3d-modeling.webp",
+    img: "visualization-and-virtual-reality.webp",
   },
 ];
 const Page = () => {
@@ -162,27 +162,24 @@ const Page = () => {
           setTimeout(() => {
             setVisibleChunks((prev) => Math.min(prev + 1, chunks.length));
             setLoading(false);
-          }, 1200); // show loading for 500ms
+          }, 1000);
         }
       },
       { threshold: 1.0 }
     );
 
     if (bottomRef.current) observer.observe(bottomRef.current);
-
-    return () => {
-      if (bottomRef.current) observer.unobserve(bottomRef.current);
-    };
+    return () => observer.disconnect();
   }, [visibleChunks, loading]);
 
   return (
     <main>
-      <section className="bg-slate-50 py-24">
+      <section className=" py-24">
         <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Text Block */}
           <div className="lg:col-span-6 space-y-3">
-            <h1 className="text-4xl sm:text-3xl lg:text-4xl font-semibold text-yellow-950 leading-tight">
-              Services
+            <h1 className="text-4xl sm:text-3xl lg:text-4xl font-semibold text-amber-700 leading-tight">
+              Our Services
             </h1>
             <h2 className=" text-xl text-slate-700 font-normal leading-relaxed">
               Milestone Project Management partners with public and private
@@ -208,44 +205,43 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="container">
-        <ul className="grid grid-cols-1 gap-1 lg:grid-cols-4">
+      <section ref={ref} className="container pb-24">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
           {chunks
             .slice(0, visibleChunks)
             .flat()
             .map((service, idx) => (
               <motion.li
-                animate={{ scale: inView ? 1 : 0, opacity: inView ? 1 : 0 }}
-                viewport={{ once: true }}
-                ref={ref}
-                transition={{
-                  duration: 0.4,
-                  type: "spring",
-                  delay: 0.1 * idx,
-                }}
                 key={idx}
-                className="aspect-square w-full relative"
+                initial={{ opacity: 0 }}
+                animate={inView ? { opacity: 1 } : {}}
+                transition={{ duration: 0.6, delay: idx * 0.08 }}
+                className="relative group overflow-hidden rounded shadow-md border border-slate-200/40 bg-white/60 backdrop-blur-sm hover:shadow-xl transition-all duration-500"
               >
                 <Link href={`/Services${service.link}`}>
-                  <h2 className="absolute z-10 bottom-3 left-3 text-xl font-medium text-slate-50">
-                    {service.title}
-                  </h2>
-                  <BgLayer color="bg-slate-900/50" />
-                  <Image
-                    width={300}
-                    height={300}
-                    src={`/services/${service.img}`}
-                    alt={service.title}
-                    className="w-full h-full object-cover"
-                  />
+                  <div className="relative w-full h-[300px] overflow-hidden">
+                    <Image
+                      width={600}
+                      height={600}
+                      src={`/services/${service.img}`}
+                      alt={service.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500"></div>
+                    <h2 className="absolute bottom-4 left-4 text-xl font-semibold text-white drop-shadow-lg">
+                      {service.title}
+                    </h2>
+                  </div>
                 </Link>
               </motion.li>
             ))}
+
+          {/* Skeleton Loading */}
           {loading &&
-            Array.from({ length: 12 }).map((_, idx) => (
+            Array.from({ length: 8 }).map((_, idx) => (
               <Skeleton
                 key={`skeleton-${idx}`}
-                className="aspect-square w-full "
+                className="w-full h-[300px] rounded"
               />
             ))}
         </ul>

@@ -236,16 +236,19 @@ const MenuMobile = ({ menu }: { menu: SiteConfig["navItems"] }) => {
                     </AccordionTrigger>
                     <AccordionContent className="pt-4 pb-6">
                       {isAboutNavItem(item) && item.label === "About us" ? (
-                        <AboutMenu menu={item.menus} />
+                        <AboutMenu menuProp={setIsOpen} menu={item.menus} />
                       ) : null}
 
                       {isServicesNavItem(item) &&
                       item.label.toLowerCase() === "services" ? (
-                        <ServicesMenu services={item.services} />
+                        <ServicesMenu
+                          menuProp={setIsOpen}
+                          services={item.services}
+                        />
                       ) : null}
 
                       {item.label.toLowerCase() === "digital solutions" ? (
-                        <LocationMenu />
+                        <LocationMenu menuProp={setIsOpen} />
                       ) : null}
                     </AccordionContent>
                   </AccordionItem>

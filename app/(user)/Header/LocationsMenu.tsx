@@ -4,7 +4,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const LocationMenu = () => {
+type LocationProps = {
+  menuProp?: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const LocationMenu: React.FC<LocationProps> = ({ menuProp }) => {
   const locationsites = [
     {
       label: "Multi-Sector Solutions",
@@ -46,6 +49,9 @@ const LocationMenu = () => {
             >
               <Link
                 href={location.href}
+                onClick={() => {
+                  if (menuProp) menuProp(false); // ✅ Only run if true
+                }}
                 className=" text-lg w-full rounded-lg "
               >
                 <div className="h-[150px] lg:h-[350px] w-full rounded-lg overflow-hidden">
