@@ -36,32 +36,32 @@ export default function Page() {
     {
       title: "Comprehensive Masterplans",
       desc: "Complete land-use frameworks that define how space will be organized, used, and developed over time.",
-      img: "/urban-planning/community-planning/Comprehensive Masterplans.webp",
+      img: "/urban-planning/community-engagement/innovative-engagement.webp",
     },
     {
       title: "Human-Centric Design",
       desc: "Layouts that promote walkability, community engagement, and inclusive access for all residents.",
-      img: "/urban-planning/community-planning/Human-Centric Design.webp",
+      img: "/urban-planning/city-planning/Green Urbanism.webp",
     },
     {
       title: "Regulatory & Planning Compliance",
       desc: "We align all plans with local planning laws, sustainability codes, and infrastructure requirements.",
-      img: "/urban-planning/community-planning/Regulatory Compliance.webp",
+      img: "/urban-planning/planning-and-advisory/Policy.webp",
     },
     {
       title: "Green & Open Space Integration",
       desc: "Incorporating parks, shaded walkways, and public gathering areas to enhance livability and health.",
-      img: "/urban-planning/community-planning/Green Open Spaces.webp",
+      img: "/urban-planning/planning-and-advisory/community.webp",
     },
     {
       title: "Mobility & Transport Frameworks",
       desc: "Designing efficient road layouts, public transit links, and cycling networks to ensure seamless connectivity.",
-      img: "/urban-planning/community-planning/Mobility Transport.webp",
+      img: "/urban-planning/community-planning/hero.webp",
     },
     {
       title: "Social & Economic Growth Strategies",
       desc: "Encouraging balanced growth that supports businesses, housing, and quality of life across all groups.",
-      img: "/urban-planning/community-planning/Social Economic Growth.webp",
+      img: "/urban-planning/visualization/about1.webp",
     },
   ];
 
@@ -90,7 +90,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <div className="container  my-10">
         <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           Community Design
@@ -98,7 +98,9 @@ export default function Page() {
       </div>
       <section className=" w-full h-[500px] text-center ">
         <Image
-          src={"/urban-planning/community-planning/hero.webp"}
+          src={
+            "/Transportation-mobility/pedestrian-movement/Pedestrian Volume.webp"
+          }
           className="w-full h-full object-cover object-bottom"
           alt={""}
           width={1100}
@@ -117,7 +119,7 @@ export default function Page() {
           meaningful ways.
         </p>{" "}
       </section>
-      <section className="bg-gray-100 py-20 px-4">
+      <section className=" py-20 px-4">
         <div className="container text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
             Our <span className="text-yellow-500">Design Framework</span>
@@ -213,7 +215,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-white py-20">
+      <section className=" py-20">
         <div className="max-w-7xl mx-auto px-6 space-y-20">
           {/* Sustainable Communities */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -223,7 +225,7 @@ export default function Page() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl font-bold mb-6 text-[#B59410]">
+              <h2 className="text-4xl font-bold mb-6 text-amber-600">
                 Building Resilient & Green Communities
               </h2>
               <p className="mb-6 text-gray-700">
@@ -292,7 +294,7 @@ export default function Page() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl font-bold mb-6 text-yellow-900">
+              <h2 className="text-4xl font-bold mb-6 text-amber-600">
                 Our Experience
               </h2>
               <p className="mb-6 text-gray-700">
@@ -313,14 +315,14 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-amber-50 py-20 px-4 md:px-10">
-        <div className="max-w-5xl mx-auto text-center">
+      <section className=" py-20 ">
+        <div className="max-w-5xl container mx-auto text-center">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl lg:text-5xl font-bold text-gray-800 mb-10"
+            className="text-4xl max-w-4xl mx-auto lg:text-5xl font-bold text-gray-800 mb-10"
           >
             Why Choose{" "}
             <span className="text-yellow-500">
@@ -346,11 +348,14 @@ export default function Page() {
         </div>
       </section>
 
-      <EngineeringCTA
-        title="Let’s Design Better Communities Together"
-        desc="From concept to completion, Milestone Project Management helps you create well-planned, inclusive, and sustainable communities that enhance everyday life. Reach out to our team to start building your next great community vision today."
-        btn="Contact Us Today"
-      />
+      <section className="container">
+        {" "}
+        <EngineeringCTA
+          title="Let’s Design Better Communities Together"
+          desc="From concept to completion, Milestone Project Management helps you create well-planned, inclusive, and sustainable communities that enhance everyday life. Reach out to our team to start building your next great community vision today."
+          btn="Contact Us Today"
+        />
+      </section>
     </main>
   );
 }

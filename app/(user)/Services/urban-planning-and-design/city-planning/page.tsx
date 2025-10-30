@@ -56,7 +56,8 @@ export default function Page() {
     {
       title: "Community-Centered Planning",
       desc: "Our planning process focuses on people — fostering inclusive, culturally aware, and community-driven urban environments.",
-      image: "/urban-planning/city-planning/Community Planning.webp",
+      image:
+        "/Transportation-mobility/smart-infrastructure/global-connectivity.webp",
       icon: Users,
       points: [
         "Stakeholder engagement and consultation sessions",
@@ -68,7 +69,7 @@ export default function Page() {
     {
       title: "Implementation and Delivery Strategy",
       desc: "We go beyond planning — supporting clients through execution, monitoring, and phased delivery to ensure that the city vision is realized sustainably.",
-      image: "/urban-planning/city-planning/Implementation Strategy.webp",
+      image: "/Transportation-mobility/urban-mobility/freight-planning.webp",
       icon: ClipboardCheck,
       points: [
         "Phased infrastructure delivery planning",
@@ -80,7 +81,8 @@ export default function Page() {
     {
       title: "Complementary Services",
       desc: "Supporting urban growth through environmental, economic, and design-focused complementary solutions.",
-      image: "/urban-planning/city-planning/Complementary Services.webp",
+      image:
+        "/Transportation-mobility/smart-infrastructure/smart-buildings.webp",
       icon: Layers,
       points: [
         "Environmental and social impact assessments",
@@ -135,7 +137,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <div className="container  my-10">
         <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#B59410]">
           City Master Planning
@@ -143,7 +145,7 @@ export default function Page() {
       </div>
       <section className=" w-full h-[500px] text-center ">
         <Image
-          src={"/urban-planning/city-planning/hero.webp"}
+          src={"/Transportation-mobility/city-analytics/smart-city.jpg"}
           className="w-full h-full object-cover object-bottom"
           alt={"City planning Hero"}
           width={1200}
@@ -165,7 +167,7 @@ export default function Page() {
           sustainability goals.
         </p>
       </section>
-      <section className="bg-gray-50 py-20 px-4 md:px-8">
+      <section className=" py-20 px-4 md:px-8">
         <div className="container mb-16 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Our <span className="text-green-500">City Planning</span> Vision
@@ -181,7 +183,7 @@ export default function Page() {
           {planningData.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div key={index} className="bg-white rounded-lg  overflow-hidden">
+              <div key={index} className=" rounded-lg bg-amber-50/90 overflow-hidden">
                 {/* Top image */}
                 <div className="relative h-[300px] bg-slate-100 w-full">
                   <Image
@@ -218,10 +220,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-gray-50 py-20 px-4 md:px-8">
+      <section className=" py-20 px-4 md:px-8">
         <div className="container text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            <span className="text-yellow-500">Supporting</span> Services
+            <span className="text-green-500">Supporting</span> Services
           </h2>
         </div>
 
@@ -229,7 +231,7 @@ export default function Page() {
           {services.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+              className=" rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
             >
               <div className="relative bg-slate-100 w-full h-56">
                 <Image
@@ -250,7 +252,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-gray-50 py-20 px-6 md:px-12">
+      <section className=" py-20 px-6 md:px-12">
         <div className="container text-center mb-16">
           <h2 className="text-4xl lg:text-5xl  font-bold text-gray-900 mb-4">
             Why Choose <span className="text-yellow-500">Milestone PM?</span>
@@ -268,7 +270,7 @@ export default function Page() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-left flex flex-col gap-4"
+                className="bg-amber-50 rounded-xl shadow-md hover:shadow-lg transition p-6 text-left flex flex-col gap-4"
               >
                 <div className="bg-yellow-100 p-3 w-fit rounded-md">
                   <Icon className="w-6 h-6 text-yellow-600" />
@@ -284,11 +286,14 @@ export default function Page() {
           })}
         </div>
       </section>
-      <EngineeringCTA
-        title="Building the Cities of Tomorrow"
-        desc="At Milestone Project Management, we are dedicated to shaping urban environments that inspire progress and improve lives. Reach out to us today to explore how we can help you plan and deliver your next city, district, or community development, designed for the future, built for people."
-        btn="Contact Us Today"
-      />
+      <section className="container">
+        {" "}
+        <EngineeringCTA
+          title="Building the Cities of Tomorrow"
+          desc="At Milestone Project Management, we are dedicated to shaping urban environments that inspire progress and improve lives. Reach out to us today to explore how we can help you plan and deliver your next city, district, or community development, designed for the future, built for people."
+          btn="Contact Us Today"
+        />
+      </section>
     </main>
   );
 }
