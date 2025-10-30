@@ -16,9 +16,7 @@ export default function Home() {
       <Services />
       <Marquee />
       <GlobalSection />
-
       <Process />
-     
       <Industry />
       <HomeForm />
     </main>

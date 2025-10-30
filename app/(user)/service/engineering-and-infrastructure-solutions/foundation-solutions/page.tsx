@@ -12,7 +12,7 @@ import {
   Globe2,
 } from "lucide-react";
 
-export default function ConstructionManagementPage() {
+export default function Page() {
   const offerings = [
     {
       title: "Deep Foundation Systems",

@@ -12,7 +12,7 @@ import {
 
 import Image from "next/image";
 
-export default function ConstructionManagementPage() {
+export default function Page() {
   const expertise = [
     {
       title: "Structural Design & Analysis",

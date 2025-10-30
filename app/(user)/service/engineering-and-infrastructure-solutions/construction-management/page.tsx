@@ -147,7 +147,7 @@ const lifecyclePhases = [
   },
 ];
 
-export default function ConstructionManagementPage() {
+export default function Page() {
   const [api, setApi] = useState<CarouselApi>();
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);

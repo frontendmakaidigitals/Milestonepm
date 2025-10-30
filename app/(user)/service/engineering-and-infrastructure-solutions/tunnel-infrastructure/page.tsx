@@ -11,7 +11,7 @@ import {
   MountainSnow,
   BadgeCheck,
 } from "lucide-react";
-export default function ConstructionManagementPage() {
+export default function Page() {
   const reasons = [
     {
       title: "Full Lifecycle Support",
