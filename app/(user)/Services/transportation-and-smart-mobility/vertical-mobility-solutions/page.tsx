@@ -88,7 +88,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
@@ -113,14 +113,14 @@ export default function Page() {
           </div>
           <div className="w-full h-[450px] bg-slate-100 rounded-lg">
             <img
-              src={"/Transportation-mobility/vertical-transportation/hero.webp"}
+              src={"/Transportation-mobility/vertical-transportation/elevators.jpg"}
               className="w-full h-full object-cover"
               alt={""}
             />
           </div>
         </div>
       </section>
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-amber-100/30">
         <div className="max-w-5xl mx-auto px-6 lg:px-12 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -148,7 +148,7 @@ export default function Page() {
           </motion.p>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 ">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -167,7 +167,7 @@ export default function Page() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: idx * 0.2 }}
-                className="bg-white shadow-lg rounded-2xl p-8 border border-gray-100"
+                className=" shadow-lg rounded-2xl p-8 bg-amber-100/40 border border-amber-100"
               >
                 <div className="flex items-center gap-3 mb-4">
                   {service.icon}
@@ -186,7 +186,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-white">
+      <section className="py-20 ">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -210,7 +210,7 @@ export default function Page() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.2 }}
-                className="bg-gray-50 rounded-2xl p-8 shadow-md hover:shadow-xl transition"
+                className="bg-amber-50 rounded-2xl p-8 shadow-md hover:shadow-xl transition"
               >
                 <div className="flex items-center gap-3 mb-4">
                   {reason.icon}

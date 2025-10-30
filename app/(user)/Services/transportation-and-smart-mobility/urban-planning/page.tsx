@@ -1,7 +1,7 @@
 "use client";
 import EngineeringCTA from "@/app/(user)/app_chunks/CTA";
 import { Lightbulb, Layers, Globe2, CheckCircle2 } from "lucide-react";
-
+import Image from "next/image";
 export default function Page() {
   const items = [
     {
@@ -12,7 +12,7 @@ export default function Page() {
         "Evaluate micro-mobility adoption, walking, and cycling trends.",
         "Optimize freight and delivery routes to reduce congestion.",
       ],
-      image: "/Transportation-mobility/urban-mobility/mobility-analysis.webp",
+      image: "/Transportation-mobility/urban-mobility/shared-mobility.webp",
     },
     {
       title: "Technology-Enabled Infrastructure",
@@ -23,7 +23,7 @@ export default function Page() {
         "Develop infrastructure for autonomous and connected transport.",
       ],
       image:
-        "/Transportation-mobility/urban-mobility/technology-infrastructure.webp",
+        "/Transportation-mobility/urban-mobility/tech-integeration.webp",
     },
     {
       title: "Shared & Sustainable Mobility Solutions",
@@ -33,7 +33,7 @@ export default function Page() {
         "Develop car-sharing systems to reduce single-occupancy vehicles.",
         "Create safe and connected micro-mobility hubs in high-demand areas.",
       ],
-      image: "/Transportation-mobility/urban-mobility/shared-sustainable.webp",
+      image: "/Transportation-mobility/urban-mobility/travel-pattern.webp",
     },
     {
       title: "Urban Freight & Logistics Planning",
@@ -43,7 +43,7 @@ export default function Page() {
         "Develop optimized delivery schedules to improve efficiency.",
         "Support adoption of low-emission and electric freight vehicles.",
       ],
-      image: "/Transportation-mobility/urban-mobility/freight-logistics.webp",
+      image: "/Transportation-mobility/urban-mobility/freight-planning.webp",
     },
     {
       title: "Green & Climate-Conscious Planning",
@@ -54,7 +54,7 @@ export default function Page() {
         "Create safe, connected cycling networks.",
         "Reduce dependency on private vehicles through multimodal planning.",
       ],
-      image: "/Transportation-mobility/urban-mobility/green-planning.webp",
+      image: "/Transportation-mobility/city-analytics/Emissions Planning.webp",
     },
     {
       title: "Scenario-Based Planning & Forecasting",
@@ -64,7 +64,7 @@ export default function Page() {
         "Evaluate infrastructure resilience under various growth scenarios.",
         "Compare investment options before committing resources.",
       ],
-      image: "/Transportation-mobility/urban-mobility/scenario-planning.webp",
+      image: "/Transportation-mobility/pedestrian-flow-analysis/hero.webp",
     },
   ];
 
@@ -92,7 +92,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
@@ -111,14 +111,14 @@ export default function Page() {
           </div>
           <div className="w-full h-[450px] bg-slate-100 rounded-lg">
             <img
-              src={"/Transportation-mobility/urban-mobility/hero.webp"}
+              src={"/Transportation-mobility/urban-mobility/Sustainable-planning.webp"}
               className="w-full h-full object-cover"
               alt={""}
             />
           </div>
         </div>
       </section>
-      <section className="py-16 px-6 lg:px-20 bg-gray-50">
+      <section className="py-16 px-6 lg:px-20 ">
         <h2 className="text-4xl lg:text-5xl font-bold text-center mb-12">
           Our <span className="text-yellow-600">Scope of Work</span>
         </h2>
@@ -143,7 +143,9 @@ export default function Page() {
 
               {/* Image */}
               <div className="lg:w-1/2">
-                <img
+                <Image
+                width={400}
+                height={400}
                   src={item.image}
                   alt={item.title}
                   className="rounded-2xl shadow-lg w-full h-80 object-cover"
@@ -153,7 +155,7 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <section className="py-16 px-6 lg:px-20 bg-white">
+      <section className="py-16 px-6 lg:px-20 ">
         <h2 className="text-4xl font-bold text-center mb-12">
           Why Choose <span className="text-yellow-500">Milestone PM</span> for{" "}
           <span className="text-blue-500">Urban Planning?</span>
@@ -163,7 +165,7 @@ export default function Page() {
           {reasons.map((item, i) => (
             <div
               key={i}
-              className=" gap-4 p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition"
+              className=" gap-4 p-6  rounded-2xl shadow-sm hover:shadow-md transition"
             >
               <div className="flex-shrink-0">{item.icon}</div>
               <div className="mt-4">
