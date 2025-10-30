@@ -36,11 +36,17 @@ const Industry = () => {
       setCanScrollNext(api.canScrollNext());
     };
 
-    update();
+    // Run once when initialized (after a short delay to ensure measurement)
+    const initTimeout = setTimeout(update, 100);
+
+    // Listen for carousel changes
     api.on("select", update);
+    api.on("reInit", update); // when carousel resets (e.g., window resize)
 
     return () => {
-      api.off?.("select", update);
+      clearTimeout(initTimeout);
+      api.off("select", update);
+      api.off("reInit", update);
     };
   }, [api]);
 
@@ -76,26 +82,28 @@ const Industry = () => {
           setApi={setApi}
           className="w-full mt-12"
         >
-          <CarouselContent className="lg:px-5">
+          <CarouselContent className="-ml-4 gap-5">
             {blogs.map((item, idx) => {
               return (
                 <CarouselItem
                   key={idx}
-                  className={`relative w-full basis-1/1  lg:basis-1/3 h-[400px] ${
+                  className={`relative w-full basis-1/1  lg:basis-1/3  ${
                     idx < 3 ? "mb-[120px]" : ""
                   } rounded-xl`}
                 >
-                  <Image
-                    width={300}
-                    height={400}
-                    src={`/api/uploads/${item.image}`}
-                    alt={item.title}
-                    className="absolute inset-0 w-full h-full object-cover "
-                  />
-                  <BgLayer />
+                  <div className="h-[400px]">
+                    <Image
+                      width={300}
+                      height={400}
+                      src={`/api/uploads/${item.image}`}
+                      alt={item.title}
+                      className="absolute inset-0 w-full h-full object-cover "
+                    />
+                    <BgLayer />
+                  </div>
                   <div className="absolute bottom-0 translate-y-1/2 bg-yellow-50 shadow-lg rounded-lg py-8 px-5 w-[90%] left-1/2 transform -translate-x-1/2">
                     <div className="mb-4 flex items-center gap-2 text-yellow-600">
-                      <h2 className="text-2xl text-slate-900 font-semibold w-full text-center">
+                      <h2 className="text-xl text-slate-900 font-semibold w-full text-center">
                         {item.title}
                       </h2>
                     </div>
