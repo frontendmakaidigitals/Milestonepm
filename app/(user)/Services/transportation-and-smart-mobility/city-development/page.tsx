@@ -38,27 +38,27 @@ export default function Page() {
     {
       title: "Master Planning & Urban Design",
       desc: "We develop integrated master plans that balance land use, mobility, and community growth. Our designs foster mixed-use, transit-oriented, and sustainable neighborhoods that enhance quality of life and long-term urban resilience.",
-      img: "/Urban-Planning/master-planning.webp",
+      img: "/Transportation-mobility/city-analytics/urban-design.jpg",
     },
     {
       title: "Sustainability & Resilience",
       desc: "We embed sustainability and climate resilience into every phase of planning, addressing carbon reduction, renewable integration, and adaptive urban strategies that safeguard communities from environmental risks.",
-      img: "/Urban-Planning/sustainability.webp",
+      img: "/Transportation-mobility/city-analytics/sustainable-infra.webp",
     },
     {
       title: "Urban Analytics & Smart City Tools",
       desc: "Using advanced data analytics, GIS mapping, and simulation tools, we enable smarter decision-making for cities—optimizing mobility, energy use, and infrastructure performance through evidence-based insights.",
-      img: "/Urban-Planning/smart-city-tools.webp",
+      img: "/Transportation-mobility/city-analytics/smartCity-tool.avif",
     },
     {
       title: "Community Engagement & Social Planning",
       desc: "Inclusive engagement ensures people are at the heart of planning. We facilitate consultations, social impact studies, and cultural assessments to align development with community aspirations and values.",
-      img: "/Urban-Planning/community-engagement.webp",
+      img: "/Transportation-mobility/city-analytics/smart-city.webp",
     },
     {
       title: "Implementation & Phased Development",
       desc: "From feasibility to delivery, we support clients with clear phasing, zoning, and regulatory strategies, ensuring projects transition from vision to execution efficiently and sustainably.",
-      img: "/Urban-Planning/implementation.webp",
+      img: "/Transportation-mobility/city-analytics/hero.webp",
     },
   ];
 
@@ -71,12 +71,12 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
             <h1 className="text-4xl lg:text-5xl font-[600]">
-              City Development
+              <span className="text-green-500">City</span> Development
             </h1>
             <p>
               With cities growing rapidly and facing challenges such as climate
@@ -94,21 +94,21 @@ export default function Page() {
               standards.
             </p>
           </div>
-          <div className="w-full h-[400px] bg-slate-100 rounded-lg">
+          <div className="w-full h-[300px] lg:h-[400px] bg-slate-100 rounded-lg">
             <img
-              src={"/Transportation-mobility/city-analytics/hero.webp"}
+              src={"/Transportation-mobility/city-analytics/smart-city.jpg"}
               className="w-full h-full object-cover"
               alt={""}
             />
           </div>
         </div>
       </section>
-      <section className="w-full py-16">
+      <section className="w-full py-16 bg-green-400/5">
         <div className="container grid grid-cols-1 lg:grid-cols-2 place-items-center gap-12">
           {/* Image Left */}
-          <div className="w-full h-[400px] bg-slate-100 rounded-lg">
+          <div className="w-full h-[300px] lg:h-[400px] bg-slate-50 rounded-lg">
             <img
-              src={"/Transportation-mobility/city-analytics/visualizing.webp"}
+              src={"/Transportation-mobility/city-analytics/saudi-tech.jpg"}
               className="w-full h-full object-cover"
               alt={""}
             />
@@ -143,7 +143,8 @@ export default function Page() {
           {/* Heading */}
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
-              Our City Development Approach
+              Our <span className="text-green-500">City Development</span>{" "}
+              Approach
             </h2>
           </div>
 
@@ -154,7 +155,7 @@ export default function Page() {
                 key={index}
                 className=" rounded-2xl shadow-md overflow-hidden border border-border"
               >
-                <div className="bg-slate-100 w-full h-[250px]">
+                <div className="bg-slate-50 w-full h-[250px]">
                   <img
                     src={area.img}
                     alt={area.title}
@@ -235,11 +236,14 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <EngineeringCTA
-        title="Shaping the Cities of Tomorrow"
-        desc="Milestone PM helps you design, plan, and deliver urban environments that are smart, sustainable, and adaptable. Together, we can create cities that enhance quality of life, support economic growth, and stand resilient for future generations."
-        btn="Contact Us Today"
-      />
+      <section className="container">
+        {" "}
+        <EngineeringCTA
+          title="Shaping the Cities of Tomorrow"
+          desc="Milestone PM helps you design, plan, and deliver urban environments that are smart, sustainable, and adaptable. Together, we can create cities that enhance quality of life, support economic growth, and stand resilient for future generations."
+          btn="Contact Us Today"
+        />
+      </section>
     </main>
   );
 }

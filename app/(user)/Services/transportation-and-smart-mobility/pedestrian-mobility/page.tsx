@@ -1,7 +1,7 @@
 "use client";
 import EngineeringCTA from "@/app/(user)/app_chunks/CTA";
 import { Building, Users, Footprints } from "lucide-react";
-import { motion } from "motion/react";
+
 export default function Page() {
   const steps = [
     {
@@ -66,7 +66,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white text-gray-900">
+    <main className=" text-gray-900">
       <section className="py-10">
         <div className="container grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
           <div className="space-y-3">
@@ -96,11 +96,11 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-20 container">
+        <div className=" ">
           {/* Heading */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
               How It Works: Dynamic Pedestrian Modeling
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
@@ -111,7 +111,7 @@ export default function Page() {
           </div>
 
           {/* Grid */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid max-w-6xl mx-auto md:grid-cols-3 gap-8">
             {steps.map((step, i) => (
               <div
                 key={i}
@@ -135,11 +135,11 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 ">
         <div className="max-w-6xl mx-auto px-6">
           {/* Heading */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">
+            <h2 className="text-4xl lg;text-5xl font-bold text-gray-900">
               Key Variables We Study
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
@@ -174,7 +174,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-white">
+      <section className="py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           {/* Left: Image */}
           <div className="relative">
@@ -187,7 +187,7 @@ export default function Page() {
 
           {/* Right: Content */}
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               Measurable Outcomes
             </h2>
             <p className="text-lg text-gray-600 mb-6">
@@ -212,11 +212,11 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 ">
         <div className="max-w-6xl mx-auto px-6">
           {/* Heading */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
               Applications & Use Cases
             </h2>
             <p className="mt-4 text-lg text-gray-600">
@@ -242,7 +242,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gradient-to-r from-yellow-50 via-white to-yellow-100">
+      <section className="py-20 bg-amber-100/50">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
             Why Choose{" "}
@@ -259,11 +259,13 @@ export default function Page() {
           </p>
         </div>
       </section>
-      <EngineeringCTA
-        title="Why Choose Milestone PM?"
-        desc="With expertise in urban planning, infrastructure design, and dynamic simulation, Milestone PM delivers practical, high-impact pedestrian mobility solutions. Our insights help you create inclusive, safe, and efficient spaces where people move with confidence."
-        btn="Contact Us Today"
-      />
+      <section className="container">
+        <EngineeringCTA
+          title="Why Choose Milestone PM?"
+          desc="With expertise in urban planning, infrastructure design, and dynamic simulation, Milestone PM delivers practical, high-impact pedestrian mobility solutions. Our insights help you create inclusive, safe, and efficient spaces where people move with confidence."
+          btn="Contact Us Today"
+        />
+      </section>
     </main>
   );
 }
