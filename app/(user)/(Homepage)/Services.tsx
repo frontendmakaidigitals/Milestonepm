@@ -11,63 +11,43 @@ const Services = () => {
   const services = [
     {
       title: "Construction Management",
-      link: "/Services/Engineering-Infrastructure/Construction-Management",
-      img: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg",
+      link: "/engineering-and-infrastructure-solutions/construction-management",
+      img: "construction-management.webp",
     },
     {
       title: "Structural Engineering",
-      link: "/Services/Engineering-Infrastructure/Engineering-Services",
-      img: "https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg",
+      link: "/engineering-and-infrastructure-solutions/structural-engineering",
+      img: "strategic-consulting.webp",
     },
     {
       title: "Electrical and Mechanical Advisory",
-      link: "/Services/Engineering-Infrastructure/Electrical-and-Mechanical-Advisory",
-      img: "https://images.pexels.com/photos/30589066/pexels-photo-30589066.jpeg",
+      link: "/engineering-and-infrastructure-solutions/electrical-and-mechanical-advisory",
+      img: "electrical-contracting.webp",
     },
     {
       title: "Foundation Solutions",
-      link: "/Services/Engineering-Infrastructure/Foundation-Solutions",
-      img: "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg",
+      link: "/engineering-and-infrastructure-solutions/foundation-solutions",
+      img: "foundations-contracting.webp",
     },
     {
       title: "Tunnel Infrastructure",
-      link: "/Services/Engineering-Infrastructure/Tunnel-Infrastructure",
-      img: "https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg",
-    },
-    {
-      title: "City Master Planning",
-      link: "/Services/Urban-Planning/planning-and-advisory",
-      img: "https://images.pexels.com/photos/4098228/pexels-photo-4098228.jpeg",
+      link: "/engineering-and-infrastructure-solutions/tunnel-infrastructure",
+      img: "tunnels-trenchless-technology-and-underground-infrastructure.webp",
     },
     {
       title: "Urban Planning",
-      link: "/Services/Urban-Planning/planning-and-advisory",
-      img: "https://images.pexels.com/photos/4098228/pexels-photo-4098228.jpeg",
-    },
-    {
-      title: "Community Planning",
-      link: "/Services/Project-Advisory/process-development-and-implementation",
-      img: "https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg",
+      link: "/urban-planning-and-design/urban-planning",
+      img: "urban-design.webp",
     },
     {
       title: "Interior & Spatial Design",
-      link: "/Services/Urban-Planning/interior-spatial-design",
-      img: "https://images.pexels.com/photos/3280130/pexels-photo-3280130.jpeg",
+      link: "/urban-planning-and-design/interior-and-spatial-design",
+      img: "interior-architecture.webp",
     },
     {
       title: "Visualization & 3D Modeling",
-      link: "/Services/Urban-Planning/visualization-3d-modeling",
-      img: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg",
-    },
-    {
-      title: "Program & Portfolio Management",
-      link: "/Services/Project-Advisory/process-development-and-implementation",
-      img: "https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg",
-    },
-    {
-      title: "Project Scheduling",
-      link: "/Services/Project-Advisory/cost-management",
-      img: "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg",
+      link: "/urban-planning-and-design/visualization-and-3d-modeling",
+      img: "visualization-and-virtual-reality.webp",
     },
   ];
   const serviceRef = useRef(null);
@@ -95,51 +75,46 @@ const Services = () => {
           return (
             <motion.li
               key={idx}
-              animate={{
-                y: inView ? 0 : 300,
-                x: inView ? 0 : -100,
-                opacity: inView ? 1 : 0,
-              }}
-              transition={{
-                duration: 0.7,
-                ease: [0.19, 1, 0.22, 1],
-                delay: 0.05 * idx,
-              }}
-              onAnimationComplete={() => {
-                if (inView && idx === services.length - 1) {
-                  setAnimationFinished(true);
-                }
-              }}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              transition={{
+                duration: 0.6,
+                ease: [0.19, 1, 0.22, 1],
+                delay: idx * 0.05,
+              }}
               onMouseEnter={() => setHoveredIndex(idx)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className="h-[320px] p-2 flex flex-col justify-end overflow-hidden rounded-lg w-full relative cursor-pointer"
+              className="relative overflow-hidden group rounded-2xl h-[340px] bg-slate-900/10 shadow-md border border-white/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
             >
-              <Link href={service.link}>
+              <Link
+                href={`/services/${service.link}`}
+                className="block h-full w-full relative"
+              >
+                {/* Image */}
                 <MotionImage
-                  src={service.img}
-                  alt=""
+                  src={`/services/${service.img}`}
+                  alt={service.title}
                   fill
-                  className="object-cover absolute inset-0"
-                  animate={{ scale: isHovered ? 1.15 : 1 }}
-                  transition={{ duration: 0.7, ease: [0.19, 1, 0.22, 1] }}
+                  className="object-cover absolute inset-0 rounded-2xl"
+                  animate={{ scale: hoveredIndex === idx ? 1.1 : 1 }}
+                  transition={{ duration: 0.7 }}
                 />
-                <BgLayer color="bg-slate-900/30" />
 
-                <motion.div
-                  layout
-                  animate={{ opacity: animationFinished ? 1 : 0 }}
-                  transition={{ duration: 0.4, ease: [0.19, 1, 0.22, 1] }}
-                  className={`w-full  text-slate-50 rounded-md relative   !p-3  ${
-                    animationFinished
-                      ? "backdrop-filter backdrop-blur-lg bg-gradient-to-tr from-[#FFA000]/40 to-[#FB8C00]/70 z-10"
-                      : ""
-                  }`}
-                >
-                  <h3 className="font-semibold relative z-10">
-                    {service.title}
-                  </h3>
-                </motion.div>
+                {/* Diagonal overlay */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-[#B59410]/60 via-transparent to-transparent mix-blend-overlay"></div>
+
+                {/* Text */}
+                <div className="absolute bottom-0 left-0 w-full">
+                  <div className="backdrop-blur-sm bg-amber-500/20 rounded-lg p-4 border border-[#B59410]/40">
+                    <h3 className="text-xl font-semibold text-white">
+                      {service.title}
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Accent border animation */}
+                <span className="absolute inset-0 border-2 border-transparent group-hover:border-[#B59410]/50 rounded-2xl transition-all duration-500" />
               </Link>
             </motion.li>
           );
@@ -147,7 +122,7 @@ const Services = () => {
       </motion.ul>
       <div className="flex justify-center items-center">
         <Link
-          href={"/Services"}
+          href={"/services"}
           className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
         >
           View all services <ArrowUpRight />
