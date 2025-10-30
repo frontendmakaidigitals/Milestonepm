@@ -99,7 +99,7 @@ const Herosection = () => {
                     >
                       {slides[activeIndex].desc}
                     </motion.p>
-                    <Link href={"/Services"}>
+                    <Link href={"/services"}>
                       <motion.button
                         key={slides[activeIndex].img}
                         initial={{ x: 200, opacity: 0 }}
@@ -111,7 +111,7 @@ const Herosection = () => {
                         }}
                         className="bg-gradient-to-br mt-4 px-4 py-[.45rem] text-sm rounded-lg text-slate-50 flex items-center gap-2 from-[#FFC107] to-[#F57C00]"
                       >
-                        Explore Our Services <ArrowUpRight />
+                        Read more <ArrowUpRight />
                       </motion.button>
                     </Link>
                   </div>

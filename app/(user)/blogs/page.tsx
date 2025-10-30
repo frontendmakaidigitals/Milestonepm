@@ -29,7 +29,7 @@ interface BlogsResponse {
 }
 const Page = () => {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 4000, stopOnInteraction: true })
   );
 
   const [blogs, setBlogs] = useState<Blog[]>([]);
@@ -109,18 +109,18 @@ const Page = () => {
                                 )}
                               </div>
                             </div>
-                            <div className="mt-5 lg:mt-0">
+                            <div className="mt-10 flex flex-row gap-5 items-center justify-between lg:items-start w-full lg:w-auto lg:flex-col lg:mt-0">
                               <div className="flex items-center gap-4">
                                 <div className="p-2 bg-slate-200 rounded-full">
                                   <User className="size-[16px]" />
                                 </div>
                                 <p className="text-slate-50">{blog.author}</p>
                               </div>
-                              <div className="flex items-center gap-4 mt-3">
+                              <div className="flex items-center gap-4">
                                 <div className="p-2 bg-slate-200 rounded-full">
                                   <Calendar className="size-[16px]" />
                                 </div>
-                                <p className="text-slate-50 mt-2">
+                                <p className="text-slate-50">
                                   {blog.id
                                     ? new Date(blog.id).toLocaleDateString()
                                     : ""}
@@ -134,11 +134,19 @@ const Page = () => {
                   ))}
               </CarouselContent>
 
-              {/* Carousel Controls */}
-              <div className="absolute top-1/2 left-2 lg:-left-10 flex items-center justify-center">
+              <div className="lg:hidden absolute top-10 right-5 flex items-center gap-5">
+                <div className="">
+                  <CarouselPrevious className="relative left-0 translate-x-0 hover:translate-x-0 hover:bg-primary/90" />
+                </div>
+                <div className=" items-center justify-center">
+                  <CarouselNext className="relative right-0 translate-x-0 hover:translate-x-0 hover:bg-primary/90" />
+                </div>
+              </div>
+
+              <div className="absolute hidden lg:flex top-1/2 left-2 lg:-left-10  items-center justify-center">
                 <CarouselPrevious className="relative left-0 translate-x-0 hover:translate-x-0 hover:bg-primary/90" />
               </div>
-              <div className="absolute top-1/2 right-2 lg:-right-10 flex items-center justify-center">
+              <div className="absolute hidden lg:flex top-1/2 right-2 lg:-right-10 items-center justify-center">
                 <CarouselNext className="relative right-0 translate-x-0 hover:translate-x-0 hover:bg-primary/90" />
               </div>
             </Carousel>

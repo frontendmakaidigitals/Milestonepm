@@ -59,9 +59,9 @@ const Blogs = () => {
   }, []);
 
   return (
-    <section className=" py-1 lg:py-10 text-gray-900 relative">
+    <section className=" pb-12 pt-12 lg:py-10 text-gray-900 relative">
       {blogs.length !== 0 ? (
-        <div className="container ">
+        <div className=" ">
           <motion.h1 className="text-4xl text-center lg:text-5xl font-bold  mb-6">
             Latest from the <span className="text-yellow-500">Blog</span>
           </motion.h1>

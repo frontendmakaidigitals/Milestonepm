@@ -42,7 +42,7 @@ const About = () => {
             </p>
 
             <Link
-              href={"/sustainability 2/approach.webp"}
+              href={"/company-profile"}
               className="mt-6 w-fit bg-gradient-to-br flex justify-center items-center gap-3 from-[#FFC107] to-[#FB8C00] px-5 py-2.5 text-sm rounded-lg text-white hover:opacity-90 transition"
             >
               Discover Our Story <ArrowUpRight />

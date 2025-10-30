@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Logo from "./Logo";
-import { Printer } from "lucide-react";
+
 const Footer = () => {
   return (
     <footer className="bg-black overflow-hidden relative">

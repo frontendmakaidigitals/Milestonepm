@@ -22,8 +22,8 @@ import Image from "next/image";
 const Contact = () => {
   const internationalOffices = [
     {
-      country: "United Kingdom",
-      flag: "/contact-flags/uk.webp",
+      country: "UAE",
+      flag: "/contact-flags/uae.png",
       bg: "#E8EAF6", // indigo 50
       text: "#1A237E", // indigo 900
     },

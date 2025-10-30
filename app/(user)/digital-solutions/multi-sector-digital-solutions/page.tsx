@@ -68,7 +68,7 @@ export default function Page() {
     {
       title: "SmartSpace: Building Performance Analytics",
       desc: "An intelligent analytics platform that evaluates space utilization, energy consumption, and occupant behavior to improve comfort, efficiency, and asset performance.",
-      img: "/digital-engineering/Définition-performance-commerciale.jpg",
+      img: "/digital-engineering/Definition-performance-commerciale.jpg",
     },
     {
       title: "EnergySense: Real-Time Energy Tracking",

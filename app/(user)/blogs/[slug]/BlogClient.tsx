@@ -25,7 +25,7 @@ export default function BlogClient({ blog }: { blog: any }) {
   }
 
   return (
-    <main className="pt-28 relative container ">
+    <main className="pt-12 lg:pt-28 relative container ">
       <div className="flex flex-col items-center">
         <p className="p-2 text-xs bg-teal-100 text-teal-700 rounded-lg font-bold font-quicksand text-center mb-2">
           {blog?.category}
