@@ -100,7 +100,7 @@ const Herosection = () => {
                               : item.content
                           }
                           readOnly
-                          clampLines={3}
+                          clampLines={2}
                           blogPage={false}
                         />
                       ) : null}
