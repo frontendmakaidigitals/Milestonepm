@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
@@ -13,12 +12,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title:
-    "Milestone Project Management Engineering Consulting – Global Infrastructure Solutions | Riyadh, UK, Egypt, Sri Lanka",
-  description:
-    "Milestone Project Management Engineering Consulting delivers innovative global infrastructure solutions across Riyadh, UK, Egypt, and Sri Lanka. Trusted experts in engineering design, BIM management, and project execution.",
-};
 
 export default function RootLayout({
   children,
