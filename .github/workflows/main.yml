@@ -64,40 +64,47 @@ jobs:
       - name: Deploy on VPS
         uses: appleboy/ssh-action@v1.0.0
         with:
-          host: 65.20.74.159
-          username: milestonehre
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
-          script: |
-            set -e
-            cd /home/milestonehre
+              host: 65.20.74.159
+              username: milestonehre
+              key: ${{ secrets.SSH_PRIVATE_KEY }}
+              port: 22
+              script: |
+                set -e
+                cd /home/milestonehre
 
-            echo "🧹 Cleaning old deployment..."
-            rm -rf milestonepm_temp
-            mkdir milestonepm_temp
-            mv milestonepm/milestonepm-deploy.tar.gz milestonepm_temp/
-            cd milestonepm_temp
+                echo "🧹 Cleaning old deployment..."
+                rm -rf milestonepm_temp
+                mkdir milestonepm_temp
+                mv milestonepm/milestonepm-deploy.tar.gz milestonepm_temp/
+                cd milestonepm_temp
 
-            echo "📦 Extracting build..."
-            tar -xzf milestonepm-deploy.tar.gz
+                echo "📦 Extracting build..."
+                tar -xzf milestonepm-deploy.tar.gz
 
-            echo "🚚 Replacing old app with new build..."
-            rm -rf /home/milestonehre/milestonepm/*
-            cp -r ./* /home/milestonehre/milestonepm/
+                echo "🚚 Replacing old app with new build..."
+                rm -rf /home/milestonehre/milestonepm/*
+                cp -r ./* /home/milestonehre/milestonepm/
 
-            cd /home/milestonehre/milestonepm
-            echo "📦 Installing production dependencies..."
-            npm ci --omit=dev
+                cd /home/milestonehre/milestonepm
 
-            echo "⚙️ Ensuring PM2 is not blocking port 3009..."
-            PORT=3009
-            PID=$(sudo lsof -t -i:$PORT || true)
-            if [ -n "$PID" ]; then
-              echo "🛑 Killing process using port $PORT (PID: $PID)..."
-              sudo kill -9 $PID
-            fi
+                echo "📦 Installing production dependencies..."
+                export NVM_DIR="$HOME/.nvm"
+                [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+                [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+                export PATH="$HOME/.nvm/versions/node/v18.*/bin:$PATH"
 
-            echo "🚀 Restarting MilestonePM app with PM2..."
-            pm2 restart milestonepm || pm2 start npm --name "milestonepm" -- start -- --port 3009
+                npm ci --omit=dev
 
-            echo "✅ Deployment completed successfully!"
+                echo "⚙️ Killing any process on port 3009..."
+                PORT=3009
+                PID=$(sudo lsof -t -i:$PORT || true)
+                if [ -n "$PID" ]; then
+                  echo "🛑 Killing process using port $PORT (PID: $PID)..."
+                  sudo kill -9 $PID
+                fi
+
+                echo "🚀 Restarting MilestonePM with PM2..."
+                pm2 delete milestonepm || true
+                pm2 start npm --name "milestonepm" -- start -- --port 3009
+
+                echo "✅ Deployment completed successfully!"
