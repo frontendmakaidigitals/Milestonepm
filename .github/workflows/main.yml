@@ -1,0 +1,86 @@
+name: Deploy MilestonePM
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js app
+        run: |
+          rm -rf .next
+          npm run build
+
+      - name: Package build files
+        run: |
+          mkdir -p deploy
+          cp -r .next deploy/
+          cp -r public deploy/ 2>/dev/null || true
+          cp package.json package-lock.json deploy/
+          cp next.config.* deploy/ 2>/dev/null || true
+          cd deploy && tar -czf ../milestonepm-deploy.tar.gz .
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: milestonepm-build
+          path: milestonepm-deploy.tar.gz
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: milestonepm-build
+          path: .
+
+      - name: Copy build to VPS
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: 65.20.74.159
+          username: milestonehre
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "milestonepm-deploy.tar.gz"
+          target: "/home/milestonehre/milestonepm"
+
+      - name: Deploy on VPS
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: 65.20.74.159
+          username: milestonehre
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            set -e
+            cd /home/milestonehre/milestonepm
+
+            echo "📦 Extracting build..."
+            rm -rf .next
+            tar -xzf milestonepm-deploy.tar.gz
+
+            echo "📦 Installing production dependencies..."
+            npm ci --omit=dev
+
+            echo "🚀 Restarting MilestonePM app with PM2..."
+            pm2 restart milestonepm || pm2 start npm --name "milestonepm" -- start -- --port 3007
+
+            echo "✅ Deployment completed successfully!"
