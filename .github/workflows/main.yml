@@ -80,6 +80,6 @@ jobs:
             npm ci --omit=dev
 
             echo "🚀 Restarting MilestonePM app with PM2..."
-            pm2 restart milestonepm || pm2 start npm --name "milestonepm" -- start -- --port 3007
+            pm2 restart milestonepm || pm2 start npm --name "milestonepm" -- start -- --port 3009
 
             echo "✅ Deployment completed successfully!"
