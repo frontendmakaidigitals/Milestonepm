@@ -236,7 +236,7 @@ const BlogTopic = ({ blogs }: { blogs: Blog[] }) => {
                     <div className="h-[250px] lg:h-[220px] w-full rounded-lg overflow-hidden">
                       <img
                         className="w-full h-full object-cover"
-                        src={blog.image}
+                        src={`/api/uploads/${blog.image}`}
                         alt={blog.title}
                       />
                     </div>
@@ -261,7 +261,7 @@ const BlogTopic = ({ blogs }: { blogs: Blog[] }) => {
                           blog.title.toLowerCase().replace(/\s+/g, "-")
                         )}`}
                       >
-                        <button className="absolute right-4 bottom-1 translate-y-1/2 bg-dimondra-teal hover:bg-dimondra-tealDark text-dimondra-white rounded-lg p-2">
+                        <button className="absolute right-4 bottom-1 translate-y-1/2 bg-amber-600 hover:bg-amber-700 text-white rounded-lg p-2">
                           <MoveUpRight />
                         </button>
                       </Link>
