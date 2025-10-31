@@ -83,7 +83,7 @@ const Industry = () => {
           className="w-full mt-12"
         >
           <CarouselContent className="-ml-4 gap-5">
-            {blogs.map((item, idx) => {
+            {blogs.slice(3).map((item, idx) => {
               return (
                 <CarouselItem
                   key={idx}
