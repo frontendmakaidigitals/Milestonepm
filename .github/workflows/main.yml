@@ -70,14 +70,32 @@ jobs:
           port: 22
           script: |
             set -e
-            cd /home/milestonehre/milestonepm
+            cd /home/milestonehre
+
+            echo "🧹 Cleaning old deployment..."
+            rm -rf milestonepm_temp
+            mkdir milestonepm_temp
+            mv milestonepm/milestonepm-deploy.tar.gz milestonepm_temp/
+            cd milestonepm_temp
 
             echo "📦 Extracting build..."
-            rm -rf .next
             tar -xzf milestonepm-deploy.tar.gz
 
+            echo "🚚 Replacing old app with new build..."
+            rm -rf /home/milestonehre/milestonepm/*
+            cp -r ./* /home/milestonehre/milestonepm/
+
+            cd /home/milestonehre/milestonepm
             echo "📦 Installing production dependencies..."
             npm ci --omit=dev
+
+            echo "⚙️ Ensuring PM2 is not blocking port 3009..."
+            PORT=3009
+            PID=$(sudo lsof -t -i:$PORT || true)
+            if [ -n "$PID" ]; then
+              echo "🛑 Killing process using port $PORT (PID: $PID)..."
+              sudo kill -9 $PID
+            fi
 
             echo "🚀 Restarting MilestonePM app with PM2..."
             pm2 restart milestonepm || pm2 start npm --name "milestonepm" -- start -- --port 3009
