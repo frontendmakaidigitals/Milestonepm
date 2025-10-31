@@ -67,7 +67,7 @@ export async function POST(req: Request) {
 
     // ✅ Send email using Resend
     const emailResponse = await resend.emails.send({
-      from: "Milestone Contact <onboarding@resend.dev>", // Must use verified sender or Resend default
+      from: "noreply@insightvision.marketing", // Must use verified sender or Resend default
       to: "frontendmakaidigitals@gmail.com", // Replace with where you want to receive the form submission
       subject: `New Contact from ${name}`,
       html: `
