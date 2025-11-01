@@ -87,7 +87,8 @@ jobs:
                 cp -r ./* /home/milestonehre/milestonepm/
 
                 cd /home/milestonehre/milestonepm
-
+                tar -xzf milestonepm-deploy.tar.gz
+                rm -rf milestonepm-deploy.tar.gz
                 echo "📦 Installing production dependencies..."
                 export NVM_DIR="$HOME/.nvm"
                 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
