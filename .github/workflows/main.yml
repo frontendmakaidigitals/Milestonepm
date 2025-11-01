@@ -2,7 +2,7 @@ name: Deploy MilestonePM
 
 on:
   push:
-    branches: [main, master]
+    branches: [main] # Deploy only from main branch
   workflow_dispatch:
 
 jobs:
@@ -11,6 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -28,12 +29,11 @@ jobs:
       - name: Package build files
         run: |
           mkdir -p deploy
-          cp -r .next deploy/
-          cp -r public deploy/ 2>/dev/null || true
-          cp package.json package-lock.json deploy/
+          cp -r .next public package.json package-lock.json deploy/
           cp next.config.* deploy/ 2>/dev/null || true
           cp -r data deploy/ 2>/dev/null || true
           cd deploy && tar -czf ../milestonepm-deploy.tar.gz .
+          cd ..
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
@@ -44,7 +44,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Download build artifact
@@ -65,49 +65,48 @@ jobs:
       - name: Deploy on VPS
         uses: appleboy/ssh-action@v1.0.0
         with:
-              host: 65.20.74.159
-              username: milestonehre
-              key: ${{ secrets.SSH_PRIVATE_KEY }}
-              port: 22
-              script: |
-                set -e
-                cd /home/milestonehre
+          host: 65.20.74.159
+          username: milestonehre
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            set -e
+            cd /home/milestonehre
 
-                echo "🧹 Cleaning old deployment..."
-                rm -rf milestonepm_temp
-                mkdir milestonepm_temp
-                mv milestonepm/milestonepm-deploy.tar.gz milestonepm_temp/
-                cd milestonepm_temp
+            echo "🧹 Cleaning old deployment..."
+            rm -rf milestonepm_temp
+            mkdir milestonepm_temp
+            mv milestonepm/milestonepm-deploy.tar.gz milestonepm_temp/
+            cd milestonepm_temp
 
-                echo "📦 Extracting build..."
-                tar -xzf milestonepm-deploy.tar.gz
+            echo "📦 Extracting build..."
+            tar -xzf milestonepm-deploy.tar.gz
 
-                echo "🚚 Replacing old app with new build..."
-                rm -rf /home/milestonehre/milestonepm/*
-                cp -r ./* /home/milestonehre/milestonepm/
+            echo "🚚 Replacing old app with new build..."
+            rm -rf /home/milestonehre/milestonepm/*
+            cp -r ./* /home/milestonehre/milestonepm/
+            cd /home/milestonehre/milestonepm
 
-                cd /home/milestonehre/milestonepm
-                tar -xzf milestonepm-deploy.tar.gz
-                rm -rf milestonepm-deploy.tar.gz
-                echo "📦 Installing production dependencies..."
-                export NVM_DIR="$HOME/.nvm"
-                [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-                [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-                export PATH="$HOME/.nvm/versions/node/v18.*/bin:$PATH"
+            echo "📦 Installing production dependencies..."
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+            export PATH="$HOME/.nvm/versions/node/v18.*/bin:$PATH"
+            npm ci --omit=dev
 
-                npm ci --omit=dev
+            echo "⚙️ Killing any process on port 3009..."
+            PORT=3009
+            PID=$(sudo lsof -t -i:$PORT || true)
+            if [ -n "$PID" ]; then
+              echo "🛑 Killing process using port $PORT (PID: $PID)..."
+              sudo kill -9 $PID
+            fi
 
-                echo "⚙️ Killing any process on port 3009..."
-                PORT=3009
-                PID=$(sudo lsof -t -i:$PORT || true)
-                if [ -n "$PID" ]; then
-                  echo "🛑 Killing process using port $PORT (PID: $PID)..."
-                  sudo kill -9 $PID
-                fi
-                cd /home/milestonehre
-                rm -rf milestonepm_temp
-                echo "🚀 Restarting MilestonePM with PM2..."
-                pm2 delete milestonepm || true
-                pm2 start npm --name "milestonepm" --cwd /home/milestonehre/milestonepm -- start -- --port 3009
+            echo "🧽 Cleaning up temporary files..."
+            rm -rf /home/milestonehre/milestonepm_temp
 
-                echo "✅ Deployment completed successfully!"
+            echo "🚀 Restarting MilestonePM with PM2..."
+            pm2 delete milestonepm || true
+            pm2 start npm --name "milestonepm" --cwd /home/milestonehre/milestonepm -- start -- --port 3009
+
+            echo "✅ Deployment completed successfully!"
