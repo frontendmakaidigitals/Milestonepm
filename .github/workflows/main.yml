@@ -32,7 +32,6 @@ jobs:
           cp -r public deploy/ 2>/dev/null || true
           cp package.json package-lock.json deploy/
           cp next.config.* deploy/ 2>/dev/null || true
-          cp -r data deploy/ 2>/dev/null || true
           cd deploy && tar -czf ../milestonepm-deploy.tar.gz .
 
       - name: Upload build artifact
@@ -82,8 +81,13 @@ jobs:
                 echo "📦 Extracting build..."
                 tar -xzf milestonepm-deploy.tar.gz
 
-                echo "🚚 Replacing old app with new build..."
-                rm -rf /home/milestonehre/milestonepm/*
+                echo "🚚 Replacing old app with new build (keeping /data)..."
+                mkdir -p /home/milestonehre/milestonepm/data
+
+                # Remove everything except /data
+                find /home/milestonehre/milestonepm -mindepth 1 -maxdepth 1 ! -name data -exec rm -rf {} +
+
+                # Copy new files in
                 cp -r ./* /home/milestonehre/milestonepm/
 
                 cd /home/milestonehre/milestonepm
@@ -108,4 +112,11 @@ jobs:
                 pm2 delete milestonepm || true
                 pm2 start npm --name "milestonepm" -- start -- --port 3009
 
+                echo "🧽 Cleaning up temporary files..."
+                cd /home/milestonehre
+                rm -rf milestonepm_temp
+                cd /home/milestonehre/milestonepm
+                rm -rf milestonepm-deploy.tar.gz 
+
                 echo "✅ Deployment completed successfully!"
+
