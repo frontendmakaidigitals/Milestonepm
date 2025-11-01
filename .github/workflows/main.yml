@@ -108,6 +108,6 @@ jobs:
                 rm -rf milestonepm_temp
                 echo "🚀 Restarting MilestonePM with PM2..."
                 pm2 delete milestonepm || true
-                pm2 start npm --name "milestonepm" -- start -- --port 3009
+                pm2 start npm --name "milestonepm" --cwd /home/milestonehre/milestonepm -- start -- --port 3009
 
                 echo "✅ Deployment completed successfully!"
