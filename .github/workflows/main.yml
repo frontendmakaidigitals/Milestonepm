@@ -89,7 +89,6 @@ jobs:
                 cd /home/milestonehre/milestonepm
                 tar -xzf milestonepm-deploy.tar.gz
                 rm -rf milestonepm-deploy.tar.gz
-
                 echo "📦 Installing production dependencies..."
                 export NVM_DIR="$HOME/.nvm"
                 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -105,7 +104,8 @@ jobs:
                   echo "🛑 Killing process using port $PORT (PID: $PID)..."
                   sudo kill -9 $PID
                 fi
-
+                cd /home/milestonehre
+                rm -rf milestonepm_temp
                 echo "🚀 Restarting MilestonePM with PM2..."
                 pm2 delete milestonepm || true
                 pm2 start npm --name "milestonepm" -- start -- --port 3009
