@@ -113,10 +113,6 @@ jobs:
                 pm2 start npm --name "milestonepm" -- start -- --port 3009
 
                 echo "🧽 Cleaning up temporary files..."
-                cd /home/milestonehre
-                rm -rf milestonepm_temp
-                cd /home/milestonehre/milestonepm
-                rm -rf milestonepm-deploy.tar.gz 
 
                 echo "✅ Deployment completed successfully!"
 
