@@ -59,6 +59,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: milestonehre
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
           source: "milestonepm-deploy.tar.gz"
           target: "/home/milestonehre/milestonepm"
 
