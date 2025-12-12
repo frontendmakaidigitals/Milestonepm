@@ -1,113 +1,141 @@
-name: Deploy MilestonePM
+name: Deploy milestonepm
 
 on:
   push:
-    branches: [main] # Deploy only from main branch
+    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "18"
-          cache: "npm"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Next.js app
-        run: |
-          rm -rf .next
-          npm run build
-
-      - name: Package build files
-        run: |
-          mkdir -p deploy
-          cp -r .next public package.json package-lock.json deploy/
-          cp next.config.* deploy/ 2>/dev/null || true
-          cp -r data deploy/ 2>/dev/null || true
-          cd deploy && tar -czf ../milestonepm-deploy.tar.gz .
-          cd ..
-
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: milestonepm-build
-          path: milestonepm-deploy.tar.gz
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Run tests
+      run: npm test --if-present
+    
+    - name: Build application
+      run: npm run build
 
   deploy:
-    needs: build
+    needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    
     steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: milestonepm-build
-          path: .
-
-      - name: Copy build to VPS
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: milestonehre
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT }}
-          source: "milestonepm-deploy.tar.gz"
-          target: "/home/milestonehre/milestonepm"
-
-      - name: Deploy on VPS
-        uses: appleboy/ssh-action@v1.0.0
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: milestonehre
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT }}
-          script: |
-            set -e
-            cd /home/milestonehre
-
-            echo "🧹 Cleaning old deployment..."
-            rm -rf milestonepm_temp
-            mkdir milestonepm_temp
-            mv milestonepm/milestonepm-deploy.tar.gz milestonepm_temp/
-            cd milestonepm_temp
-
-            echo "📦 Extracting build..."
-            tar -xzf milestonepm-deploy.tar.gz
-
-            echo "🚚 Replacing old app with new build..."
-            rm -rf /home/milestonehre/milestonepm/*
-            cp -r ./* /home/milestonehre/milestonepm/
-            cd /home/milestonehre/milestonepm
-
-            echo "📦 Installing production dependencies..."
-            export NVM_DIR="$HOME/.nvm"
-            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-            [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-            export PATH="$HOME/.nvm/versions/node/v18.*/bin:$PATH"
-            npm ci --omit=dev
-
-            echo "⚙️ Killing any process on port 3009..."
-            PORT=3009
-            PID=$(sudo lsof -t -i:$PORT || true)
-            if [ -n "$PID" ]; then
-              echo "🛑 Killing process using port $PORT (PID: $PID)..."
-              sudo kill -9 $PID
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Build application
+      run: npm run build
+    
+    - name: Create deployment package
+      run: |
+        mkdir -p deploy
+        cp -r .next deploy/
+        cp -r public deploy/ 2>/dev/null || true
+        cp package.json package-lock.json deploy/
+        cp next.config.* deploy/ 2>/dev/null || true
+        cd deploy && tar -czf ../milestonepm-deploy.tar.gz .
+    
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: milestonepm-build
+        path: milestonepm-deploy.tar.gz
+    
+    - name: Deploy to server
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: milestonehre
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.SSH_PORT }}
+        script: |
+          # Create backup
+          cd /home/milestonehre/milestonepm
+          if [ -d ".next" ]; then
+            cp -r .next .next.backup.$(date +%Y%m%d_%H%M%S)
+          fi
+          
+          # Initialize git repository if needed and pull latest code
+          if [ ! -d .git ]; then
+            git init
+            git remote add origin https://github.com/frontendmakaidigitals/milestonepm.git
+          fi
+          git fetch origin
+          git reset --hard origin/master
+          
+          # Install production dependencies
+          npm ci 
+          
+          # Build application
+          npm run build
+          
+          # Restart PM2 process
+          pm2 restart milestonepm || pm2 start npm --name "milestonepm" -- start -- --port 3005
+          
+          # Wait for app to start
+          sleep 10
+    
+    - name: Health check
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: milestonehre
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.SSH_PORT }}
+        script: |
+          # Check if the application is responding
+          for i in {1..5}; do
+            if curl -f http://localhost:3005 > /dev/null 2>&1; then
+              echo "✅ Application is healthy"
+              exit 0
             fi
-
-            echo "🧽 Cleaning up temporary files..."
-            rm -rf /home/milestonehre/milestonepm_temp
-
-            echo "🚀 Restarting MilestonePM with PM2..."
-            pm2 delete milestonepm || true
-            pm2 start npm --name "milestonepm" --cwd /home/milestonehre/milestonepm -- start -- --port 3009
-
-            echo "✅ Deployment completed successfully!"
+            echo "⏳ Attempt $i: Waiting for application..."
+            sleep 10
+          done
+          echo "❌ Application health check failed"
+          exit 1
+    
+    - name: Rollback on failure
+      if: failure()
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: milestonehre
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.SSH_PORT }}
+        script: |
+          echo "🔄 Deployment failed, attempting rollback..."
+          cd /home/milestonehre/milestonepm
+          
+          # Find latest backup
+          BACKUP=$(ls -t .next.backup.* 2>/dev/null | head -n1)
+          if [ -n "$BACKUP" ]; then
+            echo "📦 Restoring from backup: $BACKUP"
+            rm -rf .next
+            mv "$BACKUP" .next
+            pm2 restart milestonepm
+            echo "✅ Rollback completed"
+          else
+            echo "❌ No backup found for rollback"
+            pm2 restart milestonepm
+          fi
