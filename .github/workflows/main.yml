@@ -67,7 +67,7 @@ jobs:
 
             echo "♻️ Restarting PM2 process"
             pm2 delete milestonepm || true
-            PORT=3005 pm2 start npm --name milestonepm -- start
+            PORT=3009 pm2 start npm --name milestonepm -- start
 
             pm2 save
 
@@ -89,7 +89,7 @@ jobs:
             echo "🔍 Checking app health"
 
             for i in {1..5}; do
-              if curl -f http://localhost:3005 > /dev/null 2>&1; then
+              if curl -f http://localhost:3009 > /dev/null 2>&1; then
                 echo "✅ Application is healthy"
                 exit 0
               fi
