@@ -2,7 +2,7 @@ name: Deploy milestonepm
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Deploy to server via SSH
@@ -57,8 +57,7 @@ jobs:
 
             echo "📥 Fetching latest code"
             git fetch origin
-            git checkout master
-            git reset --hard origin/master
+            git checkout -B main origin/main
 
             echo "📦 Installing dependencies"
             npm ci
@@ -88,11 +87,13 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             echo "🔍 Checking app health"
+
             for i in {1..5}; do
               if curl -f http://localhost:3005 > /dev/null 2>&1; then
                 echo "✅ Application is healthy"
                 exit 0
               fi
+
               echo "⏳ Attempt $i failed, retrying..."
               sleep 10
             done
